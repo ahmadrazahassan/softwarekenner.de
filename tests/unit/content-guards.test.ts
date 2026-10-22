@@ -248,6 +248,10 @@ describe("content guards", () => {
         ...mdx({ content: "Wir arbeiten nahtlos mit allem zusammen." }),
         topic: "E-Rechnung",
         hero: null,
+        categories: [],
+        software: [],
+        keyPoints: [],
+        featured: false,
         _meta: { path: "e-rechnung" },
       });
       expect(messages(set)).toEqual([
@@ -262,9 +266,54 @@ describe("content guards", () => {
         ...mdx({ content: "Siehe `price: $5` und https://example.com/a-b und\n```\nconst x = a — b;\n```" }),
         topic: "Beispiel",
         hero: null,
+        categories: [],
+        software: [],
+        keyPoints: [],
+        featured: false,
         _meta: { path: "beispiel" },
       });
       expect(errors(set)).toEqual([]);
+    });
+  });
+
+  describe("guides (Ratgeber)", () => {
+    const guide = (extra: Record<string, unknown>) => ({
+      ...mdx({}),
+      topic: "Beispiel",
+      hero: null,
+      categories: [] as string[],
+      software: [] as string[],
+      keyPoints: [] as string[],
+      featured: false,
+      _meta: { path: "beispiel" },
+      ...extra,
+    });
+
+    it("resolve categories and programs", () => {
+      const set = validSet();
+      set.guides.push(guide({ categories: ["buchhaltung", "gibt-es-nicht"], software: ["alpha", "fehlt"] }));
+      expect(messages(set)).toEqual([
+        "guides/beispiel: Kategorie „gibt-es-nicht“ existiert nicht.",
+        "guides/beispiel: Software „fehlt“ existiert nicht.",
+      ]);
+    });
+
+    it("warn when a published guide lists an unpublished program", () => {
+      const set = validSet();
+      set.software[1] = software("beta", { status: "entwurf" });
+      set.guides.push(guide({ status: "veroeffentlicht", software: ["beta"] }));
+      expect(errors(set)).toEqual([]);
+      expect(warnings(set).map((w) => w.message)).toContain(
+        "Software „beta“ ist noch nicht veröffentlicht und wird nicht angezeigt.",
+      );
+    });
+
+    it("apply the copy rules to key points", () => {
+      const set = validSet();
+      set.guides.push(guide({ keyPoints: ["Die Einrichtung gelingt im Handumdrehen und ohne Aufwand."] }));
+      expect(messages(set)).toEqual([
+        "guides/beispiel: Floskel ersetzen (Section 15.3): „Die Einrichtung gelingt im Handumdrehen und ohne Aufwand.“",
+      ]);
     });
   });
 
@@ -287,8 +336,18 @@ describe("content guards", () => {
 
     it("allow one buying guide per category", () => {
       const set = validSet();
-      set.buyingGuides.push({ ...mdx({}), category: "buchhaltung", _meta: { path: "buchhaltung" } });
-      set.buyingGuides.push({ ...mdx({}), category: "buchhaltung", _meta: { path: "buchhaltung-2" } });
+      set.buyingGuides.push({
+        ...mdx({}),
+        category: "buchhaltung",
+        keyPoints: [],
+        _meta: { path: "buchhaltung" },
+      });
+      set.buyingGuides.push({
+        ...mdx({}),
+        category: "buchhaltung",
+        keyPoints: [],
+        _meta: { path: "buchhaltung-2" },
+      });
       expect(messages(set)).toEqual([
         "kaufberatung/buchhaltung-2: Für „buchhaltung“ gibt es schon eine Kaufberatung.",
       ]);

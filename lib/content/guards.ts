@@ -217,9 +217,15 @@ export function checkContent(data: ContentSet, today: Date = new Date()): Issue[
     return where;
   };
 
+  const keyPointsLint = (where: string, points: string[]) => {
+    for (const issue of points.flatMap((p) => lintText(p)))
+      error(where, `${issue.message}: „${issue.excerpt}“`);
+  };
+
   const buyingGuideCategories = new Set<string>();
   for (const doc of data.buyingGuides) {
     const where = editorial("kaufberatung", doc);
+    keyPointsLint(where, doc.keyPoints);
     if (!categoryBySlug.has(doc.category)) error(where, `Kategorie „${doc.category}“ existiert nicht.`);
     if (buyingGuideCategories.has(doc.category))
       error(where, `Für „${doc.category}“ gibt es schon eine Kaufberatung.`);
@@ -253,7 +259,20 @@ export function checkContent(data: ContentSet, today: Date = new Date()): Issue[
     }
   }
 
-  for (const doc of data.guides) editorial("guides", doc);
+  for (const doc of data.guides) {
+    const where = editorial("guides", doc);
+    keyPointsLint(where, [...doc.keyPoints, ...(doc.navTitle ? [doc.navTitle] : [])]);
+    for (const c of doc.categories) {
+      if (!categoryBySlug.has(c)) error(where, `Kategorie „${c}“ existiert nicht.`);
+    }
+    for (const s of doc.software) {
+      const target = softwareBySlug.get(s);
+      if (!target) error(where, `Software „${s}“ existiert nicht.`);
+      else if (doc.status === "veroeffentlicht" && target.status !== "veroeffentlicht") {
+        warn(where, `Software „${s}“ ist noch nicht veröffentlicht und wird nicht angezeigt.`);
+      }
+    }
+  }
 
   for (const doc of data.downloads) {
     const where = `downloads/${doc._meta?.path ?? doc.title}`;

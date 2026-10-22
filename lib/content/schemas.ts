@@ -311,6 +311,9 @@ export const Comparison = z.object({
   verdict: z.string().min(40).max(400),
 });
 
+/** "Das Wichtigste in Kürze": three to five quotable sentences above the body (Section 20). */
+const KeyPoints = z.array(z.string().min(20).max(220)).max(5).default([]);
+
 /** Ratgeber article. */
 export const Guide = z.object({
   ...editorialFrontmatter,
@@ -321,10 +324,19 @@ export const Guide = z.object({
       alt: z.string().min(10),
     })
     .nullable(),
+  /** Categories the article belongs to: it is listed on their pages and links back to them. */
+  categories: z.array(Slug).default([]),
+  /** Programs the article discusses, shown as cards after the body. */
+  software: z.array(Slug).max(6).default([]),
+  keyPoints: KeyPoints,
+  /** Short label for menus and the footer, e.g. "E-Rechnungspflicht". Falls back to the title. */
+  navTitle: z.string().min(3).max(24).optional(),
+  /** Lead article on /ratgeber and first on the home page. */
+  featured: z.boolean().default(false),
 });
 
 /** Buyer guide (Kaufberatung) for a category page. */
-export const BuyingGuide = z.object({ ...editorialFrontmatter, category: Slug });
+export const BuyingGuide = z.object({ ...editorialFrontmatter, category: Slug, keyPoints: KeyPoints });
 
 /** Downloadable guide (Leitfaden). */
 export const Download = z.object({

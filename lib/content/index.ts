@@ -156,14 +156,51 @@ export const listReviews = () =>
 export const getBuyingGuide = (categorySlug: string) =>
   allBuyingGuides.find((g) => g.category === categorySlug && visible(g));
 
+/** Buying guides of visible categories, in category order. */
+export const listBuyingGuides = () => {
+  const order = listCategories().map((c) => c.slug);
+  return allBuyingGuides
+    .filter((g) => visible(g) && order.includes(g.category))
+    .sort((a, b) => order.indexOf(a.category) - order.indexOf(b.category));
+};
+
 export const listComparisons = () => allComparisons.filter(visible);
 export const getComparison = (slug: string) => allComparisons.find((c) => c.slug === slug && visible(c));
 export const listComparisonsFor = (softwareSlug: string) =>
   listComparisons().filter((c) => c.a === softwareSlug || c.b === softwareSlug);
 
+/** Visible guides, newest first; on the same day the featured one leads, then by title. */
 export const listGuides = () =>
-  allGuides.filter(visible).sort((a, b) => b.publishedAt.localeCompare(a.publishedAt));
+  allGuides
+    .filter(visible)
+    .sort(
+      (a, b) =>
+        b.publishedAt.localeCompare(a.publishedAt) ||
+        Number(b.featured) - Number(a.featured) ||
+        compareDe(a.title, b.title),
+    );
 export const getGuide = (slug: string) => allGuides.find((g) => g.slug === slug && visible(g));
+
+/** Guides that belong to a category, newest first (category pages, profiles). */
+export const listGuidesForCategory = (categorySlug: string) =>
+  listGuides().filter((g) => g.categories.includes(categorySlug));
+
+/** Other guides for the end of an article: shared categories first, then the newest. */
+export function relatedGuides(slug: string, limit = 3) {
+  const guide = getGuide(slug);
+  const others = listGuides().filter((g) => g.slug !== slug);
+  if (!guide) return others.slice(0, limit);
+  const shared = (g: (typeof others)[number]) =>
+    g.categories.filter((c) => guide.categories.includes(c)).length;
+  return [...others].sort((a, b) => shared(b) - shared(a)).slice(0, limit);
+}
+
+/** Card props for the programs a guide discusses; unpublished ones are left out. */
+export const guideSoftware = (slugs: string[]) =>
+  slugs.flatMap((slug) => {
+    const software = getSoftware(slug);
+    return software ? [summaryOf(software, { from: "ratgeber" })] : [];
+  });
 
 export const listDownloads = () => allDownloads.filter(visible);
 export const getDownload = (slug: string) => allDownloads.find((d) => d.slug === slug && visible(d));
@@ -235,7 +272,7 @@ export function getSiteChrome() {
     guideTeaser: download ? { title: download.title, href: routes.download(download.slug) } : undefined,
     latestGuides: listGuides()
       .slice(0, 5)
-      .map((g) => ({ label: g.title, href: routes.guide(g.slug) })),
+      .map((g) => ({ label: g.navTitle ?? g.title, href: routes.guide(g.slug) })),
     searchItems: buildSearchIndex(
       {
         software: allSoftware,

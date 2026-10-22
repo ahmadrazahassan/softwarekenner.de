@@ -135,3 +135,41 @@ export function softwareJsonLd(
       : {}),
   };
 }
+
+/** Ratgeber and Kaufberatung as Article with author, dates and publisher (Section 20). */
+export function articleJsonLd(article: {
+  title: string;
+  description: string;
+  path: string;
+  authorName?: string;
+  authorPath?: string;
+  publishedAt: string;
+  updatedAt: string;
+}): JsonLd | null {
+  if (!hasDomain()) return null;
+  return {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: article.title,
+    description: article.description,
+    url: absoluteUrl(article.path),
+    mainEntityOfPage: absoluteUrl(article.path),
+    inLanguage: "de-DE",
+    datePublished: article.publishedAt,
+    dateModified: article.updatedAt,
+    ...(article.authorName
+      ? {
+          author: {
+            "@type": "Person",
+            name: article.authorName,
+            ...(article.authorPath ? { url: absoluteUrl(article.authorPath) } : {}),
+          },
+        }
+      : {}),
+    publisher: {
+      "@type": "Organization",
+      "@id": `${siteConfig.domain}#organisation`,
+      name: siteConfig.brand.name,
+    },
+  };
+}
