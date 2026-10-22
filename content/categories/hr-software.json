@@ -6,12 +6,29 @@
   "description": "Software für Personalakte, Abwesenheiten, Bewerbermanagement und Personalprozesse. Wir achten auf Rollen und Rechte, Datenschutz, Mitbestimmung des Betriebsrats und die Übergabe an die Lohnabrechnung.",
   "batch": 1,
   "weights": null,
-  "faq": [],
+  "faq": [
+    {
+      "question": "Was ist der Unterschied zwischen HR-Software und Lohnabrechnung?",
+      "answer": "HR-Software verwaltet Personaldaten, Abwesenheiten, Dokumente und Abläufe wie das Onboarding. Die Lohnabrechnung berechnet Gehälter, Steuern und Sozialabgaben und übermittelt die Meldungen. Viele Betriebe nutzen beides getrennt und übergeben die Daten monatlich, etwa an DATEV."
+    },
+    {
+      "question": "Was kostet HR-Software?",
+      "answer": "Meist wird pro Mitarbeitendem und Monat abgerechnet. Einige Anbieter nennen Listenpreise, andere nur Ab-Preise oder Preise auf Anfrage. Achten Sie auf Mindestnutzerzahlen, Einrichtungsgebühren und Zusatzmodule. Unsere Profile zeigen, was jeder Anbieter offenlegt."
+    },
+    {
+      "question": "Darf ich Arbeitsverträge digital verschicken?",
+      "answer": "Seit dem 1. Januar 2025 dürfen die Vertragsbedingungen nach dem Nachweisgesetz grundsätzlich in Textform übermittelt werden, wenn sie gespeichert und ausgedruckt werden können und ein Empfangsnachweis verlangt wird. In Branchen nach § 2a Schwarzarbeitsbekämpfungsgesetz bleibt die Schriftform Pflicht."
+    },
+    {
+      "question": "Wo sollten Personaldaten gespeichert sein?",
+      "answer": "Rechtlich sind Rechenzentren in der EU solchen in Deutschland gleichgestellt. Wichtig sind ein Vertrag zur Auftragsverarbeitung, eine transparente Liste der Unterauftragsverarbeiter und klare Regeln für KI-Funktionen. Den Serverstandort jedes Programms nennt der Deutschland-Check im Profil."
+    }
+  ],
   "related": ["zeiterfassung", "lohnabrechnung"],
   "seo": {
     "title": "HR-Software im Vergleich",
     "description": "HR-Software für Unternehmen in Deutschland: Personalakte, Abwesenheiten, Datenschutz und Preise in Euro im unabhängigen Vergleich."
   },
   "status": "veroeffentlicht",
-  "updatedAt": "2026-10-19"
+  "updatedAt": "2026-10-22"
 }

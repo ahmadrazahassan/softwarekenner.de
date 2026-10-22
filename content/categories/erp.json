@@ -6,12 +6,29 @@
   "description": "Systeme für Lager, Einkauf, Verkauf und Produktion. Wir achten auf Shopanbindungen, Schnittstellen zur Buchhaltung und den Aufwand der Einführung.",
   "batch": 3,
   "weights": null,
-  "faq": [],
+  "faq": [
+    {
+      "question": "Cloud-ERP oder lokale Installation?",
+      "answer": "In der Cloud betreibt der Anbieter das System und spielt Updates ein. Lokal haben Sie mehr Kontrolle, aber auch die Verantwortung für Betrieb und Sicherung. Für Unternehmen ohne eigene IT ist die Cloud meist einfacher. Eine dritte Variante ist der Betrieb lokaler Software durch einen Partner."
+    },
+    {
+      "question": "Was kostet ein ERP-System?",
+      "answer": "Die Lizenz wird je nach Anbieter pro Nutzer, pro Modul oder nach Volumen berechnet, bei vielen Mittelstandssystemen nur auf Anfrage. Hinzu kommen Einführung, Datenübernahme, Anpassungen und Schulung, die bei Partnerprojekten die Lizenzkosten übersteigen können. Rechnen Sie über fünf Jahre."
+    },
+    {
+      "question": "Muss ein ERP E-Rechnungen erstellen können?",
+      "answer": "Wenn es Ihre Ausgangsrechnungen erzeugt, ja. Unternehmen mit mehr als 800.000 € Vorjahresumsatz müssen ab dem 1. Januar 2027 E-Rechnungen ausstellen, ab 2028 gilt das für alle. Fragen Sie nach XRechnung und ZUGFeRD im gewünschten Paket und nach der GoBD-konformen Archivierung."
+    },
+    {
+      "question": "Wie bereite ich eine ERP-Einführung vor?",
+      "answer": "Beschreiben Sie Ihre Kernprozesse in einem Lastenheft, benennen Sie eine verantwortliche Person mit Entscheidungsbefugnis und bereinigen Sie die Stammdaten vor dem Import. Wählen Sie einen Stichtag außerhalb der Hauptsaison und planen Sie einen Parallelbetrieb ein."
+    }
+  ],
   "related": ["shopsysteme", "buchhaltung"],
   "seo": {
     "title": "ERP und Warenwirtschaft im Vergleich",
     "description": "ERP-Software und Warenwirtschaft für Unternehmen in Deutschland: Lager, Shopanbindung, Einführung und Preise in Euro im Vergleich."
   },
   "status": "veroeffentlicht",
-  "updatedAt": "2026-10-19"
+  "updatedAt": "2026-10-22"
 }

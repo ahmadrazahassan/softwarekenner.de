@@ -6,12 +6,33 @@
   "description": "Programme für Belegerfassung, Bankabgleich, Umsatzsteuervoranmeldung und den Export an die Steuerberatung. Wir prüfen jedes Programm auf GoBD, E-Rechnung und DATEV-Anbindung.",
   "batch": 1,
   "weights": null,
-  "faq": [],
+  "faq": [
+    {
+      "question": "Brauche ich eine Buchhaltungssoftware, wenn ich eine Steuerberatung habe?",
+      "answer": "Meist ja. Auch wenn die Kanzlei bucht, schreiben Sie Rechnungen, sammeln Belege und müssen seit 2025 E-Rechnungen empfangen können. Eine Software, deren Daten die Kanzlei direkt übernimmt, spart beiden Seiten Arbeit. Stimmen Sie den Übergabeweg vor der Auswahl mit der Kanzlei ab."
+    },
+    {
+      "question": "Welche Buchhaltungssoftware kann E-Rechnungen erstellen?",
+      "answer": "Laut Anbieter erstellen unter anderem Lexware Office, sevdesk, BuchhaltungsButler, Papierkram, Accountable, Sage 50 und WISO MeinBüro XRechnung und ZUGFeRD (Stand Oktober 2026). Collmex erstellt laut eigener FAQ keine XRechnung. Den Stand jedes Programms mit Quelle zeigt der Deutschland-Check im Profil."
+    },
+    {
+      "question": "Wie lange muss ich Belege aufbewahren?",
+      "answer": "Buchungsbelege wie Rechnungen und Kontoauszüge seit 2025 acht Jahre, Bücher, Inventare und Jahresabschlüsse zehn Jahre, Geschäftsbriefe sechs Jahre. Die Frist beginnt mit dem Ende des Kalenderjahres, in dem die Unterlage entstanden ist (§ 147 AO)."
+    },
+    {
+      "question": "Gibt es kostenlose Buchhaltungssoftware?",
+      "answer": "Ja. sevdesk, Papierkram, Accountable und Collmex bieten dauerhaft kostenlose Tarife. Sie sind meist auf einen Nutzer und einen Teil der Funktionen begrenzt. Prüfen Sie, ob der Empfang von E-Rechnungen und der Export für die Steuerberatung enthalten sind."
+    },
+    {
+      "question": "Was bedeutet GoBD-konform?",
+      "answer": "Die Software ermöglicht eine Buchführung nach den Grundsätzen der Finanzverwaltung: unveränderbar, nachvollziehbar und vollständig archiviert. Ein amtliches GoBD-Zertifikat gibt es nicht. Verantwortlich für die ordnungsgemäße Nutzung bleibt Ihr Unternehmen."
+    }
+  ],
   "related": ["rechnungsprogramme", "lohnabrechnung"],
   "seo": {
     "title": "Buchhaltungssoftware im Vergleich",
     "description": "Buchhaltungssoftware für Unternehmen in Deutschland: Preise in Euro, GoBD, E-Rechnung und DATEV-Anbindung im unabhängigen Vergleich."
   },
   "status": "veroeffentlicht",
-  "updatedAt": "2026-10-19"
+  "updatedAt": "2026-10-22"
 }

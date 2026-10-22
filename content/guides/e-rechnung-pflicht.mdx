@@ -1,0 +1,128 @@
+---
+title: "E-Rechnungspflicht 2025 bis 2028: Fristen, Ausnahmen und was Ihre Software können muss"
+description: "Seit 2025 müssen alle Unternehmen E-Rechnungen empfangen, ab 2027 beginnt die Pflicht zum Ausstellen. Fristen, Ausnahmen und Softwarecheck."
+navTitle: "E-Rechnungspflicht"
+topic: "E-Rechnung"
+author: wolfram-eschenbach
+reviewer: wolfram-eschenbach
+publishedAt: "2026-10-22"
+updatedAt: "2026-10-22"
+status: veroeffentlicht
+hero: null
+featured: true
+categories: [buchhaltung, erp]
+software: [lexware-office, sevdesk, buchhaltungsbutler, papierkram]
+keyPoints:
+  - "Seit dem 1. Januar 2025 muss jedes inländische Unternehmen E-Rechnungen empfangen können, auch Kleinunternehmer."
+  - "Beim Ausstellen gilt eine Übergangszeit: bis Ende 2026 für alle, im Jahr 2027 nur noch bei höchstens 800.000 € Vorjahresumsatz."
+  - "Ab dem 1. Januar 2028 ist die E-Rechnung im inländischen B2B-Geschäft Pflicht. Ausnahmen gibt es etwa für Kleinbetragsrechnungen bis 250 €."
+  - "Ein PDF ist keine E-Rechnung. Es zählen strukturierte Formate nach EN 16931, etwa XRechnung und ZUGFeRD ab Version 2.0.1."
+sources:
+  - label: "IHK Dresden: E-Rechnung ab 2025, Pflicht, Fristen, Ausnahmen"
+    url: "https://www.ihk.de/dresden/hauptnavigation/recht-steuern/erechnung-6232764"
+    accessedAt: "2026-10-22"
+  - label: "IHK Köln: Neues BMF-Schreiben zur E-Rechnung vom 15. Oktober 2025"
+    url: "https://www.ihk.de/koeln/hauptnavigation/recht-steuern/steuern/bmf-schreiben-zur-e-rechnung-vom-15-10-2025-6774012"
+    accessedAt: "2026-10-22"
+  - label: "Bundesfinanzministerium: Fragen und Antworten zur E-Rechnung"
+    url: "https://www.bundesfinanzministerium.de/Content/DE/FAQ/e-rechnung.html"
+    accessedAt: "2026-10-22"
+  - label: "IHK Rhein-Neckar: E-Rechnung oder PDF, Zustimmung und Kleinunternehmer"
+    url: "https://www.ihk.de/rhein-neckar/recht/steuerrecht/umsatzsteuer/e-rechnungspflicht-5931752"
+    accessedAt: "2026-10-22"
+  - label: "FeRD: Fragen und Antworten zu ZUGFeRD"
+    url: "https://www.ferd-net.de/standards/zugferd-faq"
+    accessedAt: "2026-10-22"
+  - label: "ZDH: Veröffentlichung aktualisierter GoBD (14. Juli 2025)"
+    url: "https://www.zdh.de/ueber-uns/fachbereich-steuern-und-finanzen/abgabenordnung/aktuelles/veroeffentlichung-aktualisierter-gobd/"
+    accessedAt: "2026-10-22"
+---
+
+Angenommen, Sie führen einen Großhandel für Sanitärbedarf mit 1,2 Millionen Euro Jahresumsatz. Ihre Kunden sind Installationsbetriebe in der Region, Ihre Rechnungen gehen bisher als PDF per E-Mail hinaus. Diese Praxis endet für Sie mit dem 31. Dezember 2026. Ab dem 1. Januar 2027 müssen Rechnungen an andere Unternehmen im Inland als E-Rechnung ausgestellt werden, weil Ihr Umsatz im Vorjahr über 800.000 € lag. Ein Betrieb mit 600.000 € Umsatz hat ein Jahr länger Zeit. Den Empfang von E-Rechnungen müssen beide schon heute beherrschen.
+
+Die Regeln stehen im Umsatzsteuergesetz und in zwei Anwendungsschreiben des Bundesfinanzministeriums, zuletzt vom 15. Oktober 2025. Dieser Ratgeber fasst zusammen, was gilt, wer ausgenommen ist und welche Fragen Sie Ihrer Buchhaltungssoftware oder Ihrem Rechnungsprogramm stellen sollten, bevor Sie sich für sie entscheiden.
+
+## Was als E-Rechnung zählt und was nicht
+
+Eine E-Rechnung ist eine Rechnung in einem strukturierten elektronischen Format, das eine Software ohne Abtippen auslesen kann. Maßgeblich ist die europäische Normenreihe EN 16931. In Deutschland sind vor allem zwei Formate verbreitet:
+
+- **XRechnung:** eine reine XML-Datei. Für Menschen ist sie ohne Anzeigeprogramm kaum lesbar, für Software dafür eindeutig.
+- **ZUGFeRD:** ein PDF, in das eine XML-Datei eingebettet ist. Menschen sehen das gewohnte Rechnungsbild, die Software liest die Daten. Als E-Rechnung gilt ZUGFeRD ab Version 2.0.1, allerdings nicht in den Profilen MINIMUM und BASIC-WL, weil diese keine vollständige Rechnung abbilden.
+
+Ein klassisches PDF, das Sie aus Word oder einem Rechnungsprogramm erzeugen und per E-Mail verschicken, ist dagegen keine E-Rechnung. Es zählt zu den „sonstigen Rechnungen“, ebenso wie die Papierrechnung. Das zweite BMF-Schreiben stellt außerdem klar: Eine Datei, die wegen technischer Fehler nicht der Norm entspricht, ist ebenfalls nur eine sonstige Rechnung. Wer eine solche Rechnung erhält, sollte eine korrigierte E-Rechnung anfordern. Das BMF empfiehlt, eingehende Dateien mit einer geeigneten Anwendung zu prüfen.
+
+## Die Fristen im Überblick
+
+<Tabelle
+  titel="E-Rechnung im inländischen B2B-Geschäft"
+  kopf={["Zeitraum", "Empfangen", "Ausstellen"]}
+  zeilen={[
+    [
+      "Seit 1. Januar 2025",
+      "Pflicht für alle inländischen Unternehmen",
+      "E-Rechnung möglich; Papier und, mit Zustimmung des Empfängers, PDF weiter erlaubt",
+    ],
+    [
+      "Jahr 2027",
+      "Pflicht",
+      "E-Rechnung Pflicht bei mehr als 800.000 € Gesamtumsatz im Vorjahr; darunter sind sonstige Rechnungen noch erlaubt; EDI-Verfahren mit Zustimmung des Empfängers",
+    ],
+    [
+      "Ab 1. Januar 2028",
+      "Pflicht",
+      "E-Rechnung Pflicht für alle inländischen B2B-Umsätze, mit den gesetzlichen Ausnahmen",
+    ],
+  ]}
+  quelle="IHK Dresden, IHK Köln und Bundesfinanzministerium, abgerufen am 22. Oktober 2026"
+/>
+
+Für den Empfang gibt es keine Übergangsfrist. Die gestaffelten Termine betreffen nur die Seite, die Rechnungen ausstellt. Maßgeblich für die 800.000-€-Grenze ist der Gesamtumsatz des Vorjahres, für 2027 also der Umsatz aus 2026.
+
+## Wer betroffen ist und welche Ausnahmen gelten
+
+Die Pflicht gilt für Umsätze zwischen Unternehmen, die beide im Inland ansässig sind. Rechnungen an Privatkundinnen und Privatkunden sind nicht betroffen. Ebenso wenig Rechnungen an Unternehmen im Ausland, für die weiterhin die bisherigen Regeln gelten.
+
+Ausgenommen sind außerdem:
+
+- **Kleinbetragsrechnungen** bis 250 € brutto nach § 33 UStDV. Eine E-Rechnung ist hier erlaubt, aber nicht vorgeschrieben.
+- **Fahrausweise** nach § 34 UStDV.
+- **Bestimmte steuerfreie Umsätze**, für die das Gesetz keine E-Rechnung verlangt.
+- **Kleinunternehmer nach § 19 UStG** beim Ausstellen. Die Grundlage ist § 34a UStDV. Empfangen müssen auch sie E-Rechnungen können.
+
+Wer sich unsicher ist, ob eine bestimmte Umsatzart unter eine Ausnahme fällt, klärt das am besten mit der Steuerberatung. Für die Softwareauswahl ist die Ausnahme selten entscheidend: Fast jedes Unternehmen erhält Rechnungen von Lieferanten, die ab 2027 oder 2028 elektronisch ankommen.
+
+## Empfangen: Das Postfach reicht, die Verarbeitung ist die eigentliche Aufgabe
+
+Für den Empfang reicht nach Auffassung der Finanzverwaltung ein E-Mail-Postfach. Damit ist die Pflicht aber nur formal erfüllt. Eine XRechnung können die meisten Menschen ohne Software nicht lesen, und die Datei muss unverändert aufbewahrt werden. Spätestens wenn mehrere Lieferanten E-Rechnungen schicken, brauchen Sie ein Programm, das die Dateien anzeigt, prüft und an die Buchhaltung übergibt.
+
+Bei der Aufbewahrung haben die GoBD in der Fassung vom 14. Juli 2025 eine Erleichterung gebracht: Bei einer E-Rechnung genügt es, die strukturierte XML-Datei aufzubewahren. Ein zusätzliches Bild der Rechnung ist nur nötig, wenn es Informationen enthält, die in der XML-Datei fehlen. Die Aufbewahrungsfrist für Buchungsbelege beträgt seit 2025 acht Jahre. Mehr dazu lesen Sie in unserem Ratgeber [GoBD und Aufbewahrungsfristen](/ratgeber/gobd-aufbewahrung).
+
+## Sechs Fragen an Ihre Software
+
+Ob eine Software für die E-Rechnung taugt, lässt sich mit wenigen Fragen klären. Stellen Sie sie dem Anbieter schriftlich, wenn die Produktseite keine klare Antwort gibt.
+
+1. **Empfang:** Liest die Software XRechnung und ZUGFeRD ein und zeigt den Inhalt lesbar an?
+2. **Prüfung:** Validiert sie eingehende Dateien gegen die Norm und meldet Fehler, bevor Sie buchen?
+3. **Versand:** Erstellt sie selbst E-Rechnungen in beiden Formaten, und zwar in dem Tarif, den Sie buchen wollen?
+4. **Archiv:** Bewahrt sie die Originaldatei unveränderbar und für die gesamte Frist auf, auch nach einer Kündigung?
+5. **Übergabe:** Gehen Rechnungsdaten und Datei gemeinsam an die Steuerberatung, etwa über eine DATEV-Schnittstelle?
+6. **Zeitplan:** Wenn eine Funktion noch fehlt: Bis wann liefert der Anbieter sie, und steht das im Vertrag?
+
+Die dritte Frage ist wichtiger, als sie klingt. Manche Anbieter bieten den Empfang in allen Tarifen an, den Versand aber nur in höheren Stufen. Und nicht jedes Programm kann heute beides: Collmex erstellt laut eigener FAQ keine XRechnung, bei Sage Active kommen E-Rechnungen laut Anbieter herein, der Versand folgt erst. Für ein Unternehmen über der 800.000-€-Grenze ist das ab 2027 ein Ausschlusskriterium.
+
+## Was Sie jetzt tun sollten
+
+Ein einfacher Fahrplan hilft, die Umstellung ohne Hektik zu erledigen:
+
+- **Sofort:** Prüfen Sie, wie E-Rechnungen bei Ihnen ankommen, wer sie öffnet und wo sie liegen. Legen Sie eine zentrale Adresse für Eingangsrechnungen fest.
+- **Noch in diesem Jahr:** Klären Sie mit der Steuerberatung, ob Ihr Gesamtumsatz 2026 über 800.000 € liegt. Dann müssen Sie ab dem 1. Januar 2027 E-Rechnungen ausstellen, und es bleiben nur noch wenige Wochen.
+- **Vor Ihrem Stichtag:** Testen Sie den Versand mit zwei oder drei Stammkunden. Fragen Sie, ob deren Software Ihre Dateien fehlerfrei einliest.
+- **Laufend:** Halten Sie in Ihrer Verfahrensdokumentation fest, wie E-Rechnungen empfangen, geprüft und archiviert werden.
+
+In unseren Profilen sehen Sie für jedes Programm, ob es XRechnung und ZUGFeRD laut Anbieter unterstützt, und mit welcher Quelle. Die Übersicht für [Buchhaltungssoftware](/kategorien/buchhaltung) zeigt die Angaben aller bewerteten Programme nebeneinander.
+
+<Hinweis titel="So ist dieser Ratgeber entstanden">
+  Grundlage sind die Veröffentlichungen des Bundesfinanzministeriums, IHK-Merkblätter und die Erläuterungen
+  des FeRD, abgerufen im Oktober 2026. Der Ratgeber ersetzt keine Steuerberatung. Maßgeblich sind das
+  Umsatzsteuergesetz und die aktuellen Schreiben der Finanzverwaltung.
+</Hinweis>

@@ -6,12 +6,33 @@
   "description": "Lösungen zur Erfassung von Arbeits- und Projektzeiten per App, Browser oder Terminal. Wir prüfen Offline-Erfassung, Pausenregeln, Auswertungen und die Rolle des Betriebsrats.",
   "batch": 1,
   "weights": null,
-  "faq": [],
+  "faq": [
+    {
+      "question": "Ist Arbeitszeiterfassung in Deutschland Pflicht?",
+      "answer": "Ja. Seit dem Beschluss des Bundesarbeitsgerichts vom 13. September 2022 müssen Arbeitgeber Beginn, Ende und Dauer der täglichen Arbeitszeit ihrer Beschäftigten erfassen. Ein Gesetz mit Detailregeln ist geplant, aber noch nicht beschlossen (Stand Oktober 2026)."
+    },
+    {
+      "question": "Reichen Stundenzettel auf Papier?",
+      "answer": "Nach geltendem Recht kann Papier genügen, eine elektronische Form ist nicht vorgeschrieben. Ein Referentenentwurf des Bundesarbeitsministeriums vom Juni 2026 sieht jedoch eine elektronische Erfassung mit Übergangsfristen vor. Wer neu auswählt, ist mit einer elektronischen Lösung auf der sicheren Seite."
+    },
+    {
+      "question": "Was kostet eine Zeiterfassung?",
+      "answer": "Die meisten Anbieter rechnen pro Person und Monat ab, die Einstiegspreise in unserem Vergleich liegen meist im einstelligen Eurobereich. Hinzu kommen je nach Anbieter Grundgebühren, Terminals oder kostenpflichtige Exporte. Die Kosten nach Teamgröße zeigen die Profile."
+    },
+    {
+      "question": "Muss der Betriebsrat zustimmen?",
+      "answer": "Gibt es einen Betriebsrat, bestimmt er bei der Ausgestaltung einer elektronischen Zeiterfassung mit, weil sie Daten einzelnen Beschäftigten zuordnet. Die Einführung erzwingen kann er nach der Rechtsprechung des Bundesarbeitsgerichts nicht. Planen Sie eine Betriebsvereinbarung ein."
+    },
+    {
+      "question": "Darf eine Zeiterfassung den Standort erfassen?",
+      "answer": "Nur wenn das für den Zweck erforderlich ist und die Beschäftigten darüber informiert sind. Für die reine Arbeitszeiterfassung ist eine Ortung in der Regel nicht nötig. Klären Sie den Einsatz mit Ihrer Datenschutzberatung und, falls vorhanden, in der Betriebsvereinbarung."
+    }
+  ],
   "related": ["hr-software", "projektmanagement"],
   "seo": {
     "title": "Zeiterfassung im Vergleich",
     "description": "Zeiterfassungssoftware für Unternehmen in Deutschland: mobile Erfassung, Pausenregeln, Datenschutz und Preise in Euro im Vergleich."
   },
   "status": "veroeffentlicht",
-  "updatedAt": "2026-10-19"
+  "updatedAt": "2026-10-22"
 }

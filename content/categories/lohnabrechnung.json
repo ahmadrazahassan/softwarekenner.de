@@ -6,12 +6,29 @@
   "description": "Programme für Entgeltabrechnung, Meldungen an Sozialversicherung und Finanzamt sowie die Zusammenarbeit mit der Steuerberatung. Wir prüfen Datenschutz, Schnittstellen und Aufwand.",
   "batch": 2,
   "weights": null,
-  "faq": [],
+  "faq": [
+    {
+      "question": "Lohn selbst abrechnen oder durch die Steuerberatung?",
+      "answer": "Die Kanzlei nimmt Ihnen Fachwissen, Fristen und Haftungsrisiken weitgehend ab und rechnet pro Abrechnung ab. Selbst abzurechnen lohnt sich, wenn Sie eine fachkundige Person im Haus haben und häufige Änderungen schneller selbst einpflegen. Verbreitet sind auch Mischformen mit Vorbereitung in einer HR-Software."
+    },
+    {
+      "question": "Was bedeutet systemgeprüfte Lohnsoftware?",
+      "answer": "Meldungen und Beitragsnachweise zur Sozialversicherung dürfen nur aus systemgeprüften Programmen oder Ausfüllhilfen übermittelt werden. Die Prüfung führt die ITSG im Auftrag des GKV-Spitzenverbands durch. Ob ein Programm geprüft ist, erfahren Sie beim Hersteller."
+    },
+    {
+      "question": "Was ändert sich zum 1. Januar 2027?",
+      "answer": "Der gesetzliche Mindestlohn steigt von 13,90 € auf 14,60 € pro Stunde, die Verdienstgrenze im Minijob von 603 € auf 633 € im Monat. Prüfen Sie Minijobs mit festen Stunden und Löhne nahe am Mindestlohn rechtzeitig vor dem Jahreswechsel."
+    },
+    {
+      "question": "Wie funktioniert die elektronische Krankmeldung?",
+      "answer": "Seit 2023 rufen Arbeitgeber die Arbeitsunfähigkeitsdaten gesetzlich versicherter Beschäftigter bei der Krankenkasse ab, für jeden Fall einzeln. Die Rückmeldungen werden laut AOK nach 42 Tagen gelöscht und sollten mindestens wöchentlich abgeholt werden. Eine Lohnsoftware mit integriertem eAU-Abruf erledigt das automatisch."
+    }
+  ],
   "related": ["hr-software", "zeiterfassung"],
   "seo": {
     "title": "Lohnabrechnung im Vergleich",
     "description": "Software für die Lohnabrechnung in Deutschland: Meldewesen, DATEV-Anbindung, Datenschutz und Preise in Euro im Vergleich."
   },
   "status": "veroeffentlicht",
-  "updatedAt": "2026-10-19"
+  "updatedAt": "2026-10-22"
 }

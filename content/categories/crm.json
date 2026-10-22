@@ -6,12 +6,29 @@
   "description": "Software für Kontakte, Verkaufschancen und Kundenkommunikation. Wir prüfen den datenschutzkonformen Umgang mit Kontaktdaten, Einwilligungen, E-Mail-Integration und Telefonie.",
   "batch": 2,
   "weights": null,
-  "faq": [],
+  "faq": [
+    {
+      "question": "Darf ich Geschäftskontakte im CRM speichern?",
+      "answer": "Ja, wenn es eine Rechtsgrundlage gibt, etwa die Anbahnung oder Durchführung eines Vertrags oder ein berechtigtes Interesse, das Sie dokumentieren. Auch Ansprechpersonen bei Unternehmen sind durch die DSGVO geschützt. Legen Sie fest, wann Kontakte gelöscht werden."
+    },
+    {
+      "question": "Darf ich Geschäftskunden Newsletter schicken?",
+      "answer": "Grundsätzlich nur mit vorheriger ausdrücklicher Einwilligung, auch im B2B-Geschäft (§ 7 UWG). Eine Ausnahme gilt unter engen Voraussetzungen für Bestandskunden, die bei der Erhebung der Adresse und bei jeder Nutzung auf ihr Widerspruchsrecht hingewiesen wurden."
+    },
+    {
+      "question": "Was kostet ein CRM?",
+      "answer": "Je nach Anbieter gibt es Paketpreise mit fester Nutzerzahl oder Preise pro Nutzer und Monat, oft mit Zusatzmodulen. In unserem Vergleich reicht die Spanne vom kostenlosen Einstieg für drei Personen bis zu einer Außendienstlösung mit Mindestnutzerzahl. Rechnen Sie mit Ihrer realen Teamgröße."
+    },
+    {
+      "question": "Warum fehlen HubSpot, Pipedrive und Zoho im Vergleich?",
+      "answer": "Wir listen nur Programme, deren Preise in Euro wir aus Anbieterquellen prüfen konnten. Bei diesen Anbietern war das in unserer Recherche nicht zuverlässig möglich. Wir ergänzen sie, sobald die Angaben geprüft sind."
+    }
+  ],
   "related": ["e-mail-marketing", "erp"],
   "seo": {
     "title": "CRM-Software im Vergleich",
     "description": "CRM-Software für Unternehmen in Deutschland: Pipeline, Einwilligungen, Datenschutz und Preise in Euro im unabhängigen Vergleich."
   },
   "status": "veroeffentlicht",
-  "updatedAt": "2026-10-19"
+  "updatedAt": "2026-10-22"
 }
