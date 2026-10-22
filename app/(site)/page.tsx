@@ -2,6 +2,14 @@ import { ArrowRight, Headset, Plug, ReceiptText, Server, ShieldCheck, FileCheck2
 import type { Metadata } from "next";
 
 import { ChartFrame, WeightsDonut } from "@/components/charts";
+import {
+  BandGraphic,
+  EditorialList,
+  PillHeading,
+  SectionRule,
+  sectionNumber,
+} from "@/components/content/editorial";
+import { guideLink } from "@/components/content/guide-links";
 import { JsonLd } from "@/components/content/page-parts";
 import { PopularSoftware, type PopularTab } from "@/components/home/popular-software";
 import { CategoryTile, ComparisonCard, SectionHeading } from "@/components/software/cards";
@@ -10,14 +18,19 @@ import { MarketReport } from "@/components/stats/market";
 import { PortfolioReport } from "@/components/stats/portfolio";
 import { CountUp } from "@/components/ui/animated";
 import { BlockPattern } from "@/components/ui/block-pattern";
+import { AppLink } from "@/components/ui/app-link";
 import { ButtonLink, TextLink } from "@/components/ui/button";
 import { Icon } from "@/components/ui/icon";
 import { ScoreChip } from "@/components/ui/score-chip";
 import {
   finderData,
+  getCategory,
+  getGuide,
   getPortfolioStats,
   getStats,
+  listBuyingGuides,
   listCategories,
+  listGuides,
   listMarket,
   listComparisons,
   listSoftware,
@@ -26,8 +39,9 @@ import {
 } from "@/lib/content";
 import { CATEGORY_ICONS } from "@/lib/content/icons";
 import { median } from "@/lib/charts";
+import { readingMinutes } from "@/lib/content/outline";
 import { entryPrice } from "@/lib/content/query";
-import { formatMonthYear, formatNumber, formatPercent } from "@/lib/format";
+import { formatDate, formatMonthYear, formatNumber, formatPercent } from "@/lib/format";
 import { routes } from "@/lib/routes";
 import { CRITERIA, CRITERION_LABEL, DEFAULT_WEIGHTS } from "@/lib/scoring";
 import { organizationJsonLd, pageMetadata } from "@/lib/seo";
@@ -113,6 +127,11 @@ export default function HomePage() {
   // Hero data card: the highest rated product overall, from our data only.
   const top = tabs.flatMap((t) => t.items).sort((a, b) => b.score - a.score)[0];
   const eInvoice = software.filter((s) => s.compliance.xrechnung === "ja");
+  const guides = listGuides();
+  const leadGuide = guides.find((g) => g.featured) ?? guides[0];
+  const moreGuides = guides.filter((g) => g !== leadGuide).slice(0, 3);
+  const buyingGuides = listBuyingGuides();
+  const eInvoiceGuide = getGuide("e-rechnung-pflicht");
 
   return (
     <>
@@ -421,6 +440,11 @@ export default function HomePage() {
               </a>
               , abgerufen am 19. Oktober 2026.
             </p>
+            {eInvoiceGuide && (
+              <TextLink href={routes.guide(eInvoiceGuide.slug)} className="self-start">
+                Fristen, Ausnahmen und Prüffragen im Ratgeber
+              </TextLink>
+            )}
           </div>
           {eInvoice.length > 0 && (
             <div className="rounded-lg border border-line bg-canvas p-6">
@@ -446,6 +470,85 @@ export default function HomePage() {
           )}
         </div>
       </section>
+
+      {leadGuide && (
+        <section aria-labelledby="ratgeber-start-titel" className="section-y">
+          <div className="container-content">
+            <SectionRule label="Neu im Ratgeber" />
+            <div className="mt-8 grid gap-10 lg:grid-cols-12 lg:gap-x-8">
+              <div className="flex flex-col items-start gap-5 lg:col-span-4">
+                <PillHeading as="p" number={sectionNumber(guides.length)}>
+                  Ratgeber
+                </PillHeading>
+                <h2
+                  id="ratgeber-start-titel"
+                  className="font-display text-[clamp(2.25rem,4.6vw,3.75rem)] leading-[0.95] font-medium tracking-[-0.03em] text-ink uppercase"
+                >
+                  Neu im Ratgeber
+                </h2>
+                <p className="type-body text-text-muted">
+                  E-Rechnung, GoBD, Datenschutz, Arbeitszeit und Mitbestimmung: kompakt erklärt, mit
+                  Prüffragen für die Softwareauswahl und allen Quellen.
+                </p>
+                <TextLink href={routes.guides()}>Alle {formatNumber(guides.length)} Ratgeber</TextLink>
+              </div>
+              <div className="flex min-w-0 flex-col gap-8 lg:col-span-8">
+                <article className="group relative isolate overflow-hidden rounded-xl bg-brand-500 p-6 sm:p-10">
+                  <BandGraphic offset={820} />
+                  <div className="relative flex max-w-xl flex-col gap-4">
+                    <p className="font-ui text-micro tracking-[0.08em] text-ink uppercase">
+                      Im Fokus · {leadGuide.topic}
+                    </p>
+                    <h3 className="font-display text-[clamp(1.5rem,3vw,2.375rem)] leading-[1.05] font-semibold tracking-[-0.02em] text-ink">
+                      <AppLink
+                        href={routes.guide(leadGuide.slug)}
+                        className="after:absolute after:inset-0 after:content-[''] focus-visible:outline-offset-4"
+                      >
+                        {leadGuide.title}
+                      </AppLink>
+                    </h3>
+                    <p className="type-body text-ink">{leadGuide.description}</p>
+                    <p className="type-small text-ink">
+                      {readingMinutes(leadGuide.content)} Min. Lesezeit · {formatDate(leadGuide.updatedAt)}
+                    </p>
+                  </div>
+                  <span
+                    aria-hidden="true"
+                    className="relative mt-6 flex size-12 items-center justify-center rounded-full bg-ink text-brand-500 transition-transform duration-200 ease-soft group-hover:-rotate-45 sm:absolute sm:right-8 sm:bottom-8 sm:mt-0"
+                  >
+                    <Icon icon={ArrowRight} size={20} />
+                  </span>
+                </article>
+                {moreGuides.length > 0 && (
+                  <EditorialList items={moreGuides.map(guideLink)} start={2} compact />
+                )}
+              </div>
+            </div>
+            {buyingGuides.length > 0 && (
+              <nav
+                aria-label="Kaufberatung je Kategorie"
+                className="mt-14 flex flex-col gap-4 border-t border-ink pt-6 lg:flex-row lg:items-center lg:justify-between"
+              >
+                <p className="font-ui text-micro tracking-[0.08em] text-ink uppercase">
+                  Kaufberatung je Kategorie
+                </p>
+                <ul className="flex flex-wrap gap-2">
+                  {buyingGuides.map((b) => (
+                    <li key={b.category}>
+                      <AppLink
+                        href={`${routes.category(b.category)}#kaufberatung`}
+                        className="inline-flex min-h-10 items-center rounded-full border border-ink px-4 font-ui text-caption font-medium text-ink transition-colors hover:bg-ink hover:text-white"
+                      >
+                        {getCategory(b.category)?.shortName ?? b.category}
+                      </AppLink>
+                    </li>
+                  ))}
+                </ul>
+              </nav>
+            )}
+          </div>
+        </section>
+      )}
 
       <section className="section-y">
         <div className="container-content grid gap-10 lg:grid-cols-[1fr_1.1fr] lg:items-center">

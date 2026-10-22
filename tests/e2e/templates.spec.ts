@@ -31,6 +31,9 @@ const PAGES = [
   "/vergleich",
   "/vergleich?produkte=lexware-office,sevdesk,collmex",
   "/ratgeber",
+  "/ratgeber/e-rechnung-pflicht",
+  "/ratgeber/betriebsrat-softwareeinfuehrung",
+  "/ratgeber/softwareauswahl-checkliste",
   "/leitfaeden",
   "/beratung",
   "/methodik",
@@ -116,10 +119,56 @@ test("no page announces that we have nothing", async ({ page }) => {
       /(^|[^\d,.])0 (Ratgeber|Softwareprofile|Kategorien)|Noch keine|in Arbeit/,
     );
   }
-  // Hubs without content stay out of the main navigation.
+  // Hubs appear in the main navigation once they have content: Ratgeber yes, Leitfäden not yet.
   const nav = page.getByRole("banner");
   await expect(nav.locator('a[href="/software"]').first()).toBeAttached();
-  await expect(nav.locator('a[href="/ratgeber"]')).toHaveCount(0);
+  await expect(nav.locator('a[href="/ratgeber"]').first()).toBeAttached();
+  await expect(nav.locator('a[href="/leitfaeden"]')).toHaveCount(0);
+});
+
+test("guides are linked from the home page, the hub, categories and profiles", async ({ page }) => {
+  await page.goto("/");
+  const home = page.getByRole("region", { name: "Neu im Ratgeber" });
+  await expect(home.getByRole("link", { name: /E-Rechnungspflicht 2025 bis 2028/ })).toHaveAttribute(
+    "href",
+    "/ratgeber/e-rechnung-pflicht",
+  );
+  await expect(
+    page
+      .getByRole("navigation", { name: "Kaufberatung je Kategorie" })
+      .getByRole("link", { name: "Buchhaltung" }),
+  ).toHaveAttribute("href", "/kategorien/buchhaltung#kaufberatung");
+
+  await page.goto("/ratgeber");
+  const hrefs = async (selector: string) =>
+    new Set(await page.locator(selector).evaluateAll((links) => links.map((a) => a.getAttribute("href"))));
+  expect((await hrefs('main a[href^="/ratgeber/"]')).size, "every guide is linked").toBe(7);
+  expect((await hrefs('main a[href$="#kaufberatung"]')).size, "every buying guide is linked").toBe(6);
+
+  await page.goto("/kategorien/buchhaltung");
+  await expect(page.getByRole("heading", { name: "Kaufberatung" })).toBeVisible();
+  await expect(page.locator('#ratgeber a[href="/ratgeber/gobd-aufbewahrung"]')).toBeAttached();
+
+  await page.goto("/software/lexware-office");
+  await expect(page.getByRole("heading", { name: "Wissen für Ihre Entscheidung" })).toBeVisible();
+});
+
+test("a guide shows key points, contents with working anchors and its sources", async ({ page }) => {
+  await page.goto("/ratgeber/gobd-aufbewahrung");
+  await expect(page.getByRole("heading", { name: "Kurz gefasst" })).toBeVisible();
+  const toc = page.getByRole("navigation", { name: "In diesem Ratgeber" });
+  if (await toc.isVisible()) {
+    const first = toc.getByRole("link").first();
+    const href = await first.getAttribute("href");
+    await expect(page.locator(href!)).toHaveCount(1);
+  }
+  await expect(page.locator("section[aria-labelledby='quellen'] a[href^='https://']").first()).toBeAttached();
+});
+
+test("the sitemap lists the guides", async ({ request }) => {
+  const xml = await (await request.get("/sitemap.xml")).text();
+  expect(xml).toContain("/ratgeber/e-rechnung-pflicht</loc>");
+  expect(xml).not.toContain("/styleguide");
 });
 
 test("outbound links without an affiliate deal carry no sponsored marker", async ({ page }) => {

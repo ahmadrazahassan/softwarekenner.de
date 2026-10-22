@@ -5,6 +5,14 @@ import { notFound } from "next/navigation";
 import { requestAdvice } from "@/app/actions/forms";
 import { AdvisorPanel } from "@/components/content/advisor-panel";
 import { ChartFrame, PriceBars, ScoreScatter } from "@/components/charts";
+import {
+  EditorialList,
+  NumberedPoints,
+  PillHeading,
+  SectionRule,
+  SourceList,
+} from "@/components/content/editorial";
+import { guideLink } from "@/components/content/guide-links";
 import { MethodologyBar } from "@/components/content/methodology-bar";
 import { Mdx } from "@/components/content/mdx";
 import { DraftNotice, JsonLd, PageHeader } from "@/components/content/page-parts";
@@ -18,7 +26,9 @@ import {
   FilterScope,
 } from "@/components/software/category-filters";
 import { ComparisonTable } from "@/components/software/comparison-table";
+import { TableOfContents } from "@/components/layout/page-nav";
 import { AppLink } from "@/components/ui/app-link";
+import { TextLink } from "@/components/ui/button";
 import { Icon } from "@/components/ui/icon";
 import { Accordion } from "@/components/ui/overlay";
 import {
@@ -27,10 +37,12 @@ import {
   getBuyingGuide,
   getCategory,
   listCategories,
+  listGuidesForCategory,
   listSoftwareByCategory,
   rankedDetailsOf,
   rankedSummaries,
 } from "@/lib/content";
+import { outlineOf, readingMinutes } from "@/lib/content/outline";
 import { comparisonGroups, comparisonProducts } from "@/lib/content/comparison";
 import { facetsOf, filterGroupsFor } from "@/lib/content/filters";
 import { entryPrice, scoreOf, weightsFor } from "@/lib/content/query";
@@ -39,7 +51,7 @@ import { formatDate, formatNumber, formatPrice, formatRating, PRICE_UNIT_LABEL }
 import { routes } from "@/lib/routes";
 import { staticParams } from "@/lib/static-params";
 import type { AwardKind } from "@/lib/scoring";
-import { itemListJsonLd, pageMetadata } from "@/lib/seo";
+import { articleJsonLd, itemListJsonLd, pageMetadata } from "@/lib/seo";
 
 export function generateStaticParams() {
   return staticParams(
@@ -79,6 +91,8 @@ export default async function CategoryPage({ params }: PageProps<"/kategorien/[k
   const guide = getBuyingGuide(category.slug);
   const guideAuthor = guide ? getAuthor(guide.author) : undefined;
   const guideReviewer = guide ? getAuthor(guide.reviewer) : undefined;
+  const guideOutline = guide ? outlineOf(guide.content) : [];
+  const guides = listGuidesForCategory(category.slug);
   const year = category.updatedAt.slice(0, 4);
   const top = software.slice(0, 6);
   const priced = software
@@ -107,6 +121,7 @@ export default async function CategoryPage({ params }: PageProps<"/kategorien/[k
     ...(top.length > 1 ? [{ id: "vergleichstabelle", label: "Vergleichstabelle" }] : []),
     ...(guide ? [{ id: "kaufberatung", label: "Kaufberatung" }] : []),
     ...(category.faq.length ? [{ id: "faq", label: "Häufige Fragen" }] : []),
+    ...(guides.length ? [{ id: "ratgeber", label: "Ratgeber" }] : []),
   ];
 
   return (
@@ -118,6 +133,19 @@ export default async function CategoryPage({ params }: PageProps<"/kategorien/[k
           summaries.map((s) => ({ name: s.name, path: s.href })),
         )}
       />
+      {guide && (
+        <JsonLd
+          data={articleJsonLd({
+            title: guide.title,
+            description: guide.description,
+            path: `${routes.category(category.slug)}#kaufberatung`,
+            authorName: guideAuthor?.name,
+            authorPath: guideAuthor ? routes.author(guideAuthor.slug) : undefined,
+            publishedAt: guide.publishedAt,
+            updatedAt: guide.updatedAt,
+          })}
+        />
+      )}
       <PageHeader
         crumbs={[
           { label: "Startseite", href: routes.home() },
@@ -275,9 +303,47 @@ export default async function CategoryPage({ params }: PageProps<"/kategorien/[k
         )}
 
         {guide && (
-          <section id="kaufberatung" className="scroll-mt-24">
-            <SectionHeading title="Kaufberatung" />
-            <Mdx code={guide.mdx} />
+          <section id="kaufberatung" aria-labelledby="kaufberatung-titel" className="scroll-mt-24">
+            <SectionRule label={`Kaufberatung ${category.shortName}`} />
+            <div className="mt-8 grid gap-10 lg:grid-cols-12 lg:gap-x-8">
+              <div className="flex flex-col gap-6 lg:col-span-3">
+                <PillHeading id="kaufberatung-titel" number={guide.updatedAt.slice(0, 4)}>
+                  Kaufberatung
+                </PillHeading>
+                <p className="type-small text-text-muted">
+                  {guideAuthor && <>Von {guideAuthor.name} · </>}
+                  {readingMinutes(guide.content)} Min. Lesezeit · Stand {formatDate(guide.updatedAt)}
+                </p>
+                {guideOutline.length > 1 && (
+                  <TableOfContents
+                    items={guideOutline}
+                    title="In dieser Kaufberatung"
+                    className="max-lg:hidden"
+                  />
+                )}
+              </div>
+              <div className="flex min-w-0 flex-col gap-10 lg:col-span-9">
+                <div className="flex flex-col gap-4">
+                  <p className="font-display text-[clamp(1.75rem,3.4vw,2.75rem)] leading-[1.05] font-medium tracking-[-0.025em] text-ink">
+                    {guide.title}
+                  </p>
+                  <p className="measure type-lead text-text-muted">{guide.description}</p>
+                </div>
+                {guide.keyPoints.length > 0 && (
+                  <div className="flex flex-col gap-4">
+                    <p className="font-ui text-micro tracking-[0.08em] text-ink uppercase">
+                      Das Wichtigste in Kürze
+                    </p>
+                    <NumberedPoints items={guide.keyPoints} />
+                  </div>
+                )}
+                <Mdx code={guide.mdx} />
+                <div className="flex flex-col gap-4">
+                  <p className="font-ui text-micro tracking-[0.08em] text-ink uppercase">Quellen</p>
+                  <SourceList sources={guide.sources} formatDate={formatDate} />
+                </div>
+              </div>
+            </div>
           </section>
         )}
 
@@ -287,6 +353,21 @@ export default async function CategoryPage({ params }: PageProps<"/kategorien/[k
             <Accordion
               items={category.faq.map((f, i) => ({ id: `faq-${i}`, title: f.question, content: f.answer }))}
             />
+          </section>
+        )}
+
+        {guides.length > 0 && (
+          <section id="ratgeber" aria-labelledby="ratgeber-titel" className="scroll-mt-24">
+            <SectionRule label="Ratgeber" />
+            <div className="mt-8 grid gap-10 lg:grid-cols-12 lg:gap-x-8">
+              <div className="flex flex-col gap-4 lg:col-span-3">
+                <PillHeading id="ratgeber-titel" number={String(guides.length).padStart(2, "0")}>
+                  Passende Ratgeber
+                </PillHeading>
+                <TextLink href={routes.guides()}>Alle Ratgeber</TextLink>
+              </div>
+              <EditorialList className="lg:col-span-9" items={guides.map(guideLink)} />
+            </div>
           </section>
         )}
 

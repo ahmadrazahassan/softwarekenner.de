@@ -5,7 +5,7 @@ A profile may only be published with `verification: "verifiziert"`, a real autho
 
 ## Categories
 
-All 14 categories exist as data (`content/categories`), all with `status: "entwurf"`. Batch 1: Buchhaltung, Zeiterfassung, HR-Software. No FAQ and no Kaufberatung yet (Phase 5).
+All 14 categories exist as data (`content/categories`). Published (with software): Buchhaltung, Zeiterfassung, HR-Software, Lohnabrechnung, ERP, CRM; each has a Kaufberatung and an FAQ since 22 October 2026. The other eight stay drafts until they have software.
 
 ## Vendors (verified 19 October 2026)
 
@@ -84,6 +84,35 @@ Not verified for any vendor yet: founding year (except Collmex) and support lang
 | zep                           | zeiterfassung               | verifiziert  | nein          | 2026-10-19      | 2       | ja     | avv, gobd, xrechnung, zugferd, bsiC5                           |
 
 42 profiles, published on 21 October 2026 after editorial approval by Wolfram Eschenbach (`status: "veroeffentlicht"`, `verification: "verifiziert"`): 22 researched on 19 October 2026, 20 added on 21 October 2026 (the complete German Sage portfolio plus weclapp, Xentral, SAP Business One, Microsoft Dynamics 365 Business Central, DATEV Lohn und Gehalt, Lexware lohn+gehalt and CentralStationCRM). Every profile has a long form review in content/reviews, written as "im Überblick" without hands on test, with sourced key figures and charts from our own price data. "Open gaps" lists fields that stay `unbekannt` because no vendor source states them. Logo sources: docs/LOGOS.md.
+
+## Ratgeber (content/guides)
+
+All published on 22 October 2026, author and reviewer Wolfram Eschenbach, every fact with a source (accessed 22 October 2026). Owner review pending.
+
+| Slug                            | Topic           | Sources | Words | Checked    |
+| ------------------------------- | --------------- | ------- | ----- | ---------- |
+| arbeitszeiterfassung-pflicht    | Arbeitsrecht    | 5       | 913   | 2026-10-22 |
+| auftragsverarbeitung-cloud      | Datenschutz     | 5       | 982   | 2026-10-22 |
+| betriebsrat-softwareeinfuehrung | Mitbestimmung   | 5       | 890   | 2026-10-22 |
+| e-rechnung-pflicht              | E-Rechnung      | 6       | 1061  | 2026-10-22 |
+| gobd-aufbewahrung               | GoBD            | 5       | 1103  | 2026-10-22 |
+| kleinunternehmerregelung        | Umsatzsteuer    | 5       | 730   | 2026-10-22 |
+| softwareauswahl-checkliste      | Softwareauswahl | 4       | 1032  | 2026-10-22 |
+
+Recheck before relying on them: status of the Arbeitszeitgesetz draft (BMAS, June 2026), the appeal C-703/25 P on the EU-U.S. Data Privacy Framework, further BMF letters on the E-Rechnung.
+
+## Kaufberatung (content/kaufberatung)
+
+One per category with published software, published on 22 October 2026, plus four or five FAQ entries in each category JSON. Below the 1.500 word target of Section 13.2.
+
+| Category       | Sources | Words | Checked    |
+| -------------- | ------- | ----- | ---------- |
+| buchhaltung    | 4       | 1066  | 2026-10-22 |
+| crm            | 4       | 913   | 2026-10-22 |
+| erp            | 3       | 913   | 2026-10-22 |
+| hr-software    | 4       | 889   | 2026-10-22 |
+| lohnabrechnung | 4       | 723   | 2026-10-22 |
+| zeiterfassung  | 4       | 907   | 2026-10-22 |
 
 ## Authors
 

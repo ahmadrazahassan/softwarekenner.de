@@ -3,6 +3,8 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
 import { ChartFrame, CriteriaRadar } from "@/components/charts";
+import { EditorialList } from "@/components/content/editorial";
+import { buyingGuideLink, guideLink } from "@/components/content/guide-links";
 import { Mdx } from "@/components/content/mdx";
 import { DraftNotice, JsonLd } from "@/components/content/page-parts";
 import { Breadcrumbs } from "@/components/layout/breadcrumbs";
@@ -30,6 +32,7 @@ import { LogoTile } from "@/components/ui/logo-tile";
 import {
   getAlternatives,
   getAuthor,
+  getBuyingGuide,
   getCategory,
   getMarket,
   getReview,
@@ -37,6 +40,7 @@ import {
   getSoftware,
   getSoftwareStats,
   listComparisonsFor,
+  listGuides,
   listSoftware,
   summaryOf,
 } from "@/lib/content";
@@ -94,6 +98,15 @@ export default async function SoftwarePage({ params }: PageProps<"/software/[slu
     ", ",
   );
   const comparisons = listComparisonsFor(software.slug);
+  // Reading for the next step: guides that discuss this program, then guides of its categories.
+  const allGuides = listGuides();
+  const guides = [
+    ...allGuides.filter((g) => g.software.includes(software.slug)),
+    ...allGuides.filter(
+      (g) => !g.software.includes(software.slug) && g.categories.some((c) => software.categories.includes(c)),
+    ),
+  ].slice(0, 3);
+  const buyingGuide = getBuyingGuide(software.primaryCategory);
   const stats = getSoftwareStats(software);
   const ctaSoftware: CtaSoftware = {
     slug: software.slug,
@@ -409,6 +422,24 @@ export default async function SoftwarePage({ params }: PageProps<"/software/[slu
                 ))}
               </ul>
             )}
+          </section>
+        )}
+
+        {(guides.length > 0 || buyingGuide) && (
+          <section aria-labelledby="ratgeber-titel" className="flex flex-col gap-6">
+            <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+              <h2 id="ratgeber-titel" className="type-h2 text-ink">
+                Wissen für Ihre Entscheidung
+              </h2>
+              <TextLink href={routes.guides()}>Alle Ratgeber</TextLink>
+            </div>
+            <EditorialList
+              compact
+              items={[
+                ...(buyingGuide && category ? [buyingGuideLink(buyingGuide, category.name)] : []),
+                ...guides.map(guideLink),
+              ]}
+            />
           </section>
         )}
 

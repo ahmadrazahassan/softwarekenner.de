@@ -5,6 +5,7 @@ import type { ReactNode } from "react";
 import { Notice } from "@/components/ui/feedback";
 
 import { Kennzahl, Kennzahlen, Kostenvergleich, Preisvergleich, Tabelle } from "./mdx-data";
+import { headingId, textOf } from "@/lib/content/outline";
 import { cn } from "@/lib/utils/cn";
 
 /**
@@ -12,6 +13,8 @@ import { cn } from "@/lib/utils/cn";
  * charts built from our own profile data (Preisvergleich, Kostenvergleich).
  */
 const components = {
+  /** Anchor ids for the table of contents (lib/content/outline derives the same ids from the source). */
+  h2: ({ children }: { children?: ReactNode }) => <h2 id={headingId(textOf(children))}>{children}</h2>,
   Kennzahlen,
   Kennzahl,
   Preisvergleich,

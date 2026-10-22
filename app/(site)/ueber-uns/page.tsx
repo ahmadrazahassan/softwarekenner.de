@@ -1,7 +1,7 @@
 import { ArrowRight, History } from "lucide-react";
 import type { Metadata } from "next";
-import type { ReactNode } from "react";
 
+import { BandGraphic, PillHeading, SectionRule } from "@/components/content/editorial";
 import { Breadcrumbs } from "@/components/layout/breadcrumbs";
 import { LogoMark } from "@/components/layout/logo-mark";
 import { CountUp } from "@/components/ui/animated";
@@ -44,52 +44,6 @@ const PRINCIPLES = [
     text: "Keine ausgedachten Bewertungen, Zitate oder Zahlen. Nutzerbewertungen zeigen wir erst, wenn sie echt und geprüft sind.",
   },
 ] as const;
-
-/** Section heading in the reference style: an outlined number pill and an ink label pill. */
-function PillHeading({ id, number, children }: { id: string; number: string; children: ReactNode }) {
-  return (
-    <h2 id={id} className="flex items-center gap-1.5">
-      <span className="inline-flex h-8 min-w-12 items-center justify-center rounded-full border border-ink px-3 font-ui text-caption font-semibold text-ink tabular-nums">
-        {number}
-      </span>
-      <span className="inline-flex h-8 items-center rounded-full bg-ink px-5 font-ui text-caption font-semibold tracking-[0.08em] text-white uppercase">
-        {children}
-      </span>
-    </h2>
-  );
-}
-
-/** Thin ink rule with a micro label on the left, as in an editorial spec sheet. */
-function SectionRule({ label }: { label: string }) {
-  return (
-    <div className="flex items-center justify-between border-t border-ink pt-2.5 font-ui text-micro tracking-[0.08em] text-ink uppercase">
-      <span>{label}</span>
-      <span aria-hidden="true">{siteConfig.brand.name}</span>
-    </div>
-  );
-}
-
-/**
- * The logo mark as a tonal super graphic in the brand band (Section 5.8). Drawn on the 22 unit grid
- * of LogoMark, bottom aligned and cropped by the band.
- */
-function BandGraphic() {
-  return (
-    <svg
-      viewBox="0 0 1200 300"
-      preserveAspectRatio="xMidYMax slice"
-      aria-hidden="true"
-      focusable="false"
-      className="pointer-events-none absolute inset-0 size-full"
-    >
-      <g transform="translate(330 4) scale(14)">
-        <rect x="0" y="14" width="8" height="8" fill="var(--color-brand-200)" />
-        <rect x="7" y="7" width="8" height="15" fill="var(--color-brand-200)" />
-        <rect x="14" y="0" width="8" height="22" fill="var(--color-brand-700)" />
-      </g>
-    </svg>
-  );
-}
 
 /**
  * Über uns in the editorial style of the owner's reference (a product case study sheet): spec header,

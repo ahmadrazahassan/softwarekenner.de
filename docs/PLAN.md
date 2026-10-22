@@ -9,7 +9,7 @@ Phase overview from BUILD_PROMPT Section 22. Each phase ends with a review stop.
 | 2 Content layer | Done        |
 | 3 Templates     | In progress |
 | 4 Interactivity | Not started |
-| 5 Content       | Not started |
+| 5 Content       | In progress |
 | 6 Hardening     | Not started |
 | 7 Launch        | Not started |
 
@@ -88,3 +88,16 @@ Goal: every interactive part from Sections 7.4, 13, 14, 18 and 19 works with rea
 9. **Consent:** service registry, banner and settings panel per Section 19. With no consent requiring service registered (today) no banner appears; the styleguide shows it.
 10. **Analytics:** cookieless adapter for Plausible EU or Umami, off until configured. No request to any third party before that.
 11. **Tests:** unit tests for finder, filters, tokens, rate limit, `/go` logic, consent; E2E for search to category to filter to compare to profile, `/go` redirects, advice form, newsletter double opt in, review form, keyboard only navigation.
+
+## Phase 5, batch 1 editorial: Ratgeber and Kaufberatung (22 October 2026)
+
+Goal (owner request): the first Ratgeber articles and a Kaufberatung for every category with published software, in the editorial style of Über uns, linked from the home page, the Ratgeber hub, the category pages and the profiles.
+
+1. **Research:** facts from primary or official sources only (BMF, amtliches AO-Handbuch, gesetze-im-internet.de, Bundesarbeitsgericht, BMAS, Datenschutzkonferenz, EUR-Lex, IHK merit sheets, Minijob-Zentrale, Bundesregierung, Krankenkassen). Direct page fetches were blocked by the network policy; pages were read through the search tool, which quotes them. Anything we could not pin down stays out or is worded with its status (for example the Arbeitszeitgesetz draft of June 2026).
+2. **Ratgeber (7):** E-Rechnungspflicht, GoBD und Aufbewahrungsfristen, Arbeitszeiterfassung, Software einführen mit Betriebsrat, Auftragsverarbeitung bei Cloudsoftware, Kleinunternehmerregelung, Software auswählen in sieben Schritten.
+3. **Kaufberatung (6):** Buchhaltung, Zeiterfassung, HR-Software, Lohnabrechnung, ERP, CRM, plus four or five FAQ entries per category.
+4. **Schema:** Guide gets `categories`, `software`, `keyPoints`, `navTitle`, `featured`; BuyingGuide gets `keyPoints`. Guards resolve the references and lint the new strings.
+5. **Templates:** shared editorial parts from Über uns (`components/content/editorial.tsx`), Ratgeber hub and article in that system, Kaufberatung block on category pages with table of contents and sources, "Passende Ratgeber" on category pages, "Wissen für Ihre Entscheidung" on profiles, "Neu im Ratgeber" and Kaufberatung links on the home page, Article JSON-LD, `sitemap.ts`.
+6. **Verification:** content validation, copy lint, unit tests, preview build, `check:css`, E2E plus axe on the new templates at desktop and mobile width, visual review at 1440 px and 390 px.
+
+Result (22 October 2026): all of the above in place. `pnpm content:validate`, `lint`, `lint:copy`, `typecheck`, `test` (127 unit tests), `CONTENT_PREVIEW=1 pnpm build`, `check:css` and the template and smoke E2E suites (118 tests) pass. Known and not caused by this work: 15 tests in `flows.spec.ts` and `styleguide.spec.ts` fail on the base commit as well (stale data expectations); AwardCard overflows by 20 px at 390 px on `/kategorien/crm`. Open for the owner: review of all 13 texts, a second person for the fachliche Prüfung, Kaufberatung length below the 1.500 word target (Section 13.2), Leitfäden (PDF) still missing.

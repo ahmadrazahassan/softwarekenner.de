@@ -5,6 +5,7 @@ import { AppLink } from "@/components/ui/app-link";
 import { Icon } from "@/components/ui/icon";
 import { CATEGORIES, categoryHref, FOOTER_COMPANY, FOOTER_LEGAL } from "@/lib/navigation";
 import { routes } from "@/lib/routes";
+import { cn } from "@/lib/utils/cn";
 import { siteConfig } from "@/site.config";
 
 import { LogoMark } from "./logo-mark";
@@ -29,7 +30,7 @@ const PRINCIPLES: { icon: LucideIcon; lines: [string, string] }[] = [
 const linkClass =
   "inline-flex min-h-9 items-center font-ui text-label whitespace-nowrap text-ink decoration-[1.5px] underline-offset-4 hover:underline";
 
-function Column({ title, links }: { title: string; links: readonly LinkItem[] }) {
+function Column({ title, links, wrap }: { title: string; links: readonly LinkItem[]; wrap?: boolean }) {
   if (links.length === 0) return null;
   return (
     <nav aria-label={title} className="lg:text-right">
@@ -37,7 +38,7 @@ function Column({ title, links }: { title: string; links: readonly LinkItem[] })
       <ul className="mt-3 flex flex-col lg:items-end">
         {links.map((link) => (
           <li key={link.href}>
-            <AppLink href={link.href} className={linkClass}>
+            <AppLink href={link.href} className={cn(linkClass, wrap && "py-1 whitespace-normal")}>
               {link.label}
             </AppLink>
           </li>
@@ -182,7 +183,7 @@ export function Footer({
             links={[...categoryLinks, { href: routes.categories(), label: "Alle Kategorien" }]}
           />
           <Column title="Beliebte Vergleiche" links={popularComparisons} />
-          <Column title="Ratgeber" links={latestGuides} />
+          <Column title="Ratgeber" links={latestGuides} wrap />
           <Column title="Unternehmen" links={FOOTER_COMPANY} />
           <Column title="Rechtliches" links={FOOTER_LEGAL} />
         </div>
