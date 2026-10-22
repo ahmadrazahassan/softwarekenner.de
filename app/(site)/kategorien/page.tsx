@@ -9,9 +9,9 @@ import { routes } from "@/lib/routes";
 import { pageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = pageMetadata({
-  title: "Alle Kategorien",
+  title: "Software-Kategorien: Unternehmenssoftware im Vergleich",
   description:
-    "Alle Softwarekategorien im Überblick: Buchhaltung, Zeiterfassung, HR-Software und mehr, mit Preisen in Euro und Deutschland-Check.",
+    "Buchhaltungssoftware, Zeiterfassung, HR-Software, Lohnabrechnung, ERP und CRM im Vergleich: Preise in Euro, Kaufberatung und Deutschland-Check.",
   path: routes.categories(),
 });
 

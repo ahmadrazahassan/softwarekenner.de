@@ -101,3 +101,7 @@ Goal (owner request): the first Ratgeber articles and a Kaufberatung for every c
 6. **Verification:** content validation, copy lint, unit tests, preview build, `check:css`, E2E plus axe on the new templates at desktop and mobile width, visual review at 1440 px and 390 px.
 
 Result (22 October 2026): all of the above in place. `pnpm content:validate`, `lint`, `lint:copy`, `typecheck`, `test` (127 unit tests), `CONTENT_PREVIEW=1 pnpm build`, `check:css` and the template and smoke E2E suites (118 tests) pass. Known and not caused by this work: 15 tests in `flows.spec.ts` and `styleguide.spec.ts` fail on the base commit as well (stale data expectations); AwardCard overflows by 20 px at 390 px on `/kategorien/crm`. Open for the owner: review of all 13 texts, a second person for the fachliche Prüfung, Kaufberatung length below the 1.500 word target (Section 13.2), Leitfäden (PDF) still missing.
+
+## Phase 6, part 1: indexing and SEO (22 October 2026)
+
+Owner request: everything ready for Google, researched keywords, then push to main. Done: indexing switched on, ownership tags via env, keyword titles and descriptions from the google.de results pages (measured volumes were not available, see docs/SEO.md), share images with next/og, FAQPage and richer Organization and Article markup, AVV article section on official templates, unit and E2E tests. Open: Search Console and Bing setup by the owner (docs/SEO.md), hard 404 for unknown slugs, Lighthouse budgets (Section 21).

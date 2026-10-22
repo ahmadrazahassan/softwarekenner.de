@@ -49,7 +49,7 @@ import { formatDate, formatRating } from "@/lib/format";
 import { CRITERIA, CRITERION_LABEL, CRITERION_SHORT_LABEL } from "@/lib/scoring";
 import { routes } from "@/lib/routes";
 import { staticParams } from "@/lib/static-params";
-import { pageMetadata, softwareJsonLd } from "@/lib/seo";
+import { metaDescription, pageMetadata, softwareJsonLd } from "@/lib/seo";
 
 export function generateStaticParams() {
   return staticParams(
@@ -64,9 +64,10 @@ export async function generateMetadata({ params }: PageProps<"/software/[slug]">
   if (!software) return {};
   const word = software.editorial.handsOnTest ? "im Test" : "im Überblick";
   return pageMetadata({
-    title: `${software.name} ${word}: Preise, Funktionen und Alternativen`,
-    description: software.editorial.verdict.slice(0, 155),
+    title: `${software.name} ${word} ${software.editorial.updatedAt.slice(0, 4)}: Preise und Alternativen`,
+    description: metaDescription(software.editorial.verdict),
     path: routes.software(software.slug),
+    ownImage: true,
   });
 }
 

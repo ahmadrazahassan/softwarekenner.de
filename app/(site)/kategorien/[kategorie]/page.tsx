@@ -51,7 +51,7 @@ import { formatDate, formatNumber, formatPrice, formatRating, PRICE_UNIT_LABEL }
 import { routes } from "@/lib/routes";
 import { staticParams } from "@/lib/static-params";
 import type { AwardKind } from "@/lib/scoring";
-import { articleJsonLd, itemListJsonLd, pageMetadata } from "@/lib/seo";
+import { articleJsonLd, faqJsonLd, itemListJsonLd, pageMetadata, withYear } from "@/lib/seo";
 
 export function generateStaticParams() {
   return staticParams(
@@ -65,9 +65,10 @@ export async function generateMetadata({ params }: PageProps<"/kategorien/[kateg
   const category = getCategory(kategorie);
   if (!category) return {};
   return pageMetadata({
-    title: category.seo.title,
+    title: withYear(category.seo.title, category.updatedAt),
     description: category.seo.description,
     path: routes.category(category.slug),
+    ownImage: true,
   });
 }
 
@@ -146,6 +147,7 @@ export default async function CategoryPage({ params }: PageProps<"/kategorien/[k
           })}
         />
       )}
+      <JsonLd data={faqJsonLd(category.faq)} />
       <PageHeader
         crumbs={[
           { label: "Startseite", href: routes.home() },

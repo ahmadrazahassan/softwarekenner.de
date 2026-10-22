@@ -31,7 +31,7 @@ export async function generateMetadata({
   const software = getSoftware(slug);
   if (!software) return {};
   return pageMetadata({
-    title: `Die besten Alternativen zu ${software.name}`,
+    title: `${software.name} Alternativen ${software.editorial.updatedAt.slice(0, 4)}: Programme im Vergleich`,
     description: `Alternativen zu ${software.name} im Vergleich: Preise in Euro, Deutschland-Check und Redaktionswertung.`,
     path: routes.softwareAlternatives(software.slug),
   });

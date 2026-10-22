@@ -329,6 +329,8 @@ export const Guide = z.object({
   /** Programs the article discusses, shown as cards after the body. */
   software: z.array(Slug).max(6).default([]),
   keyPoints: KeyPoints,
+  /** Search result title (Section 15.7, max 60 characters); the page keeps the longer `title` as H1. */
+  seoTitle: z.string().min(10).max(60).optional(),
   /** Short label for menus and the footer, e.g. "E-Rechnungspflicht". Falls back to the title. */
   navTitle: z.string().min(3).max(24).optional(),
   /** Lead article on /ratgeber and first on the home page. */

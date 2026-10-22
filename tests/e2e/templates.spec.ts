@@ -221,3 +221,25 @@ test("compare tray opens the comparison tool with the chosen products", async ({
   await expect(page).toHaveURL(/produkte=lexware-office(%2C|,)sevdesk/);
   await expect(page.getByRole("table")).toBeVisible();
 });
+
+test("public pages are indexable with canonical and share image", async ({ page, request }) => {
+  for (const path of [
+    "/",
+    "/kategorien/buchhaltung",
+    "/ratgeber/e-rechnung-pflicht",
+    "/software/lexware-office",
+  ]) {
+    await page.goto(path);
+    await expect(page.locator('meta[name="robots"]').first(), path).toHaveAttribute(
+      "content",
+      /^index, follow/,
+    );
+    await expect(page.locator('link[rel="canonical"]'), path).toHaveAttribute("href", /^https:\/\//);
+    const image = await page.locator('meta[property="og:image"]').first().getAttribute("content");
+    const response = await request.get(new URL(image!).pathname + new URL(image!).search);
+    expect(response.status(), `${path} og:image`).toBe(200);
+    expect(response.headers()["content-type"]).toContain("image/png");
+  }
+  await page.goto("/suche?q=datev");
+  await expect(page.locator('meta[name="robots"]').first()).toHaveAttribute("content", /noindex/);
+});

@@ -51,7 +51,7 @@ export const metadata: Metadata = {
   ...pageMetadata({
     title: "Software für Unternehmen in Deutschland im Vergleich",
     description:
-      "Unabhängige Bewertungen von Unternehmenssoftware für den deutschen Markt: Preise in Euro, offene Methodik, Datenschutz, GoBD und E-Rechnung im Blick.",
+      "Buchhaltungssoftware, Zeiterfassung, HR-Software, ERP und CRM unabhängig verglichen: Preise in Euro, DSGVO, GoBD und E-Rechnung im Blick.",
     path: "/",
   }),
   title: { absolute: `${siteConfig.brand.name}: Software für Unternehmen im Vergleich` },

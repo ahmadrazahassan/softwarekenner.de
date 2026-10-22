@@ -10,8 +10,9 @@ import { routes } from "@/lib/routes";
 import { pageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = pageMetadata({
-  title: "Software von A bis Z",
-  description: "Alle bewerteten Programme von A bis Z mit Redaktionswertung und Kategorie.",
+  title: "Unternehmenssoftware von A bis Z: alle Programme",
+  description:
+    "Alle bewerteten Programme für Buchhaltung, Zeiterfassung, HR, Lohn, ERP und CRM von A bis Z, mit Redaktionswertung, Preisen in Euro und Deutschland-Check.",
   path: routes.softwareIndex(),
 });
 

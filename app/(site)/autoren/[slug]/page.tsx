@@ -6,7 +6,7 @@ import { SoftwareCard } from "@/components/software/cards";
 import { getAuthor, listAuthors, listSoftware, summaryOf } from "@/lib/content";
 import { initials } from "@/lib/format";
 import { routes } from "@/lib/routes";
-import { pageMetadata } from "@/lib/seo";
+import { metaDescription, pageMetadata } from "@/lib/seo";
 import { staticParams } from "@/lib/static-params";
 
 export function generateStaticParams() {
@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: PageProps<"/autoren/[slug]">)
   if (!author) return {};
   return pageMetadata({
     title: author.name,
-    description: author.bio.slice(0, 155),
+    description: metaDescription(author.bio),
     path: routes.author(author.slug),
   });
 }

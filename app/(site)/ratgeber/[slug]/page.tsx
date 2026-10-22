@@ -39,7 +39,13 @@ export async function generateMetadata({ params }: PageProps<"/ratgeber/[slug]">
   const { slug } = await params;
   const guide = getGuide(slug);
   if (!guide) return {};
-  return pageMetadata({ title: guide.title, description: guide.description, path: routes.guide(guide.slug) });
+  return pageMetadata({
+    title: guide.seoTitle ?? guide.title,
+    description: guide.description,
+    path: routes.guide(guide.slug),
+    type: "article",
+    ownImage: true,
+  });
 }
 
 /**

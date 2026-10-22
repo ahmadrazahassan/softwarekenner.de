@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: PageProps<"/software/[slug]/p
   const software = getSoftware(slug);
   if (!software) return {};
   return pageMetadata({
-    title: `${software.name} Preise: Tarife und Kosten in Euro`,
+    title: `${software.name} Preise ${software.pricing.verifiedAt.slice(0, 4)}: Tarife und Kosten in Euro`,
     description:
       `Alle Tarife von ${software.name} mit Preisen in Euro, netto und brutto, Vertragsdetails und Kostenrechner. Stand ${formatDate(software.pricing.verifiedAt)}.`.slice(
         0,

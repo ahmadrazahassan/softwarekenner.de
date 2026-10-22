@@ -34,9 +34,9 @@ import { pageMetadata } from "@/lib/seo";
 import { siteConfig } from "@/site.config";
 
 export const metadata: Metadata = pageMetadata({
-  title: "Ratgeber",
+  title: "Ratgeber für Unternehmen: E-Rechnung, GoBD, DSGVO",
   description:
-    "Ratgeber zu Software, E-Rechnung, Datenschutz und Arbeitsrecht für Unternehmen in Deutschland.",
+    "Ratgeber zu E-Rechnungspflicht, GoBD, Arbeitszeiterfassung, AVV, Kleinunternehmerregelung und Softwareauswahl. Mit Fristen, Checklisten und Quellen.",
   path: routes.guides(),
 });
 

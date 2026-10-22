@@ -261,7 +261,11 @@ export function checkContent(data: ContentSet, today: Date = new Date()): Issue[
 
   for (const doc of data.guides) {
     const where = editorial("guides", doc);
-    keyPointsLint(where, [...doc.keyPoints, ...(doc.navTitle ? [doc.navTitle] : [])]);
+    keyPointsLint(where, [
+      ...doc.keyPoints,
+      ...(doc.navTitle ? [doc.navTitle] : []),
+      ...(doc.seoTitle ? [doc.seoTitle] : []),
+    ]);
     for (const c of doc.categories) {
       if (!categoryBySlug.has(c)) error(where, `Kategorie „${c}“ existiert nicht.`);
     }
