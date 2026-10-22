@@ -1,6 +1,7 @@
 /**
  * Builds the self hosted web fonts from the OFL source files in assets/fonts/source.
- * Output: assets/fonts/web/*.woff2, loaded through next/font/local (docs/DECISIONS.md).
+ * Output: assets/fonts/web/*.woff2, loaded through next/font/local (docs/DECISIONS.md), and
+ * assets/fonts/og/*.ttf, static instances for the Open Graph images (next/og reads no variable fonts).
  *
  * - Subset: Google Fonts "latin" plus "latin-ext" ranges, plus ⌘ for the shortcut hint.
  * - Axes: wght limited to the weights we use, every other axis pinned to its default,
@@ -99,4 +100,21 @@ for (const font of FONTS) {
   const target = join(outDir, font.out);
   writeFileSync(target, output);
   console.log(`${font.out}: ${(statSync(target).size / 1024).toFixed(1)} KB`);
+}
+
+/** Static TrueType instances for next/og (Section 5.3: OG images use the same three families). */
+const OG_FONTS: FontJob[] = [
+  { source: "Outfit-Variable.ttf", out: "outfit-600.ttf", axes: { wght: 600 } },
+  { source: "Outfit-Variable.ttf", out: "outfit-800.ttf", axes: { wght: 800 } },
+  { source: "WorkSans-Variable.ttf", out: "work-sans-600.ttf", axes: { wght: 600 } },
+];
+const ogDir = join(root, "assets", "fonts", "og");
+mkdirSync(ogDir, { recursive: true });
+
+for (const font of OG_FONTS) {
+  const input = readFileSync(join(sourceDir, font.source));
+  const output = await subsetFont(input, text, { targetFormat: "truetype", variationAxes: font.axes });
+  const target = join(ogDir, font.out);
+  writeFileSync(target, output);
+  console.log(`og/${font.out}: ${(statSync(target).size / 1024).toFixed(1)} KB`);
 }

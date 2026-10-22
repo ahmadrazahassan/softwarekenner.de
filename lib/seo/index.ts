@@ -12,17 +12,25 @@ export const hasDomain = () => !isPlaceholder(siteConfig.domain);
 export const absoluteUrl = (path: string) =>
   hasDomain() ? new URL(path, siteConfig.domain).toString() : null;
 
+/** The static default share image route (app/opengraph-image.tsx). */
+export const DEFAULT_OG_IMAGE = "/opengraph-image";
+
 /** Page metadata with German Open Graph locale and a canonical once the domain exists. */
 export function pageMetadata({
   title,
   description,
   path,
   noindex,
+  type = "website",
+  ownImage = false,
 }: {
   title: string;
   description: string;
   path: string;
   noindex?: boolean;
+  type?: "website" | "article";
+  /** The route has its own opengraph-image file; a config image would replace it. */
+  ownImage?: boolean;
 }): Metadata {
   const url = absoluteUrl(path);
   return {
@@ -33,13 +41,29 @@ export function pageMetadata({
       title,
       description,
       locale: siteConfig.locale.ogLocale,
-      type: "website",
+      type,
       siteName: siteConfig.brand.name,
       ...(url ? { url } : {}),
+      // Default share image (app/opengraph-image.tsx); routes with their own image file override it.
+      ...(ownImage
+        ? {}
+        : { images: [{ url: DEFAULT_OG_IMAGE, width: 1200, height: 630, alt: siteConfig.brand.name }] }),
     },
+    twitter: { card: "summary_large_image", title, description },
     ...(noindex ? { robots: { index: false, follow: true } } : {}),
   };
 }
+
+/** Meta description within the Section 15.7 limit, cut at a word boundary with an ellipsis. */
+export function metaDescription(text: string, max = 155): string {
+  const clean = text.replace(/\s+/g, " ").trim();
+  if (clean.length <= max) return clean;
+  const cut = clean.slice(0, max - 1);
+  return `${cut.slice(0, cut.lastIndexOf(" ")).replace(/[,;:.]$/, "")}…`;
+}
+
+/** Replaces the {jahr} token in SEO titles with the year of the last content update (Section 15.7). */
+export const withYear = (title: string, updatedAt: string) => title.replace("{jahr}", updatedAt.slice(0, 4));
 
 type JsonLd = Record<string, unknown>;
 
@@ -53,6 +77,15 @@ export function organizationJsonLd(): JsonLd | null {
         "@id": `${siteConfig.domain}#organisation`,
         name: siteConfig.brand.name,
         url: siteConfig.domain,
+        logo: absoluteUrl("/icons/icon-512.png"),
+        email: siteConfig.contact.email,
+        address: {
+          "@type": "PostalAddress",
+          streetAddress: siteConfig.legal.companyStreet,
+          postalCode: siteConfig.legal.companyCity.split(" ")[0],
+          addressLocality: siteConfig.legal.companyCity.split(" ").slice(1).join(" "),
+          addressCountry: "DE",
+        },
       },
       {
         "@type": "WebSite",
@@ -150,6 +183,7 @@ export function articleJsonLd(article: {
   return {
     "@context": "https://schema.org",
     "@type": "Article",
+    image: absoluteUrl(DEFAULT_OG_IMAGE),
     headline: article.title,
     description: article.description,
     url: absoluteUrl(article.path),
@@ -171,5 +205,19 @@ export function articleJsonLd(article: {
       "@id": `${siteConfig.domain}#organisation`,
       name: siteConfig.brand.name,
     },
+  };
+}
+
+/** FAQPage for the category FAQ (Section 20); the questions are visible on the page. */
+export function faqJsonLd(items: { question: string; answer: string }[]): JsonLd | null {
+  if (!hasDomain() || items.length === 0) return null;
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: items.map((f) => ({
+      "@type": "Question",
+      name: f.question,
+      acceptedAnswer: { "@type": "Answer", text: f.answer },
+    })),
   };
 }
