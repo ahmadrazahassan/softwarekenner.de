@@ -1,6 +1,6 @@
 "use client";
 
-import { useId, useState, type ReactNode } from "react";
+import { useEffect, useId, useRef, useState, type ReactNode } from "react";
 
 import { Skeleton } from "@/components/ui/feedback";
 import { cn } from "@/lib/utils/cn";
@@ -10,7 +10,9 @@ export type ChartTable = { columns: string[]; rows: string[][] };
 /**
  * Frame for every chart (Section 14.1): title, one sentence takeaway, the chart as `role="img"` with
  * a summary, a toggle "Daten als Tabelle anzeigen" and a footnote with basis and "Stand".
- * The fixed height keeps the layout still while the chart code loads.
+ * The fixed height keeps the layout still while the chart code loads. The chart (and with it the
+ * Recharts bundle) is only rendered once the frame comes near the viewport, so pages do not pay for
+ * charts below the fold during load (Section 21).
  */
 export function ChartFrame({
   title,
@@ -37,7 +39,25 @@ export function ChartFrame({
   children: ReactNode;
 }) {
   const [showTable, setShowTable] = useState(false);
+  const [near, setNear] = useState(false);
+  const chartRef = useRef<HTMLDivElement>(null);
   const tableId = useId();
+
+  useEffect(() => {
+    const el = chartRef.current;
+    if (!el || near) return;
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries.some((e) => e.isIntersecting)) {
+          setNear(true);
+          observer.disconnect();
+        }
+      },
+      { rootMargin: "400px 0px" },
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, [near, showTable]);
   const Heading = headingLevel === 3 ? "h3" : "h4";
   const muted = onDark ? "text-on-dark-muted" : "text-text-muted";
 
@@ -86,12 +106,13 @@ export function ChartFrame({
         </div>
       ) : (
         <div
+          ref={chartRef}
           role="img"
           aria-label={summary}
           className={cn("chart w-full", onDark && "chart-on-dark")}
           style={{ height }}
         >
-          {children}
+          {near ? children : <ChartSkeleton onDark={onDark} />}
         </div>
       )}
 

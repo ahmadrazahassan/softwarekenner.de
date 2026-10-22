@@ -46,3 +46,16 @@ Titles put the main term first and stay at 60 characters or less before the bran
 4. **Bing Webmaster Tools:** import the site from Search Console (one click), or verify with `BING_SITE_VERIFICATION`. Bing also feeds ChatGPT search and Copilot.
 5. **After four to eight weeks:** read Search Console, Performance, Queries. Adjust titles where pages get impressions without clicks, and write new Ratgeber articles for queries with impressions but no fitting page.
 6. **Backlinks:** register in the IHK and association directories where possible, and offer the Ratgeber to trade associations and Steuerberatung newsletters. No paid links (Google spam policies).
+
+## Lighthouse (22 October 2026, local production build, mobile emulation)
+
+| Page                           | Performance | Accessibility | Best Practices | SEO |
+| ------------------------------ | ----------- | ------------- | -------------- | --- |
+| `/`                            | 80 (was 47) | 100           | 100            | 100 |
+| `/kategorien/buchhaltung`      | 80 (was 71) | 100           | 100            | 100 |
+| `/ratgeber/e-rechnung-pflicht` | 84          | 100           | 100            | 100 |
+| `/software/lexware-office`     | 81 (was 77) | 100           | 100            | 100 |
+
+Fix: charts render (and load Recharts) only when their frame comes within 400 px of the viewport; total blocking time on `/` fell from 2.356 ms to 233 ms. Remaining LCP of about 4,3 s in the simulated slow mobile network comes mostly from `font-display: block` (hard rule in Section 5.3) and the render blocking stylesheet; measure again on Vercel with real field data in Search Console (Core Web Vitals).
+
+SEOptimer: the owner has an API key, but the API offers site audits and rank tracking, not keyword volumes, and seoptimer.com was not reachable from the research environment. Never commit the key; store it as an environment secret if it is used later.
