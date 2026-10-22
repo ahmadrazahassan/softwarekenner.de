@@ -1,0 +1,23 @@
+{
+  "slug": "clockin",
+  "legalName": "clockin GmbH",
+  "brandName": "clockin",
+  "headquarters": {
+    "city": "Münster",
+    "country": "DE"
+  },
+  "founded": null,
+  "website": "https://www.clockin.de",
+  "germanEntity": true,
+  "supportLanguages": null,
+  "notes": "Registergericht Münster, HRB 17578.",
+  "sources": [
+    {
+      "label": "Impressum clockin",
+      "url": "https://www.clockin.de/impressum",
+      "accessedAt": "2026-10-19"
+    }
+  ],
+  "verification": "verifiziert",
+  "verifiedAt": "2026-10-19"
+}

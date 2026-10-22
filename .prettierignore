@@ -1,0 +1,15 @@
+.next
+out
+build
+coverage
+playwright-report
+test-results
+node_modules
+pnpm-lock.yaml
+next-env.d.ts
+docs/BUILD_PROMPT.md
+docs/IMAGE_PROMPTS.md
+AGENTS.md
+.content-collections
+public/search-index.json
+.e2e-outbox

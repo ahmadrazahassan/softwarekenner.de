@@ -1,0 +1,111 @@
+{
+  "slug": "papershift",
+  "name": "Papershift",
+  "vendor": "papershift",
+  "categories": ["zeiterfassung"],
+  "primaryCategory": "zeiterfassung",
+  "tagline": "Dienstplanung und Zeiterfassung für Schichtbetriebe",
+  "logo": "/logos/papershift.png",
+  "brandColor": "#4a4fc4",
+  "website": "https://www.papershift.com",
+  "affiliate": null,
+  "pricing": {
+    "currency": "EUR",
+    "basis": "netto",
+    "freePlan": false,
+    "trialDays": null,
+    "plans": [
+      {
+        "name": "Light Core",
+        "priceMonthlyNet": 4000,
+        "priceYearlyNetPerMonth": null,
+        "unit": "pro-monat",
+        "includedUsers": 10,
+        "highlights": ["Für Teams bis 15 Personen", "Weitere Mitarbeitende 4,00 € pro Monat"],
+        "recommended": true
+      },
+      {
+        "name": "Light Premium",
+        "priceMonthlyNet": 6000,
+        "priceYearlyNetPerMonth": null,
+        "unit": "pro-monat",
+        "includedUsers": 10,
+        "highlights": ["Für Teams bis 15 Personen", "Weitere Mitarbeitende 6,00 € pro Monat"],
+        "recommended": false
+      }
+    ],
+    "contractNotes": "Papershift Light mit mindestens 24 Monaten Laufzeit. Für größere Teams monatliche Grundgebühr von 39,00 € plus Preis pro Mitarbeiter laut Paketseite; Preisangaben auf den Seiten nicht einheitlich.",
+    "source": "https://www.papershift.com/papershift-light",
+    "verifiedAt": "2026-10-19"
+  },
+  "hosting": {
+    "serverLocation": "unbekannt",
+    "avv": "unbekannt"
+  },
+  "compliance": {
+    "gobd": "unbekannt",
+    "xrechnung": "unbekannt",
+    "zugferd": "unbekannt",
+    "iso27001": "unbekannt",
+    "bsiC5": "unbekannt"
+  },
+  "madeInGermany": true,
+  "germanInterface": true,
+  "germanSupport": true,
+  "integrations": ["DATEV"],
+  "platforms": ["web", "ios", "android"],
+  "companySizes": ["10-49", "50-249"],
+  "scores": {
+    "funktionsumfang": 4.2,
+    "bedienung": 4.1,
+    "preisLeistung": 3.9,
+    "datenschutz": 3.6,
+    "support": 3.9,
+    "integrationen": 3.9
+  },
+  "editorial": {
+    "verdict": "Dienstplan und Zeiterfassung für Gastronomie, Handel und Logistik. Das kleine Paket bindet 24 Monate, die DATEV-Exporte sind laut Hilfeartikel nicht direkt importierbar. Serverstandort nicht gefunden.",
+    "bestFor": ["Schichtbetriebe in Gastronomie und Handel", "Teams mit wechselnden Einsatzplänen"],
+    "notFor": ["Büroteams mit festen Arbeitszeiten"],
+    "pros": [
+      "Dienstplanung und Zeiterfassung in einem Werkzeug",
+      "Exporte für DATEV Lohn und Gehalt und LODAS",
+      "Eigenes Paket für Teams bis 15 Personen"
+    ],
+    "cons": [
+      "24 Monate Laufzeit im Light-Paket",
+      "Uneinheitliche Preisangaben",
+      "Keine Angabe zum Serverstandort gefunden"
+    ],
+    "sources": [
+      {
+        "label": "Papershift Light",
+        "url": "https://www.papershift.com/papershift-light",
+        "accessedAt": "2026-10-19"
+      },
+      {
+        "label": "DATEV-Export",
+        "url": "https://help.papershift.com/articles/5871204-datev",
+        "accessedAt": "2026-10-19"
+      }
+    ],
+    "author": "wolfram-eschenbach",
+    "reviewer": "wolfram-eschenbach",
+    "publishedAt": "2026-10-19",
+    "updatedAt": "2026-10-21",
+    "handsOnTest": false,
+    "changelog": [
+      {
+        "date": "2026-10-19",
+        "note": "Profil angelegt. Fakten aus Anbieterseiten, Wertung als Entwurf zur redaktionellen Prüfung."
+      },
+      {
+        "date": "2026-10-21",
+        "note": "Redaktionell freigegeben und veröffentlicht. Fakten aus den genannten Anbieterquellen, Wertung ohne eigenen Praxistest."
+      }
+    ]
+  },
+  "alternatives": ["clockodo", "crewmeister", "clockin", "timetac", "zep"],
+  "verification": "verifiziert",
+  "status": "veroeffentlicht"
+}

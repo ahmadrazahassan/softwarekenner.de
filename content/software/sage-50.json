@@ -1,0 +1,138 @@
+{
+  "slug": "sage-50",
+  "name": "Sage 50",
+  "vendor": "sage",
+  "categories": ["buchhaltung", "erp"],
+  "primaryCategory": "buchhaltung",
+  "tagline": "Desktopklassiker für Buchhaltung und Warenwirtschaft, ab zwei Arbeitsplätzen",
+  "logo": "/logos/sage.svg",
+  "brandColor": "#4a4fc4",
+  "website": "https://www.sage.com/de-de/produkte/sage-50connected/",
+  "affiliate": null,
+  "pricing": {
+    "currency": "EUR",
+    "basis": "netto",
+    "freePlan": false,
+    "trialDays": 30,
+    "plans": [
+      {
+        "name": "Comfort",
+        "priceMonthlyNet": null,
+        "priceYearlyNetPerMonth": 3500,
+        "unit": "pro-nutzer-monat",
+        "includedUsers": null,
+        "highlights": [
+          "Angebote, Rechnungen, Warenwirtschaft, Bestellwesen",
+          "Integriertes Onlinebanking",
+          "EÜR oder Bilanz, Anlagenbuchhaltung",
+          "DATEV-Schnittstelle und E-Rechnung",
+          "Ab 2 Arbeitsplätzen"
+        ],
+        "recommended": false
+      },
+      {
+        "name": "Professional",
+        "priceMonthlyNet": null,
+        "priceYearlyNetPerMonth": 4000,
+        "unit": "pro-nutzer-monat",
+        "includedUsers": null,
+        "highlights": [
+          "Alles aus Comfort",
+          "Kosten- und Erlösrechnung",
+          "Variantenartikel",
+          "Anpassbare Chefübersichten",
+          "Ab 3 Arbeitsplätzen"
+        ],
+        "recommended": false
+      }
+    ],
+    "contractNotes": "Preise pro Arbeitsplatz und Monat bei jährlicher Rechnungsstellung und 12 Monaten Mindestlaufzeit, nur für Neukunden; kürzere oder längere Laufzeiten optional. Comfort ab 2, Professional ab 3 Arbeitsplätzen. Test 30 Tage ohne Zahlungsangaben. Kasse, E-Bilanz, Webshop und weitere Module kosten extra.",
+    "source": "https://www.sage.com/de-de/produkte/sage-50connected/",
+    "verifiedAt": "2026-10-21"
+  },
+  "hosting": {
+    "serverLocation": "DE",
+    "avv": "unbekannt"
+  },
+  "compliance": {
+    "gobd": "ja",
+    "xrechnung": "ja",
+    "zugferd": "ja",
+    "iso27001": "unbekannt",
+    "bsiC5": "unbekannt"
+  },
+  "madeInGermany": true,
+  "germanInterface": true,
+  "germanSupport": true,
+  "integrations": ["DATEV", "ELSTER", "Microsoft 365", "PayPal", "Stripe", "ePages", "OmniSeller"],
+  "platforms": ["windows"],
+  "companySizes": ["1-9", "10-49"],
+  "scores": {
+    "funktionsumfang": 4.4,
+    "bedienung": 3.9,
+    "preisLeistung": 3.8,
+    "datenschutz": 4.1,
+    "support": 4,
+    "integrationen": 4
+  },
+  "editorial": {
+    "verdict": "Gestandene Windows-Software, die Buchhaltung, Warenwirtschaft und Bestellwesen verbindet. Stark für Handel und kleine Teams mit Lager, aber erst ab zwei Arbeitsplätzen buchbar.",
+    "bestFor": ["Kleine Handelsbetriebe mit Lager", "Teams, die lokal unter Windows arbeiten wollen"],
+    "notFor": ["Selbstständige allein am Mac", "Wer nur im Browser arbeiten möchte"],
+    "pros": [
+      "Buchhaltung, Warenwirtschaft und Bestellwesen in einem Programm",
+      "E-Rechnungen als XRechnung und ZUGFeRD senden und empfangen laut Anbieter",
+      "Lager mit Stücklisten, Seriennummern und optional Chargen",
+      "Cloud-Dienste laut Anbieter im Microsoft-Azure-Rechenzentrum in Deutschland"
+    ],
+    "cons": [
+      "Nur für Windows",
+      "Mindestens zwei Arbeitsplätze und zwölf Monate Laufzeit",
+      "Kasse, E-Bilanz und Webshop nur als kostenpflichtige Zusatzmodule"
+    ],
+    "sources": [
+      {
+        "label": "Sage 50 Produktseite mit Preisen",
+        "url": "https://www.sage.com/de-de/produkte/sage-50connected/",
+        "accessedAt": "2026-10-21"
+      },
+      {
+        "label": "Sage 50 Zusatzfunktionen",
+        "url": "https://www.sage.com/de-de/produkte/sage-50connected/zusatzfunktionen/",
+        "accessedAt": "2026-10-21"
+      },
+      {
+        "label": "Sage 50 eCommerce",
+        "url": "https://www.sage.com/de-de/produkte/sage-50-ecommerce-online-handel/",
+        "accessedAt": "2026-10-21"
+      },
+      {
+        "label": "Impressum Sage GmbH",
+        "url": "https://www.sage.com/de-de/impressum/",
+        "accessedAt": "2026-10-21"
+      }
+    ],
+    "author": "wolfram-eschenbach",
+    "reviewer": "wolfram-eschenbach",
+    "publishedAt": "2026-10-21",
+    "updatedAt": "2026-10-21",
+    "handsOnTest": false,
+    "changelog": [
+      {
+        "date": "2026-10-21",
+        "note": "Profil angelegt. Fakten aus Anbieterseiten, Wertung als Entwurf zur redaktionellen Prüfung."
+      },
+      {
+        "date": "2026-10-21",
+        "note": "Vertiefte Prüfung aller Sage Unterseiten: Preise, Tarife, Zusatzmodule, FAQ und Quellen aktualisiert."
+      },
+      {
+        "date": "2026-10-21",
+        "note": "Redaktionell freigegeben und veröffentlicht. Fakten aus den genannten Anbieterquellen, Wertung ohne eigenen Praxistest."
+      }
+    ]
+  },
+  "alternatives": ["sage-active", "lexware-office", "wiso-meinbuero", "collmex", "weclapp"],
+  "verification": "verifiziert",
+  "status": "veroeffentlicht"
+}

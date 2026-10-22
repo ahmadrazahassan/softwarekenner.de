@@ -1,0 +1,17 @@
+{
+  "slug": "kollaboration",
+  "name": "Kollaboration und Kommunikation",
+  "shortName": "Kollaboration",
+  "icon": "MessagesSquare",
+  "description": "Werkzeuge für Chat, Videokonferenzen, Dateiablage und Intranet. Wir achten auf Hosting, Verschlüsselung, Rechteverwaltung und die Nutzung auf dem Smartphone.",
+  "batch": 3,
+  "weights": null,
+  "faq": [],
+  "related": ["projektmanagement", "dokumentenmanagement"],
+  "seo": {
+    "title": "Kollaborationssoftware im Vergleich",
+    "description": "Software für Chat, Video und Intranet in Unternehmen in Deutschland: Hosting, Datenschutz und Preise in Euro im Vergleich."
+  },
+  "status": "entwurf",
+  "updatedAt": "2026-10-19"
+}

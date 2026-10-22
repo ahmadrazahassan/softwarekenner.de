@@ -1,0 +1,28 @@
+{
+  "slug": "zep",
+  "legalName": "ZEP GmbH",
+  "brandName": "ZEP",
+  "headquarters": {
+    "city": "Ditzingen",
+    "country": "DE"
+  },
+  "founded": null,
+  "website": "https://www.zep.de",
+  "germanEntity": true,
+  "supportLanguages": null,
+  "notes": "Amtsgericht Stuttgart, HRB 732230. Früher provantis IT Solutions GmbH.",
+  "sources": [
+    {
+      "label": "Impressum ZEP",
+      "url": "https://www.zep.de/legal/impressum",
+      "accessedAt": "2026-10-19"
+    },
+    {
+      "label": "Über uns ZEP",
+      "url": "https://www.zep.de/en/company/about-us",
+      "accessedAt": "2026-10-19"
+    }
+  ],
+  "verification": "verifiziert",
+  "verifiedAt": "2026-10-19"
+}

@@ -1,0 +1,17 @@
+{
+  "slug": "crm",
+  "name": "CRM-Software",
+  "shortName": "CRM",
+  "icon": "Handshake",
+  "description": "Software für Kontakte, Verkaufschancen und Kundenkommunikation. Wir prüfen den datenschutzkonformen Umgang mit Kontaktdaten, Einwilligungen, E-Mail-Integration und Telefonie.",
+  "batch": 2,
+  "weights": null,
+  "faq": [],
+  "related": ["e-mail-marketing", "erp"],
+  "seo": {
+    "title": "CRM-Software im Vergleich",
+    "description": "CRM-Software für Unternehmen in Deutschland: Pipeline, Einwilligungen, Datenschutz und Preise in Euro im unabhängigen Vergleich."
+  },
+  "status": "veroeffentlicht",
+  "updatedAt": "2026-10-19"
+}

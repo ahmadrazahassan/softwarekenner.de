@@ -1,0 +1,94 @@
+{
+  "slug": "sage-wincarat",
+  "name": "Sage Wincarat",
+  "vendor": "sage",
+  "categories": ["erp"],
+  "primaryCategory": "erp",
+  "tagline": "Branchen-ERP für Kunststoffspritzguss und Metallguss im Mittelstand",
+  "logo": "/logos/sage.svg",
+  "brandColor": "#4a4fc4",
+  "website": "https://www.sage.com/de-de/produkte/sage-wincarat/",
+  "affiliate": null,
+  "pricing": {
+    "currency": "EUR",
+    "basis": "netto",
+    "freePlan": false,
+    "trialDays": null,
+    "plans": [],
+    "contractNotes": "Preise nur auf Anfrage. Betrieb lokal oder in der Cloud durch Sage.",
+    "source": "https://www.sage.com/de-de/produkte/sage-wincarat/",
+    "verifiedAt": "2026-10-21"
+  },
+  "hosting": {
+    "serverLocation": "unbekannt",
+    "avv": "unbekannt"
+  },
+  "compliance": {
+    "gobd": "unbekannt",
+    "xrechnung": "unbekannt",
+    "zugferd": "unbekannt",
+    "iso27001": "unbekannt",
+    "bsiC5": "unbekannt"
+  },
+  "madeInGermany": true,
+  "germanInterface": true,
+  "germanSupport": true,
+  "integrations": ["Microsoft 365", "EDI nach VDA"],
+  "platforms": ["windows"],
+  "companySizes": ["50-249", "250+"],
+  "scores": {
+    "funktionsumfang": 4.3,
+    "bedienung": 3.7,
+    "preisLeistung": 3.6,
+    "datenschutz": 3.9,
+    "support": 3.9,
+    "integrationen": 3.8
+  },
+  "editorial": {
+    "verdict": "Spezialisiertes ERP für Kunststoffverarbeiter und Metallgießereien mit Losgrößenplanung nach Kavität und Zykluszeit, Rezepturen und Werkzeugkosten in der Vorkalkulation.",
+    "bestFor": ["Kunststoffspritzgießer", "Metallgießereien im Mittelstand"],
+    "notFor": ["Unternehmen außerhalb dieser Branchen"],
+    "pros": [
+      "Losgrößenplanung anhand von Kavität und Zykluszeiten",
+      "Vorkalkulation mit Werkzeugkosten, Rezepturen und Regeneratanteilen",
+      "Chargenrückverfolgung bis auf Karton- und Behälterebene",
+      "Werkzeugbau mit Wartungsintervallen und Reparaturkosten",
+      "Betrieb lokal oder in der Cloud durch Sage"
+    ],
+    "cons": ["Keine öffentlichen Preise", "Nur für eine enge Zielbranche sinnvoll"],
+    "sources": [
+      {
+        "label": "Sage Wincarat Produktseite",
+        "url": "https://www.sage.com/de-de/produkte/sage-wincarat/",
+        "accessedAt": "2026-10-21"
+      },
+      {
+        "label": "Impressum Sage GmbH",
+        "url": "https://www.sage.com/de-de/impressum/",
+        "accessedAt": "2026-10-21"
+      }
+    ],
+    "author": "wolfram-eschenbach",
+    "reviewer": "wolfram-eschenbach",
+    "publishedAt": "2026-10-21",
+    "updatedAt": "2026-10-21",
+    "handsOnTest": false,
+    "changelog": [
+      {
+        "date": "2026-10-21",
+        "note": "Profil angelegt. Fakten aus Anbieterseiten, Wertung als Entwurf zur redaktionellen Prüfung."
+      },
+      {
+        "date": "2026-10-21",
+        "note": "Vertiefte Prüfung aller Sage Unterseiten: Preise, Tarife, Zusatzmodule, FAQ und Quellen aktualisiert."
+      },
+      {
+        "date": "2026-10-21",
+        "note": "Redaktionell freigegeben und veröffentlicht. Fakten aus den genannten Anbieterquellen, Wertung ohne eigenen Praxistest."
+      }
+    ]
+  },
+  "alternatives": ["sage-b7", "sage-100", "sage-x3"],
+  "verification": "verifiziert",
+  "status": "veroeffentlicht"
+}

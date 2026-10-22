@@ -1,0 +1,23 @@
+{
+  "slug": "leapsome",
+  "legalName": "Leapsome GmbH",
+  "brandName": "Leapsome",
+  "headquarters": {
+    "city": "Berlin",
+    "country": "DE"
+  },
+  "founded": null,
+  "website": "https://www.leapsome.com",
+  "germanEntity": true,
+  "supportLanguages": null,
+  "notes": "Amtsgericht Charlottenburg, HRB 187546 B.",
+  "sources": [
+    {
+      "label": "Impressum Leapsome",
+      "url": "https://www.leapsome.com/legal/impressum",
+      "accessedAt": "2026-10-19"
+    }
+  ],
+  "verification": "verifiziert",
+  "verifiedAt": "2026-10-19"
+}

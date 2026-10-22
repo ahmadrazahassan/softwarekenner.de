@@ -1,0 +1,91 @@
+{
+  "slug": "sap-business-one",
+  "name": "SAP Business One",
+  "vendor": "sap",
+  "categories": ["erp"],
+  "primaryCategory": "erp",
+  "tagline": "ERP von SAP für kleine und mittlere Unternehmen, in der Cloud oder vor Ort",
+  "logo": "/logos/sap.svg",
+  "brandColor": "#4a4fc4",
+  "website": "https://www.sap.com/germany/products/erp/business-one.html",
+  "affiliate": null,
+  "pricing": {
+    "currency": "EUR",
+    "basis": "netto",
+    "freePlan": false,
+    "trialDays": null,
+    "plans": [],
+    "contractNotes": "Preise nennt SAP nur über Partner auf Anfrage, abhängig von Lizenzen, Betriebsmodell und Einführung.",
+    "source": "https://www.sap.com/germany/products/erp/business-one.html",
+    "verifiedAt": "2026-10-21"
+  },
+  "hosting": {
+    "serverLocation": "unbekannt",
+    "avv": "unbekannt"
+  },
+  "compliance": {
+    "gobd": "unbekannt",
+    "xrechnung": "unbekannt",
+    "zugferd": "unbekannt",
+    "iso27001": "unbekannt",
+    "bsiC5": "unbekannt"
+  },
+  "madeInGermany": true,
+  "germanInterface": true,
+  "germanSupport": true,
+  "integrations": [],
+  "platforms": ["web", "windows"],
+  "companySizes": ["10-49", "50-249"],
+  "scores": {
+    "funktionsumfang": 4.4,
+    "bedienung": 3.7,
+    "preisLeistung": 3.6,
+    "datenschutz": 4.1,
+    "support": 3.9,
+    "integrationen": 4.1
+  },
+  "editorial": {
+    "verdict": "Das Mittelstands-ERP von SAP verbindet Buchhaltung, Einkauf, Bestand, Vertrieb und Analysen. Laut SAP bei über 85.000 Kunden weltweit im Einsatz, Preise nur über Partner.",
+    "bestFor": [
+      "Mittelständler im Großhandel und in der leichten Fertigung",
+      "Tochtergesellschaften von SAP-Konzernen"
+    ],
+    "notFor": ["Kleine Betriebe mit wenig Budget für Einführung"],
+    "pros": [
+      "Laut SAP über 85.000 Kunden weltweit",
+      "Betrieb in der Cloud oder vor Ort",
+      "Großes Partnernetz für Einführung und Branchenlösungen"
+    ],
+    "cons": ["Keine öffentlichen Preise", "Einführung nur über Partner"],
+    "sources": [
+      {
+        "label": "SAP Business One Produktseite",
+        "url": "https://www.sap.com/germany/products/erp/business-one.html",
+        "accessedAt": "2026-10-21"
+      },
+      {
+        "label": "Impressum SAP SE",
+        "url": "https://www.sap.com/about/legal/impressum-se.html",
+        "accessedAt": "2026-10-21"
+      }
+    ],
+    "author": "wolfram-eschenbach",
+    "reviewer": "wolfram-eschenbach",
+    "publishedAt": "2026-10-21",
+    "updatedAt": "2026-10-21",
+    "handsOnTest": false,
+    "changelog": [
+      {
+        "date": "2026-10-21",
+        "note": "Profil angelegt. Fakten aus Anbieterseiten, Wertung als Entwurf zur redaktionellen Prüfung."
+      },
+      {
+        "date": "2026-10-21",
+        "note": "Redaktionell freigegeben und veröffentlicht. Fakten aus den genannten Anbieterquellen, Wertung ohne eigenen Praxistest."
+      }
+    ]
+  },
+  "alternatives": ["dynamics-365-business-central", "sage-100", "weclapp", "sage-x3"],
+  "verification": "verifiziert",
+  "status": "veroeffentlicht"
+}

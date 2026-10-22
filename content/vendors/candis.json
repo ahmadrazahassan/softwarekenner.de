@@ -1,0 +1,23 @@
+{
+  "slug": "candis",
+  "legalName": "Candis GmbH",
+  "brandName": "Candis",
+  "headquarters": {
+    "city": "Berlin",
+    "country": "DE"
+  },
+  "founded": null,
+  "website": "https://www.candis.io",
+  "germanEntity": true,
+  "supportLanguages": null,
+  "notes": "Registergericht Berlin Charlottenburg, HRB 168078.",
+  "sources": [
+    {
+      "label": "Impressum Candis",
+      "url": "https://www.candis.io/impressum",
+      "accessedAt": "2026-10-19"
+    }
+  ],
+  "verification": "verifiziert",
+  "verifiedAt": "2026-10-19"
+}

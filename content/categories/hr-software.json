@@ -1,0 +1,17 @@
+{
+  "slug": "hr-software",
+  "name": "HR-Software",
+  "shortName": "HR",
+  "icon": "Users",
+  "description": "Software für Personalakte, Abwesenheiten, Bewerbermanagement und Personalprozesse. Wir achten auf Rollen und Rechte, Datenschutz, Mitbestimmung des Betriebsrats und die Übergabe an die Lohnabrechnung.",
+  "batch": 1,
+  "weights": null,
+  "faq": [],
+  "related": ["zeiterfassung", "lohnabrechnung"],
+  "seo": {
+    "title": "HR-Software im Vergleich",
+    "description": "HR-Software für Unternehmen in Deutschland: Personalakte, Abwesenheiten, Datenschutz und Preise in Euro im unabhängigen Vergleich."
+  },
+  "status": "veroeffentlicht",
+  "updatedAt": "2026-10-19"
+}

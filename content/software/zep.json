@@ -1,0 +1,134 @@
+{
+  "slug": "zep",
+  "name": "ZEP",
+  "vendor": "zep",
+  "categories": ["zeiterfassung"],
+  "primaryCategory": "zeiterfassung",
+  "tagline": "Projektzeiterfassung und Controlling für Dienstleister",
+  "logo": "/logos/zep.png",
+  "brandColor": "#4a4fc4",
+  "website": "https://www.zep.de",
+  "affiliate": null,
+  "pricing": {
+    "currency": "EUR",
+    "basis": "netto",
+    "freePlan": false,
+    "trialDays": null,
+    "plans": [
+      {
+        "name": "ZEP Clock",
+        "priceMonthlyNet": 600,
+        "priceYearlyNetPerMonth": 450,
+        "unit": "pro-nutzer-monat",
+        "includedUsers": null,
+        "highlights": ["Arbeitszeiterfassung"],
+        "recommended": false
+      },
+      {
+        "name": "ZEP Track",
+        "priceMonthlyNet": 1200,
+        "priceYearlyNetPerMonth": 900,
+        "unit": "pro-nutzer-monat",
+        "includedUsers": null,
+        "highlights": ["Projektzeiterfassung"],
+        "recommended": true
+      },
+      {
+        "name": "ZEP Control",
+        "priceMonthlyNet": null,
+        "priceYearlyNetPerMonth": 1900,
+        "unit": "pro-nutzer-monat",
+        "includedUsers": null,
+        "highlights": ["Projektcontrolling"],
+        "recommended": false
+      },
+      {
+        "name": "ZEP Operations",
+        "priceMonthlyNet": null,
+        "priceYearlyNetPerMonth": 2900,
+        "unit": "pro-nutzer-monat",
+        "includedUsers": null,
+        "highlights": ["Erweiterte Steuerung"],
+        "recommended": false
+      },
+      {
+        "name": "ZEP Business",
+        "priceMonthlyNet": null,
+        "priceYearlyNetPerMonth": 3900,
+        "unit": "pro-nutzer-monat",
+        "includedUsers": null,
+        "highlights": ["Volle Produktlinie"],
+        "recommended": false
+      }
+    ],
+    "contractNotes": "Zzgl. MwSt. Jahrespreise im Jahresvertrag; Monatspreise für die höheren Stufen nicht angegeben. Terminal 15 € pro Monat, Reisekosten 2,50 € pro Nutzer.",
+    "source": "https://www.zep.de/en/prices",
+    "verifiedAt": "2026-10-19"
+  },
+  "hosting": {
+    "serverLocation": "DE",
+    "avv": "unbekannt"
+  },
+  "compliance": {
+    "gobd": "unbekannt",
+    "xrechnung": "unbekannt",
+    "zugferd": "unbekannt",
+    "iso27001": "ja",
+    "bsiC5": "unbekannt"
+  },
+  "madeInGermany": true,
+  "germanInterface": true,
+  "germanSupport": true,
+  "integrations": [],
+  "platforms": ["web", "ios", "android"],
+  "companySizes": ["10-49", "50-249"],
+  "scores": {
+    "funktionsumfang": 4.5,
+    "bedienung": 3.9,
+    "preisLeistung": 3.9,
+    "datenschutz": 4.4,
+    "support": 4,
+    "integrationen": 4.1
+  },
+  "editorial": {
+    "verdict": "Projektzeiterfassung mit Controlling für Beratungen, Agenturen und Ingenieurbüros. Entwickelt und gehostet in Deutschland, ISO 27001 laut Anbieter. App in jeder Produktlinie, Stempeln auch offline.",
+    "bestFor": ["Beratungen und Agenturen", "Ingenieur- und Architekturbüros"],
+    "notFor": ["Betriebe, die nur einfache Arbeitszeiten erfassen"],
+    "pros": [
+      "Projektzeiten bis zum Controlling",
+      "Hosting in Deutschland und ISO 27001 laut Anbieter",
+      "App mit Offline-Stempeln in jeder Produktlinie"
+    ],
+    "cons": ["Höhere Stufen nur im Jahresvertrag ausgewiesen", "Zusatzkosten für Terminal und Reisekosten"],
+    "sources": [
+      {
+        "label": "Preise ZEP",
+        "url": "https://www.zep.de/en/prices",
+        "accessedAt": "2026-10-19"
+      },
+      {
+        "label": "ZEP Clock",
+        "url": "https://www.zep.de/en/product/zep-clock",
+        "accessedAt": "2026-10-19"
+      }
+    ],
+    "author": "wolfram-eschenbach",
+    "reviewer": "wolfram-eschenbach",
+    "publishedAt": "2026-10-19",
+    "updatedAt": "2026-10-21",
+    "handsOnTest": false,
+    "changelog": [
+      {
+        "date": "2026-10-19",
+        "note": "Profil angelegt. Fakten aus Anbieterseiten, Wertung als Entwurf zur redaktionellen Prüfung."
+      },
+      {
+        "date": "2026-10-21",
+        "note": "Redaktionell freigegeben und veröffentlicht. Fakten aus den genannten Anbieterquellen, Wertung ohne eigenen Praxistest."
+      }
+    ]
+  },
+  "alternatives": ["clockodo", "crewmeister", "clockin", "timetac", "papershift"],
+  "verification": "verifiziert",
+  "status": "veroeffentlicht"
+}

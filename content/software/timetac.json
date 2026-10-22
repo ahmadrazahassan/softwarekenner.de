@@ -1,0 +1,107 @@
+{
+  "slug": "timetac",
+  "name": "TimeTac",
+  "vendor": "timetac",
+  "categories": ["zeiterfassung"],
+  "primaryCategory": "zeiterfassung",
+  "tagline": "Modulare Zeiterfassung mit App, Terminals und DATEV-Export",
+  "logo": "/logos/timetac.svg",
+  "brandColor": "#4a4fc4",
+  "website": "https://www.timetac.com/de",
+  "affiliate": null,
+  "pricing": {
+    "currency": "EUR",
+    "basis": "netto",
+    "freePlan": false,
+    "trialDays": null,
+    "plans": [
+      {
+        "name": "Module",
+        "priceMonthlyNet": 450,
+        "priceYearlyNetPerMonth": null,
+        "unit": "pro-nutzer-monat",
+        "includedUsers": null,
+        "highlights": ["Ab-Preis pro Person", "Nur genutzte Module"],
+        "recommended": true
+      }
+    ],
+    "contractNotes": "Ab 4,50 € pro Person und Monat; laut englischer FAQ zusätzlich eine Grundgebühr von 20 € pro Monat bei jährlicher Zahlung. DATEV-Export 0,99 € netto pro Nutzer. Terminals zur Miete ab 29,90 € pro Monat.",
+    "source": "https://www.timetac.com/de/personalzeiterfassung/",
+    "verifiedAt": "2026-10-19"
+  },
+  "hosting": {
+    "serverLocation": "EU",
+    "avv": "unbekannt"
+  },
+  "compliance": {
+    "gobd": "unbekannt",
+    "xrechnung": "unbekannt",
+    "zugferd": "unbekannt",
+    "iso27001": "ja",
+    "bsiC5": "unbekannt"
+  },
+  "madeInGermany": false,
+  "germanInterface": true,
+  "germanSupport": true,
+  "integrations": ["DATEV"],
+  "platforms": ["web", "ios", "android"],
+  "companySizes": ["10-49", "50-249", "250+"],
+  "scores": {
+    "funktionsumfang": 4.4,
+    "bedienung": 4,
+    "preisLeistung": 4,
+    "datenschutz": 4.2,
+    "support": 4,
+    "integrationen": 4.2
+  },
+  "editorial": {
+    "verdict": "Modulare Zeiterfassung aus Graz mit App, Terminals und kostenpflichtigem DATEV-Export. Server laut Anbieter in der EU, ISO 27001. Das Impressum nennt keine deutsche Gesellschaft.",
+    "bestFor": ["Mittelständische Betriebe mit Terminals", "Unternehmen mit mehreren Standorten"],
+    "notFor": ["Kleinstbetriebe, die einen Fixpreis ohne Grundgebühr suchen"],
+    "pros": [
+      "Bezahlung nur für genutzte Module",
+      "Terminals mietbar",
+      "ISO 27001 und EU-Server laut Anbieter"
+    ],
+    "cons": [
+      "Grundgebühr zusätzlich zum Preis pro Person",
+      "DATEV-Export kostet extra",
+      "Kein deutscher Vertragspartner im Impressum"
+    ],
+    "sources": [
+      {
+        "label": "Personalzeiterfassung TimeTac",
+        "url": "https://www.timetac.com/de/personalzeiterfassung/",
+        "accessedAt": "2026-10-19"
+      },
+      {
+        "label": "FAQ TimeTac",
+        "url": "https://www.timetac.com/en/faqs/",
+        "accessedAt": "2026-10-19"
+      },
+      {
+        "label": "DATEV-Schnittstelle",
+        "url": "https://www.timetac.com/de/zeiterfassung-datev-schnittstelle/",
+        "accessedAt": "2026-10-19"
+      }
+    ],
+    "author": "wolfram-eschenbach",
+    "reviewer": "wolfram-eschenbach",
+    "publishedAt": "2026-10-19",
+    "updatedAt": "2026-10-21",
+    "handsOnTest": false,
+    "changelog": [
+      {
+        "date": "2026-10-19",
+        "note": "Profil angelegt. Fakten aus Anbieterseiten, Wertung als Entwurf zur redaktionellen Prüfung."
+      },
+      {
+        "date": "2026-10-21",
+        "note": "Redaktionell freigegeben und veröffentlicht. Fakten aus den genannten Anbieterquellen, Wertung ohne eigenen Praxistest."
+      }
+    ]
+  },
+  "alternatives": ["clockodo", "crewmeister", "clockin", "papershift", "zep"],
+  "verification": "verifiziert",
+  "status": "veroeffentlicht"
+}

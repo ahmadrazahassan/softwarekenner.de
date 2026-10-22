@@ -1,0 +1,17 @@
+{
+  "slug": "e-signatur",
+  "name": "E-Signatur",
+  "shortName": "E-Signatur",
+  "icon": "Signature",
+  "description": "Lösungen zum elektronischen Unterschreiben von Verträgen und Dokumenten. Wir achten auf Signaturstufen nach eIDAS, Serverstandort und Integrationen.",
+  "batch": 4,
+  "weights": null,
+  "faq": [],
+  "related": ["dokumentenmanagement", "crm"],
+  "seo": {
+    "title": "E-Signatur im Vergleich",
+    "description": "E-Signatur-Software für Unternehmen in Deutschland: Signaturstufen nach eIDAS, Serverstandort und Preise in Euro im Vergleich."
+  },
+  "status": "entwurf",
+  "updatedAt": "2026-10-19"
+}

@@ -1,0 +1,142 @@
+{
+  "slug": "sage-lohnabrechnung",
+  "name": "Sage Lohnabrechnung",
+  "vendor": "sage",
+  "categories": ["lohnabrechnung", "hr-software"],
+  "primaryCategory": "lohnabrechnung",
+  "tagline": "Cloud-Lohnabrechnung mit HR-Funktionen, fünf Mitarbeitende im Grundpreis",
+  "logo": "/logos/sage.svg",
+  "brandColor": "#4a4fc4",
+  "website": "https://www.sage.com/de-de/sage-business-cloud/lohnabrechnung/",
+  "affiliate": null,
+  "pricing": {
+    "currency": "EUR",
+    "basis": "netto",
+    "freePlan": false,
+    "trialDays": 30,
+    "plans": [
+      {
+        "name": "Payroll Essentials",
+        "priceMonthlyNet": 2000,
+        "priceYearlyNetPerMonth": null,
+        "unit": "pro-monat",
+        "includedUsers": 5,
+        "highlights": [
+          "5 Mitarbeitende inklusive, weitere je 3 €",
+          "Lohnabrechnung inklusive gesetzlicher Meldungen",
+          "Buchhaltungsexport für Sage und DATEV",
+          "Bis zu 3 Abwesenheitsarten"
+        ],
+        "recommended": false
+      },
+      {
+        "name": "Payroll Standard",
+        "priceMonthlyNet": 3000,
+        "priceYearlyNetPerMonth": null,
+        "unit": "pro-monat",
+        "includedUsers": 5,
+        "highlights": [
+          "5 Mitarbeitende inklusive, weitere je 5 €",
+          "Onboarding-Portal und Organigramm",
+          "Arbeitszeiten und Überstunden"
+        ],
+        "recommended": false
+      },
+      {
+        "name": "Payroll Premium",
+        "priceMonthlyNet": 4000,
+        "priceYearlyNetPerMonth": null,
+        "unit": "pro-monat",
+        "includedUsers": 5,
+        "highlights": [
+          "5 Mitarbeitende inklusive, weitere je 7 €",
+          "Schichtplanung und Einsatzpläne",
+          "Ausgaben per App einreichen und genehmigen"
+        ],
+        "recommended": false
+      }
+    ],
+    "contractNotes": "Grundpreis inklusive 5 Mitarbeitende, ausbaubar bis 150. Upgrade oder Kündigung laut Anbieter jederzeit, keine langfristigen Verträge. 30 Tage kostenlos testbar. Nicht geeignet für Baulohn, Betriebsrentner und den öffentlichen Dienst.",
+    "source": "https://www.sage.com/de-de/sage-business-cloud/lohnabrechnung/",
+    "verifiedAt": "2026-10-21"
+  },
+  "hosting": {
+    "serverLocation": "unbekannt",
+    "avv": "ja"
+  },
+  "compliance": {
+    "gobd": "unbekannt",
+    "xrechnung": "unbekannt",
+    "zugferd": "unbekannt",
+    "iso27001": "unbekannt",
+    "bsiC5": "unbekannt"
+  },
+  "madeInGermany": true,
+  "germanInterface": true,
+  "germanSupport": true,
+  "integrations": ["DATEV", "Sage 50", "Collmex", "freeFIBU"],
+  "platforms": ["web"],
+  "companySizes": ["1-9", "10-49", "50-249"],
+  "scores": {
+    "funktionsumfang": 4.1,
+    "bedienung": 4.2,
+    "preisLeistung": 4.3,
+    "datenschutz": 4,
+    "support": 4,
+    "integrationen": 3.7
+  },
+  "editorial": {
+    "verdict": "Schlanke Cloud-Lohnabrechnung für kleine Betriebe mit bis zu 150 Mitarbeitenden. Transparente Preise mit fünf Mitarbeitenden im Grundpreis, HR-Funktionen je nach Tarif.",
+    "bestFor": ["Kleine Betriebe, die den Lohn selbst abrechnen", "Gründer mit ersten Mitarbeitenden"],
+    "notFor": ["Unternehmen mit mehr als 150 Mitarbeitenden"],
+    "pros": [
+      "Öffentliche Preise ab 20 € pro Monat inklusive fünf Mitarbeitender",
+      "Lohn und HR-Funktionen in einer Cloudlösung",
+      "30 Tage kostenlos testbar"
+    ],
+    "cons": [
+      "Obergrenze von 150 Mitarbeitenden",
+      "Keine Baulohnabrechnung, keine Betriebsrentner, kein öffentlicher Dienst",
+      "Serverstandort auf der Produktseite nicht genannt"
+    ],
+    "sources": [
+      {
+        "label": "Sage Lohnabrechnung Produktseite mit Preisen und FAQ",
+        "url": "https://www.sage.com/de-de/sage-business-cloud/lohnabrechnung/",
+        "accessedAt": "2026-10-21"
+      },
+      {
+        "label": "Sage HR & Payroll",
+        "url": "https://www.sage.com/de-de/produkte/sage-hr-payroll/",
+        "accessedAt": "2026-10-21"
+      },
+      {
+        "label": "Impressum Sage GmbH",
+        "url": "https://www.sage.com/de-de/impressum/",
+        "accessedAt": "2026-10-21"
+      }
+    ],
+    "author": "wolfram-eschenbach",
+    "reviewer": "wolfram-eschenbach",
+    "publishedAt": "2026-10-21",
+    "updatedAt": "2026-10-21",
+    "handsOnTest": false,
+    "changelog": [
+      {
+        "date": "2026-10-21",
+        "note": "Profil angelegt. Fakten aus Anbieterseiten, Wertung als Entwurf zur redaktionellen Prüfung."
+      },
+      {
+        "date": "2026-10-21",
+        "note": "Vertiefte Prüfung aller Sage Unterseiten: Preise, Tarife, Zusatzmodule, FAQ und Quellen aktualisiert."
+      },
+      {
+        "date": "2026-10-21",
+        "note": "Redaktionell freigegeben und veröffentlicht. Fakten aus den genannten Anbieterquellen, Wertung ohne eigenen Praxistest."
+      }
+    ]
+  },
+  "alternatives": ["lexware-lohn-gehalt", "datev-lohn-und-gehalt", "sage-hr-suite", "personio"],
+  "verification": "verifiziert",
+  "status": "veroeffentlicht"
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "cloud-anwendungen",
+  "kicker": "Cloud-Anwendungen",
+  "title": "ERP und CRM kommen erst langsam in die Cloud",
+  "takeaway": "Cloud-Nutzer setzen Cloud-Services vor allem für E-Mail und Speicher ein. ERP und CRM beziehen nur je 23 % aus der Cloud.",
+  "chart": "balken",
+  "basis": "Unternehmen ab 10 Beschäftigten, die Cloud-Services nutzen",
+  "period": "2025",
+  "points": [
+    {
+      "label": "E-Mail",
+      "value": 76,
+      "unit": "prozent",
+      "highlight": false
+    },
+    {
+      "label": "Datenspeicherung",
+      "value": 71,
+      "unit": "prozent",
+      "highlight": false
+    },
+    {
+      "label": "Office-Anwendungen",
+      "value": 68,
+      "unit": "prozent",
+      "highlight": false
+    },
+    {
+      "label": "ERP",
+      "value": 23,
+      "unit": "prozent",
+      "highlight": true
+    },
+    {
+      "label": "CRM",
+      "value": 23,
+      "unit": "prozent",
+      "highlight": true
+    }
+  ],
+  "source": {
+    "label": "Destatis: Jedes zweite Unternehmen nutzt kostenpflichtige Cloud-Services",
+    "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2025/11/PD25_416_52911.html",
+    "accessedAt": "2026-10-22",
+    "publisher": "Statistisches Bundesamt",
+    "publishedAt": "2025-11-24"
+  },
+  "order": 9
+}

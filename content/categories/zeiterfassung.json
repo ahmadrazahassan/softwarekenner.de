@@ -1,0 +1,17 @@
+{
+  "slug": "zeiterfassung",
+  "name": "Zeiterfassung",
+  "shortName": "Zeiterfassung",
+  "icon": "Clock",
+  "description": "Lösungen zur Erfassung von Arbeits- und Projektzeiten per App, Browser oder Terminal. Wir prüfen Offline-Erfassung, Pausenregeln, Auswertungen und die Rolle des Betriebsrats.",
+  "batch": 1,
+  "weights": null,
+  "faq": [],
+  "related": ["hr-software", "projektmanagement"],
+  "seo": {
+    "title": "Zeiterfassung im Vergleich",
+    "description": "Zeiterfassungssoftware für Unternehmen in Deutschland: mobile Erfassung, Pausenregeln, Datenschutz und Preise in Euro im Vergleich."
+  },
+  "status": "veroeffentlicht",
+  "updatedAt": "2026-10-19"
+}

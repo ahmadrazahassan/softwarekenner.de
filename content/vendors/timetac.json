@@ -1,0 +1,23 @@
+{
+  "slug": "timetac",
+  "legalName": "TimeTac GmbH",
+  "brandName": "TimeTac",
+  "headquarters": {
+    "city": "Graz",
+    "country": "AT"
+  },
+  "founded": null,
+  "website": "https://www.timetac.com/de",
+  "germanEntity": false,
+  "supportLanguages": null,
+  "notes": "Landesgericht für ZRS Graz, FN 379505x. Das Impressum nennt keine deutsche Gesellschaft.",
+  "sources": [
+    {
+      "label": "Impressum TimeTac",
+      "url": "https://www.timetac.com/de/unternehmen/impressum/",
+      "accessedAt": "2026-10-19"
+    }
+  ],
+  "verification": "verifiziert",
+  "verifiedAt": "2026-10-19"
+}

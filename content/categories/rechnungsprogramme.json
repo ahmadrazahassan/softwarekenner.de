@@ -1,0 +1,17 @@
+{
+  "slug": "rechnungsprogramme",
+  "name": "Rechnungsprogramme und E-Rechnung",
+  "shortName": "Rechnungen",
+  "icon": "ReceiptText",
+  "description": "Software zum Schreiben, Versenden und Empfangen von Rechnungen, einschließlich XRechnung und ZUGFeRD. Wir achten auf Mahnwesen, Vorlagen und die Übergabe an die Buchhaltung.",
+  "batch": 2,
+  "weights": null,
+  "faq": [],
+  "related": ["buchhaltung", "kassensysteme"],
+  "seo": {
+    "title": "Rechnungsprogramme und E-Rechnung im Vergleich",
+    "description": "Rechnungsprogramme für Unternehmen in Deutschland: XRechnung, ZUGFeRD, Mahnwesen und Preise in Euro im unabhängigen Vergleich."
+  },
+  "status": "entwurf",
+  "updatedAt": "2026-10-19"
+}

@@ -1,0 +1,98 @@
+{
+  "slug": "factorial",
+  "name": "Factorial",
+  "vendor": "factorial",
+  "categories": ["hr-software"],
+  "primaryCategory": "hr-software",
+  "tagline": "HR-Software mit Zeiterfassung, Abwesenheiten und DATEV-Anbindung",
+  "logo": "/logos/factorial.png",
+  "brandColor": "#4a4fc4",
+  "website": "https://factorialhr.de",
+  "affiliate": null,
+  "pricing": {
+    "currency": "EUR",
+    "basis": "netto",
+    "freePlan": false,
+    "trialDays": null,
+    "plans": [
+      {
+        "name": "Pakete nach Mitarbeiterzahl",
+        "priceMonthlyNet": null,
+        "priceYearlyNetPerMonth": null,
+        "unit": "pro-nutzer-monat",
+        "includedUsers": null,
+        "highlights": ["Preis auf Anfrage"],
+        "recommended": true
+      }
+    ],
+    "contractNotes": "Keine offizielle Preisliste gefunden. Der Anbieterblog nennt Einstiegspreise von etwa 7 bis 8 € pro Mitarbeitendem und Monat.",
+    "source": "https://factorialhr.de/blog/personio-alternative/",
+    "verifiedAt": "2026-10-19"
+  },
+  "hosting": {
+    "serverLocation": "DE",
+    "avv": "unbekannt"
+  },
+  "compliance": {
+    "gobd": "unbekannt",
+    "xrechnung": "unbekannt",
+    "zugferd": "unbekannt",
+    "iso27001": "ja",
+    "bsiC5": "unbekannt"
+  },
+  "madeInGermany": true,
+  "germanInterface": true,
+  "germanSupport": true,
+  "integrations": ["DATEV"],
+  "platforms": ["web", "ios", "android"],
+  "companySizes": ["10-49", "50-249"],
+  "scores": {
+    "funktionsumfang": 4.4,
+    "bedienung": 4.2,
+    "preisLeistung": 4.2,
+    "datenschutz": 4.3,
+    "support": 3.8,
+    "integrationen": 4.1
+  },
+  "editorial": {
+    "verdict": "HR-Plattform mit Personalverwaltung und Zeiterfassung, Server laut Anbieter in Frankfurt mit ISO 27001, DATEV-Marktplatzpartner. Vertragspartner in Deutschland ist die FACTORIAL GmbH in München.",
+    "bestFor": ["Kleine und mittlere Unternehmen", "Firmen mit DATEV-Lohnabrechnung"],
+    "notFor": ["Konzerne mit komplexen Organisationsstrukturen"],
+    "pros": [
+      "Server in Frankfurt und ISO 27001 laut Anbieter",
+      "DATEV-Marktplatzpartner",
+      "Vertragspartner mit Sitz in München"
+    ],
+    "cons": ["Keine offizielle Preisliste gefunden", "Angaben stammen überwiegend aus dem Anbieterblog"],
+    "sources": [
+      {
+        "label": "Personio-Alternativen (Anbieterblog)",
+        "url": "https://factorialhr.de/blog/personio-alternative/",
+        "accessedAt": "2026-10-19"
+      },
+      {
+        "label": "Impressum Factorial",
+        "url": "https://factorialhr.de/legal",
+        "accessedAt": "2026-10-19"
+      }
+    ],
+    "author": "wolfram-eschenbach",
+    "reviewer": "wolfram-eschenbach",
+    "publishedAt": "2026-10-19",
+    "updatedAt": "2026-10-21",
+    "handsOnTest": false,
+    "changelog": [
+      {
+        "date": "2026-10-19",
+        "note": "Profil angelegt. Fakten aus Anbieterseiten, Wertung als Entwurf zur redaktionellen Prüfung."
+      },
+      {
+        "date": "2026-10-21",
+        "note": "Redaktionell freigegeben und veröffentlicht. Fakten aus den genannten Anbieterquellen, Wertung ohne eigenen Praxistest."
+      }
+    ]
+  },
+  "alternatives": ["personio", "hrworks", "kenjo", "rexx-systems", "leapsome"],
+  "verification": "verifiziert",
+  "status": "veroeffentlicht"
+}

@@ -1,0 +1,94 @@
+{
+  "slug": "sage-b7",
+  "name": "Sage b7",
+  "vendor": "sage",
+  "categories": ["erp"],
+  "primaryCategory": "erp",
+  "tagline": "ERP für Fertigung und Handel im Mittelstand mit EDI, Lager und Service",
+  "logo": "/logos/sage.svg",
+  "brandColor": "#4a4fc4",
+  "website": "https://www.sage.com/de-de/produkte/sage-b7-warenwirtschaftssystem/",
+  "affiliate": null,
+  "pricing": {
+    "currency": "EUR",
+    "basis": "netto",
+    "freePlan": false,
+    "trialDays": null,
+    "plans": [],
+    "contractNotes": "Preise nur auf Anfrage. Einführung und Anpassung über Sage oder Partner.",
+    "source": "https://www.sage.com/de-de/produkte/sage-b7-warenwirtschaftssystem/",
+    "verifiedAt": "2026-10-21"
+  },
+  "hosting": {
+    "serverLocation": "unbekannt",
+    "avv": "unbekannt"
+  },
+  "compliance": {
+    "gobd": "ja",
+    "xrechnung": "unbekannt",
+    "zugferd": "unbekannt",
+    "iso27001": "unbekannt",
+    "bsiC5": "unbekannt"
+  },
+  "madeInGermany": true,
+  "germanInterface": true,
+  "germanSupport": true,
+  "integrations": ["Microsoft 365", "EDI", "CAD", "PDM", "CAQ", "MES", "Sage HR Suite"],
+  "platforms": ["windows"],
+  "companySizes": ["50-249", "250+"],
+  "scores": {
+    "funktionsumfang": 4.3,
+    "bedienung": 3.6,
+    "preisLeistung": 3.6,
+    "datenschutz": 3.9,
+    "support": 3.9,
+    "integrationen": 4
+  },
+  "editorial": {
+    "verdict": "Seit über 30 Jahren im Mittelstand verankertes ERP für Fertigung und Handel, mit EDI, Konsignationslager, Filialbelieferung und Servicemanagement. Stark anpassbar, Preise nur auf Anfrage.",
+    "bestFor": ["Produzierende Mittelständler mit EDI-Partnern", "Händler mit Filialversorgung"],
+    "notFor": ["Kleine Betriebe, die schnell starten wollen"],
+    "pros": [
+      "EDI für Lieferscheine, Rechnungen und Bestellungen",
+      "Variantenmanagement erzeugt Stückliste und Arbeitsplan nach Regeln",
+      "Grafische Produktionsplanung mit Plantafel",
+      "Touchfähige Kasse mit Echtzeitanbindung an die Zentrale",
+      "CO₂-Ermittlung je Fertigungsprodukt aus Stamm- und Maschinendaten"
+    ],
+    "cons": ["Keine öffentlichen Preise", "Projektgeschäft mit spürbarem Einführungsaufwand"],
+    "sources": [
+      {
+        "label": "Sage b7 Produktseite",
+        "url": "https://www.sage.com/de-de/produkte/sage-b7-warenwirtschaftssystem/",
+        "accessedAt": "2026-10-21"
+      },
+      {
+        "label": "Impressum Sage GmbH",
+        "url": "https://www.sage.com/de-de/impressum/",
+        "accessedAt": "2026-10-21"
+      }
+    ],
+    "author": "wolfram-eschenbach",
+    "reviewer": "wolfram-eschenbach",
+    "publishedAt": "2026-10-21",
+    "updatedAt": "2026-10-21",
+    "handsOnTest": false,
+    "changelog": [
+      {
+        "date": "2026-10-21",
+        "note": "Profil angelegt. Fakten aus Anbieterseiten, Wertung als Entwurf zur redaktionellen Prüfung."
+      },
+      {
+        "date": "2026-10-21",
+        "note": "Vertiefte Prüfung aller Sage Unterseiten: Preise, Tarife, Zusatzmodule, FAQ und Quellen aktualisiert."
+      },
+      {
+        "date": "2026-10-21",
+        "note": "Redaktionell freigegeben und veröffentlicht. Fakten aus den genannten Anbieterquellen, Wertung ohne eigenen Praxistest."
+      }
+    ]
+  },
+  "alternatives": ["sage-100", "sage-x3", "sap-business-one", "dynamics-365-business-central"],
+  "verification": "verifiziert",
+  "status": "veroeffentlicht"
+}

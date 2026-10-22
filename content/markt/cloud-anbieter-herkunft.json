@@ -1,0 +1,41 @@
+{
+  "slug": "cloud-anbieter-herkunft",
+  "kicker": "Digitale Souveränität",
+  "title": "Genutzt aus den USA, gewünscht aus Deutschland",
+  "takeaway": "71 % beziehen Cloud-Angebote aus den USA, bevorzugen würden das nur 8 %. Deutsche Anbieter nutzen 53 %, gewünscht sind sie von 91 %.",
+  "chart": "vergleich",
+  "legend": ["genutzt", "bevorzugt"],
+  "basis": "Unternehmen ab 20 Beschäftigten, die Cloud nutzen oder planen",
+  "period": "2026",
+  "points": [
+    {
+      "label": "Anbieter aus Deutschland",
+      "value": 53,
+      "unit": "prozent",
+      "highlight": true,
+      "compare": 91
+    },
+    {
+      "label": "Anbieter aus der EU",
+      "value": 45,
+      "unit": "prozent",
+      "highlight": false,
+      "compare": 68
+    },
+    {
+      "label": "Anbieter aus den USA",
+      "value": 71,
+      "unit": "prozent",
+      "highlight": false,
+      "compare": 8
+    }
+  ],
+  "source": {
+    "label": "Bitkom: Cloud Report 2026",
+    "url": "https://www.bitkom.org/Presse/Presseinformation/Deutsche-Cloud-4-von-10-Unternehmen-wuerden-Abstriche-in-Kauf-nehmen",
+    "accessedAt": "2026-10-22",
+    "publisher": "Bitkom",
+    "publishedAt": "2026-06-17"
+  },
+  "order": 5
+}

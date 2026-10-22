@@ -1,0 +1,23 @@
+{
+  "slug": "factorial",
+  "legalName": "FACTORIAL GmbH",
+  "brandName": "Factorial",
+  "headquarters": {
+    "city": "München",
+    "country": "DE"
+  },
+  "founded": null,
+  "website": "https://factorialhr.de",
+  "germanEntity": true,
+  "supportLanguages": null,
+  "notes": "Amtsgericht München, HRB 294374. Copyright-Hinweis nennt zusätzlich Everyday Software, S.L.",
+  "sources": [
+    {
+      "label": "Impressum Factorial",
+      "url": "https://factorialhr.de/legal",
+      "accessedAt": "2026-10-19"
+    }
+  ],
+  "verification": "verifiziert",
+  "verifiedAt": "2026-10-19"
+}

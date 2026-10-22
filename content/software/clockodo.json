@@ -1,0 +1,130 @@
+{
+  "slug": "clockodo",
+  "name": "Clockodo",
+  "vendor": "clockodo",
+  "categories": ["zeiterfassung"],
+  "primaryCategory": "zeiterfassung",
+  "tagline": "Arbeits- und Projektzeiterfassung mit kostenlosem Tarif für Selbstständige",
+  "logo": "/logos/clockodo.svg",
+  "brandColor": "#3657f7",
+  "website": "https://www.clockodo.com/de",
+  "affiliate": null,
+  "pricing": {
+    "currency": "EUR",
+    "basis": "netto",
+    "freePlan": true,
+    "trialDays": 14,
+    "plans": [
+      {
+        "name": "Freelancer",
+        "priceMonthlyNet": 0,
+        "priceYearlyNetPerMonth": 0,
+        "unit": "pro-monat",
+        "includedUsers": 1,
+        "highlights": ["Nur für einen Nutzer", "Support per E-Mail"],
+        "recommended": false
+      },
+      {
+        "name": "Basic",
+        "priceMonthlyNet": 400,
+        "priceYearlyNetPerMonth": 380,
+        "unit": "pro-nutzer-monat",
+        "includedUsers": null,
+        "highlights": ["Arbeitszeiterfassung"],
+        "recommended": false
+      },
+      {
+        "name": "Pro",
+        "priceMonthlyNet": 1000,
+        "priceYearlyNetPerMonth": 950,
+        "unit": "pro-nutzer-monat",
+        "includedUsers": null,
+        "highlights": ["Projektzeiten und Abwesenheiten"],
+        "recommended": true
+      },
+      {
+        "name": "Pro Plus",
+        "priceMonthlyNet": 1200,
+        "priceYearlyNetPerMonth": 1140,
+        "unit": "pro-nutzer-monat",
+        "includedUsers": null,
+        "highlights": ["Erweiterter Pro-Tarif"],
+        "recommended": false
+      }
+    ],
+    "contractNotes": "Netto zzgl. MwSt. 5 % Rabatt bei jährlicher Zahlung (Jahrespreise daraus berechnet). Ab 20 Nutzern individuelle Angebote.",
+    "source": "https://www.clockodo.com/en/pricing/",
+    "verifiedAt": "2026-10-19"
+  },
+  "hosting": {
+    "serverLocation": "DE",
+    "avv": "ja"
+  },
+  "compliance": {
+    "gobd": "unbekannt",
+    "xrechnung": "unbekannt",
+    "zugferd": "unbekannt",
+    "iso27001": "unbekannt",
+    "bsiC5": "unbekannt"
+  },
+  "madeInGermany": true,
+  "germanInterface": true,
+  "germanSupport": true,
+  "integrations": ["Lexware Office", "sevdesk", "FastBill", "Personio"],
+  "platforms": ["web", "ios", "android"],
+  "companySizes": ["solo", "1-9", "10-49"],
+  "scores": {
+    "funktionsumfang": 4.3,
+    "bedienung": 4.5,
+    "preisLeistung": 4.4,
+    "datenschutz": 4.3,
+    "support": 4,
+    "integrationen": 4.1
+  },
+  "editorial": {
+    "verdict": "Zeiterfassung für Arbeits- und Projektzeiten mit klaren Preisen pro Nutzer, kostenlosem Tarif für Selbstständige und Server in Deutschland. Eine DATEV-Schnittstelle fanden wir nicht.",
+    "bestFor": ["Agenturen und Dienstleister", "Selbstständige mit Projektzeiten"],
+    "notFor": ["Betriebe, die Zeiten direkt an DATEV übergeben wollen"],
+    "pros": [
+      "Transparente Preise pro Nutzer",
+      "Kostenloser Tarif für Selbstständige",
+      "Server in Deutschland und Auftragsverarbeitungsvertrag laut Anbieter"
+    ],
+    "cons": ["Keine DATEV-Schnittstelle gefunden", "Kostenloser Tarif ohne Abwesenheitsverwaltung"],
+    "sources": [
+      {
+        "label": "Pricing Clockodo",
+        "url": "https://www.clockodo.com/en/pricing/",
+        "accessedAt": "2026-10-19"
+      },
+      {
+        "label": "Tarife und Funktionen 2024",
+        "url": "https://www.clockodo.com/fileadmin/clockodo-tarife-und-funktionen-2024.pdf",
+        "accessedAt": "2026-10-19"
+      },
+      {
+        "label": "Was kostet Clockodo",
+        "url": "https://support.clockodo.com/en/help-center/how-much-does-clockodo-cost",
+        "accessedAt": "2026-10-19"
+      }
+    ],
+    "author": "wolfram-eschenbach",
+    "reviewer": "wolfram-eschenbach",
+    "publishedAt": "2026-10-19",
+    "updatedAt": "2026-10-21",
+    "handsOnTest": false,
+    "changelog": [
+      {
+        "date": "2026-10-19",
+        "note": "Profil angelegt. Fakten aus Anbieterseiten, Wertung als Entwurf zur redaktionellen Prüfung."
+      },
+      {
+        "date": "2026-10-21",
+        "note": "Redaktionell freigegeben und veröffentlicht. Fakten aus den genannten Anbieterquellen, Wertung ohne eigenen Praxistest."
+      }
+    ]
+  },
+  "alternatives": ["crewmeister", "clockin", "timetac", "papershift", "zep"],
+  "verification": "verifiziert",
+  "status": "veroeffentlicht"
+}

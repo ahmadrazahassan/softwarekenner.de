@@ -1,0 +1,17 @@
+{
+  "slug": "kassensysteme",
+  "name": "Kassensysteme",
+  "shortName": "Kassen",
+  "icon": "CreditCard",
+  "description": "Kassensoftware für Handel und Gastronomie. Wir prüfen die Anforderungen an Kassen in Deutschland, Kartenzahlung, Auswertungen und die Übergabe an die Buchhaltung.",
+  "batch": 4,
+  "weights": null,
+  "faq": [],
+  "related": ["rechnungsprogramme", "shopsysteme"],
+  "seo": {
+    "title": "Kassensysteme im Vergleich",
+    "description": "Kassensysteme für Handel und Gastronomie in Deutschland: Anforderungen, Kartenzahlung und Preise in Euro im Vergleich."
+  },
+  "status": "entwurf",
+  "updatedAt": "2026-10-19"
+}

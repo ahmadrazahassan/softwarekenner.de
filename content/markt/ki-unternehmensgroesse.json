@@ -1,0 +1,42 @@
+{
+  "slug": "ki-unternehmensgroesse",
+  "kicker": "KI nach Unternehmensgröße",
+  "title": "Großunternehmen nutzen KI mehr als doppelt so oft",
+  "takeaway": "26 % der Unternehmen ab 10 Beschäftigten nutzten 2025 KI, nach 20 % im Vorjahr. Bei Großunternehmen sind es 57 %.",
+  "chart": "balken",
+  "basis": "Unternehmen ab 10 Beschäftigten, amtliche IKT-Erhebung",
+  "period": "2025",
+  "points": [
+    {
+      "label": "10 bis 49 Beschäftigte",
+      "value": 23,
+      "unit": "prozent",
+      "highlight": false
+    },
+    {
+      "label": "50 bis 249 Beschäftigte",
+      "value": 36,
+      "unit": "prozent",
+      "highlight": false
+    },
+    {
+      "label": "ab 250 Beschäftigte",
+      "value": 57,
+      "unit": "prozent",
+      "highlight": false
+    },
+    {
+      "label": "Alle Unternehmen",
+      "value": 26,
+      "unit": "prozent",
+      "highlight": true
+    }
+  ],
+  "source": {
+    "label": "Destatis: IKT in Unternehmen",
+    "url": "https://www.destatis.de/DE/Themen/Branchen-Unternehmen/Unternehmen/IKT-in-Unternehmen-IKT-Branche/_inhalt.html",
+    "accessedAt": "2026-10-22",
+    "publisher": "Statistisches Bundesamt"
+  },
+  "order": 11
+}

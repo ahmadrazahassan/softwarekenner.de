@@ -1,0 +1,23 @@
+{
+  "slug": "papershift",
+  "legalName": "Papershift GmbH",
+  "brandName": "Papershift",
+  "headquarters": {
+    "city": "Karlsruhe",
+    "country": "DE"
+  },
+  "founded": null,
+  "website": "https://www.papershift.com",
+  "germanEntity": true,
+  "supportLanguages": null,
+  "notes": "Registergericht Mannheim, HRB 722151.",
+  "sources": [
+    {
+      "label": "Impressum Papershift",
+      "url": "https://www.papershift.com/impressum",
+      "accessedAt": "2026-10-19"
+    }
+  ],
+  "verification": "verifiziert",
+  "verifiedAt": "2026-10-19"
+}

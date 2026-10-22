@@ -1,0 +1,120 @@
+{
+  "slug": "sage-intacct",
+  "name": "Sage Intacct",
+  "vendor": "sage",
+  "categories": ["buchhaltung"],
+  "primaryCategory": "buchhaltung",
+  "tagline": "Cloud-Finanzplattform für Unternehmensgruppen mit Konsolidierung und Abschluss-Assistent",
+  "logo": "/logos/sage.svg",
+  "brandColor": "#4a4fc4",
+  "website": "https://www.sage.com/de-de/sage-business-cloud/intacct/",
+  "affiliate": null,
+  "pricing": {
+    "currency": "EUR",
+    "basis": "netto",
+    "freePlan": false,
+    "trialDays": null,
+    "plans": [
+      {
+        "name": "Standard",
+        "priceMonthlyNet": 139000,
+        "priceYearlyNetPerMonth": null,
+        "unit": "pro-monat",
+        "includedUsers": 2,
+        "highlights": [
+          "2 Business User inklusive, weitere je 240 €",
+          "Hauptbuch, Debitoren und Kreditoren",
+          "Sage Copilot und Anomalie-Erkennung",
+          "Nationale Konsolidierung, Dashboards"
+        ],
+        "recommended": false
+      }
+    ],
+    "contractNotes": "Richtpreis ab 1.390 € pro Monat netto; der Endpreis hängt von Modulen, Nutzern, Gesellschaften und Integrationen ab. Erweiterungen laut Preisübersicht etwa AP Automation ab 90 €, Close Automation 329 €, Multi-Entity 215 € plus 60 € je Gesellschaft, globale Konsolidierung 1.005 € im Monat. Implementierung, Migration und Schulung werden separat berechnet; Rabatte bei Jahres- und Mehrjahresverträgen.",
+    "source": "https://www.sage.com/de-de/sage-business-cloud/intacct/",
+    "verifiedAt": "2026-10-21"
+  },
+  "hosting": {
+    "serverLocation": "unbekannt",
+    "avv": "unbekannt"
+  },
+  "compliance": {
+    "gobd": "ja",
+    "xrechnung": "unbekannt",
+    "zugferd": "unbekannt",
+    "iso27001": "ja",
+    "bsiC5": "unbekannt"
+  },
+  "madeInGermany": true,
+  "germanInterface": true,
+  "germanSupport": true,
+  "integrations": ["Salesforce", "REST-API", "MCP-Server", "Bank Feeds"],
+  "platforms": ["web"],
+  "companySizes": ["50-249", "250+"],
+  "scores": {
+    "funktionsumfang": 4.5,
+    "bedienung": 4,
+    "preisLeistung": 3.7,
+    "datenschutz": 4,
+    "support": 3.9,
+    "integrationen": 4
+  },
+  "editorial": {
+    "verdict": "Finanzplattform für Finance-Teams in Unternehmensgruppen: Konsolidierung, KI-gestützter Rechnungseingang und Abschluss-Assistent. Ab 1.390 € im Monat, laut Anbieter GoBD zertifiziert und nach ISO 27001.",
+    "bestFor": [
+      "Unternehmensgruppen mit mehreren Gesellschaften",
+      "Finance-Teams, die Excel-Konsolidierung ablösen wollen"
+    ],
+    "notFor": ["Kleine Betriebe mit einer Gesellschaft"],
+    "pros": [
+      "Konsolidierung mehrerer Gesellschaften in einem System",
+      "Öffentliche Preisliste mit Einzelpreisen für Erweiterungen",
+      "Zehn Standarddimensionen statt aufgeblähtem Kontenplan",
+      "Laut Anbieter GoBD zertifiziert, ISO 27001 und SOC 2 Type II"
+    ],
+    "cons": [
+      "Einstiegspreis von 1.390 € pro Monat ohne Implementierung",
+      "Wichtige Bausteine wie Multiwährung und AP Automation kosten extra",
+      "Für kleine Unternehmen überdimensioniert"
+    ],
+    "sources": [
+      {
+        "label": "Sage Intacct Preisübersicht und FAQ",
+        "url": "https://www.sage.com/de-de/sage-business-cloud/intacct/pricing/",
+        "accessedAt": "2026-10-21"
+      },
+      {
+        "label": "Sage Intacct Produktfunktionen",
+        "url": "https://www.sage.com/de-de/sage-business-cloud/intacct/produktfunktionen/",
+        "accessedAt": "2026-10-21"
+      },
+      {
+        "label": "Impressum Sage GmbH",
+        "url": "https://www.sage.com/de-de/impressum/",
+        "accessedAt": "2026-10-21"
+      }
+    ],
+    "author": "wolfram-eschenbach",
+    "reviewer": "wolfram-eschenbach",
+    "publishedAt": "2026-10-21",
+    "updatedAt": "2026-10-21",
+    "handsOnTest": false,
+    "changelog": [
+      {
+        "date": "2026-10-21",
+        "note": "Profil angelegt. Fakten aus Anbieterseiten, Wertung als Entwurf zur redaktionellen Prüfung."
+      },
+      {
+        "date": "2026-10-21",
+        "note": "Vertiefte Prüfung aller Sage Unterseiten: Preise, Tarife, Zusatzmodule, FAQ und Quellen aktualisiert."
+      },
+      {
+        "date": "2026-10-21",
+        "note": "Redaktionell freigegeben und veröffentlicht. Fakten aus den genannten Anbieterquellen, Wertung ohne eigenen Praxistest."
+      }
+    ]
+  },
+  "alternatives": ["datev-unternehmen-online", "sage-x3", "dynamics-365-business-central"],
+  "verification": "verifiziert",
+  "status": "veroeffentlicht"
+}

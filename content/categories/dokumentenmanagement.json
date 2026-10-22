@@ -1,0 +1,17 @@
+{
+  "slug": "dokumentenmanagement",
+  "name": "Dokumentenmanagement",
+  "shortName": "DMS",
+  "icon": "FolderOpen",
+  "description": "Systeme zur revisionssicheren Ablage und Bearbeitung von Dokumenten. Wir prüfen GoBD, Aufbewahrungsfristen, Workflows und Schnittstellen.",
+  "batch": 3,
+  "weights": null,
+  "faq": [],
+  "related": ["buchhaltung", "kollaboration"],
+  "seo": {
+    "title": "Dokumentenmanagement im Vergleich",
+    "description": "Dokumentenmanagementsysteme für Unternehmen in Deutschland: GoBD, Archivierung, Workflows und Preise in Euro im Vergleich."
+  },
+  "status": "entwurf",
+  "updatedAt": "2026-10-19"
+}

@@ -1,0 +1,23 @@
+{
+  "slug": "kenjo",
+  "legalName": "Kenjo GmbH",
+  "brandName": "Kenjo",
+  "headquarters": {
+    "city": "Berlin",
+    "country": "DE"
+  },
+  "founded": null,
+  "website": "https://www.kenjo.io/de",
+  "germanEntity": true,
+  "supportLanguages": null,
+  "notes": "Amtsgericht Charlottenburg, HRB 183681 B.",
+  "sources": [
+    {
+      "label": "Impressum Kenjo",
+      "url": "https://www.kenjo.io/de/legal/impressum",
+      "accessedAt": "2026-10-19"
+    }
+  ],
+  "verification": "verifiziert",
+  "verifiedAt": "2026-10-19"
+}

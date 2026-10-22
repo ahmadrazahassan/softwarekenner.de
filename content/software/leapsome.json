@@ -1,0 +1,119 @@
+{
+  "slug": "leapsome",
+  "name": "Leapsome",
+  "vendor": "leapsome",
+  "categories": ["hr-software"],
+  "primaryCategory": "hr-software",
+  "tagline": "Plattform für Performance, Ziele, Feedback und Personalverwaltung",
+  "logo": "/logos/leapsome.png",
+  "brandColor": "#4a4fc4",
+  "website": "https://www.leapsome.com",
+  "affiliate": null,
+  "pricing": {
+    "currency": "EUR",
+    "basis": "netto",
+    "freePlan": false,
+    "trialDays": 14,
+    "plans": [
+      {
+        "name": "Foundation",
+        "priceMonthlyNet": 700,
+        "priceYearlyNetPerMonth": null,
+        "unit": "pro-nutzer-monat",
+        "includedUsers": null,
+        "highlights": ["Basis der Plattform"],
+        "recommended": false
+      },
+      {
+        "name": "Pro",
+        "priceMonthlyNet": 1000,
+        "priceYearlyNetPerMonth": null,
+        "unit": "pro-nutzer-monat",
+        "includedUsers": null,
+        "highlights": ["Erweiterte Plattform"],
+        "recommended": true
+      }
+    ],
+    "contractNotes": "Listenpreise pro Mitarbeiter und Monat; Module wie Performance Reviews oder Recruiting kosten zusätzlich. Mindestlaufzeit ein Jahr. Zeitweise Aktionspreise.",
+    "source": "https://www.leapsome.com/pricing",
+    "verifiedAt": "2026-10-19"
+  },
+  "hosting": {
+    "serverLocation": "DE",
+    "avv": "unbekannt"
+  },
+  "compliance": {
+    "gobd": "unbekannt",
+    "xrechnung": "unbekannt",
+    "zugferd": "unbekannt",
+    "iso27001": "ja",
+    "bsiC5": "unbekannt"
+  },
+  "madeInGermany": true,
+  "germanInterface": true,
+  "germanSupport": true,
+  "integrations": [],
+  "platforms": ["web", "ios", "android"],
+  "companySizes": ["50-249", "250+"],
+  "scores": {
+    "funktionsumfang": 4.3,
+    "bedienung": 4.3,
+    "preisLeistung": 3.9,
+    "datenschutz": 4.2,
+    "support": 3.9,
+    "integrationen": 4
+  },
+  "editorial": {
+    "verdict": "Stark bei Performance, Zielen und Feedback, ergänzt um Personalverwaltung. Daten laut Anbieter in Deutschland, einige KI-Funktionen nutzen jedoch einen Dienstleister außerhalb der EU.",
+    "bestFor": [
+      "Unternehmen mit Fokus auf Mitarbeiterentwicklung",
+      "Wachsende Organisationen ab 50 Beschäftigten"
+    ],
+    "notFor": ["Betriebe, die vor allem Lohn und Zeiterfassung brauchen"],
+    "pros": [
+      "Klare Listenpreise",
+      "ISO 27001 und SOC 2 laut Anbieter",
+      "Kostenlose Testphase ohne Kreditkarte"
+    ],
+    "cons": [
+      "Module kosten zusätzlich",
+      "Mindestlaufzeit ein Jahr",
+      "Manche KI-Funktionen verarbeiten Daten außerhalb der EU"
+    ],
+    "sources": [
+      {
+        "label": "Pricing Leapsome",
+        "url": "https://www.leapsome.com/pricing",
+        "accessedAt": "2026-10-19"
+      },
+      {
+        "label": "AI Trust Leapsome",
+        "url": "https://www.leapsome.com/ai-trust",
+        "accessedAt": "2026-10-19"
+      },
+      {
+        "label": "Information Leapsome",
+        "url": "https://www.leapsome.com/information",
+        "accessedAt": "2026-10-19"
+      }
+    ],
+    "author": "wolfram-eschenbach",
+    "reviewer": "wolfram-eschenbach",
+    "publishedAt": "2026-10-19",
+    "updatedAt": "2026-10-21",
+    "handsOnTest": false,
+    "changelog": [
+      {
+        "date": "2026-10-19",
+        "note": "Profil angelegt. Fakten aus Anbieterseiten, Wertung als Entwurf zur redaktionellen Prüfung."
+      },
+      {
+        "date": "2026-10-21",
+        "note": "Redaktionell freigegeben und veröffentlicht. Fakten aus den genannten Anbieterquellen, Wertung ohne eigenen Praxistest."
+      }
+    ]
+  },
+  "alternatives": ["personio", "hrworks", "factorial", "kenjo", "rexx-systems"],
+  "verification": "verifiziert",
+  "status": "veroeffentlicht"
+}

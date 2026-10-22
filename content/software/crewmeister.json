@@ -1,0 +1,116 @@
+{
+  "slug": "crewmeister",
+  "name": "Crewmeister",
+  "vendor": "crewmeister",
+  "categories": ["zeiterfassung"],
+  "primaryCategory": "zeiterfassung",
+  "tagline": "Einfache Zeiterfassung per App für kleine und mittlere Betriebe",
+  "logo": "/logos/crewmeister.png",
+  "brandColor": "#4a4fc4",
+  "website": "https://crewmeister.com/de",
+  "affiliate": null,
+  "pricing": {
+    "currency": "EUR",
+    "basis": "netto",
+    "freePlan": false,
+    "trialDays": 14,
+    "plans": [
+      {
+        "name": "Go",
+        "priceMonthlyNet": null,
+        "priceYearlyNetPerMonth": 150,
+        "unit": "pro-nutzer-monat",
+        "includedUsers": null,
+        "highlights": ["Preis bei etwa 50 Mitarbeitenden"],
+        "recommended": false
+      },
+      {
+        "name": "Easy",
+        "priceMonthlyNet": null,
+        "priceYearlyNetPerMonth": 200,
+        "unit": "pro-nutzer-monat",
+        "includedUsers": null,
+        "highlights": ["Erweiterte Funktionen"],
+        "recommended": true
+      },
+      {
+        "name": "Pro",
+        "priceMonthlyNet": null,
+        "priceYearlyNetPerMonth": 300,
+        "unit": "pro-nutzer-monat",
+        "includedUsers": null,
+        "highlights": ["Volle Funktionen"],
+        "recommended": false
+      }
+    ],
+    "contractNotes": "Preise bei jährlicher Abrechnung; monatliche Zahlung zu höheren Listenpreisen. Preis pro Nutzer sinkt mit der Mitarbeiterzahl, über 50 Personen individuelles Angebot.",
+    "source": "https://crewmeister.com/de/preise",
+    "verifiedAt": "2026-10-19"
+  },
+  "hosting": {
+    "serverLocation": "unbekannt",
+    "avv": "unbekannt"
+  },
+  "compliance": {
+    "gobd": "unbekannt",
+    "xrechnung": "unbekannt",
+    "zugferd": "unbekannt",
+    "iso27001": "unbekannt",
+    "bsiC5": "unbekannt"
+  },
+  "madeInGermany": true,
+  "germanInterface": true,
+  "germanSupport": true,
+  "integrations": [],
+  "platforms": ["web", "ios", "android"],
+  "companySizes": ["1-9", "10-49", "50-249"],
+  "scores": {
+    "funktionsumfang": 3.9,
+    "bedienung": 4.5,
+    "preisLeistung": 4.7,
+    "datenschutz": 3.6,
+    "support": 3.9,
+    "integrationen": 3.8
+  },
+  "editorial": {
+    "verdict": "Sehr günstige Zeiterfassung per App mit drei Paketen und kostenloser Testphase ohne Zahlungsdaten. Anbieter ist die ATOSS Aloud GmbH in München. Zum Serverstandort fanden wir keine Angabe.",
+    "bestFor": ["Kleine Betriebe mit wenig Verwaltung", "Teams, die vor allem per Smartphone stempeln"],
+    "notFor": ["Unternehmen mit komplexer Projektabrechnung"],
+    "pros": [
+      "Niedrige Preise pro Nutzer",
+      "14 Tage Testphase ohne Zahlungsdaten",
+      "Anbieter mit Sitz in München"
+    ],
+    "cons": ["Genannte Preise gelten bei jährlicher Abrechnung", "Keine Angabe zum Serverstandort gefunden"],
+    "sources": [
+      {
+        "label": "Preise Crewmeister",
+        "url": "https://crewmeister.com/de/preise",
+        "accessedAt": "2026-10-19"
+      },
+      {
+        "label": "Fakten Crewmeister",
+        "url": "https://crewmeister.com/de/fakten",
+        "accessedAt": "2026-10-19"
+      }
+    ],
+    "author": "wolfram-eschenbach",
+    "reviewer": "wolfram-eschenbach",
+    "publishedAt": "2026-10-19",
+    "updatedAt": "2026-10-21",
+    "handsOnTest": false,
+    "changelog": [
+      {
+        "date": "2026-10-19",
+        "note": "Profil angelegt. Fakten aus Anbieterseiten, Wertung als Entwurf zur redaktionellen Prüfung."
+      },
+      {
+        "date": "2026-10-21",
+        "note": "Redaktionell freigegeben und veröffentlicht. Fakten aus den genannten Anbieterquellen, Wertung ohne eigenen Praxistest."
+      }
+    ]
+  },
+  "alternatives": ["clockodo", "clockin", "timetac", "papershift", "zep"],
+  "verification": "verifiziert",
+  "status": "veroeffentlicht"
+}

@@ -1,0 +1,136 @@
+{
+  "slug": "sage-50-handwerk",
+  "name": "Sage 50 Handwerk",
+  "vendor": "sage",
+  "categories": ["erp"],
+  "primaryCategory": "erp",
+  "tagline": "Handwerkersoftware für Angebote, Aufmaß, Projekte und Abschlagsrechnungen",
+  "logo": "/logos/sage.svg",
+  "brandColor": "#4a4fc4",
+  "website": "https://www.sage.com/de-de/produkte/sage-50-handwerk/",
+  "affiliate": null,
+  "pricing": {
+    "currency": "EUR",
+    "basis": "netto",
+    "freePlan": false,
+    "trialDays": 30,
+    "plans": [
+      {
+        "name": "Essential",
+        "priceMonthlyNet": null,
+        "priceYearlyNetPerMonth": 1990,
+        "unit": "pro-monat",
+        "includedUsers": 1,
+        "highlights": [
+          "1 Benutzer",
+          "Angebote, Aufträge, Rechnungen, Projektverwaltung",
+          "E-Rechnung als ZUGFeRD 2.1 und XRechnung",
+          "Express-Auftrag und SmartFinder"
+        ],
+        "recommended": false
+      },
+      {
+        "name": "Enterprise",
+        "priceMonthlyNet": null,
+        "priceYearlyNetPerMonth": 5900,
+        "unit": "pro-monat",
+        "includedUsers": null,
+        "highlights": [
+          "Unbegrenzte Benutzer",
+          "Teil- und Schlussrechnungen",
+          "Terminkalender",
+          "Erweiterbar um Nachkalkulation, Wartung, Ressourcenplanung"
+        ],
+        "recommended": true
+      }
+    ],
+    "contractNotes": "Preise bei jährlicher Rechnungsstellung und 12 Monaten Mindestlaufzeit; kürzere oder längere Laufzeiten optional. Vertrieb über Fachhandelspartner, die eine 30 Tage Demoversion installieren. Finanzbuchhaltung, DMS, Zeitmanagement und Cloud-Paket als Zusatz.",
+    "source": "https://www.sage.com/de-de/produkte/sage-50-handwerk/",
+    "verifiedAt": "2026-10-21"
+  },
+  "hosting": {
+    "serverLocation": "DE",
+    "avv": "unbekannt"
+  },
+  "compliance": {
+    "gobd": "ja",
+    "xrechnung": "ja",
+    "zugferd": "ja",
+    "iso27001": "unbekannt",
+    "bsiC5": "unbekannt"
+  },
+  "madeInGermany": true,
+  "germanInterface": true,
+  "germanSupport": true,
+  "integrations": ["GAEB", "IDS", "OCI", "DATANORM", "ELDANORM", "ZVEH", "d.velop"],
+  "platforms": ["windows"],
+  "companySizes": ["1-9", "10-49"],
+  "scores": {
+    "funktionsumfang": 4.2,
+    "bedienung": 3.9,
+    "preisLeistung": 4,
+    "datenschutz": 4,
+    "support": 3.9,
+    "integrationen": 4
+  },
+  "editorial": {
+    "verdict": "Branchenlösung für Handwerksbetriebe mit Aufmaß, Projektverwaltung, Abschlags- und Schlussrechnungen. Mobile Projektmappe und Dokumentenablage gibt es nur mit Zusatzpaketen.",
+    "bestFor": ["Handwerksbetriebe mit Baustellen", "Betriebe, die mit Großhandel über IDS bestellen"],
+    "notFor": ["Dienstleister ohne Projekte und Material"],
+    "pros": [
+      "Aufmaß, Abschlags-, Teil- und Schlussrechnungen für Bauprojekte",
+      "E-Rechnung als ZUGFeRD 2.1 und XRechnung laut Anbieter",
+      "Großhandel per IDS und OCI, Ausschreibungen per GAEB, DATANORM",
+      "Enterprise mit unbegrenzten Benutzern für 59 € im Monat"
+    ],
+    "cons": [
+      "Kauf und Einrichtung über Fachhändler",
+      "Finanzbuchhaltung, DMS und Cloud-Funktionen kosten extra",
+      "GoBD-Archiv laut Anbieter erst mit dem DMS-Modul"
+    ],
+    "sources": [
+      {
+        "label": "Sage 50 Handwerk Produktseite mit Preisen und FAQ",
+        "url": "https://www.sage.com/de-de/produkte/sage-50-handwerk/",
+        "accessedAt": "2026-10-21"
+      },
+      {
+        "label": "Sage 50 Handwerk Zusatzfunktionen",
+        "url": "https://www.sage.com/de-de/produkte/sage-50-handwerk/zusatzfunktionen/",
+        "accessedAt": "2026-10-21"
+      },
+      {
+        "label": "Sage 50 Handwerk Gewerke",
+        "url": "https://www.sage.com/de-de/produkte/sage-50-handwerk/gewerke/",
+        "accessedAt": "2026-10-21"
+      },
+      {
+        "label": "Impressum Sage GmbH",
+        "url": "https://www.sage.com/de-de/impressum/",
+        "accessedAt": "2026-10-21"
+      }
+    ],
+    "author": "wolfram-eschenbach",
+    "reviewer": "wolfram-eschenbach",
+    "publishedAt": "2026-10-21",
+    "updatedAt": "2026-10-21",
+    "handsOnTest": false,
+    "changelog": [
+      {
+        "date": "2026-10-21",
+        "note": "Profil angelegt. Fakten aus Anbieterseiten, Wertung als Entwurf zur redaktionellen Prüfung."
+      },
+      {
+        "date": "2026-10-21",
+        "note": "Vertiefte Prüfung aller Sage Unterseiten: Preise, Tarife, Zusatzmodule, FAQ und Quellen aktualisiert."
+      },
+      {
+        "date": "2026-10-21",
+        "note": "Redaktionell freigegeben und veröffentlicht. Fakten aus den genannten Anbieterquellen, Wertung ohne eigenen Praxistest."
+      }
+    ]
+  },
+  "alternatives": ["sage-50", "weclapp", "sage-100"],
+  "verification": "verifiziert",
+  "status": "veroeffentlicht"
+}

@@ -1,0 +1,40 @@
+{
+  "slug": "software-umsatz-2026",
+  "kicker": "Softwaremarkt Deutschland",
+  "title": "Software wächst fast zweistellig",
+  "takeaway": "Der Softwareumsatz in Deutschland steigt 2026 laut Bitkom um 9,9 % auf 58,1 Mrd. €, getragen von Cloud-Software und KI-Plattformen.",
+  "chart": "umsatz",
+  "basis": "Umsatz in Deutschland, Prognose von Bitkom auf Basis von IDC-Daten",
+  "period": "Prognose 2026",
+  "points": [
+    {
+      "label": "Software",
+      "value": 58.1,
+      "unit": "mrd-eur",
+      "highlight": true,
+      "change": 9.9
+    },
+    {
+      "label": "Cloud-Software",
+      "value": 42.5,
+      "unit": "mrd-eur",
+      "highlight": false,
+      "change": 21.9
+    },
+    {
+      "label": "KI-Plattformen",
+      "value": 3.1,
+      "unit": "mrd-eur",
+      "highlight": false,
+      "change": 75.8
+    }
+  ],
+  "source": {
+    "label": "Bitkom: Digitalbranche zeigt sich weiterhin stabil",
+    "url": "https://www.bitkom.org/Presse/Presseinformation/Digitalbranche-weiterhin-stabil",
+    "accessedAt": "2026-10-22",
+    "publisher": "Bitkom",
+    "publishedAt": "2026-07-07"
+  },
+  "order": 1
+}

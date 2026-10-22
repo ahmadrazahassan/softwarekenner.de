@@ -1,0 +1,107 @@
+{
+  "slug": "rexx-systems",
+  "name": "rexx systems",
+  "vendor": "rexx-systems",
+  "categories": ["hr-software"],
+  "primaryCategory": "hr-software",
+  "tagline": "HR- und Talentmanagement für Mittelstand und Konzerne, cloud oder vor Ort",
+  "logo": "/logos/rexx-systems.webp",
+  "brandColor": "#4a4fc4",
+  "website": "https://www.rexx-systems.com",
+  "affiliate": null,
+  "pricing": {
+    "currency": "EUR",
+    "basis": "netto",
+    "freePlan": false,
+    "trialDays": null,
+    "plans": [
+      {
+        "name": "Personalmanagement",
+        "priceMonthlyNet": null,
+        "priceYearlyNetPerMonth": null,
+        "unit": "pro-nutzer-monat",
+        "includedUsers": null,
+        "highlights": ["Digitale Personalakte", "Laut Anbieter etwa 0,70 bis 3,70 € pro Nutzer"],
+        "recommended": true
+      },
+      {
+        "name": "Kombipaket mit Zeiterfassung",
+        "priceMonthlyNet": null,
+        "priceYearlyNetPerMonth": null,
+        "unit": "pro-nutzer-monat",
+        "includedUsers": null,
+        "highlights": ["Laut Anbieter etwa 1,60 bis 7,30 € pro Nutzer"],
+        "recommended": false
+      }
+    ],
+    "contractNotes": "Spannen laut Anbieterseite, abhängig von Nutzerzahl; verbindlich ist das Angebot. On-Premise wird gesondert kalkuliert.",
+    "source": "https://www.rexx-systems.com/hr-glossar/hr-software-vergleich/",
+    "verifiedAt": "2026-10-19"
+  },
+  "hosting": {
+    "serverLocation": "DE",
+    "avv": "unbekannt"
+  },
+  "compliance": {
+    "gobd": "unbekannt",
+    "xrechnung": "unbekannt",
+    "zugferd": "unbekannt",
+    "iso27001": "ja",
+    "bsiC5": "unbekannt"
+  },
+  "madeInGermany": true,
+  "germanInterface": true,
+  "germanSupport": true,
+  "integrations": [],
+  "platforms": ["web"],
+  "companySizes": ["50-249", "250+"],
+  "scores": {
+    "funktionsumfang": 4.5,
+    "bedienung": 3.7,
+    "preisLeistung": 4,
+    "datenschutz": 4.5,
+    "support": 4,
+    "integrationen": 4.1
+  },
+  "editorial": {
+    "verdict": "Umfangreiche Suite von Recruiting bis Talentmanagement aus Hamburg, nach ISO 27001:2022 zertifiziert laut Anbieter, mit Rechenzentren in Deutschland und der Schweiz. Preise abhängig von Modulen und Nutzerzahl.",
+    "bestFor": ["Mittelstand und Konzerne", "Unternehmen mit eigenem Recruiting"],
+    "notFor": ["Kleinbetriebe mit einfachen HR-Abläufen"],
+    "pros": [
+      "ISO 27001:2022 laut Anbieter",
+      "Rechenzentren in Deutschland und der Schweiz",
+      "Cloud oder eigener Betrieb möglich"
+    ],
+    "cons": ["Keine festen Listenpreise", "Standort des Rechenzentrums im Vertrag prüfen"],
+    "sources": [
+      {
+        "label": "HR-Software-Vergleich (Anbieter)",
+        "url": "https://www.rexx-systems.com/hr-glossar/hr-software-vergleich/",
+        "accessedAt": "2026-10-19"
+      },
+      {
+        "label": "Das Unternehmen",
+        "url": "https://www.rexx-systems.com/rexx-systems_en/",
+        "accessedAt": "2026-10-19"
+      }
+    ],
+    "author": "wolfram-eschenbach",
+    "reviewer": "wolfram-eschenbach",
+    "publishedAt": "2026-10-19",
+    "updatedAt": "2026-10-21",
+    "handsOnTest": false,
+    "changelog": [
+      {
+        "date": "2026-10-19",
+        "note": "Profil angelegt. Fakten aus Anbieterseiten, Wertung als Entwurf zur redaktionellen Prüfung."
+      },
+      {
+        "date": "2026-10-21",
+        "note": "Redaktionell freigegeben und veröffentlicht. Fakten aus den genannten Anbieterquellen, Wertung ohne eigenen Praxistest."
+      }
+    ]
+  },
+  "alternatives": ["personio", "hrworks", "factorial", "kenjo", "leapsome"],
+  "verification": "verifiziert",
+  "status": "veroeffentlicht"
+}

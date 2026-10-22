@@ -1,0 +1,42 @@
+{
+  "slug": "kmu-deutschland",
+  "kicker": "Unternehmenslandschaft",
+  "title": "Fast jedes Unternehmen ist ein KMU",
+  "takeaway": "Von 3,2 Mio. Unternehmen zählen 99,3 % zu den KMU. Sie beschäftigen 54 % der tätigen Personen, erzielen aber nur 27 % des Umsatzes.",
+  "chart": "kennzahlen",
+  "basis": "Unternehmen der gewerblichen Wirtschaft mit Sitz in Deutschland",
+  "period": "2024",
+  "points": [
+    {
+      "label": "Unternehmen",
+      "value": 3.2,
+      "unit": "mio",
+      "highlight": true
+    },
+    {
+      "label": "davon KMU",
+      "value": 99.3,
+      "unit": "prozent",
+      "highlight": false
+    },
+    {
+      "label": "Beschäftigte in KMU",
+      "value": 54,
+      "unit": "prozent",
+      "highlight": false
+    },
+    {
+      "label": "Umsatzanteil der KMU",
+      "value": 27,
+      "unit": "prozent",
+      "highlight": false
+    }
+  ],
+  "source": {
+    "label": "Destatis: Kleine und mittlere Unternehmen",
+    "url": "https://www.destatis.de/DE/Themen/Branchen-Unternehmen/Unternehmen/Kleine-Unternehmen-Mittlere-Unternehmen/_inhalt.html",
+    "accessedAt": "2026-10-22",
+    "publisher": "Statistisches Bundesamt"
+  },
+  "order": 7
+}

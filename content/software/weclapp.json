@@ -1,0 +1,122 @@
+{
+  "slug": "weclapp",
+  "name": "weclapp",
+  "vendor": "weclapp",
+  "categories": ["erp"],
+  "primaryCategory": "erp",
+  "tagline": "Cloud-ERP aus Deutschland mit CRM, Projekten, Warenwirtschaft und Shopanbindung",
+  "logo": "/logos/weclapp.png",
+  "brandColor": "#4a4fc4",
+  "website": "https://www.weclapp.com/de/",
+  "affiliate": null,
+  "pricing": {
+    "currency": "EUR",
+    "basis": "netto",
+    "freePlan": false,
+    "trialDays": 30,
+    "plans": [
+      {
+        "name": "ERP Starter",
+        "priceMonthlyNet": 3900,
+        "priceYearlyNetPerMonth": null,
+        "unit": "pro-nutzer-monat",
+        "includedUsers": null,
+        "highlights": ["Angebote und Rechnungen", "Fibu und Banking", "E-Rechnung"],
+        "recommended": false
+      },
+      {
+        "name": "ERP Dienstleistung",
+        "priceMonthlyNet": 9500,
+        "priceYearlyNetPerMonth": 8600,
+        "unit": "pro-nutzer-monat",
+        "includedUsers": null,
+        "highlights": ["CRM und Projektmanagement", "Zeiterfassung", "API-Zugriff"],
+        "recommended": true
+      },
+      {
+        "name": "ERP Handel",
+        "priceMonthlyNet": 17900,
+        "priceYearlyNetPerMonth": 16300,
+        "unit": "pro-nutzer-monat",
+        "includedUsers": null,
+        "highlights": ["Warenwirtschaft und Lager", "Shop- und Marktplatzanbindung", "Produktion"],
+        "recommended": false
+      }
+    ],
+    "contractNotes": "Preise pro Nutzer und Monat. Starter nur monatlich buchbar. Bei monatlicher Laufzeit ein Monat Kündigungsfrist. Ab 10 Lizenzen Enterprise-Angebot auf Anfrage.",
+    "source": "https://www.weclapp.com/de/preise/",
+    "verifiedAt": "2026-10-21"
+  },
+  "hosting": {
+    "serverLocation": "DE",
+    "avv": "unbekannt"
+  },
+  "compliance": {
+    "gobd": "unbekannt",
+    "xrechnung": "unbekannt",
+    "zugferd": "unbekannt",
+    "iso27001": "unbekannt",
+    "bsiC5": "unbekannt"
+  },
+  "madeInGermany": true,
+  "germanInterface": true,
+  "germanSupport": true,
+  "integrations": ["DATEV", "Shopware", "WooCommerce", "Shopify", "Amazon", "eBay"],
+  "platforms": ["web"],
+  "companySizes": ["1-9", "10-49", "50-249"],
+  "scores": {
+    "funktionsumfang": 4.4,
+    "bedienung": 4.2,
+    "preisLeistung": 4,
+    "datenschutz": 4.4,
+    "support": 4,
+    "integrationen": 4.3
+  },
+  "editorial": {
+    "verdict": "Deutsches Cloud-ERP mit klarer Paketlogik von Rechnungen bis Warenwirtschaft und Produktion. Daten laut Anbieter ausschließlich in deutschen Rechenzentren, DATEV- und Shopanbindung inklusive.",
+    "bestFor": [
+      "Dienstleister und Händler mit 5 bis 100 Mitarbeitenden",
+      "E-Commerce mit Shop und Marktplätzen"
+    ],
+    "notFor": ["Konzerne mit komplexer Fertigung"],
+    "pros": [
+      "Rechenzentren laut Anbieter ausschließlich in Deutschland",
+      "Shop- und Marktplatzanbindung an Shopware, Shopify, Amazon und eBay",
+      "DATEV-Anbindung mit Kontierung und Bankabgleich"
+    ],
+    "cons": [
+      "Handelspaket mit 163 € pro Nutzer kostspielig",
+      "Helpdesk und Vertragsmanagement als Zusatz ab 55 €"
+    ],
+    "sources": [
+      {
+        "label": "weclapp Preise und FAQ",
+        "url": "https://www.weclapp.com/de/preise/",
+        "accessedAt": "2026-10-21"
+      },
+      {
+        "label": "Impressum weclapp",
+        "url": "https://www.weclapp.com/de/impressum/",
+        "accessedAt": "2026-10-21"
+      }
+    ],
+    "author": "wolfram-eschenbach",
+    "reviewer": "wolfram-eschenbach",
+    "publishedAt": "2026-10-21",
+    "updatedAt": "2026-10-21",
+    "handsOnTest": false,
+    "changelog": [
+      {
+        "date": "2026-10-21",
+        "note": "Profil angelegt. Fakten aus Anbieterseiten, Wertung als Entwurf zur redaktionellen Prüfung."
+      },
+      {
+        "date": "2026-10-21",
+        "note": "Redaktionell freigegeben und veröffentlicht. Fakten aus den genannten Anbieterquellen, Wertung ohne eigenen Praxistest."
+      }
+    ]
+  },
+  "alternatives": ["xentral", "sage-100", "dynamics-365-business-central", "sage-operations"],
+  "verification": "verifiziert",
+  "status": "veroeffentlicht"
+}

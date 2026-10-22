@@ -1,0 +1,140 @@
+{
+  "slug": "wiso-meinbuero",
+  "name": "WISO MeinBüro",
+  "vendor": "buhl-data",
+  "categories": ["buchhaltung"],
+  "primaryCategory": "buchhaltung",
+  "tagline": "Rechnungen, Buchhaltung und Warenwirtschaft für kleine Betriebe, auch als Desktop",
+  "logo": "/logos/wiso-meinbuero.svg",
+  "brandColor": "#4a4fc4",
+  "website": "https://meinbuero.de",
+  "affiliate": null,
+  "pricing": {
+    "currency": "EUR",
+    "basis": "netto",
+    "freePlan": false,
+    "trialDays": 14,
+    "plans": [
+      {
+        "name": "Rechnungen & Angebote",
+        "priceMonthlyNet": null,
+        "priceYearlyNetPerMonth": 1090,
+        "unit": "pro-monat",
+        "includedUsers": 1,
+        "highlights": ["Umsatzgrenze 25.000 € pro 365 Tage"],
+        "recommended": false
+      },
+      {
+        "name": "Buchhaltung",
+        "priceMonthlyNet": null,
+        "priceYearlyNetPerMonth": 1990,
+        "unit": "pro-monat",
+        "includedUsers": 1,
+        "highlights": ["Umsatzgrenze 120.000 € pro 365 Tage"],
+        "recommended": true
+      },
+      {
+        "name": "Auftragswesen",
+        "priceMonthlyNet": null,
+        "priceYearlyNetPerMonth": 3990,
+        "unit": "pro-monat",
+        "includedUsers": 2,
+        "highlights": ["Ohne Umsatzgrenze"],
+        "recommended": false
+      },
+      {
+        "name": "Warenwirtschaft",
+        "priceMonthlyNet": null,
+        "priceYearlyNetPerMonth": 6990,
+        "unit": "pro-monat",
+        "includedUsers": 5,
+        "highlights": ["Ohne Umsatzgrenze"],
+        "recommended": false
+      }
+    ],
+    "contractNotes": "Laufzeit ein Jahr mit automatischer Verlängerung, Kündigung bis einen Tag vor Ablauf. Netto zzgl. USt. Weitere Nutzer 6,00 € pro Monat. Zeitweise Aktionsrabatte für das erste Jahr.",
+    "source": "https://meinbuero.de/preise/",
+    "verifiedAt": "2026-10-19"
+  },
+  "hosting": {
+    "serverLocation": "unbekannt",
+    "avv": "unbekannt"
+  },
+  "compliance": {
+    "gobd": "ja",
+    "xrechnung": "ja",
+    "zugferd": "ja",
+    "iso27001": "unbekannt",
+    "bsiC5": "unbekannt"
+  },
+  "madeInGermany": true,
+  "germanInterface": true,
+  "germanSupport": true,
+  "integrations": ["DATEV", "ELSTER"],
+  "platforms": ["web", "windows", "ios", "android"],
+  "companySizes": ["solo", "1-9", "10-49"],
+  "scores": {
+    "funktionsumfang": 4.3,
+    "bedienung": 4.1,
+    "preisLeistung": 4.2,
+    "datenschutz": 3.6,
+    "support": 4,
+    "integrationen": 4.2
+  },
+  "editorial": {
+    "verdict": "Breites Paket von Rechnungen bis Warenwirtschaft, mit ELSTER, DATEV-Export und E-Rechnung. Jahresvertrag mit Umsatzgrenzen in den kleineren Tarifen. Zum Serverstandort fanden wir keine Angabe.",
+    "bestFor": ["Selbstständige mit Warenverkauf", "Kleine Handels- und Handwerksbetriebe"],
+    "notFor": ["Unternehmen, die monatlich kündigen möchten"],
+    "pros": [
+      "Tarife bis zur Warenwirtschaft",
+      "EÜR und Umsatzsteuervoranmeldung per ELSTER",
+      "E-Rechnung als XRechnung und ZUGFeRD mit Prüfung"
+    ],
+    "cons": [
+      "Nur Jahresverträge auf der Preisseite",
+      "Umsatzgrenzen in den Tarifen Rechnungen und Buchhaltung",
+      "Keine Angabe zum Serverstandort gefunden"
+    ],
+    "sources": [
+      {
+        "label": "Preise WISO MeinBüro",
+        "url": "https://meinbuero.de/preise/",
+        "accessedAt": "2026-10-19"
+      },
+      {
+        "label": "Rechnungsprogramm",
+        "url": "https://www.meinbuero.de/rechnungsprogramm/",
+        "accessedAt": "2026-10-19"
+      },
+      {
+        "label": "E-Rechnungen Desktop",
+        "url": "https://handbuch-desktop.meinbuero.de/e-rechnungen",
+        "accessedAt": "2026-10-19"
+      }
+    ],
+    "author": "wolfram-eschenbach",
+    "reviewer": "wolfram-eschenbach",
+    "publishedAt": "2026-10-19",
+    "updatedAt": "2026-10-21",
+    "handsOnTest": false,
+    "changelog": [
+      {
+        "date": "2026-10-19",
+        "note": "Profil angelegt. Fakten aus Anbieterseiten, Wertung als Entwurf zur redaktionellen Prüfung."
+      },
+      {
+        "date": "2026-10-21",
+        "note": "Redaktionell freigegeben und veröffentlicht. Fakten aus den genannten Anbieterquellen, Wertung ohne eigenen Praxistest."
+      }
+    ]
+  },
+  "alternatives": [
+    "lexware-office",
+    "sevdesk",
+    "datev-unternehmen-online",
+    "buchhaltungsbutler",
+    "papierkram"
+  ],
+  "verification": "verifiziert",
+  "status": "veroeffentlicht"
+}

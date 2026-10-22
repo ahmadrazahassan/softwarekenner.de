@@ -1,0 +1,49 @@
+{
+  "slug": "cloud-nutzung-2026",
+  "kicker": "Cloud",
+  "title": "Cloud ist Standard in der Wirtschaft",
+  "takeaway": "86 % der Unternehmen ab 20 Beschäftigten nutzen Cloud-Dienste, die Private Cloud liegt vor der Public Cloud.",
+  "chart": "ring",
+  "basis": "603 Unternehmen ab 20 Beschäftigten, repräsentativ",
+  "period": "2026",
+  "points": [
+    {
+      "label": "nutzen Cloud-Dienste",
+      "value": 86,
+      "unit": "prozent",
+      "highlight": true
+    },
+    {
+      "label": "Private Cloud",
+      "value": 64,
+      "unit": "prozent",
+      "highlight": false
+    },
+    {
+      "label": "Public Cloud",
+      "value": 53,
+      "unit": "prozent",
+      "highlight": false
+    },
+    {
+      "label": "Multi-Cloud",
+      "value": 38,
+      "unit": "prozent",
+      "highlight": false
+    },
+    {
+      "label": "Hybrid-Cloud",
+      "value": 34,
+      "unit": "prozent",
+      "highlight": false
+    }
+  ],
+  "source": {
+    "label": "Bitkom: Cloud Report 2026",
+    "url": "https://www.bitkom.org/Presse/Presseinformation/Deutsche-Cloud-4-von-10-Unternehmen-wuerden-Abstriche-in-Kauf-nehmen",
+    "accessedAt": "2026-10-22",
+    "publisher": "Bitkom",
+    "publishedAt": "2026-06-17"
+  },
+  "order": 2
+}

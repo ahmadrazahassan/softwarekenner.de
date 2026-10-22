@@ -1,0 +1,43 @@
+{
+  "slug": "cloud-unternehmensgroesse",
+  "kicker": "Cloud nach Unternehmensgröße",
+  "title": "Kleine Betriebe nutzen Cloud seltener",
+  "takeaway": "54 % der Unternehmen ab 10 Beschäftigten bezahlen für Cloud-Services, bei Großunternehmen sind es 86 %, bei kleinen 51 %.",
+  "chart": "balken",
+  "basis": "Unternehmen ab 10 Beschäftigten, amtliche IKT-Erhebung",
+  "period": "2025",
+  "points": [
+    {
+      "label": "10 bis 49 Beschäftigte",
+      "value": 51,
+      "unit": "prozent",
+      "highlight": false
+    },
+    {
+      "label": "50 bis 249 Beschäftigte",
+      "value": 65,
+      "unit": "prozent",
+      "highlight": false
+    },
+    {
+      "label": "ab 250 Beschäftigte",
+      "value": 86,
+      "unit": "prozent",
+      "highlight": false
+    },
+    {
+      "label": "Alle Unternehmen",
+      "value": 54,
+      "unit": "prozent",
+      "highlight": true
+    }
+  ],
+  "source": {
+    "label": "Destatis: Jedes zweite Unternehmen nutzt kostenpflichtige Cloud-Services",
+    "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2025/11/PD25_416_52911.html",
+    "accessedAt": "2026-10-22",
+    "publisher": "Statistisches Bundesamt",
+    "publishedAt": "2025-11-24"
+  },
+  "order": 4
+}

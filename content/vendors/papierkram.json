@@ -1,0 +1,23 @@
+{
+  "slug": "papierkram",
+  "legalName": "odacer finanzsoftware GmbH",
+  "brandName": "Papierkram",
+  "headquarters": {
+    "city": "Wiesbaden",
+    "country": "DE"
+  },
+  "founded": null,
+  "website": "https://www.papierkram.de",
+  "germanEntity": true,
+  "supportLanguages": null,
+  "notes": "Amtsgericht Wiesbaden, HRB 24735.",
+  "sources": [
+    {
+      "label": "Impressum Papierkram",
+      "url": "https://www.papierkram.de/impressum/",
+      "accessedAt": "2026-10-19"
+    }
+  ],
+  "verification": "verifiziert",
+  "verifiedAt": "2026-10-19"
+}

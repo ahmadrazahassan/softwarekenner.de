@@ -1,0 +1,127 @@
+{
+  "slug": "dynamics-365-business-central",
+  "name": "Microsoft Dynamics 365 Business Central",
+  "vendor": "microsoft",
+  "categories": ["erp"],
+  "primaryCategory": "erp",
+  "tagline": "Cloud-ERP von Microsoft mit deutscher Lokalisierung und Hosting in Deutschland",
+  "logo": "/logos/business-central.svg",
+  "brandColor": "#4a4fc4",
+  "website": "https://www.microsoft.com/de-de/dynamics-365/products/business-central",
+  "affiliate": null,
+  "pricing": {
+    "currency": "EUR",
+    "basis": "netto",
+    "freePlan": false,
+    "trialDays": 30,
+    "plans": [
+      {
+        "name": "Essentials",
+        "priceMonthlyNet": null,
+        "priceYearlyNetPerMonth": 6930,
+        "unit": "pro-nutzer-monat",
+        "includedUsers": null,
+        "highlights": ["Finanzen, Vertrieb, Einkauf, Lager", "Projekte"],
+        "recommended": true
+      },
+      {
+        "name": "Premium",
+        "priceMonthlyNet": null,
+        "priceYearlyNetPerMonth": 9530,
+        "unit": "pro-nutzer-monat",
+        "includedUsers": null,
+        "highlights": ["Alles aus Essentials", "Dienstverwaltung und Produktion"],
+        "recommended": false
+      },
+      {
+        "name": "Team Members",
+        "priceMonthlyNet": null,
+        "priceYearlyNetPerMonth": 690,
+        "unit": "pro-nutzer-monat",
+        "includedUsers": null,
+        "highlights": ["Lesen und einfache Aufgaben", "Für gelegentliche Nutzer"],
+        "recommended": false
+      }
+    ],
+    "contractNotes": "Preise pro Benutzer und Monat bei jährlicher Abrechnung. Einführung meist über Microsoft-Partner. Copilot-Funktionen teils nutzungsbasiert.",
+    "source": "https://www.microsoft.com/de-de/dynamics-365/products/business-central/pricing",
+    "verifiedAt": "2026-10-21"
+  },
+  "hosting": {
+    "serverLocation": "DE",
+    "avv": "unbekannt"
+  },
+  "compliance": {
+    "gobd": "unbekannt",
+    "xrechnung": "unbekannt",
+    "zugferd": "unbekannt",
+    "iso27001": "unbekannt",
+    "bsiC5": "unbekannt"
+  },
+  "madeInGermany": false,
+  "germanInterface": true,
+  "germanSupport": true,
+  "integrations": ["Microsoft 365"],
+  "platforms": ["web"],
+  "companySizes": ["10-49", "50-249"],
+  "scores": {
+    "funktionsumfang": 4.5,
+    "bedienung": 4,
+    "preisLeistung": 4,
+    "datenschutz": 4.2,
+    "support": 3.9,
+    "integrationen": 4.5
+  },
+  "editorial": {
+    "verdict": "Microsofts ERP für den Mittelstand mit deutscher Lokalisierung von Microsoft selbst. Umgebungen mit deutscher Lokalisierung liegen laut Microsoft in der Azure-Region Deutschland.",
+    "bestFor": [
+      "Mittelständler mit Microsoft 365",
+      "Unternehmen, die mit Partnern individuell erweitern wollen"
+    ],
+    "notFor": ["Kleinstbetriebe ohne Partnerbudget"],
+    "pros": [
+      "Deutsche Lokalisierung durch Microsoft, Daten laut Doku in der Azure-Geografie Deutschland",
+      "Enge Verzahnung mit Microsoft 365",
+      "Transparente Listenpreise pro Benutzer"
+    ],
+    "cons": [
+      "Einführung praktisch immer mit Partner",
+      "Anbieter laut Impressum die Microsoft Corporation in den USA"
+    ],
+    "sources": [
+      {
+        "label": "Business Central Preise",
+        "url": "https://www.microsoft.com/de-de/dynamics-365/products/business-central/pricing",
+        "accessedAt": "2026-10-21"
+      },
+      {
+        "label": "Microsoft Learn: Länderverfügbarkeit und Azure-Geografien",
+        "url": "https://learn.microsoft.com/de-de/dynamics365/business-central/dev-itpro/compliance/apptest-countries-and-translations",
+        "accessedAt": "2026-10-21"
+      },
+      {
+        "label": "Impressum Microsoft Deutschland",
+        "url": "https://www.microsoft.com/de-de/rechtliche-hinweise/impressum",
+        "accessedAt": "2026-10-21"
+      }
+    ],
+    "author": "wolfram-eschenbach",
+    "reviewer": "wolfram-eschenbach",
+    "publishedAt": "2026-10-21",
+    "updatedAt": "2026-10-21",
+    "handsOnTest": false,
+    "changelog": [
+      {
+        "date": "2026-10-21",
+        "note": "Profil angelegt. Fakten aus Anbieterseiten, Wertung als Entwurf zur redaktionellen Prüfung."
+      },
+      {
+        "date": "2026-10-21",
+        "note": "Redaktionell freigegeben und veröffentlicht. Fakten aus den genannten Anbieterquellen, Wertung ohne eigenen Praxistest."
+      }
+    ]
+  },
+  "alternatives": ["sap-business-one", "sage-100", "weclapp", "sage-x3"],
+  "verification": "verifiziert",
+  "status": "veroeffentlicht"
+}

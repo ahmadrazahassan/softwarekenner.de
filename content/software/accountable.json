@@ -1,0 +1,145 @@
+{
+  "slug": "accountable",
+  "name": "Accountable",
+  "vendor": "accountable",
+  "categories": ["buchhaltung"],
+  "primaryCategory": "buchhaltung",
+  "tagline": "Buchhaltung und Steuern für Selbstständige mit kostenloser Rechnungsversion",
+  "logo": "/logos/accountable.png",
+  "brandColor": "#4a4fc4",
+  "website": "https://www.accountable.de",
+  "affiliate": null,
+  "pricing": {
+    "currency": "EUR",
+    "basis": "netto",
+    "freePlan": true,
+    "trialDays": null,
+    "plans": [
+      {
+        "name": "Rechnungen Free",
+        "priceMonthlyNet": 0,
+        "priceYearlyNetPerMonth": 0,
+        "unit": "pro-monat",
+        "includedUsers": null,
+        "highlights": ["Rechnungen schreiben"],
+        "recommended": false
+      },
+      {
+        "name": "Rechnungen Plus",
+        "priceMonthlyNet": 1240,
+        "priceYearlyNetPerMonth": 990,
+        "unit": "pro-monat",
+        "includedUsers": null,
+        "highlights": ["Erweiterte Rechnungsfunktionen"],
+        "recommended": false
+      },
+      {
+        "name": "Buchhaltung",
+        "priceMonthlyNet": 2490,
+        "priceYearlyNetPerMonth": 1990,
+        "unit": "pro-monat",
+        "includedUsers": null,
+        "highlights": ["Buchhaltung für Selbstständige"],
+        "recommended": true
+      },
+      {
+        "name": "Steuern",
+        "priceMonthlyNet": 3740,
+        "priceYearlyNetPerMonth": 2990,
+        "unit": "pro-monat",
+        "includedUsers": null,
+        "highlights": ["Steuererklärungen"],
+        "recommended": false
+      },
+      {
+        "name": "Max",
+        "priceMonthlyNet": 7490,
+        "priceYearlyNetPerMonth": 5990,
+        "unit": "pro-monat",
+        "includedUsers": null,
+        "highlights": ["Alle Zusatzmodule enthalten", "Mindestlaufzeit 12 Monate"],
+        "recommended": false
+      }
+    ],
+    "contractNotes": "Netto zzgl. USt. Max mit 12 Monaten Mindestlaufzeit, übrige Tarife jederzeit kündbar. 30 Tage Geld-zurück-Garantie, zeitweise Aktionsrabatte für Neukunden.",
+    "source": "https://www.accountable.de/preise/",
+    "verifiedAt": "2026-10-19"
+  },
+  "hosting": {
+    "serverLocation": "EU",
+    "avv": "unbekannt"
+  },
+  "compliance": {
+    "gobd": "ja",
+    "xrechnung": "ja",
+    "zugferd": "ja",
+    "iso27001": "unbekannt",
+    "bsiC5": "unbekannt"
+  },
+  "madeInGermany": false,
+  "germanInterface": true,
+  "germanSupport": true,
+  "integrations": ["DATEV", "ELSTER", "PEPPOL"],
+  "platforms": ["web", "ios", "android"],
+  "companySizes": ["solo"],
+  "scores": {
+    "funktionsumfang": 4.1,
+    "bedienung": 4.4,
+    "preisLeistung": 4.2,
+    "datenschutz": 4,
+    "support": 3.8,
+    "integrationen": 4.1
+  },
+  "editorial": {
+    "verdict": "Auf Selbstständige zugeschnitten: Rechnungen, Buchhaltung und Steuererklärungen in einer App, mit ELSTER-Schnittstelle und DATEV-Export. Server laut Anbieter in der EU.",
+    "bestFor": ["Freiberufler", "Einzelunternehmen ohne Angestellte"],
+    "notFor": ["Unternehmen mit mehreren Beschäftigten in der Buchhaltung"],
+    "pros": [
+      "Kostenlose Rechnungsversion",
+      "Offizielle ELSTER-Schnittstelle und DATEV-Export laut Anbieter",
+      "E-Rechnungen auch über das PEPPOL-Netzwerk"
+    ],
+    "cons": ["Serverstandort nur als EU angegeben", "Mehrnutzerbetrieb auf der Preisseite nicht beschrieben"],
+    "sources": [
+      {
+        "label": "Preise Accountable",
+        "url": "https://www.accountable.de/preise/",
+        "accessedAt": "2026-10-19"
+      },
+      {
+        "label": "GoBD-konform",
+        "url": "https://www.accountable.de/blog/gobd-konform/",
+        "accessedAt": "2026-10-19"
+      },
+      {
+        "label": "E-Rechnung und Datenschutz",
+        "url": "https://www.accountable.de/blog/e-rechnung-datenschutz/",
+        "accessedAt": "2026-10-19"
+      }
+    ],
+    "author": "wolfram-eschenbach",
+    "reviewer": "wolfram-eschenbach",
+    "publishedAt": "2026-10-19",
+    "updatedAt": "2026-10-21",
+    "handsOnTest": false,
+    "changelog": [
+      {
+        "date": "2026-10-19",
+        "note": "Profil angelegt. Fakten aus Anbieterseiten, Wertung als Entwurf zur redaktionellen Prüfung."
+      },
+      {
+        "date": "2026-10-21",
+        "note": "Redaktionell freigegeben und veröffentlicht. Fakten aus den genannten Anbieterquellen, Wertung ohne eigenen Praxistest."
+      }
+    ]
+  },
+  "alternatives": [
+    "lexware-office",
+    "sevdesk",
+    "datev-unternehmen-online",
+    "buchhaltungsbutler",
+    "wiso-meinbuero"
+  ],
+  "verification": "verifiziert",
+  "status": "veroeffentlicht"
+}

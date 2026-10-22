@@ -1,0 +1,23 @@
+{
+  "slug": "hrworks",
+  "legalName": "HRworks GmbH",
+  "brandName": "HRworks",
+  "headquarters": {
+    "city": "Freiburg",
+    "country": "DE"
+  },
+  "founded": null,
+  "website": "https://www.hrworks.de",
+  "germanEntity": true,
+  "supportLanguages": null,
+  "notes": "HRB Freiburg 5406. Laut Anbieter erfolgen Betreuung, Einrichtung und Support durch Menschen aus Deutschland.",
+  "sources": [
+    {
+      "label": "Unternehmensfakten HRworks",
+      "url": "https://www.hrworks.de/unternehmen/facts/",
+      "accessedAt": "2026-10-19"
+    }
+  ],
+  "verification": "verifiziert",
+  "verifiedAt": "2026-10-19"
+}

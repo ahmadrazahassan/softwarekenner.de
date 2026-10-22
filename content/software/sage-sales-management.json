@@ -1,0 +1,121 @@
+{
+  "slug": "sage-sales-management",
+  "name": "Sage Sales Management",
+  "vendor": "sage",
+  "categories": ["crm"],
+  "primaryCategory": "crm",
+  "tagline": "Mobiles CRM für B2B-Außendienst mit Spracheingabe, Routenplanung und ERP-Anbindung",
+  "logo": "/logos/sage.svg",
+  "brandColor": "#4a4fc4",
+  "website": "https://www.sage.com/de-de/produkte/sage-sales-management/",
+  "affiliate": null,
+  "pricing": {
+    "currency": "EUR",
+    "basis": "netto",
+    "freePlan": false,
+    "trialDays": null,
+    "plans": [
+      {
+        "name": "Professional",
+        "priceMonthlyNet": 5500,
+        "priceYearlyNetPerMonth": null,
+        "unit": "pro-nutzer-monat",
+        "includedUsers": null,
+        "highlights": [
+          "Mindestens 5 Nutzer",
+          "Bis zu 100.000 Accounts, Kontakte und Opportunities",
+          "Sage Copilot mit 150 Voice Reports",
+          "Microsoft 365 und Google Workspace mit SSO",
+          "API mit 250 Anfragen pro Minute"
+        ],
+        "recommended": false
+      }
+    ],
+    "contractNotes": "Preis pro Nutzer und Monat, mindestens 5 Nutzer. Zusatzmodule: Angebote & Bestellungen 7 €, Vertriebskampagnen 10 €, mehr Voice Reports 10 € pro Nutzer und Monat, weitere Signaturen ab 30 € im Monat.",
+    "source": "https://www.sage.com/de-de/produkte/sage-sales-management/",
+    "verifiedAt": "2026-10-21"
+  },
+  "hosting": {
+    "serverLocation": "unbekannt",
+    "avv": "unbekannt"
+  },
+  "compliance": {
+    "gobd": "unbekannt",
+    "xrechnung": "unbekannt",
+    "zugferd": "unbekannt",
+    "iso27001": "unbekannt",
+    "bsiC5": "unbekannt"
+  },
+  "madeInGermany": true,
+  "germanInterface": true,
+  "germanSupport": true,
+  "integrations": [
+    "Microsoft 365",
+    "Google Workspace",
+    "Microsoft Teams",
+    "Zoom",
+    "Mailchimp",
+    "Zendesk",
+    "Zapier",
+    "Make"
+  ],
+  "platforms": ["web", "ios", "android"],
+  "companySizes": ["10-49", "50-249"],
+  "scores": {
+    "funktionsumfang": 4.1,
+    "bedienung": 4.3,
+    "preisLeistung": 3.9,
+    "datenschutz": 3.9,
+    "support": 3.9,
+    "integrationen": 4.1
+  },
+  "editorial": {
+    "verdict": "CRM speziell für den B2B-Außendienst: Besuchsberichte per Sprache, Routenplanung, Offline-Arbeit in der App und Anbindung an das ERP. Laut Anbieter bei über 1.600 Unternehmen im Einsatz.",
+    "bestFor": ["Vertriebsteams im Außendienst", "Unternehmen mit Sage ERP"],
+    "notFor": ["Kleine Teams, die ein kostenloses CRM suchen"],
+    "pros": [
+      "Besuchsberichte per Spracheingabe",
+      "Offlinefähige App für iOS und Android",
+      "ERP-Anbindung für Aufträge und Angebote"
+    ],
+    "cons": [
+      "55 € pro Nutzer und Monat bei mindestens 5 Nutzern",
+      "Angebote und Kampagnen nur gegen Aufpreis",
+      "Fokus auf Außendienst, wenig Marketingfunktionen"
+    ],
+    "sources": [
+      {
+        "label": "Sage Sales Management Produktseite mit Preisen",
+        "url": "https://www.sage.com/de-de/produkte/sage-sales-management/",
+        "accessedAt": "2026-10-21"
+      },
+      {
+        "label": "Impressum Sage GmbH",
+        "url": "https://www.sage.com/de-de/impressum/",
+        "accessedAt": "2026-10-21"
+      }
+    ],
+    "author": "wolfram-eschenbach",
+    "reviewer": "wolfram-eschenbach",
+    "publishedAt": "2026-10-21",
+    "updatedAt": "2026-10-21",
+    "handsOnTest": false,
+    "changelog": [
+      {
+        "date": "2026-10-21",
+        "note": "Profil angelegt. Fakten aus Anbieterseiten, Wertung als Entwurf zur redaktionellen Prüfung."
+      },
+      {
+        "date": "2026-10-21",
+        "note": "Vertiefte Prüfung aller Sage Unterseiten: Preise, Tarife, Zusatzmodule, FAQ und Quellen aktualisiert."
+      },
+      {
+        "date": "2026-10-21",
+        "note": "Redaktionell freigegeben und veröffentlicht. Fakten aus den genannten Anbieterquellen, Wertung ohne eigenen Praxistest."
+      }
+    ]
+  },
+  "alternatives": ["centralstationcrm", "weclapp", "sage-100"],
+  "verification": "verifiziert",
+  "status": "veroeffentlicht"
+}

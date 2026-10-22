@@ -1,0 +1,124 @@
+{
+  "slug": "buchhaltungsbutler",
+  "name": "BuchhaltungsButler",
+  "vendor": "buchhaltungsbutler",
+  "categories": ["buchhaltung"],
+  "primaryCategory": "buchhaltung",
+  "tagline": "Automatisierte Buchhaltung mit Belegerkennung, DATEV-Export und ELSTER",
+  "logo": "/logos/buchhaltungsbutler.png",
+  "brandColor": "#4a4fc4",
+  "website": "https://www.buchhaltungsbutler.de",
+  "affiliate": null,
+  "pricing": {
+    "currency": "EUR",
+    "basis": "netto",
+    "freePlan": false,
+    "trialDays": 14,
+    "plans": [
+      {
+        "name": "Light",
+        "priceMonthlyNet": 3990,
+        "priceYearlyNetPerMonth": 2990,
+        "unit": "pro-monat",
+        "includedUsers": 1,
+        "highlights": ["1 Nutzer und 1 Zugang für die Steuerberatung"],
+        "recommended": false
+      },
+      {
+        "name": "Smart",
+        "priceMonthlyNet": 4690,
+        "priceYearlyNetPerMonth": 3490,
+        "unit": "pro-monat",
+        "includedUsers": 1,
+        "highlights": ["1 Nutzer und 1 Zugang für die Steuerberatung"],
+        "recommended": true
+      },
+      {
+        "name": "Premium",
+        "priceMonthlyNet": 8990,
+        "priceYearlyNetPerMonth": 5990,
+        "unit": "pro-monat",
+        "includedUsers": 5,
+        "highlights": ["5 Nutzerzugänge"],
+        "recommended": false
+      }
+    ],
+    "contractNotes": "Preise laut Hilfeartikel des Anbieters; die Preisseite zeigt zeitweise Aktionspreise und nennt an anderer Stelle ab 24,95 € pro Monat. Netto oder brutto nicht ausdrücklich angegeben. Weitere Nutzer 4,90 €.",
+    "source": "https://wissen.buchhaltungsbutler.de/hc/de/articles/11441670785949-Einen-Paketwechsel-durchf%C3%BChren",
+    "verifiedAt": "2026-10-19"
+  },
+  "hosting": {
+    "serverLocation": "DE",
+    "avv": "unbekannt"
+  },
+  "compliance": {
+    "gobd": "ja",
+    "xrechnung": "ja",
+    "zugferd": "ja",
+    "iso27001": "unbekannt",
+    "bsiC5": "unbekannt"
+  },
+  "madeInGermany": true,
+  "germanInterface": true,
+  "germanSupport": true,
+  "integrations": ["DATEV", "ELSTER"],
+  "platforms": ["web"],
+  "companySizes": ["1-9", "10-49", "50-249"],
+  "scores": {
+    "funktionsumfang": 4.4,
+    "bedienung": 4.1,
+    "preisLeistung": 3.8,
+    "datenschutz": 4.4,
+    "support": 4,
+    "integrationen": 4.4
+  },
+  "editorial": {
+    "verdict": "Buchhaltung mit Fokus auf Automatisierung, DATEV-Export mit Belegverknüpfung und Umsatzsteuervoranmeldung ohne eigenes ELSTER-Zertifikat. Daten laut Anbieter in Frankfurt.",
+    "bestFor": ["Unternehmen mit vielen Belegen", "Teams, die mit der Steuerberatung zusammenarbeiten"],
+    "notFor": ["Selbstständige mit sehr kleinem Budget"],
+    "pros": [
+      "DATEV-Export, bei dem die Verknüpfung von Beleg und Buchung erhalten bleibt",
+      "Umsatzsteuervoranmeldung ohne eigenes ELSTER-Zertifikat",
+      "Erstellen und Empfangen von XRechnung und ZUGFeRD laut Anbieter"
+    ],
+    "cons": [
+      "Höherer Einstiegspreis als viele Konkurrenten",
+      "Widersprüchliche Preisangaben auf den Anbieterseiten"
+    ],
+    "sources": [
+      {
+        "label": "Paketwechsel und Preise",
+        "url": "https://wissen.buchhaltungsbutler.de/hc/de/articles/11441670785949-Einen-Paketwechsel-durchf%C3%BChren",
+        "accessedAt": "2026-10-19"
+      },
+      {
+        "label": "Funktionen im Überblick",
+        "url": "https://www.buchhaltungsbutler.de/funktionen/",
+        "accessedAt": "2026-10-19"
+      },
+      {
+        "label": "GoBD-konformes Arbeiten",
+        "url": "https://wissen.buchhaltungsbutler.de/hc/de/articles/11432424987037-GoBD-konformes-Arbeiten-mit-BuchhaltungsButler",
+        "accessedAt": "2026-10-19"
+      }
+    ],
+    "author": "wolfram-eschenbach",
+    "reviewer": "wolfram-eschenbach",
+    "publishedAt": "2026-10-19",
+    "updatedAt": "2026-10-21",
+    "handsOnTest": false,
+    "changelog": [
+      {
+        "date": "2026-10-19",
+        "note": "Profil angelegt. Fakten aus Anbieterseiten, Wertung als Entwurf zur redaktionellen Prüfung."
+      },
+      {
+        "date": "2026-10-21",
+        "note": "Redaktionell freigegeben und veröffentlicht. Fakten aus den genannten Anbieterquellen, Wertung ohne eigenen Praxistest."
+      }
+    ]
+  },
+  "alternatives": ["lexware-office", "sevdesk", "datev-unternehmen-online", "wiso-meinbuero", "papierkram"],
+  "verification": "verifiziert",
+  "status": "veroeffentlicht"
+}

@@ -1,0 +1,106 @@
+{
+  "slug": "sage-x3",
+  "name": "Sage X3",
+  "vendor": "sage",
+  "categories": ["erp"],
+  "primaryCategory": "erp",
+  "tagline": "Cloud-ERP für international tätige Mittelständler mit Fertigung und Lieferkette",
+  "logo": "/logos/sage.svg",
+  "brandColor": "#4a4fc4",
+  "website": "https://www.sage.com/de-de/sage-business-cloud/sage-x3/",
+  "affiliate": null,
+  "pricing": {
+    "currency": "EUR",
+    "basis": "netto",
+    "freePlan": false,
+    "trialDays": null,
+    "plans": [],
+    "contractNotes": "Preise nennt Sage nur auf Anfrage, abhängig von Modulen, Nutzern und Implementierung.",
+    "source": "https://www.sage.com/de-de/sage-business-cloud/sage-x3/",
+    "verifiedAt": "2026-10-21"
+  },
+  "hosting": {
+    "serverLocation": "unbekannt",
+    "avv": "unbekannt"
+  },
+  "compliance": {
+    "gobd": "unbekannt",
+    "xrechnung": "unbekannt",
+    "zugferd": "unbekannt",
+    "iso27001": "unbekannt",
+    "bsiC5": "unbekannt"
+  },
+  "madeInGermany": true,
+  "germanInterface": true,
+  "germanSupport": true,
+  "integrations": ["GraphQL-API", "Sage Sales Management"],
+  "platforms": ["web"],
+  "companySizes": ["50-249", "250+"],
+  "scores": {
+    "funktionsumfang": 4.5,
+    "bedienung": 3.7,
+    "preisLeistung": 3.6,
+    "datenschutz": 4,
+    "support": 3.9,
+    "integrationen": 4.1
+  },
+  "editorial": {
+    "verdict": "Sages ERP für wachsende Mittelständler, die über mehrere Länder, Gesellschaften und Währungen hinweg produzieren und verkaufen. Leistungsstark, aber Preise nur auf Anfrage.",
+    "bestFor": [
+      "Produzierende Mittelständler mit Auslandsgesellschaften",
+      "Unternehmen mit Chargen und Rückverfolgung"
+    ],
+    "notFor": ["Kleine Betriebe mit einfachem Handel"],
+    "pros": [
+      "Mehrere Gesellschaften, Währungen und Steuerregeln laut Anbieter für über 80 Länder",
+      "Diskrete Fertigung, Prozessfertigung und Mischfertigung",
+      "Los-, Chargen- und Rückrufkontrolle für die Rückverfolgbarkeit",
+      "Über 400 Standardberichte und Low-Code-Anpassungen"
+    ],
+    "cons": ["Keine öffentlichen Preise", "Hoher Einführungsaufwand typisch für diese Klasse"],
+    "sources": [
+      {
+        "label": "Sage X3 Produktseite und FAQ",
+        "url": "https://www.sage.com/de-de/sage-business-cloud/sage-x3/",
+        "accessedAt": "2026-10-21"
+      },
+      {
+        "label": "Sage X3 Branchen",
+        "url": "https://www.sage.com/de-de/sage-business-cloud/sage-x3/industrie/",
+        "accessedAt": "2026-10-21"
+      },
+      {
+        "label": "Sage Preisübersicht",
+        "url": "https://www.sage.com/de-de/preise/",
+        "accessedAt": "2026-10-21"
+      },
+      {
+        "label": "Impressum Sage GmbH",
+        "url": "https://www.sage.com/de-de/impressum/",
+        "accessedAt": "2026-10-21"
+      }
+    ],
+    "author": "wolfram-eschenbach",
+    "reviewer": "wolfram-eschenbach",
+    "publishedAt": "2026-10-21",
+    "updatedAt": "2026-10-21",
+    "handsOnTest": false,
+    "changelog": [
+      {
+        "date": "2026-10-21",
+        "note": "Profil angelegt. Fakten aus Anbieterseiten, Wertung als Entwurf zur redaktionellen Prüfung."
+      },
+      {
+        "date": "2026-10-21",
+        "note": "Vertiefte Prüfung aller Sage Unterseiten: Preise, Tarife, Zusatzmodule, FAQ und Quellen aktualisiert."
+      },
+      {
+        "date": "2026-10-21",
+        "note": "Redaktionell freigegeben und veröffentlicht. Fakten aus den genannten Anbieterquellen, Wertung ohne eigenen Praxistest."
+      }
+    ]
+  },
+  "alternatives": ["sage-100", "dynamics-365-business-central", "sap-business-one", "sage-operations"],
+  "verification": "verifiziert",
+  "status": "veroeffentlicht"
+}

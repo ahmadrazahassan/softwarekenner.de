@@ -1,0 +1,23 @@
+{
+  "slug": "buchhaltungsbutler",
+  "legalName": "BuchhaltungsButler GmbH",
+  "brandName": "BuchhaltungsButler",
+  "headquarters": {
+    "city": "Berlin",
+    "country": "DE"
+  },
+  "founded": null,
+  "website": "https://www.buchhaltungsbutler.de",
+  "germanEntity": true,
+  "supportLanguages": null,
+  "notes": "Amtsgericht Charlottenburg, HRB 271745.",
+  "sources": [
+    {
+      "label": "Impressum BuchhaltungsButler",
+      "url": "https://www.buchhaltungsbutler.de/impressum/",
+      "accessedAt": "2026-10-19"
+    }
+  ],
+  "verification": "verifiziert",
+  "verifiedAt": "2026-10-19"
+}

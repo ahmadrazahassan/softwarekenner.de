@@ -1,0 +1,20 @@
+{
+  "slug": "42he",
+  "legalName": "42he GmbH",
+  "brandName": "CentralStationCRM",
+  "headquarters": { "city": "Köln", "country": "DE" },
+  "founded": null,
+  "website": "https://centralstationcrm.de",
+  "germanEntity": true,
+  "supportLanguages": null,
+  "notes": "Herderstraße 70, 50931 Köln. Amtsgericht Köln, HRB 70598.",
+  "sources": [
+    {
+      "label": "Impressum CentralStationCRM",
+      "url": "https://centralstationcrm.de/impressum",
+      "accessedAt": "2026-10-21"
+    }
+  ],
+  "verification": "verifiziert",
+  "verifiedAt": "2026-10-21"
+}

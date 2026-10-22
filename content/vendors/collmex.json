@@ -1,0 +1,23 @@
+{
+  "slug": "collmex",
+  "legalName": "Collmex GmbH",
+  "brandName": "Collmex",
+  "headquarters": {
+    "city": "Saarbrücken",
+    "country": "DE"
+  },
+  "founded": 2003,
+  "website": "https://www.collmex.de",
+  "germanEntity": true,
+  "supportLanguages": null,
+  "notes": "Amtsgericht Saarbrücken, HRB 17054. Laut Impressum besteht das Unternehmen seit 2003.",
+  "sources": [
+    {
+      "label": "Impressum Collmex",
+      "url": "https://www.collmex.de/impressum.html",
+      "accessedAt": "2026-10-19"
+    }
+  ],
+  "verification": "verifiziert",
+  "verifiedAt": "2026-10-19"
+}

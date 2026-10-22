@@ -1,0 +1,16 @@
+{
+  "slug": "xentral",
+  "legalName": "Xentral ERP Software GmbH",
+  "brandName": "Xentral",
+  "headquarters": { "city": "Augsburg", "country": "DE" },
+  "founded": null,
+  "website": "https://xentral.com/de",
+  "germanEntity": true,
+  "supportLanguages": null,
+  "notes": "Viktoriastraße 3b, 86150 Augsburg. Amtsgericht Augsburg, HRB 23930.",
+  "sources": [
+    { "label": "Impressum Xentral", "url": "https://xentral.com/de/impressum", "accessedAt": "2026-10-21" }
+  ],
+  "verification": "verifiziert",
+  "verifiedAt": "2026-10-21"
+}

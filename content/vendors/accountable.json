@@ -1,0 +1,23 @@
+{
+  "slug": "accountable",
+  "legalName": "Accountable SA",
+  "brandName": "Accountable",
+  "headquarters": {
+    "city": "Saint-Josse-ten-Noode",
+    "country": "BE"
+  },
+  "founded": null,
+  "website": "https://www.accountable.de",
+  "germanEntity": null,
+  "supportLanguages": null,
+  "notes": "Impressum nennt zusätzlich „Accountable SA Deutschland“ in Berlin, ohne Registerangabe. Rechtsform der deutschen Niederlassung unklar.",
+  "sources": [
+    {
+      "label": "Impressum Accountable",
+      "url": "https://www.accountable.de/impressum/",
+      "accessedAt": "2026-10-19"
+    }
+  ],
+  "verification": "verifiziert",
+  "verifiedAt": "2026-10-19"
+}

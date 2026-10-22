@@ -1,0 +1,129 @@
+{
+  "slug": "xentral",
+  "name": "Xentral",
+  "vendor": "xentral",
+  "categories": ["erp"],
+  "primaryCategory": "erp",
+  "tagline": "ERP für E-Commerce und Handel mit unbegrenzten Nutzern und Preisen nach Auftragsvolumen",
+  "logo": "/logos/xentral.svg",
+  "brandColor": "#4a4fc4",
+  "website": "https://xentral.com/de",
+  "affiliate": null,
+  "pricing": {
+    "currency": "EUR",
+    "basis": "netto",
+    "freePlan": false,
+    "trialDays": null,
+    "plans": [
+      {
+        "name": "Launch",
+        "priceMonthlyNet": 9900,
+        "priceYearlyNetPerMonth": null,
+        "unit": "pro-monat",
+        "includedUsers": null,
+        "highlights": [
+          "Ein Shop und ein Marktplatz",
+          "0,30 € je Auftrag, max. 100 Aufträge",
+          "Unbegrenzte Nutzer"
+        ],
+        "recommended": false
+      },
+      {
+        "name": "Starter",
+        "priceMonthlyNet": 34900,
+        "priceYearlyNetPerMonth": null,
+        "unit": "pro-monat",
+        "includedUsers": null,
+        "highlights": ["500 Aufträge pro Monat", "Service-Paket", "Unbegrenzte Nutzer"],
+        "recommended": false
+      },
+      {
+        "name": "Business",
+        "priceMonthlyNet": 64900,
+        "priceYearlyNetPerMonth": null,
+        "unit": "pro-monat",
+        "includedUsers": null,
+        "highlights": ["Prozessautomatisierung", "Retourenportal", "Unbegrenzte Nutzer"],
+        "recommended": true
+      },
+      {
+        "name": "Pro",
+        "priceMonthlyNet": 84900,
+        "priceYearlyNetPerMonth": null,
+        "unit": "pro-monat",
+        "includedUsers": null,
+        "highlights": ["Komplexe Workflows", "MCP-Server für KI-Zugriff", "Unbegrenzte Nutzer"],
+        "recommended": false
+      }
+    ],
+    "contractNotes": "Ab-Preise für Neukunden, abhängig von Umsatz und Versandvolumen. Alle Pakete mit unbegrenzten Nutzern. KI wird ab Januar 2027 nach Credits abgerechnet.",
+    "source": "https://xentral.com/de/preise",
+    "verifiedAt": "2026-10-21"
+  },
+  "hosting": {
+    "serverLocation": "DE",
+    "avv": "unbekannt"
+  },
+  "compliance": {
+    "gobd": "unbekannt",
+    "xrechnung": "unbekannt",
+    "zugferd": "unbekannt",
+    "iso27001": "unbekannt",
+    "bsiC5": "unbekannt"
+  },
+  "madeInGermany": true,
+  "germanInterface": true,
+  "germanSupport": true,
+  "integrations": ["DATEV"],
+  "platforms": ["web"],
+  "companySizes": ["1-9", "10-49", "50-249"],
+  "scores": {
+    "funktionsumfang": 4.3,
+    "bedienung": 4.1,
+    "preisLeistung": 3.9,
+    "datenschutz": 4.2,
+    "support": 4,
+    "integrationen": 4.4
+  },
+  "editorial": {
+    "verdict": "ERP aus Augsburg für Onlinehändler, das nach Auftragsvolumen statt nach Köpfen abrechnet. Daten laut Anbieter in der AWS Cloud in Frankfurt, mit DATEV-Übergabe und vielen Shopanbindungen.",
+    "bestFor": ["Onlinehändler mit Shop und Marktplätzen", "Teams mit vielen Nutzern"],
+    "notFor": ["Dienstleister ohne Warenfluss"],
+    "pros": [
+      "Unbegrenzte Nutzer in jedem Paket",
+      "Datenhaltung laut Anbieter in der AWS Cloud in Frankfurt",
+      "Anbindung an Onlineshops, Marktplätze und Versanddienstleister"
+    ],
+    "cons": ["Preis hängt von Umsatz und Versandvolumen ab", "Für kleine Händler ab 349 € im Monat spürbar"],
+    "sources": [
+      {
+        "label": "Xentral Preise und FAQ",
+        "url": "https://xentral.com/de/preise",
+        "accessedAt": "2026-10-21"
+      },
+      {
+        "label": "Impressum Xentral",
+        "url": "https://xentral.com/de/impressum",
+        "accessedAt": "2026-10-21"
+      }
+    ],
+    "author": "wolfram-eschenbach",
+    "reviewer": "wolfram-eschenbach",
+    "publishedAt": "2026-10-21",
+    "updatedAt": "2026-10-21",
+    "handsOnTest": false,
+    "changelog": [
+      {
+        "date": "2026-10-21",
+        "note": "Profil angelegt. Fakten aus Anbieterseiten, Wertung als Entwurf zur redaktionellen Prüfung."
+      },
+      {
+        "date": "2026-10-21",
+        "note": "Redaktionell freigegeben und veröffentlicht. Fakten aus den genannten Anbieterquellen, Wertung ohne eigenen Praxistest."
+      }
+    ]
+  },
+  "alternatives": ["weclapp", "sage-operations", "dynamics-365-business-central"],
+  "verification": "verifiziert",
+  "status": "veroeffentlicht"
+}

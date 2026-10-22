@@ -1,0 +1,172 @@
+{
+  "slug": "sage-100",
+  "name": "Sage 100",
+  "vendor": "sage",
+  "categories": ["erp"],
+  "primaryCategory": "erp",
+  "tagline": "Modulares ERP für den Mittelstand mit Warenwirtschaft, Rechnungswesen und Produktion",
+  "logo": "/logos/sage.svg",
+  "brandColor": "#4a4fc4",
+  "website": "https://www.sage.com/de-de/produkte/sage-100/",
+  "affiliate": null,
+  "pricing": {
+    "currency": "EUR",
+    "basis": "netto",
+    "freePlan": false,
+    "trialDays": null,
+    "plans": [
+      {
+        "name": "Warenwirtschaft",
+        "priceMonthlyNet": null,
+        "priceYearlyNetPerMonth": 5600,
+        "unit": "pro-nutzer-monat",
+        "includedUsers": null,
+        "highlights": [
+          "Kunden, Lieferanten, Artikel und Preislisten",
+          "Verkauf, Bestellwesen und Kommissionierung",
+          "Lager, Inventur, Seriennummern und Chargen",
+          "Unbegrenzte Mandanten"
+        ],
+        "recommended": false
+      },
+      {
+        "name": "Rechnungswesen",
+        "priceMonthlyNet": null,
+        "priceYearlyNetPerMonth": 5800,
+        "unit": "pro-nutzer-monat",
+        "includedUsers": null,
+        "highlights": [
+          "Finanz- und Anlagenbuchhaltung, Kostenrechnung",
+          "Zahlungsverkehr mit Bankanbindung",
+          "DATEV-Export und -Import, UStVA per ELSTER",
+          "Unbegrenzte Mandanten"
+        ],
+        "recommended": false
+      },
+      {
+        "name": "Produktion",
+        "priceMonthlyNet": null,
+        "priceYearlyNetPerMonth": 9000,
+        "unit": "pro-nutzer-monat",
+        "includedUsers": null,
+        "highlights": [
+          "Inklusive Warenwirtschaft",
+          "Fertigungssteuerung, BDE, Fremdfertigung",
+          "Vor- und Nachkalkulation, Simulation",
+          "Grafische Ressourcenplanung, CAD-Schnittstelle"
+        ],
+        "recommended": false
+      }
+    ],
+    "contractNotes": "Preise je Modul pro Nutzer und Monat bei jährlicher Rechnungsstellung und 12 Monaten Mindestlaufzeit; kürzere oder längere Laufzeiten optional. Betrieb lokal oder in der Cloud über zertifizierte Sage Cloud-Partner. Einführung meist mit einem der laut Anbieter über 200 Fachhändler.",
+    "source": "https://www.sage.com/de-de/produkte/sage-100/",
+    "verifiedAt": "2026-10-21"
+  },
+  "hosting": {
+    "serverLocation": "unbekannt",
+    "avv": "unbekannt"
+  },
+  "compliance": {
+    "gobd": "ja",
+    "xrechnung": "ja",
+    "zugferd": "ja",
+    "iso27001": "unbekannt",
+    "bsiC5": "unbekannt"
+  },
+  "madeInGermany": true,
+  "germanInterface": true,
+  "germanSupport": true,
+  "integrations": [
+    "DATEV",
+    "ELSTER",
+    "Shopware",
+    "Magento",
+    "OXID eShop",
+    "xt:Commerce",
+    "Amazon",
+    "eBay",
+    "PayPal",
+    "shipcloud",
+    "Microsoft Office"
+  ],
+  "platforms": ["windows"],
+  "companySizes": ["10-49", "50-249"],
+  "scores": {
+    "funktionsumfang": 4.5,
+    "bedienung": 3.8,
+    "preisLeistung": 3.9,
+    "datenschutz": 4.1,
+    "support": 4,
+    "integrationen": 4.2
+  },
+  "editorial": {
+    "verdict": "Modulares Mittelstands-ERP, das Warenwirtschaft, Rechnungswesen und Produktion je Nutzer abrechnet. Desktopsoftware mit optionalen Cloud-Services und einem KI-Assistenten.",
+    "bestFor": ["Mittelständler mit Handel und Fertigung", "Unternehmen mit individuellen Prozessen"],
+    "notFor": ["Kleinstbetriebe mit wenigen Belegen"],
+    "pros": [
+      "Module für Warenwirtschaft, Rechnungswesen und Produktion frei kombinierbar",
+      "E-Rechnungen als XRechnung und ZUGFeRD mit OCR im Rechnungseingang",
+      "Über 40 Kennzahlen im Controlling und unbegrenzte Mandanten",
+      "Laut Anbieter über 200 Partnerlösungen, etwa Sanktionslistenprüfung und Versand"
+    ],
+    "cons": [
+      "Kosten summieren sich je Modul und Nutzer",
+      "Einführung meist nur mit Partner sinnvoll",
+      "Cloudbetrieb über Partner, Serverstandort nicht einheitlich angegeben"
+    ],
+    "sources": [
+      {
+        "label": "Sage 100 Produktseite mit Preisen",
+        "url": "https://www.sage.com/de-de/produkte/sage-100/",
+        "accessedAt": "2026-10-21"
+      },
+      {
+        "label": "Sage 100 Warenwirtschaft",
+        "url": "https://www.sage.com/de-de/produkte/sage-100/warenwirtschaft/",
+        "accessedAt": "2026-10-21"
+      },
+      {
+        "label": "Sage 100 Rechnungswesen",
+        "url": "https://www.sage.com/de-de/produkte/sage-100/rechnungswesen/",
+        "accessedAt": "2026-10-21"
+      },
+      {
+        "label": "Sage 100 Produktion",
+        "url": "https://www.sage.com/de-de/produkte/sage-100/produktion/",
+        "accessedAt": "2026-10-21"
+      },
+      {
+        "label": "Sage 100 Zusatzlösungen",
+        "url": "https://www.sage.com/de-de/produkte/sage-100/zusatzloesungen/",
+        "accessedAt": "2026-10-21"
+      },
+      {
+        "label": "Impressum Sage GmbH",
+        "url": "https://www.sage.com/de-de/impressum/",
+        "accessedAt": "2026-10-21"
+      }
+    ],
+    "author": "wolfram-eschenbach",
+    "reviewer": "wolfram-eschenbach",
+    "publishedAt": "2026-10-21",
+    "updatedAt": "2026-10-21",
+    "handsOnTest": false,
+    "changelog": [
+      {
+        "date": "2026-10-21",
+        "note": "Profil angelegt. Fakten aus Anbieterseiten, Wertung als Entwurf zur redaktionellen Prüfung."
+      },
+      {
+        "date": "2026-10-21",
+        "note": "Vertiefte Prüfung aller Sage Unterseiten: Preise, Tarife, Zusatzmodule, FAQ und Quellen aktualisiert."
+      },
+      {
+        "date": "2026-10-21",
+        "note": "Redaktionell freigegeben und veröffentlicht. Fakten aus den genannten Anbieterquellen, Wertung ohne eigenen Praxistest."
+      }
+    ]
+  },
+  "alternatives": ["dynamics-365-business-central", "sap-business-one", "weclapp", "sage-x3", "xentral"],
+  "verification": "verifiziert",
+  "status": "veroeffentlicht"
+}

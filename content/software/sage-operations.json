@@ -1,0 +1,130 @@
+{
+  "slug": "sage-operations",
+  "name": "Sage Operations",
+  "vendor": "sage",
+  "categories": ["erp"],
+  "primaryCategory": "erp",
+  "tagline": "Cloud-native Warenwirtschaft für Handel und diskrete Fertigung im Mittelstand",
+  "logo": "/logos/sage.svg",
+  "brandColor": "#4a4fc4",
+  "website": "https://www.sage.com/de-de/sage-business-cloud/sage-operations/",
+  "affiliate": null,
+  "pricing": {
+    "currency": "EUR",
+    "basis": "netto",
+    "freePlan": false,
+    "trialDays": null,
+    "plans": [
+      {
+        "name": "Distribution",
+        "priceMonthlyNet": null,
+        "priceYearlyNetPerMonth": null,
+        "unit": "pro-monat",
+        "includedUsers": null,
+        "highlights": [
+          "Procure to Pay und Quote to Cash",
+          "Echtzeit-Bestand über mehrere Standorte",
+          "Rollenbasierte Dashboards",
+          "Automatisierte Workflows"
+        ],
+        "recommended": false
+      },
+      {
+        "name": "Distribution + Manufacturing",
+        "priceMonthlyNet": null,
+        "priceYearlyNetPerMonth": null,
+        "unit": "pro-monat",
+        "includedUsers": null,
+        "highlights": [
+          "Alles aus Distribution",
+          "Mehrstufige Stücklisten, Arbeitspläne",
+          "Fertigungsaufträge und Ist-Kosten",
+          "Mobile Fertigungsrückmeldungen"
+        ],
+        "recommended": true
+      }
+    ],
+    "contractNotes": "Zwei Pakete, Preise nur auf Anfrage und je nach Nutzung individuell kalkuliert.",
+    "source": "https://www.sage.com/de-de/sage-business-cloud/sage-operations/",
+    "verifiedAt": "2026-10-21"
+  },
+  "hosting": {
+    "serverLocation": "unbekannt",
+    "avv": "unbekannt"
+  },
+  "compliance": {
+    "gobd": "unbekannt",
+    "xrechnung": "unbekannt",
+    "zugferd": "unbekannt",
+    "iso27001": "unbekannt",
+    "bsiC5": "unbekannt"
+  },
+  "madeInGermany": true,
+  "germanInterface": true,
+  "germanSupport": true,
+  "integrations": ["DATEV-Export", "Shopify", "Shopware", "GraphQL-API"],
+  "platforms": ["web"],
+  "companySizes": ["10-49", "50-249"],
+  "scores": {
+    "funktionsumfang": 4.1,
+    "bedienung": 4.1,
+    "preisLeistung": 3.7,
+    "datenschutz": 4,
+    "support": 3.9,
+    "integrationen": 3.8
+  },
+  "editorial": {
+    "verdict": "Neue Cloud-Warenwirtschaft von Sage für kleine und mittlere Händler und Fertiger, mit Einkauf, Lager über mehrere Standorte und einem KI-Assistenten für Warnhinweise.",
+    "bestFor": ["Händler mit mehreren Lagerstandorten", "Kleine Fertiger ohne eigene IT"],
+    "notFor": ["Unternehmen, die Preise vorab vergleichen wollen"],
+    "pros": [
+      "Bestellvorschläge aus Echtzeitdaten zu Bestand und Bedarf",
+      "Lagersteuerung über mehrere Standorte",
+      "Workflows per Drag and Drop ohne Programmierung",
+      "DATEV-Export im CSV-Format und offene GraphQL-API"
+    ],
+    "cons": [
+      "Keine öffentlichen Preise",
+      "Junges Produkt mit wenig unabhängiger Erfahrung im deutschen Markt"
+    ],
+    "sources": [
+      {
+        "label": "Sage Operations Produktseite",
+        "url": "https://www.sage.com/de-de/sage-business-cloud/sage-operations/",
+        "accessedAt": "2026-10-21"
+      },
+      {
+        "label": "Sage Preisübersicht",
+        "url": "https://www.sage.com/de-de/preise/",
+        "accessedAt": "2026-10-21"
+      },
+      {
+        "label": "Impressum Sage GmbH",
+        "url": "https://www.sage.com/de-de/impressum/",
+        "accessedAt": "2026-10-21"
+      }
+    ],
+    "author": "wolfram-eschenbach",
+    "reviewer": "wolfram-eschenbach",
+    "publishedAt": "2026-10-21",
+    "updatedAt": "2026-10-21",
+    "handsOnTest": false,
+    "changelog": [
+      {
+        "date": "2026-10-21",
+        "note": "Profil angelegt. Fakten aus Anbieterseiten, Wertung als Entwurf zur redaktionellen Prüfung."
+      },
+      {
+        "date": "2026-10-21",
+        "note": "Vertiefte Prüfung aller Sage Unterseiten: Preise, Tarife, Zusatzmodule, FAQ und Quellen aktualisiert."
+      },
+      {
+        "date": "2026-10-21",
+        "note": "Redaktionell freigegeben und veröffentlicht. Fakten aus den genannten Anbieterquellen, Wertung ohne eigenen Praxistest."
+      }
+    ]
+  },
+  "alternatives": ["weclapp", "xentral", "sage-100", "dynamics-365-business-central"],
+  "verification": "verifiziert",
+  "status": "veroeffentlicht"
+}

@@ -1,0 +1,43 @@
+{
+  "slug": "digitalisierungshemmnisse",
+  "kicker": "Hürden",
+  "title": "Was die Digitalisierung bremst",
+  "takeaway": "Größtes Hindernis ist der Datenschutz mit 77 %, gefolgt vom Fachkräftemangel mit 70 % und fehlender Zeit mit 66 %.",
+  "chart": "balken",
+  "basis": "Unternehmen ab 20 Beschäftigten, Mehrfachnennungen",
+  "period": "2026",
+  "points": [
+    {
+      "label": "Anforderungen an den Datenschutz",
+      "value": 77,
+      "unit": "prozent",
+      "highlight": true
+    },
+    {
+      "label": "Mangel an Fachkräften",
+      "value": 70,
+      "unit": "prozent",
+      "highlight": false
+    },
+    {
+      "label": "Fehlende Zeit",
+      "value": 66,
+      "unit": "prozent",
+      "highlight": false
+    },
+    {
+      "label": "Technische Sicherheit",
+      "value": 61,
+      "unit": "prozent",
+      "highlight": false
+    }
+  ],
+  "source": {
+    "label": "Bitkom: Digitalisierung der Wirtschaft 2026",
+    "url": "https://www.bitkom.org/Presse/Presseinformation/Digitalisierung-der-Wirtschaft-Unternehmen-beschaeftigen-sich-mit-KI",
+    "accessedAt": "2026-10-22",
+    "publisher": "Bitkom",
+    "publishedAt": "2026-03-11"
+  },
+  "order": 10
+}

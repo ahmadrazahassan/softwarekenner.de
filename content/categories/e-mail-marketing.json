@@ -1,0 +1,17 @@
+{
+  "slug": "e-mail-marketing",
+  "name": "E-Mail-Marketing",
+  "shortName": "E-Mail-Marketing",
+  "icon": "Mail",
+  "description": "Software für Newsletter und automatisierte E-Mails. Wir achten auf Double Opt-in, Serverstandort, Zustellbarkeit und die Anbindung an CRM und Shop.",
+  "batch": 4,
+  "weights": null,
+  "faq": [],
+  "related": ["crm", "shopsysteme"],
+  "seo": {
+    "title": "E-Mail-Marketing-Software im Vergleich",
+    "description": "E-Mail-Marketing-Software für Unternehmen in Deutschland: Double Opt-in, Serverstandort und Preise in Euro im Vergleich."
+  },
+  "status": "entwurf",
+  "updatedAt": "2026-10-19"
+}

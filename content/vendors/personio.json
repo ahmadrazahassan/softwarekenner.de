@@ -1,0 +1,23 @@
+{
+  "slug": "personio",
+  "legalName": "Personio SE & Co. KG",
+  "brandName": "Personio",
+  "headquarters": {
+    "city": "München",
+    "country": "DE"
+  },
+  "founded": null,
+  "website": "https://www.personio.de",
+  "germanEntity": true,
+  "supportLanguages": null,
+  "notes": "Amtsgericht München, HRA 115934. Komplementärin: Personio Group SE.",
+  "sources": [
+    {
+      "label": "Legal Notice Personio",
+      "url": "https://www.personio.com/legal-notice/",
+      "accessedAt": "2026-10-19"
+    }
+  ],
+  "verification": "verifiziert",
+  "verifiedAt": "2026-10-19"
+}

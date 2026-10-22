@@ -1,0 +1,23 @@
+{
+  "slug": "crewmeister",
+  "legalName": "ATOSS Aloud GmbH",
+  "brandName": "Crewmeister",
+  "headquarters": {
+    "city": "München",
+    "country": "DE"
+  },
+  "founded": null,
+  "website": "https://crewmeister.com/de",
+  "germanEntity": true,
+  "supportLanguages": null,
+  "notes": "Anbieter von Crewmeister laut Impressum. Amtsgericht München, HRB 211731.",
+  "sources": [
+    {
+      "label": "Impressum Crewmeister",
+      "url": "https://crewmeister.com/de/impressum/",
+      "accessedAt": "2026-10-19"
+    }
+  ],
+  "verification": "verifiziert",
+  "verifiedAt": "2026-10-19"
+}

@@ -1,0 +1,17 @@
+{
+  "slug": "lohnabrechnung",
+  "name": "Lohnabrechnung",
+  "shortName": "Lohn",
+  "icon": "Banknote",
+  "description": "Programme für Entgeltabrechnung, Meldungen an Sozialversicherung und Finanzamt sowie die Zusammenarbeit mit der Steuerberatung. Wir prüfen Datenschutz, Schnittstellen und Aufwand.",
+  "batch": 2,
+  "weights": null,
+  "faq": [],
+  "related": ["hr-software", "zeiterfassung"],
+  "seo": {
+    "title": "Lohnabrechnung im Vergleich",
+    "description": "Software für die Lohnabrechnung in Deutschland: Meldewesen, DATEV-Anbindung, Datenschutz und Preise in Euro im Vergleich."
+  },
+  "status": "veroeffentlicht",
+  "updatedAt": "2026-10-19"
+}

@@ -1,0 +1,28 @@
+{
+  "slug": "buhl-data",
+  "legalName": "Buhl Data Service GmbH",
+  "brandName": "Buhl Data",
+  "headquarters": {
+    "city": "Neunkirchen (Siegerland)",
+    "country": "DE"
+  },
+  "founded": null,
+  "website": "https://www.buhl.de",
+  "germanEntity": true,
+  "supportLanguages": null,
+  "notes": "Anbieter von WISO MeinBüro laut Impressum auf meinbuero.de. AG Siegen, HRB 3015.",
+  "sources": [
+    {
+      "label": "Impressum Buhl Data",
+      "url": "https://www.buhl.de/impressum/",
+      "accessedAt": "2026-10-19"
+    },
+    {
+      "label": "Impressum WISO MeinBüro",
+      "url": "https://meinbuero.de/impressum/",
+      "accessedAt": "2026-10-19"
+    }
+  ],
+  "verification": "verifiziert",
+  "verifiedAt": "2026-10-19"
+}

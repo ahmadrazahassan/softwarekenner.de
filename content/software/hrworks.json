@@ -1,0 +1,105 @@
+{
+  "slug": "hrworks",
+  "name": "HRworks",
+  "vendor": "hrworks",
+  "categories": ["hr-software"],
+  "primaryCategory": "hr-software",
+  "tagline": "HR-Software für den Mittelstand mit Support aus Deutschland",
+  "logo": "/logos/hrworks.png",
+  "brandColor": "#4a4fc4",
+  "website": "https://www.hrworks.de",
+  "affiliate": null,
+  "pricing": {
+    "currency": "EUR",
+    "basis": "netto",
+    "freePlan": false,
+    "trialDays": null,
+    "plans": [
+      {
+        "name": "Plattform und Lizenzen",
+        "priceMonthlyNet": null,
+        "priceYearlyNetPerMonth": null,
+        "unit": "pro-nutzer-monat",
+        "includedUsers": null,
+        "highlights": ["Grundgebühr plus Lizenz pro Nutzer", "Mindestens 20 Nutzer"],
+        "recommended": true
+      }
+    ],
+    "contractNotes": "Grundgebühr (gestaffelt) plus Lizenzgebühr pro Nutzer, mindestens 20 Nutzer, monatliche Laufzeit, Preise netto. Konkrete Beträge nennt der Anbieter nur im Angebot.",
+    "source": "https://www.hrworks.de/produkt/faq-haeufig-gestellte-fragen-antworten/",
+    "verifiedAt": "2026-10-19"
+  },
+  "hosting": {
+    "serverLocation": "unbekannt",
+    "avv": "unbekannt"
+  },
+  "compliance": {
+    "gobd": "unbekannt",
+    "xrechnung": "unbekannt",
+    "zugferd": "unbekannt",
+    "iso27001": "unbekannt",
+    "bsiC5": "unbekannt"
+  },
+  "madeInGermany": true,
+  "germanInterface": true,
+  "germanSupport": true,
+  "integrations": ["DATEV"],
+  "platforms": ["web"],
+  "companySizes": ["10-49", "50-249"],
+  "scores": {
+    "funktionsumfang": 4.2,
+    "bedienung": 4.2,
+    "preisLeistung": 4,
+    "datenschutz": 3.8,
+    "support": 4.3,
+    "integrationen": 4
+  },
+  "editorial": {
+    "verdict": "HR-Software für mittelständische Unternehmen mit monatlicher Laufzeit und Betreuung durch ein Team in Deutschland. Preise gibt es nur auf Anfrage, mindestens 20 Nutzer werden berechnet.",
+    "bestFor": [
+      "Mittelständische Unternehmen ab 20 Beschäftigten",
+      "Firmen, die Wert auf deutschen Support legen"
+    ],
+    "notFor": ["Kleinstbetriebe unter 20 Beschäftigten"],
+    "pros": [
+      "Monatliche Laufzeit",
+      "Betreuung und Support durch ein Team in Deutschland laut Anbieter",
+      "Nachvollziehbares Preismodell aus Grundgebühr und Lizenz"
+    ],
+    "cons": [
+      "Keine öffentlichen Preise",
+      "Mindestabrechnung von 20 Nutzern",
+      "Hosting laut FAQ auf AWS, Standort nicht angegeben"
+    ],
+    "sources": [
+      {
+        "label": "FAQ HRworks",
+        "url": "https://www.hrworks.de/produkt/faq-haeufig-gestellte-fragen-antworten/",
+        "accessedAt": "2026-10-19"
+      },
+      {
+        "label": "Unternehmensfakten",
+        "url": "https://www.hrworks.de/unternehmen/facts/",
+        "accessedAt": "2026-10-19"
+      }
+    ],
+    "author": "wolfram-eschenbach",
+    "reviewer": "wolfram-eschenbach",
+    "publishedAt": "2026-10-19",
+    "updatedAt": "2026-10-21",
+    "handsOnTest": false,
+    "changelog": [
+      {
+        "date": "2026-10-19",
+        "note": "Profil angelegt. Fakten aus Anbieterseiten, Wertung als Entwurf zur redaktionellen Prüfung."
+      },
+      {
+        "date": "2026-10-21",
+        "note": "Redaktionell freigegeben und veröffentlicht. Fakten aus den genannten Anbieterquellen, Wertung ohne eigenen Praxistest."
+      }
+    ]
+  },
+  "alternatives": ["personio", "factorial", "kenjo", "rexx-systems", "leapsome"],
+  "verification": "verifiziert",
+  "status": "veroeffentlicht"
+}

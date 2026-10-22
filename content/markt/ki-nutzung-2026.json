@@ -1,0 +1,31 @@
+{
+  "slug": "ki-nutzung-2026",
+  "kicker": "Künstliche Intelligenz",
+  "title": "KI-Nutzung mehr als verdoppelt",
+  "takeaway": "41 % der Unternehmen ab 20 Beschäftigten nutzen 2026 KI, ein Jahr zuvor waren es 17 %. Weitere 48 % planen oder diskutieren den Einsatz.",
+  "chart": "saeulen",
+  "basis": "604 Unternehmen ab 20 Beschäftigten, repräsentativ",
+  "period": "2025 und 2026",
+  "points": [
+    {
+      "label": "2025",
+      "value": 17,
+      "unit": "prozent",
+      "highlight": false
+    },
+    {
+      "label": "2026",
+      "value": 41,
+      "unit": "prozent",
+      "highlight": true
+    }
+  ],
+  "source": {
+    "label": "Bitkom: Digitalisierung der Wirtschaft 2026",
+    "url": "https://www.bitkom.org/Presse/Presseinformation/Digitalisierung-der-Wirtschaft-Unternehmen-beschaeftigen-sich-mit-KI",
+    "accessedAt": "2026-10-22",
+    "publisher": "Bitkom",
+    "publishedAt": "2026-03-11"
+  },
+  "order": 3
+}

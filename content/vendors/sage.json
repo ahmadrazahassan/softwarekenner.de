@@ -1,0 +1,20 @@
+{
+  "slug": "sage",
+  "legalName": "Sage GmbH",
+  "brandName": "Sage",
+  "headquarters": { "city": "Frankfurt am Main", "country": "DE" },
+  "founded": null,
+  "website": "https://www.sage.com/de-de/",
+  "germanEntity": true,
+  "supportLanguages": null,
+  "notes": "Franklinstraße 61 bis 63, 60486 Frankfurt am Main. Amtsgericht Frankfurt am Main, HRB 55497. Teil der britischen The Sage Group plc.",
+  "sources": [
+    {
+      "label": "Impressum Sage GmbH",
+      "url": "https://www.sage.com/de-de/impressum/",
+      "accessedAt": "2026-10-21"
+    }
+  ],
+  "verification": "verifiziert",
+  "verifiedAt": "2026-10-21"
+}

@@ -1,0 +1,101 @@
+{
+  "slug": "datev-unternehmen-online",
+  "name": "DATEV Unternehmen online",
+  "vendor": "datev",
+  "categories": ["buchhaltung"],
+  "primaryCategory": "buchhaltung",
+  "tagline": "Belege, Zahlungen und Auswertungen im Austausch mit der Steuerberatung",
+  "logo": "/logos/datev.svg",
+  "brandColor": "#4a4fc4",
+  "website": "https://www.datev.de",
+  "affiliate": null,
+  "pricing": {
+    "currency": "EUR",
+    "basis": "netto",
+    "freePlan": false,
+    "trialDays": null,
+    "plans": [
+      {
+        "name": "Grundpaket",
+        "priceMonthlyNet": 1156,
+        "priceYearlyNetPerMonth": null,
+        "unit": "pro-monat",
+        "includedUsers": null,
+        "highlights": ["Nutzung über eine DATEV-Mitgliedskanzlei"],
+        "recommended": false
+      }
+    ],
+    "contractNotes": "Preis laut DATEV-Shop, Artikel 95138. Ob netto oder brutto, nennt die Seite nicht. Nutzung setzt die Zusammenarbeit mit einem DATEV-Mitglied voraus, etwa der Steuerberatung. Belege online kostet zusätzlich.",
+    "source": "https://www.datev.de/web/de/datev-shop/komplettloesungen/datev-unternehmen-online/",
+    "verifiedAt": "2026-10-19"
+  },
+  "hosting": {
+    "serverLocation": "DE",
+    "avv": "unbekannt"
+  },
+  "compliance": {
+    "gobd": "ja",
+    "xrechnung": "teilweise",
+    "zugferd": "teilweise",
+    "iso27001": "unbekannt",
+    "bsiC5": "unbekannt"
+  },
+  "madeInGermany": true,
+  "germanInterface": true,
+  "germanSupport": true,
+  "integrations": ["DATEV"],
+  "platforms": ["web"],
+  "companySizes": ["1-9", "10-49", "50-249"],
+  "scores": {
+    "funktionsumfang": 4.2,
+    "bedienung": 3.6,
+    "preisLeistung": 4,
+    "datenschutz": 4.6,
+    "support": 4,
+    "integrationen": 4.7
+  },
+  "editorial": {
+    "verdict": "Plattform für Unternehmen, deren Steuerberatung mit DATEV arbeitet. Belege werden im DATEV-Rechenzentrum abgelegt und GoBD-konform archiviert. Ohne DATEV-Kanzlei nicht nutzbar.",
+    "bestFor": ["Unternehmen mit DATEV-Kanzlei", "Betriebe, die Belege digital an die Steuerberatung geben"],
+    "notFor": ["Selbstständige ohne Steuerberatung"],
+    "pros": [
+      "Direkte Zusammenarbeit mit der DATEV-Kanzlei",
+      "GoBD-konforme Archivierung in Belege online",
+      "Verarbeitung von E-Rechnungen nach EN 16931 mit der DATEV E-Rechnungsplattform"
+    ],
+    "cons": [
+      "Nur über ein DATEV-Mitglied nutzbar",
+      "Archivierung braucht das kostenpflichtige Modul Belege online"
+    ],
+    "sources": [
+      {
+        "label": "DATEV-Shop Unternehmen online",
+        "url": "https://www.datev.de/web/de/datev-shop/komplettloesungen/datev-unternehmen-online/",
+        "accessedAt": "2026-10-19"
+      },
+      {
+        "label": "Eingang von E-Rechnungen",
+        "url": "https://www.datev.de/web/de/aktuelles/e-rechnung-mit-datev/umsetzung-der-e-rechnung/e-rechnung-erfolgreiche-umsetzung-in-unternehmen/eingang-von-e-rechnungen-gestalten-im-unternehmen/eingang-e-rechnungen-in-unternehmen/",
+        "accessedAt": "2026-10-19"
+      }
+    ],
+    "author": "wolfram-eschenbach",
+    "reviewer": "wolfram-eschenbach",
+    "publishedAt": "2026-10-19",
+    "updatedAt": "2026-10-21",
+    "handsOnTest": false,
+    "changelog": [
+      {
+        "date": "2026-10-19",
+        "note": "Profil angelegt. Fakten aus Anbieterseiten, Wertung als Entwurf zur redaktionellen Prüfung."
+      },
+      {
+        "date": "2026-10-21",
+        "note": "Redaktionell freigegeben und veröffentlicht. Fakten aus den genannten Anbieterquellen, Wertung ohne eigenen Praxistest."
+      }
+    ]
+  },
+  "alternatives": ["lexware-office", "sevdesk", "buchhaltungsbutler", "wiso-meinbuero", "papierkram"],
+  "verification": "verifiziert",
+  "status": "veroeffentlicht"
+}

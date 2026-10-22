@@ -1,0 +1,139 @@
+{
+  "slug": "centralstationcrm",
+  "name": "CentralStationCRM",
+  "vendor": "42he",
+  "categories": ["crm"],
+  "primaryCategory": "crm",
+  "tagline": "Einfaches CRM aus Köln für kleine Teams, mit kostenlosem Einstiegstarif",
+  "logo": "/logos/centralstationcrm.svg",
+  "brandColor": "#4a4fc4",
+  "website": "https://centralstationcrm.de",
+  "affiliate": null,
+  "pricing": {
+    "currency": "EUR",
+    "basis": "netto",
+    "freePlan": true,
+    "trialDays": 30,
+    "plans": [
+      {
+        "name": "Starter",
+        "priceMonthlyNet": 0,
+        "priceYearlyNetPerMonth": null,
+        "unit": "pro-monat",
+        "includedUsers": 3,
+        "highlights": ["3 Nutzer", "200 Kontakte"],
+        "recommended": false
+      },
+      {
+        "name": "Team",
+        "priceMonthlyNet": 2500,
+        "priceYearlyNetPerMonth": null,
+        "unit": "pro-monat",
+        "includedUsers": 3,
+        "highlights": ["3 Nutzer", "3.000 Kontakte"],
+        "recommended": false
+      },
+      {
+        "name": "Small Office",
+        "priceMonthlyNet": 7900,
+        "priceYearlyNetPerMonth": null,
+        "unit": "pro-monat",
+        "includedUsers": 10,
+        "highlights": ["10 Nutzer", "10.000 Kontakte"],
+        "recommended": true
+      },
+      {
+        "name": "Business",
+        "priceMonthlyNet": 15500,
+        "priceYearlyNetPerMonth": null,
+        "unit": "pro-monat",
+        "includedUsers": 20,
+        "highlights": ["20 Nutzer", "20.000 Kontakte"],
+        "recommended": false
+      },
+      {
+        "name": "Enterprise",
+        "priceMonthlyNet": 29900,
+        "priceYearlyNetPerMonth": null,
+        "unit": "pro-monat",
+        "includedUsers": 40,
+        "highlights": ["40 Nutzer", "40.000 Kontakte"],
+        "recommended": false
+      }
+    ],
+    "contractNotes": "Test 30 Tage ohne automatische Umstellung auf einen Bezahltarif. Pipelines und KPI-Tracking als Erweiterung zubuchbar.",
+    "source": "https://centralstationcrm.de/preise",
+    "verifiedAt": "2026-10-21"
+  },
+  "hosting": {
+    "serverLocation": "DE",
+    "avv": "unbekannt"
+  },
+  "compliance": {
+    "gobd": "unbekannt",
+    "xrechnung": "unbekannt",
+    "zugferd": "unbekannt",
+    "iso27001": "unbekannt",
+    "bsiC5": "unbekannt"
+  },
+  "madeInGermany": true,
+  "germanInterface": true,
+  "germanSupport": true,
+  "integrations": [],
+  "platforms": ["web"],
+  "companySizes": ["solo", "1-9", "10-49"],
+  "scores": {
+    "funktionsumfang": 3.9,
+    "bedienung": 4.6,
+    "preisLeistung": 4.4,
+    "datenschutz": 4.4,
+    "support": 4.2,
+    "integrationen": 3.7
+  },
+  "editorial": {
+    "verdict": "Bewusst einfaches CRM aus Köln für Berater, Agenturen und kleine Teams. Paketpreise statt Kopfpreise, kostenloser Einstieg und Hosting bei deutschen Dienstleistern.",
+    "bestFor": ["Beratungen und Agenturen", "Kleine Teams ohne CRM-Erfahrung"],
+    "notFor": ["Vertriebsorganisationen mit komplexen Prozessen"],
+    "pros": [
+      "Kostenloser Starter-Tarif für drei Nutzer",
+      "Paketpreise für das ganze Team statt pro Kopf",
+      "Hosting laut Datenschutzerklärung bei Dienstleistern in Nürnberg und Bonn"
+    ],
+    "cons": ["Pipelines nur als kostenpflichtige Erweiterung", "Wenig Automatisierung für große Vertriebe"],
+    "sources": [
+      {
+        "label": "CentralStationCRM Preise und FAQ",
+        "url": "https://centralstationcrm.de/preise",
+        "accessedAt": "2026-10-21"
+      },
+      {
+        "label": "CentralStationCRM Datenschutzerklärung",
+        "url": "https://centralstationcrm.de/datenschutz",
+        "accessedAt": "2026-10-21"
+      },
+      {
+        "label": "Impressum CentralStationCRM",
+        "url": "https://centralstationcrm.de/impressum",
+        "accessedAt": "2026-10-21"
+      }
+    ],
+    "author": "wolfram-eschenbach",
+    "reviewer": "wolfram-eschenbach",
+    "publishedAt": "2026-10-21",
+    "updatedAt": "2026-10-21",
+    "handsOnTest": false,
+    "changelog": [
+      {
+        "date": "2026-10-21",
+        "note": "Profil angelegt. Fakten aus Anbieterseiten, Wertung als Entwurf zur redaktionellen Prüfung."
+      },
+      {
+        "date": "2026-10-21",
+        "note": "Redaktionell freigegeben und veröffentlicht. Fakten aus den genannten Anbieterquellen, Wertung ohne eigenen Praxistest."
+      }
+    ]
+  },
+  "alternatives": ["sage-sales-management", "weclapp", "sage-100"],
+  "verification": "verifiziert",
+  "status": "veroeffentlicht"
+}

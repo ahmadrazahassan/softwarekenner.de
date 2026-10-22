@@ -1,0 +1,154 @@
+{
+  "slug": "collmex",
+  "name": "Collmex",
+  "vendor": "collmex",
+  "categories": ["buchhaltung"],
+  "primaryCategory": "buchhaltung",
+  "tagline": "Günstige Cloudbuchhaltung und Warenwirtschaft mit kostenloser Version",
+  "logo": "/logos/collmex.png",
+  "brandColor": "#4a4fc4",
+  "website": "https://www.collmex.de",
+  "affiliate": null,
+  "pricing": {
+    "currency": "EUR",
+    "basis": "netto",
+    "freePlan": true,
+    "trialDays": 30,
+    "plans": [
+      {
+        "name": "Buchhaltung free",
+        "priceMonthlyNet": 0,
+        "priceYearlyNetPerMonth": null,
+        "unit": "pro-monat",
+        "includedUsers": 1,
+        "highlights": ["1 Administrator"],
+        "recommended": false
+      },
+      {
+        "name": "Buchhaltung light",
+        "priceMonthlyNet": 895,
+        "priceYearlyNetPerMonth": null,
+        "unit": "pro-monat",
+        "includedUsers": 3,
+        "highlights": ["Administrator, Buchhalter und Steuerprüfer"],
+        "recommended": false
+      },
+      {
+        "name": "Buchhaltung basic",
+        "priceMonthlyNet": 1195,
+        "priceYearlyNetPerMonth": null,
+        "unit": "pro-monat",
+        "includedUsers": 3,
+        "highlights": ["Mitarbeiterportal für 25 Personen"],
+        "recommended": true
+      },
+      {
+        "name": "Komplettpaket basic",
+        "priceMonthlyNet": 1695,
+        "priceYearlyNetPerMonth": null,
+        "unit": "pro-monat",
+        "includedUsers": 3,
+        "highlights": ["Buchhaltung, Rechnung und mehr"],
+        "recommended": false
+      },
+      {
+        "name": "Komplettpaket plus",
+        "priceMonthlyNet": 2495,
+        "priceYearlyNetPerMonth": null,
+        "unit": "pro-monat",
+        "includedUsers": 3,
+        "highlights": ["Erweitertes Komplettpaket"],
+        "recommended": false
+      },
+      {
+        "name": "Komplettpaket pro",
+        "priceMonthlyNet": 4695,
+        "priceYearlyNetPerMonth": null,
+        "unit": "pro-monat",
+        "includedUsers": 3,
+        "highlights": ["Mitarbeiterportal für 50 Personen"],
+        "recommended": false
+      }
+    ],
+    "contractNotes": "Netto zzgl. Umsatzsteuer, monatliche Abrechnung, Kündigung jederzeit zum Monatsende. Zusatzbenutzer 11,95 € pro Monat in den erweiterbaren Tarifen.",
+    "source": "https://www.collmex.de/preise.html",
+    "verifiedAt": "2026-10-19"
+  },
+  "hosting": {
+    "serverLocation": "DE",
+    "avv": "unbekannt"
+  },
+  "compliance": {
+    "gobd": "ja",
+    "xrechnung": "nein",
+    "zugferd": "teilweise",
+    "iso27001": "ja",
+    "bsiC5": "unbekannt"
+  },
+  "madeInGermany": true,
+  "germanInterface": true,
+  "germanSupport": true,
+  "integrations": ["DATEV", "ELSTER"],
+  "platforms": ["web"],
+  "companySizes": ["solo", "1-9", "10-49"],
+  "scores": {
+    "funktionsumfang": 4,
+    "bedienung": 3.5,
+    "preisLeistung": 4.4,
+    "datenschutz": 4.2,
+    "support": 3.6,
+    "integrationen": 3.6
+  },
+  "editorial": {
+    "verdict": "Sehr günstige Cloudlösung von Buchhaltung bis Komplettpaket, monatlich kündbar, Rechenzentrum in Köln. Schwachpunkt ist die E-Rechnung: XRechnung erstellt Collmex laut eigener FAQ nicht.",
+    "bestFor": ["Kostenbewusste Kleinbetriebe", "Vereine"],
+    "notFor": ["Unternehmen, die XRechnungen ausstellen müssen"],
+    "pros": [
+      "Kostenlose Version und niedrige Monatspreise",
+      "Monatlich kündbar",
+      "Rechenzentrum in Köln mit ISO-27001-Zertifikat laut Anbieter"
+    ],
+    "cons": ["Kein Export als XRechnung", "ZUGFeRD nur im Empfang", "Wenige Nutzer pro Tarif ohne Aufpreis"],
+    "sources": [
+      {
+        "label": "Preisliste Collmex",
+        "url": "https://www.collmex.de/preise.html",
+        "accessedAt": "2026-10-19"
+      },
+      {
+        "label": "FAQ Collmex",
+        "url": "https://www.collmex.de/faq.html",
+        "accessedAt": "2026-10-19"
+      },
+      {
+        "label": "Sicherheit Collmex",
+        "url": "https://www.collmex.de/sicherheit.html",
+        "accessedAt": "2026-10-19"
+      }
+    ],
+    "author": "wolfram-eschenbach",
+    "reviewer": "wolfram-eschenbach",
+    "publishedAt": "2026-10-19",
+    "updatedAt": "2026-10-21",
+    "handsOnTest": false,
+    "changelog": [
+      {
+        "date": "2026-10-19",
+        "note": "Profil angelegt. Fakten aus Anbieterseiten, Wertung als Entwurf zur redaktionellen Prüfung."
+      },
+      {
+        "date": "2026-10-21",
+        "note": "Redaktionell freigegeben und veröffentlicht. Fakten aus den genannten Anbieterquellen, Wertung ohne eigenen Praxistest."
+      }
+    ]
+  },
+  "alternatives": [
+    "lexware-office",
+    "sevdesk",
+    "datev-unternehmen-online",
+    "buchhaltungsbutler",
+    "wiso-meinbuero"
+  ],
+  "verification": "verifiziert",
+  "status": "veroeffentlicht"
+}

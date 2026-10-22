@@ -1,0 +1,141 @@
+{
+  "slug": "sage-hr-suite",
+  "name": "Sage HR Suite",
+  "vendor": "sage",
+  "categories": ["hr-software", "lohnabrechnung"],
+  "primaryCategory": "hr-software",
+  "tagline": "Modulare HR- und Entgeltsoftware für den Mittelstand mit optionalen Cloud-Services",
+  "logo": "/logos/sage.svg",
+  "brandColor": "#4a4fc4",
+  "website": "https://www.sage.com/de-de/produkte/sage-hr-suite-personal-software/",
+  "affiliate": null,
+  "pricing": {
+    "currency": "EUR",
+    "basis": "netto",
+    "freePlan": false,
+    "trialDays": null,
+    "plans": [
+      {
+        "name": "Personalabrechnung",
+        "priceMonthlyNet": null,
+        "priceYearlyNetPerMonth": 3900,
+        "unit": "pro-monat",
+        "includedUsers": null,
+        "highlights": ["Entgeltabrechnung inklusive Meldewesen", "Altersteilzeit, Kurzarbeit, bAV"],
+        "recommended": true
+      },
+      {
+        "name": "Zeitmanagement",
+        "priceMonthlyNet": null,
+        "priceYearlyNetPerMonth": 2100,
+        "unit": "pro-monat",
+        "includedUsers": null,
+        "highlights": ["Arbeitszeiterfassung", "Abwesenheiten"],
+        "recommended": false
+      },
+      {
+        "name": "Bewerbermanagement",
+        "priceMonthlyNet": null,
+        "priceYearlyNetPerMonth": 1900,
+        "unit": "pro-monat",
+        "includedUsers": null,
+        "highlights": ["Recruiting", "Bewerbungsprozesse"],
+        "recommended": false
+      }
+    ],
+    "contractNotes": "Preise je Modul ab, inklusive Softwarewartung für einen Arbeitsplatz, Lizenzierung in Paketen zu 25 Mitarbeitenden, jährliche Rechnung mit 12 Monaten Mindestlaufzeit; kürzere oder längere Laufzeiten optional. Betrieb lokal oder als Cloud im Rechenzentrum von Sage in Deutschland.",
+    "source": "https://www.sage.com/de-de/produkte/sage-hr-suite-personal-software/",
+    "verifiedAt": "2026-10-21"
+  },
+  "hosting": {
+    "serverLocation": "DE",
+    "avv": "unbekannt"
+  },
+  "compliance": {
+    "gobd": "unbekannt",
+    "xrechnung": "unbekannt",
+    "zugferd": "unbekannt",
+    "iso27001": "unbekannt",
+    "bsiC5": "unbekannt"
+  },
+  "madeInGermany": true,
+  "germanInterface": true,
+  "germanSupport": true,
+  "integrations": ["Sage 100", "Sage b7", "Datafox", "dormakaba"],
+  "platforms": ["windows", "web"],
+  "companySizes": ["50-249", "250+"],
+  "scores": {
+    "funktionsumfang": 4.4,
+    "bedienung": 3.8,
+    "preisLeistung": 4,
+    "datenschutz": 4,
+    "support": 4,
+    "integrationen": 3.9
+  },
+  "editorial": {
+    "verdict": "Etablierte Personalsoftware für den Mittelstand: Entgeltabrechnung mit komplexen Fällen wie Kurzarbeit und Altersteilzeit, Zeitmanagement, Reisekosten und Bewerbermanagement als Module.",
+    "bestFor": ["Mittelständler mit eigener Entgeltabrechnung", "Personalabteilungen mit komplexen Tarifen"],
+    "notFor": ["Kleinstbetriebe mit wenigen Mitarbeitenden"],
+    "pros": [
+      "Entgeltabrechnung auch für Altersteilzeit, Zuschläge, Kurzarbeit und bAV",
+      "ITSG-Zertifikat für die Abrechnung laut Anbieter",
+      "Cloudbetrieb im zertifizierten Rechenzentrum in Deutschland mit georedundanter Sicherung",
+      "Module einzeln buchbar, Lizenz in Paketen zu 25 Mitarbeitenden"
+    ],
+    "cons": [
+      "Desktopsoftware, Cloud als optionaler Betrieb",
+      "Jährliche Bindung",
+      "Speziallöhne öffentlicher Dienst erst in Professional und Enterprise"
+    ],
+    "sources": [
+      {
+        "label": "Sage HR Suite Produktseite mit Preisen",
+        "url": "https://www.sage.com/de-de/produkte/sage-hr-suite-personal-software/",
+        "accessedAt": "2026-10-21"
+      },
+      {
+        "label": "Sage HR Suite Personalabrechnung",
+        "url": "https://www.sage.com/de-de/produkte/sage-hr-suite-personal-software/personalabrechnung/",
+        "accessedAt": "2026-10-21"
+      },
+      {
+        "label": "Sage HR Suite in der Cloud",
+        "url": "https://www.sage.com/de-de/produkte/sage-hr-suite-personal-software/cloud/",
+        "accessedAt": "2026-10-21"
+      },
+      {
+        "label": "Impressum Sage GmbH",
+        "url": "https://www.sage.com/de-de/impressum/",
+        "accessedAt": "2026-10-21"
+      }
+    ],
+    "author": "wolfram-eschenbach",
+    "reviewer": "wolfram-eschenbach",
+    "publishedAt": "2026-10-21",
+    "updatedAt": "2026-10-21",
+    "handsOnTest": false,
+    "changelog": [
+      {
+        "date": "2026-10-21",
+        "note": "Profil angelegt. Fakten aus Anbieterseiten, Wertung als Entwurf zur redaktionellen Prüfung."
+      },
+      {
+        "date": "2026-10-21",
+        "note": "Vertiefte Prüfung aller Sage Unterseiten: Preise, Tarife, Zusatzmodule, FAQ und Quellen aktualisiert."
+      },
+      {
+        "date": "2026-10-21",
+        "note": "Redaktionell freigegeben und veröffentlicht. Fakten aus den genannten Anbieterquellen, Wertung ohne eigenen Praxistest."
+      }
+    ]
+  },
+  "alternatives": [
+    "datev-lohn-und-gehalt",
+    "personio",
+    "sage-lohnabrechnung",
+    "lexware-lohn-gehalt",
+    "hrworks"
+  ],
+  "verification": "verifiziert",
+  "status": "veroeffentlicht"
+}

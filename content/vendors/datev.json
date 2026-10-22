@@ -1,0 +1,23 @@
+{
+  "slug": "datev",
+  "legalName": "DATEV eG",
+  "brandName": "DATEV",
+  "headquarters": {
+    "city": "Nürnberg",
+    "country": "DE"
+  },
+  "founded": null,
+  "website": "https://www.datev.de",
+  "germanEntity": true,
+  "supportLanguages": null,
+  "notes": "Eingetragene Genossenschaft, Paumgartnerstr. 6 bis 14. Das Impressum auf datev.de war beim Abruf nicht erreichbar.",
+  "sources": [
+    {
+      "label": "Lobbyregister des Deutschen Bundestages, Eintrag R003153",
+      "url": "https://www.lobbyregister.bundestag.de/suche/R003153/84915",
+      "accessedAt": "2026-10-19"
+    }
+  ],
+  "verification": "verifiziert",
+  "verifiedAt": "2026-10-19"
+}

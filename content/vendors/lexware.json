@@ -1,0 +1,23 @@
+{
+  "slug": "lexware",
+  "legalName": "Haufe-Lexware GmbH & Co. KG",
+  "brandName": "Lexware",
+  "headquarters": {
+    "city": "Freiburg",
+    "country": "DE"
+  },
+  "founded": null,
+  "website": "https://office.lexware.de",
+  "germanEntity": true,
+  "supportLanguages": null,
+  "notes": "Komplementärin laut Impressum: Haufe-Lexware Verwaltungs GmbH. Registergericht Freiburg, HRA 4408.",
+  "sources": [
+    {
+      "label": "Impressum Lexware Office",
+      "url": "https://impressum.lexware.de/lexware-office",
+      "accessedAt": "2026-10-19"
+    }
+  ],
+  "verification": "verifiziert",
+  "verifiedAt": "2026-10-19"
+}

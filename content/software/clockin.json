@@ -1,0 +1,116 @@
+{
+  "slug": "clockin",
+  "name": "clockin",
+  "vendor": "clockin",
+  "categories": ["zeiterfassung"],
+  "primaryCategory": "zeiterfassung",
+  "tagline": "Zeiterfassung per App mit DATEV-Übergabe, entwickelt in Münster",
+  "logo": "/logos/clockin.png",
+  "brandColor": "#4a4fc4",
+  "website": "https://www.clockin.de",
+  "affiliate": null,
+  "pricing": {
+    "currency": "EUR",
+    "basis": "netto",
+    "freePlan": false,
+    "trialDays": 14,
+    "plans": [
+      {
+        "name": "Starter",
+        "priceMonthlyNet": 399,
+        "priceYearlyNetPerMonth": 379,
+        "unit": "pro-nutzer-monat",
+        "includedUsers": null,
+        "highlights": ["Mobile Zeiterfassung", "DATEV-Export für Stundennachweise"],
+        "recommended": false
+      },
+      {
+        "name": "Pro",
+        "priceMonthlyNet": 699,
+        "priceYearlyNetPerMonth": null,
+        "unit": "pro-nutzer-monat",
+        "includedUsers": null,
+        "highlights": ["Erweiterte Funktionen"],
+        "recommended": true
+      },
+      {
+        "name": "Expert",
+        "priceMonthlyNet": 999,
+        "priceYearlyNetPerMonth": null,
+        "unit": "pro-nutzer-monat",
+        "includedUsers": null,
+        "highlights": ["Volle Funktionen"],
+        "recommended": false
+      }
+    ],
+    "contractNotes": "Zzgl. MwSt. Günstiger bei Jahres- oder Zweijahresvertrag (Starter 3,59 € bei zwei Jahren). Plattformgebühr 10 € pro Monat bei 1 bis 4 Nutzern.",
+    "source": "https://www.clockin.de/en/pricing",
+    "verifiedAt": "2026-10-19"
+  },
+  "hosting": {
+    "serverLocation": "DE",
+    "avv": "unbekannt"
+  },
+  "compliance": {
+    "gobd": "unbekannt",
+    "xrechnung": "unbekannt",
+    "zugferd": "unbekannt",
+    "iso27001": "unbekannt",
+    "bsiC5": "unbekannt"
+  },
+  "madeInGermany": true,
+  "germanInterface": true,
+  "germanSupport": true,
+  "integrations": ["DATEV"],
+  "platforms": ["web", "ios", "android"],
+  "companySizes": ["1-9", "10-49", "50-249"],
+  "scores": {
+    "funktionsumfang": 4.2,
+    "bedienung": 4.4,
+    "preisLeistung": 4.2,
+    "datenschutz": 4.3,
+    "support": 4,
+    "integrationen": 4.4
+  },
+  "editorial": {
+    "verdict": "Zeiterfassung für Handwerk und Dienstleister mit DATEV-Marktplatzanbindung schon im Einstiegstarif und Betrieb ausschließlich in Deutschland laut Anbieter.",
+    "bestFor": ["Handwerksbetriebe", "Teams im Außendienst"],
+    "notFor": ["Selbstständige ohne Mitarbeitende"],
+    "pros": [
+      "Stundenzettel direkt an DATEV, auch an LODAS",
+      "Server in Deutschland laut Anbieter",
+      "Testphase ohne Zahlungsdaten und ohne automatische Verlängerung"
+    ],
+    "cons": ["Plattformgebühr für sehr kleine Teams", "Kein kostenloser Tarif"],
+    "sources": [
+      {
+        "label": "Pricing clockin",
+        "url": "https://www.clockin.de/en/pricing",
+        "accessedAt": "2026-10-19"
+      },
+      {
+        "label": "Zeiterfassung für Steuerberater",
+        "url": "https://www.clockin.de/zeiterfassung-fuer-branchen/zeiterfassung-fuer-steuerberater",
+        "accessedAt": "2026-10-19"
+      }
+    ],
+    "author": "wolfram-eschenbach",
+    "reviewer": "wolfram-eschenbach",
+    "publishedAt": "2026-10-19",
+    "updatedAt": "2026-10-21",
+    "handsOnTest": false,
+    "changelog": [
+      {
+        "date": "2026-10-19",
+        "note": "Profil angelegt. Fakten aus Anbieterseiten, Wertung als Entwurf zur redaktionellen Prüfung."
+      },
+      {
+        "date": "2026-10-21",
+        "note": "Redaktionell freigegeben und veröffentlicht. Fakten aus den genannten Anbieterquellen, Wertung ohne eigenen Praxistest."
+      }
+    ]
+  },
+  "alternatives": ["clockodo", "crewmeister", "timetac", "papershift", "zep"],
+  "verification": "verifiziert",
+  "status": "veroeffentlicht"
+}

@@ -1,0 +1,134 @@
+{
+  "slug": "candis",
+  "name": "Candis",
+  "vendor": "candis",
+  "categories": ["buchhaltung"],
+  "primaryCategory": "buchhaltung",
+  "tagline": "Rechnungsmanagement für eingehende Rechnungen mit Freigaben und DATEV-Export",
+  "logo": "/logos/candis.svg",
+  "brandColor": "#4a4fc4",
+  "website": "https://www.candis.io",
+  "affiliate": null,
+  "pricing": {
+    "currency": "EUR",
+    "basis": "netto",
+    "freePlan": false,
+    "trialDays": 30,
+    "plans": [
+      {
+        "name": "Basis",
+        "priceMonthlyNet": 38900,
+        "priceYearlyNetPerMonth": null,
+        "unit": "pro-monat",
+        "includedUsers": null,
+        "highlights": ["Unbegrenzt Nutzer", "Preis nach Rechnungsanzahl"],
+        "recommended": false
+      },
+      {
+        "name": "Plus",
+        "priceMonthlyNet": 59900,
+        "priceYearlyNetPerMonth": null,
+        "unit": "pro-monat",
+        "includedUsers": null,
+        "highlights": ["Preis nach Dokumentenanzahl"],
+        "recommended": true
+      },
+      {
+        "name": "Max",
+        "priceMonthlyNet": 78900,
+        "priceYearlyNetPerMonth": null,
+        "unit": "pro-monat",
+        "includedUsers": null,
+        "highlights": ["Preis nach Dokumentenanzahl"],
+        "recommended": false
+      }
+    ],
+    "contractNotes": "Ab-Preise pro Monat. Ob netto oder brutto, nennt die Preisseite nicht. Laufzeit 12, 24 oder 36 Monate, Kündigung drei Monate vor Ablauf.",
+    "source": "https://www.candis.io/preise",
+    "verifiedAt": "2026-10-19"
+  },
+  "hosting": {
+    "serverLocation": "DE",
+    "avv": "unbekannt"
+  },
+  "compliance": {
+    "gobd": "ja",
+    "xrechnung": "teilweise",
+    "zugferd": "teilweise",
+    "iso27001": "teilweise",
+    "bsiC5": "unbekannt"
+  },
+  "madeInGermany": true,
+  "germanInterface": true,
+  "germanSupport": true,
+  "integrations": ["DATEV"],
+  "platforms": ["web"],
+  "companySizes": ["10-49", "50-249", "250+"],
+  "scores": {
+    "funktionsumfang": 4.2,
+    "bedienung": 4.2,
+    "preisLeistung": 3.4,
+    "datenschutz": 4.4,
+    "support": 4,
+    "integrationen": 4.5
+  },
+  "editorial": {
+    "verdict": "Spezialist für eingehende Rechnungen im Mittelstand: Empfang, Prüfung, Freigabe und Archivierung, mit DATEV-Schnittstellen. Keine vollständige Buchhaltung und keine Ausgangsrechnungen.",
+    "bestFor": [
+      "Mittelständische Unternehmen mit vielen Eingangsrechnungen",
+      "Finanzteams mit Freigabeprozessen"
+    ],
+    "notFor": ["Selbstständige", "Unternehmen, die Ausgangsrechnungen schreiben wollen"],
+    "pros": [
+      "Empfang, Prüfung und Archivierung von XRechnung und ZUGFeRD",
+      "DATEV-Dateischnittstellen in allen Paketen",
+      "Unbegrenzt viele Nutzer und Gesellschaften"
+    ],
+    "cons": [
+      "Hoher Einstiegspreis ab 389 € pro Monat",
+      "Erstellt keine Ausgangsrechnungen",
+      "Mindestlaufzeit 12 Monate"
+    ],
+    "sources": [
+      {
+        "label": "Preise Candis",
+        "url": "https://www.candis.io/preise",
+        "accessedAt": "2026-10-19"
+      },
+      {
+        "label": "E-Rechnungen mit Candis",
+        "url": "https://www.candis.io/en/e-invoices",
+        "accessedAt": "2026-10-19"
+      },
+      {
+        "label": "GoBD-konform archivieren",
+        "url": "https://www.candis.io/blog/gobd-konform",
+        "accessedAt": "2026-10-19"
+      }
+    ],
+    "author": "wolfram-eschenbach",
+    "reviewer": "wolfram-eschenbach",
+    "publishedAt": "2026-10-19",
+    "updatedAt": "2026-10-21",
+    "handsOnTest": false,
+    "changelog": [
+      {
+        "date": "2026-10-19",
+        "note": "Profil angelegt. Fakten aus Anbieterseiten, Wertung als Entwurf zur redaktionellen Prüfung."
+      },
+      {
+        "date": "2026-10-21",
+        "note": "Redaktionell freigegeben und veröffentlicht. Fakten aus den genannten Anbieterquellen, Wertung ohne eigenen Praxistest."
+      }
+    ]
+  },
+  "alternatives": [
+    "lexware-office",
+    "sevdesk",
+    "datev-unternehmen-online",
+    "buchhaltungsbutler",
+    "wiso-meinbuero"
+  ],
+  "verification": "verifiziert",
+  "status": "veroeffentlicht"
+}

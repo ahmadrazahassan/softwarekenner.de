@@ -1,0 +1,17 @@
+{
+  "slug": "projektmanagement",
+  "name": "Projektmanagement",
+  "shortName": "Projekte",
+  "icon": "SquareKanban",
+  "description": "Werkzeuge für Aufgaben, Zeitpläne, Ressourcen und die Zusammenarbeit im Team und mit Kunden. Wir achten auf Hosting, Rechteverwaltung und Zeiterfassung.",
+  "batch": 2,
+  "weights": null,
+  "faq": [],
+  "related": ["kollaboration", "zeiterfassung"],
+  "seo": {
+    "title": "Projektmanagement-Software im Vergleich",
+    "description": "Projektmanagement-Software für Unternehmen in Deutschland: Ressourcen, Kundenfreigaben, Hosting und Preise in Euro im Vergleich."
+  },
+  "status": "entwurf",
+  "updatedAt": "2026-10-19"
+}

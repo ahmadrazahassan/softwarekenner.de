@@ -1,0 +1,88 @@
+{
+  "slug": "datev-lohn-und-gehalt",
+  "name": "DATEV Lohn und Gehalt",
+  "vendor": "datev",
+  "categories": ["lohnabrechnung"],
+  "primaryCategory": "lohnabrechnung",
+  "tagline": "Lohnabrechnung im Unternehmen, abgestimmt mit der Steuerberatung",
+  "logo": "/logos/datev.svg",
+  "brandColor": "#4a4fc4",
+  "website": "https://www.datev.de/web/de/unternehmen/loesungen/lohn-und-personal/lohn-und-gehaltsabrechnung",
+  "affiliate": null,
+  "pricing": {
+    "currency": "EUR",
+    "basis": "netto",
+    "freePlan": false,
+    "trialDays": null,
+    "plans": [],
+    "contractNotes": "Keine öffentlichen Preise. DATEV empfiehlt den Einsatz in Abstimmung mit einem DATEV-Mitglied, etwa der Steuerberatung.",
+    "source": "https://www.datev.de/web/de/unternehmen/loesungen/lohn-und-personal/lohn-und-gehaltsabrechnung",
+    "verifiedAt": "2026-10-21"
+  },
+  "hosting": {
+    "serverLocation": "unbekannt",
+    "avv": "unbekannt"
+  },
+  "compliance": {
+    "gobd": "unbekannt",
+    "xrechnung": "unbekannt",
+    "zugferd": "unbekannt",
+    "iso27001": "unbekannt",
+    "bsiC5": "unbekannt"
+  },
+  "madeInGermany": true,
+  "germanInterface": true,
+  "germanSupport": true,
+  "integrations": ["DATEV"],
+  "platforms": ["windows"],
+  "companySizes": ["10-49", "50-249", "250+"],
+  "scores": {
+    "funktionsumfang": 4.6,
+    "bedienung": 3.6,
+    "preisLeistung": 3.8,
+    "datenschutz": 4.4,
+    "support": 4.2,
+    "integrationen": 4.5
+  },
+  "editorial": {
+    "verdict": "Die Lohnsoftware der DATEV für Unternehmen, die selbst abrechnen und eng mit ihrer Steuerkanzlei arbeiten. Fachlich sehr tief, Preise nur auf Anfrage über DATEV oder die Kanzlei.",
+    "bestFor": ["Unternehmen mit DATEV-Kanzlei", "Lohnbüros mit vielen Sonderfällen"],
+    "notFor": ["Gründer, die schnell und ohne Kanzlei starten wollen"],
+    "pros": [
+      "Fachliche Tiefe der DATEV im Lohn- und Meldewesen",
+      "Direkter Datenaustausch mit der Steuerberatung",
+      "Schulungs- und Serviceangebot der DATEV"
+    ],
+    "cons": ["Keine öffentlichen Preise", "Lokale Installation, Einarbeitung anspruchsvoll"],
+    "sources": [
+      {
+        "label": "DATEV Lohn- und Gehaltsabrechnung für Unternehmen",
+        "url": "https://www.datev.de/web/de/unternehmen/loesungen/lohn-und-personal/lohn-und-gehaltsabrechnung",
+        "accessedAt": "2026-10-21"
+      },
+      {
+        "label": "Lobbyregister des Deutschen Bundestages, DATEV eG",
+        "url": "https://www.lobbyregister.bundestag.de/suche/R003153/84915",
+        "accessedAt": "2026-10-21"
+      }
+    ],
+    "author": "wolfram-eschenbach",
+    "reviewer": "wolfram-eschenbach",
+    "publishedAt": "2026-10-21",
+    "updatedAt": "2026-10-21",
+    "handsOnTest": false,
+    "changelog": [
+      {
+        "date": "2026-10-21",
+        "note": "Profil angelegt. Fakten aus Anbieterseiten, Wertung als Entwurf zur redaktionellen Prüfung."
+      },
+      {
+        "date": "2026-10-21",
+        "note": "Redaktionell freigegeben und veröffentlicht. Fakten aus den genannten Anbieterquellen, Wertung ohne eigenen Praxistest."
+      }
+    ]
+  },
+  "alternatives": ["lexware-lohn-gehalt", "sage-hr-suite", "sage-lohnabrechnung", "personio"],
+  "verification": "verifiziert",
+  "status": "veroeffentlicht"
+}

@@ -1,0 +1,20 @@
+{
+  "slug": "microsoft",
+  "legalName": "Microsoft Corporation",
+  "brandName": "Microsoft",
+  "headquarters": { "city": "Redmond", "country": "US" },
+  "founded": null,
+  "website": "https://www.microsoft.com/de-de/",
+  "germanEntity": false,
+  "supportLanguages": null,
+  "notes": "Das deutsche Impressum nennt die Microsoft Corporation in Redmond. Laut Impressum ist die Microsoft Deutschland GmbH nicht Anbieter der Produkte. Vertrieb in Deutschland meist über Partner.",
+  "sources": [
+    {
+      "label": "Impressum Microsoft Deutschland",
+      "url": "https://www.microsoft.com/de-de/rechtliche-hinweise/impressum",
+      "accessedAt": "2026-10-21"
+    }
+  ],
+  "verification": "verifiziert",
+  "verifiedAt": "2026-10-21"
+}

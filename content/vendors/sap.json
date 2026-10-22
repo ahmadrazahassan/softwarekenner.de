@@ -1,0 +1,23 @@
+{
+  "slug": "sap",
+  "legalName": "SAP SE",
+  "brandName": "SAP",
+  "headquarters": {
+    "city": "Walldorf",
+    "country": "DE"
+  },
+  "founded": null,
+  "website": "https://www.sap.com/germany",
+  "germanEntity": true,
+  "supportLanguages": null,
+  "notes": "Amtsgericht Mannheim, HRB 719915.",
+  "sources": [
+    {
+      "label": "Impressum SAP SE",
+      "url": "https://www.sap.com/about/legal/impressum-se.html",
+      "accessedAt": "2026-10-19"
+    }
+  ],
+  "verification": "verifiziert",
+  "verifiedAt": "2026-10-19"
+}

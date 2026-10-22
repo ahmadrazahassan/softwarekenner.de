@@ -1,0 +1,17 @@
+{
+  "slug": "shopsysteme",
+  "name": "Shopsysteme",
+  "shortName": "Shopsysteme",
+  "icon": "ShoppingBag",
+  "description": "Software für den eigenen Onlineshop. Wir prüfen Rechtssicherheit für den deutschen Markt, Zahlungsarten, Hosting und Anbindungen an Warenwirtschaft und Buchhaltung.",
+  "batch": 3,
+  "weights": null,
+  "faq": [],
+  "related": ["erp", "kassensysteme"],
+  "seo": {
+    "title": "Shopsysteme im Vergleich",
+    "description": "Shopsysteme für Händler in Deutschland: Rechtssicherheit, Zahlungsarten, Hosting und Preise in Euro im unabhängigen Vergleich."
+  },
+  "status": "entwurf",
+  "updatedAt": "2026-10-19"
+}

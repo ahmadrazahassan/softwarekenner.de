@@ -1,0 +1,98 @@
+{
+  "slug": "kenjo",
+  "name": "Kenjo",
+  "vendor": "kenjo",
+  "categories": ["hr-software", "zeiterfassung"],
+  "primaryCategory": "hr-software",
+  "tagline": "HR-Software mit Zeiterfassung und Schichtplanung für operative Teams",
+  "logo": "/logos/kenjo.png",
+  "brandColor": "#4a4fc4",
+  "website": "https://www.kenjo.io/de",
+  "affiliate": null,
+  "pricing": {
+    "currency": "EUR",
+    "basis": "netto",
+    "freePlan": false,
+    "trialDays": null,
+    "plans": [
+      {
+        "name": "Ab-Preis",
+        "priceMonthlyNet": 540,
+        "priceYearlyNetPerMonth": null,
+        "unit": "pro-nutzer-monat",
+        "includedUsers": null,
+        "highlights": ["Ab-Preis pro Mitarbeiter und Monat"],
+        "recommended": true
+      }
+    ],
+    "contractNotes": "Ab-Preis laut Preisseite; die einzelnen Pakete waren in unserer Recherche nicht eindeutig zuzuordnen. Netto oder brutto nicht angegeben.",
+    "source": "https://www.kenjo.io/de/preise",
+    "verifiedAt": "2026-10-19"
+  },
+  "hosting": {
+    "serverLocation": "DE",
+    "avv": "unbekannt"
+  },
+  "compliance": {
+    "gobd": "unbekannt",
+    "xrechnung": "unbekannt",
+    "zugferd": "unbekannt",
+    "iso27001": "unbekannt",
+    "bsiC5": "unbekannt"
+  },
+  "madeInGermany": true,
+  "germanInterface": true,
+  "germanSupport": true,
+  "integrations": ["DATEV"],
+  "platforms": ["web", "ios", "android"],
+  "companySizes": ["10-49", "50-249"],
+  "scores": {
+    "funktionsumfang": 4.1,
+    "bedienung": 4.2,
+    "preisLeistung": 4.3,
+    "datenschutz": 4,
+    "support": 3.9,
+    "integrationen": 4
+  },
+  "editorial": {
+    "verdict": "HR-Software mit Zeiterfassung und Schichtplanung, Übergabe von Arbeitsstunden und Lohnarten an DATEV. Server laut Anbieter in Deutschland.",
+    "bestFor": ["Betriebe mit Schichtarbeit", "Kleine und mittlere Unternehmen"],
+    "notFor": ["Unternehmen, die nur reine Personalverwaltung suchen"],
+    "pros": [
+      "Zeiterfassung und HR in einem Produkt",
+      "Übergabe von Stunden und Lohnarten an DATEV",
+      "Niedriger Ab-Preis pro Mitarbeiter"
+    ],
+    "cons": ["Paketpreise nicht eindeutig veröffentlicht", "Keine Angabe zu ISO 27001 gefunden"],
+    "sources": [
+      {
+        "label": "Preise Kenjo",
+        "url": "https://www.kenjo.io/de/preise",
+        "accessedAt": "2026-10-19"
+      },
+      {
+        "label": "Einrichtung der DATEV-Lohnarten",
+        "url": "https://help.kenjo.io/de/support/solutions/articles/60001159760-einrichtung-der-datev-lohnarten",
+        "accessedAt": "2026-10-19"
+      }
+    ],
+    "author": "wolfram-eschenbach",
+    "reviewer": "wolfram-eschenbach",
+    "publishedAt": "2026-10-19",
+    "updatedAt": "2026-10-21",
+    "handsOnTest": false,
+    "changelog": [
+      {
+        "date": "2026-10-19",
+        "note": "Profil angelegt. Fakten aus Anbieterseiten, Wertung als Entwurf zur redaktionellen Prüfung."
+      },
+      {
+        "date": "2026-10-21",
+        "note": "Redaktionell freigegeben und veröffentlicht. Fakten aus den genannten Anbieterquellen, Wertung ohne eigenen Praxistest."
+      }
+    ]
+  },
+  "alternatives": ["personio", "factorial", "hrworks", "clockodo", "papershift"],
+  "verification": "verifiziert",
+  "status": "veroeffentlicht"
+}

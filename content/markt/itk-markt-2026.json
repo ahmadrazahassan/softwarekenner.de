@@ -1,0 +1,40 @@
+{
+  "slug": "itk-markt-2026",
+  "kicker": "Digitalwirtschaft",
+  "title": "Der ITK-Markt in Zahlen",
+  "takeaway": "Der Markt für IT und Telekommunikation wächst 2026 um 4,1 % auf 246,4 Mrd. €, die Informationstechnik allein um 5,4 %.",
+  "chart": "kennzahlen",
+  "basis": "Umsatz in Deutschland, Prognose von Bitkom auf Basis von IDC-Daten",
+  "period": "Prognose 2026",
+  "points": [
+    {
+      "label": "ITK gesamt",
+      "value": 246.4,
+      "unit": "mrd-eur",
+      "highlight": true,
+      "change": 4.1
+    },
+    {
+      "label": "Informationstechnik",
+      "value": 170.8,
+      "unit": "mrd-eur",
+      "highlight": false,
+      "change": 5.4
+    },
+    {
+      "label": "Telekommunikation",
+      "value": 75.6,
+      "unit": "mrd-eur",
+      "highlight": false,
+      "change": 1.4
+    }
+  ],
+  "source": {
+    "label": "Bitkom: Digitalbranche zeigt sich weiterhin stabil",
+    "url": "https://www.bitkom.org/Presse/Presseinformation/Digitalbranche-weiterhin-stabil",
+    "accessedAt": "2026-10-22",
+    "publisher": "Bitkom",
+    "publishedAt": "2026-07-07"
+  },
+  "order": 6
+}

@@ -1,0 +1,134 @@
+{
+  "slug": "papierkram",
+  "name": "Papierkram",
+  "vendor": "papierkram",
+  "categories": ["buchhaltung"],
+  "primaryCategory": "buchhaltung",
+  "tagline": "Buchhaltung, Rechnungen und Zeiterfassung mit kostenloser Version",
+  "logo": "/logos/papierkram.png",
+  "brandColor": "#4a4fc4",
+  "website": "https://www.papierkram.de",
+  "affiliate": null,
+  "pricing": {
+    "currency": "EUR",
+    "basis": "netto",
+    "freePlan": true,
+    "trialDays": null,
+    "plans": [
+      {
+        "name": "Free",
+        "priceMonthlyNet": 0,
+        "priceYearlyNetPerMonth": null,
+        "unit": "pro-monat",
+        "includedUsers": 1,
+        "highlights": ["Grundlegende Buchhaltung", "100 MB Speicher"],
+        "recommended": false
+      },
+      {
+        "name": "S",
+        "priceMonthlyNet": 1590,
+        "priceYearlyNetPerMonth": 1290,
+        "unit": "pro-monat",
+        "includedUsers": 1,
+        "highlights": ["1.000 MB Speicher"],
+        "recommended": false
+      },
+      {
+        "name": "M",
+        "priceMonthlyNet": 2990,
+        "priceYearlyNetPerMonth": 2490,
+        "unit": "pro-monat",
+        "includedUsers": null,
+        "highlights": ["Bis 5 Nutzer buchbar", "2.500 MB Speicher"],
+        "recommended": true
+      },
+      {
+        "name": "L",
+        "priceMonthlyNet": 5990,
+        "priceYearlyNetPerMonth": 4990,
+        "unit": "pro-monat",
+        "includedUsers": null,
+        "highlights": ["Unbegrenzt Nutzer buchbar", "10.000 MB Speicher"],
+        "recommended": false
+      }
+    ],
+    "contractNotes": "Netto zzgl. MwSt. Kündigung zum Ende der gewählten Laufzeit. Weitere Nutzer 2,90 € monatlich oder 2,32 € bei Jahreszahlung.",
+    "source": "https://www.papierkram.de/preise/",
+    "verifiedAt": "2026-10-19"
+  },
+  "hosting": {
+    "serverLocation": "DE",
+    "avv": "unbekannt"
+  },
+  "compliance": {
+    "gobd": "ja",
+    "xrechnung": "ja",
+    "zugferd": "ja",
+    "iso27001": "unbekannt",
+    "bsiC5": "unbekannt"
+  },
+  "madeInGermany": true,
+  "germanInterface": true,
+  "germanSupport": true,
+  "integrations": [],
+  "platforms": ["web", "ios", "android"],
+  "companySizes": ["solo", "1-9"],
+  "scores": {
+    "funktionsumfang": 4,
+    "bedienung": 4.3,
+    "preisLeistung": 4.4,
+    "datenschutz": 4.4,
+    "support": 3.9,
+    "integrationen": 3.4
+  },
+  "editorial": {
+    "verdict": "Günstige Cloudbuchhaltung mit dauerhaft kostenloser Version und Rechenzentren in Frankfurt und Hamburg. Zu DATEV und ELSTER fanden wir auf den Anbieterseiten keine Angaben.",
+    "bestFor": ["Freiberufler", "Kleine Teams mit kleinem Budget"],
+    "notFor": ["Unternehmen, die eine belegte DATEV-Schnittstelle brauchen"],
+    "pros": [
+      "Kostenlose Version für Einsteiger",
+      "Rechenzentren in Deutschland laut Anbieter",
+      "GoBD-Bestätigung durch eine Prüfungsgesellschaft laut Anbieter"
+    ],
+    "cons": [
+      "Keine Angaben zu DATEV und ELSTER gefunden",
+      "Nutzerzahl in den kleinen Tarifen nicht erweiterbar"
+    ],
+    "sources": [
+      {
+        "label": "Preise Papierkram",
+        "url": "https://www.papierkram.de/preise/",
+        "accessedAt": "2026-10-19"
+      },
+      {
+        "label": "GoBD-zertifizierte Software",
+        "url": "https://www.papierkram.de/gobd-zertifizierte-buchhaltungssoftware",
+        "accessedAt": "2026-10-19"
+      }
+    ],
+    "author": "wolfram-eschenbach",
+    "reviewer": "wolfram-eschenbach",
+    "publishedAt": "2026-10-19",
+    "updatedAt": "2026-10-21",
+    "handsOnTest": false,
+    "changelog": [
+      {
+        "date": "2026-10-19",
+        "note": "Profil angelegt. Fakten aus Anbieterseiten, Wertung als Entwurf zur redaktionellen Prüfung."
+      },
+      {
+        "date": "2026-10-21",
+        "note": "Redaktionell freigegeben und veröffentlicht. Fakten aus den genannten Anbieterquellen, Wertung ohne eigenen Praxistest."
+      }
+    ]
+  },
+  "alternatives": [
+    "lexware-office",
+    "sevdesk",
+    "datev-unternehmen-online",
+    "buchhaltungsbutler",
+    "wiso-meinbuero"
+  ],
+  "verification": "verifiziert",
+  "status": "veroeffentlicht"
+}

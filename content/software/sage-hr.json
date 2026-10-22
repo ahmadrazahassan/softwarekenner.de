@@ -1,0 +1,135 @@
+{
+  "slug": "sage-hr",
+  "name": "Sage HR",
+  "vendor": "sage",
+  "categories": ["hr-software"],
+  "primaryCategory": "hr-software",
+  "tagline": "Modulare Cloud-Personalverwaltung mit App, ab 4,50 € pro Mitarbeitendem",
+  "logo": "/logos/sage.svg",
+  "brandColor": "#4a4fc4",
+  "website": "https://www.sage.com/de-de/sage-business-cloud/hr/",
+  "affiliate": null,
+  "pricing": {
+    "currency": "EUR",
+    "basis": "netto",
+    "freePlan": false,
+    "trialDays": 30,
+    "plans": [
+      {
+        "name": "HR Basis",
+        "priceMonthlyNet": 450,
+        "priceYearlyNetPerMonth": null,
+        "unit": "pro-nutzer-monat",
+        "includedUsers": null,
+        "highlights": [
+          "Digitale Personalakte mit eSignature",
+          "Abwesenheitsmanagement",
+          "Onboarding und Workflow Builder",
+          "Mitarbeiter-App für iOS und Android"
+        ],
+        "recommended": false
+      },
+      {
+        "name": "Zeit-Paket",
+        "priceMonthlyNet": 700,
+        "priceYearlyNetPerMonth": null,
+        "unit": "pro-nutzer-monat",
+        "includedUsers": null,
+        "highlights": ["HR Basis", "Arbeitszeittabellen und Überstunden", "Projektbasierte Zeiten"],
+        "recommended": true
+      },
+      {
+        "name": "Schicht-Paket",
+        "priceMonthlyNet": 950,
+        "priceYearlyNetPerMonth": null,
+        "unit": "pro-nutzer-monat",
+        "includedUsers": null,
+        "highlights": ["HR Basis", "Arbeitszeittabellen", "Schichtplanung mit Verfügbarkeiten"],
+        "recommended": false
+      }
+    ],
+    "contractNotes": "Preise pro Mitarbeitendem und Monat. Zusatzmodule: Arbeitszeittabellen, Performance und Schichtplanung je 2,50 €, Ausgaben 1,50 € pro Mitarbeitendem, Recruiting pauschal 175 € im Monat. Kündigungsfrist ein Monat. Test 30 Tage ohne Zahlungsangaben, endet automatisch.",
+    "source": "https://www.sage.com/de-de/sage-business-cloud/hr/",
+    "verifiedAt": "2026-10-21"
+  },
+  "hosting": {
+    "serverLocation": "unbekannt",
+    "avv": "unbekannt"
+  },
+  "compliance": {
+    "gobd": "unbekannt",
+    "xrechnung": "unbekannt",
+    "zugferd": "unbekannt",
+    "iso27001": "unbekannt",
+    "bsiC5": "unbekannt"
+  },
+  "madeInGermany": true,
+  "germanInterface": true,
+  "germanSupport": true,
+  "integrations": ["Outlook", "Google Kalender", "iCal", "Azure Active Directory", "Sage Lohnabrechnung"],
+  "platforms": ["web", "ios", "android"],
+  "companySizes": ["1-9", "10-49", "50-249"],
+  "scores": {
+    "funktionsumfang": 4,
+    "bedienung": 4.3,
+    "preisLeistung": 4.4,
+    "datenschutz": 3.9,
+    "support": 3.9,
+    "integrationen": 3.7
+  },
+  "editorial": {
+    "verdict": "Baukasten für die Personalverwaltung kleiner und wachsender Firmen: Basispaket mit App, dazu Module wie Zeiterfassung und Schichtplanung. Monatlich kündbar und günstig im Einstieg.",
+    "bestFor": ["Kleine Unternehmen mit Schichtbetrieb", "Teams, die HR schlank digitalisieren wollen"],
+    "notFor": ["Konzerne mit komplexer Personalplanung"],
+    "pros": [
+      "Einstieg ab 4,50 € pro Mitarbeitendem und Monat",
+      "Monatlich kündbar, Module einzeln zubuchbar",
+      "Smartphone App ohne Aufpreis im Abo",
+      "Single Sign-on über Azure Active Directory"
+    ],
+    "cons": [
+      "Lohnabrechnung nur über das separate Produkt oder Bundle",
+      "Hostingstandort auf der Produktseite nicht genannt",
+      "Recruiting mit 175 € pauschal teuer für kleine Teams"
+    ],
+    "sources": [
+      {
+        "label": "Sage HR Produktseite mit Preisen und FAQ",
+        "url": "https://www.sage.com/de-de/sage-business-cloud/hr/",
+        "accessedAt": "2026-10-21"
+      },
+      {
+        "label": "Sage HR Preisrechner und FAQ",
+        "url": "https://www.sage.com/de-de/sage-business-cloud/hr/preisgestaltung/",
+        "accessedAt": "2026-10-21"
+      },
+      {
+        "label": "Impressum Sage GmbH",
+        "url": "https://www.sage.com/de-de/impressum/",
+        "accessedAt": "2026-10-21"
+      }
+    ],
+    "author": "wolfram-eschenbach",
+    "reviewer": "wolfram-eschenbach",
+    "publishedAt": "2026-10-21",
+    "updatedAt": "2026-10-21",
+    "handsOnTest": false,
+    "changelog": [
+      {
+        "date": "2026-10-21",
+        "note": "Profil angelegt. Fakten aus Anbieterseiten, Wertung als Entwurf zur redaktionellen Prüfung."
+      },
+      {
+        "date": "2026-10-21",
+        "note": "Vertiefte Prüfung aller Sage Unterseiten: Preise, Tarife, Zusatzmodule, FAQ und Quellen aktualisiert."
+      },
+      {
+        "date": "2026-10-21",
+        "note": "Redaktionell freigegeben und veröffentlicht. Fakten aus den genannten Anbieterquellen, Wertung ohne eigenen Praxistest."
+      }
+    ]
+  },
+  "alternatives": ["personio", "factorial", "kenjo", "hrworks", "sage-hr-suite"],
+  "verification": "verifiziert",
+  "status": "veroeffentlicht"
+}

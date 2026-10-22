@@ -1,0 +1,98 @@
+{
+  "slug": "sap-successfactors",
+  "name": "SAP SuccessFactors",
+  "vendor": "sap",
+  "categories": ["hr-software"],
+  "primaryCategory": "hr-software",
+  "tagline": "HCM-Suite für große Unternehmen mit Employee Central und Payroll",
+  "logo": "/logos/sap.svg",
+  "brandColor": "#4a4fc4",
+  "website": "https://www.sap.com/germany/products/hcm.html",
+  "affiliate": null,
+  "pricing": {
+    "currency": "EUR",
+    "basis": "netto",
+    "freePlan": false,
+    "trialDays": null,
+    "plans": [
+      {
+        "name": "Employee Central",
+        "priceMonthlyNet": null,
+        "priceYearlyNetPerMonth": null,
+        "unit": "pro-nutzer-monat",
+        "includedUsers": null,
+        "highlights": ["Abrechnung je Nutzer und Jahr", "Preis auf Anfrage"],
+        "recommended": true
+      }
+    ],
+    "contractNotes": "Preisliste je Nutzer und Jahr, Beträge nicht öffentlich. Vertragslaufzeiten 12 bis 60 Monate.",
+    "source": "https://www.sap.com/germany/products/hcm/employee-central-hris/pricing.html",
+    "verifiedAt": "2026-10-19"
+  },
+  "hosting": {
+    "serverLocation": "EU",
+    "avv": "unbekannt"
+  },
+  "compliance": {
+    "gobd": "unbekannt",
+    "xrechnung": "unbekannt",
+    "zugferd": "unbekannt",
+    "iso27001": "unbekannt",
+    "bsiC5": "unbekannt"
+  },
+  "madeInGermany": true,
+  "germanInterface": true,
+  "germanSupport": true,
+  "integrations": [],
+  "platforms": ["web", "ios", "android"],
+  "companySizes": ["250+"],
+  "scores": {
+    "funktionsumfang": 4.8,
+    "bedienung": 3.4,
+    "preisLeistung": 3.3,
+    "datenschutz": 4.3,
+    "support": 3.8,
+    "integrationen": 4.5
+  },
+  "editorial": {
+    "verdict": "Sehr umfangreiche HCM-Suite für große Organisationen. Europäische Kunden laufen laut SAP-Community in Rechenzentren in der EU, etwa in Frankfurt. Preise und Laufzeiten werden individuell vereinbart.",
+    "bestFor": ["Konzerne", "Unternehmen mit SAP-Landschaft"],
+    "notFor": ["Kleine und mittlere Unternehmen"],
+    "pros": [
+      "Sehr großer Funktionsumfang",
+      "Rechenzentren in der EU für europäische Kunden",
+      "Eng verzahnt mit SAP-Systemen"
+    ],
+    "cons": ["Keine öffentlichen Preise", "Lange Vertragslaufzeiten bis 60 Monate"],
+    "sources": [
+      {
+        "label": "Employee Central Preise",
+        "url": "https://www.sap.com/germany/products/hcm/employee-central-hris/pricing.html",
+        "accessedAt": "2026-10-19"
+      },
+      {
+        "label": "Datensicherheit in SuccessFactors (SAP Community)",
+        "url": "https://community.sap.com/t5/human-capital-management-blog-posts-by-sap/sicherstellung-der-datensicherheit-in-sap-successfactors/ba-p/13686997",
+        "accessedAt": "2026-10-19"
+      }
+    ],
+    "author": "wolfram-eschenbach",
+    "reviewer": "wolfram-eschenbach",
+    "publishedAt": "2026-10-19",
+    "updatedAt": "2026-10-21",
+    "handsOnTest": false,
+    "changelog": [
+      {
+        "date": "2026-10-19",
+        "note": "Profil angelegt. Fakten aus Anbieterseiten, Wertung als Entwurf zur redaktionellen Prüfung."
+      },
+      {
+        "date": "2026-10-21",
+        "note": "Redaktionell freigegeben und veröffentlicht. Fakten aus den genannten Anbieterquellen, Wertung ohne eigenen Praxistest."
+      }
+    ]
+  },
+  "alternatives": ["personio", "hrworks", "factorial", "kenjo", "rexx-systems"],
+  "verification": "verifiziert",
+  "status": "veroeffentlicht"
+}

@@ -1,0 +1,111 @@
+{
+  "slug": "personio",
+  "name": "Personio",
+  "vendor": "personio",
+  "categories": ["hr-software"],
+  "primaryCategory": "hr-software",
+  "tagline": "HR-Software für Personalakte, Abwesenheiten, Recruiting und Payroll",
+  "logo": "/logos/personio.svg",
+  "brandColor": "#4a4fc4",
+  "website": "https://www.personio.de",
+  "affiliate": null,
+  "pricing": {
+    "currency": "EUR",
+    "basis": "netto",
+    "freePlan": false,
+    "trialDays": null,
+    "plans": [
+      {
+        "name": "Core",
+        "priceMonthlyNet": 760,
+        "priceYearlyNetPerMonth": null,
+        "unit": "pro-nutzer-monat",
+        "includedUsers": null,
+        "highlights": ["Ab-Preis pro Mitarbeiter und Monat"],
+        "recommended": true
+      },
+      {
+        "name": "Core Pro",
+        "priceMonthlyNet": null,
+        "priceYearlyNetPerMonth": null,
+        "unit": "pro-nutzer-monat",
+        "includedUsers": null,
+        "highlights": ["Preis auf Anfrage"],
+        "recommended": false
+      }
+    ],
+    "contractNotes": "Ab-Preis laut englischer Preisseite, abhängig von Mitarbeiterzahl und Apps. Einmalige Einrichtungsgebühr je nach Unternehmensgröße. Netto oder brutto nicht angegeben.",
+    "source": "https://www.personio.com/pricing/",
+    "verifiedAt": "2026-10-19"
+  },
+  "hosting": {
+    "serverLocation": "unbekannt",
+    "avv": "unbekannt"
+  },
+  "compliance": {
+    "gobd": "unbekannt",
+    "xrechnung": "unbekannt",
+    "zugferd": "unbekannt",
+    "iso27001": "unbekannt",
+    "bsiC5": "unbekannt"
+  },
+  "madeInGermany": true,
+  "germanInterface": true,
+  "germanSupport": true,
+  "integrations": ["DATEV"],
+  "platforms": ["web", "ios", "android"],
+  "companySizes": ["10-49", "50-249", "250+"],
+  "scores": {
+    "funktionsumfang": 4.6,
+    "bedienung": 4.3,
+    "preisLeistung": 3.8,
+    "datenschutz": 3.8,
+    "support": 4,
+    "integrationen": 4.4
+  },
+  "editorial": {
+    "verdict": "Breite HR-Plattform für den Mittelstand mit Paketen Core und Core Pro sowie eigener Payroll. Preise hängen von Mitarbeiterzahl und Apps ab. Zu Hosting und Zertifikaten fanden wir in unserer Recherche keine Angaben.",
+    "bestFor": ["Mittelständische Unternehmen", "Wachsende Teams mit eigener HR-Abteilung"],
+    "notFor": ["Kleinstbetriebe mit wenigen Beschäftigten"],
+    "pros": [
+      "Breites Funktionsspektrum von Personalakte bis Payroll",
+      "Transparenter Ab-Preis für Core",
+      "Erweiterbar über Apps"
+    ],
+    "cons": [
+      "Einmalige Einrichtungsgebühr",
+      "Zusatzfunktionen als kostenpflichtige Apps",
+      "Keine Hosting-Angaben in unserer Recherche gefunden"
+    ],
+    "sources": [
+      {
+        "label": "Pricing Personio",
+        "url": "https://www.personio.com/pricing/",
+        "accessedAt": "2026-10-19"
+      },
+      {
+        "label": "FAQ Vertrag und Preise",
+        "url": "https://www.personio.com/faq/contract-pricing/",
+        "accessedAt": "2026-10-19"
+      }
+    ],
+    "author": "wolfram-eschenbach",
+    "reviewer": "wolfram-eschenbach",
+    "publishedAt": "2026-10-19",
+    "updatedAt": "2026-10-21",
+    "handsOnTest": false,
+    "changelog": [
+      {
+        "date": "2026-10-19",
+        "note": "Profil angelegt. Fakten aus Anbieterseiten, Wertung als Entwurf zur redaktionellen Prüfung."
+      },
+      {
+        "date": "2026-10-21",
+        "note": "Redaktionell freigegeben und veröffentlicht. Fakten aus den genannten Anbieterquellen, Wertung ohne eigenen Praxistest."
+      }
+    ]
+  },
+  "alternatives": ["hrworks", "factorial", "kenjo", "rexx-systems", "leapsome"],
+  "verification": "verifiziert",
+  "status": "veroeffentlicht"
+}

@@ -1,0 +1,23 @@
+{
+  "slug": "rexx-systems",
+  "legalName": "Rexx Systems GmbH",
+  "brandName": "rexx systems",
+  "headquarters": {
+    "city": "Hamburg",
+    "country": "DE"
+  },
+  "founded": null,
+  "website": "https://www.rexx-systems.com",
+  "germanEntity": true,
+  "supportLanguages": null,
+  "notes": "Amtsgericht Hamburg, HRB 78749.",
+  "sources": [
+    {
+      "label": "Impressum rexx systems",
+      "url": "https://www.rexx-systems.com/impressum/",
+      "accessedAt": "2026-10-19"
+    }
+  ],
+  "verification": "verifiziert",
+  "verifiedAt": "2026-10-19"
+}

@@ -1,0 +1,20 @@
+{
+  "slug": "weclapp",
+  "legalName": "weclapp GmbH",
+  "brandName": "weclapp",
+  "headquarters": { "city": "Kitzingen", "country": "DE" },
+  "founded": null,
+  "website": "https://www.weclapp.com/de/",
+  "germanEntity": true,
+  "supportLanguages": null,
+  "notes": "Friedrich-Ebert-Straße 28, 97318 Kitzingen. Amtsgericht Frankfurt am Main, HRB 129744.",
+  "sources": [
+    {
+      "label": "Impressum weclapp",
+      "url": "https://www.weclapp.com/de/impressum/",
+      "accessedAt": "2026-10-21"
+    }
+  ],
+  "verification": "verifiziert",
+  "verifiedAt": "2026-10-21"
+}

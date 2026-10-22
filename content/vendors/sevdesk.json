@@ -1,0 +1,23 @@
+{
+  "slug": "sevdesk",
+  "legalName": "sevDesk GmbH",
+  "brandName": "sevdesk",
+  "headquarters": {
+    "city": "Offenburg",
+    "country": "DE"
+  },
+  "founded": null,
+  "website": "https://sevdesk.de",
+  "germanEntity": true,
+  "supportLanguages": null,
+  "notes": "Amtsgericht Freiburg, HRB 710506. Zweigniederlassung in Wien laut Impressum.",
+  "sources": [
+    {
+      "label": "Impressum sevdesk",
+      "url": "https://sevdesk.de/impressum/",
+      "accessedAt": "2026-10-19"
+    }
+  ],
+  "verification": "verifiziert",
+  "verifiedAt": "2026-10-19"
+}

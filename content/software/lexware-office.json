@@ -1,0 +1,137 @@
+{
+  "slug": "lexware-office",
+  "name": "Lexware Office",
+  "vendor": "lexware",
+  "categories": ["buchhaltung"],
+  "primaryCategory": "buchhaltung",
+  "tagline": "Cloudbuchhaltung mit Rechnungen, Belegen, ELSTER und DATEV-Schnittstelle",
+  "logo": "/logos/lexware.svg",
+  "brandColor": "#4a4fc4",
+  "website": "https://office.lexware.de",
+  "affiliate": null,
+  "pricing": {
+    "currency": "EUR",
+    "basis": "netto",
+    "freePlan": false,
+    "trialDays": 30,
+    "plans": [
+      {
+        "name": "S",
+        "priceMonthlyNet": 790,
+        "priceYearlyNetPerMonth": null,
+        "unit": "pro-monat",
+        "includedUsers": null,
+        "highlights": ["Einstiegstarif"],
+        "recommended": false
+      },
+      {
+        "name": "M",
+        "priceMonthlyNet": 1290,
+        "priceYearlyNetPerMonth": null,
+        "unit": "pro-monat",
+        "includedUsers": null,
+        "highlights": ["Erweiterter Tarif"],
+        "recommended": false
+      },
+      {
+        "name": "L",
+        "priceMonthlyNet": 2190,
+        "priceYearlyNetPerMonth": null,
+        "unit": "pro-monat",
+        "includedUsers": null,
+        "highlights": ["Umfangreicher Tarif"],
+        "recommended": true
+      },
+      {
+        "name": "XL",
+        "priceMonthlyNet": 3290,
+        "priceYearlyNetPerMonth": null,
+        "unit": "pro-monat",
+        "includedUsers": null,
+        "highlights": ["Größter Tarif", "Lohn und Gehalt als Zusatz buchbar"],
+        "recommended": false
+      }
+    ],
+    "contractNotes": "Monatlich kündbar. Reguläre Preise netto; der Anbieter wirbt zeitweise mit 50 % Rabatt für 3 Monate. Jahrespreise und enthaltene Nutzer nennt die Preisseite nicht.",
+    "source": "https://www.lexware.de/preise/",
+    "verifiedAt": "2026-10-19"
+  },
+  "hosting": {
+    "serverLocation": "DE",
+    "avv": "unbekannt"
+  },
+  "compliance": {
+    "gobd": "ja",
+    "xrechnung": "ja",
+    "zugferd": "ja",
+    "iso27001": "ja",
+    "bsiC5": "unbekannt"
+  },
+  "madeInGermany": true,
+  "germanInterface": true,
+  "germanSupport": true,
+  "integrations": ["DATEV", "ELSTER"],
+  "platforms": ["web", "ios", "android"],
+  "companySizes": ["solo", "1-9", "10-49"],
+  "scores": {
+    "funktionsumfang": 4.5,
+    "bedienung": 4.4,
+    "preisLeistung": 4.3,
+    "datenschutz": 4.6,
+    "support": 4,
+    "integrationen": 4.5
+  },
+  "editorial": {
+    "verdict": "Breite Cloudbuchhaltung für Selbstständige und kleine Betriebe, mit ELSTER-Modul, DATEV-Schnittstelle und E-Rechnung in beiden Formaten. Rechenzentren laut Anbieter in Frankfurt am Main.",
+    "bestFor": ["Selbstständige", "Kleine Unternehmen mit Steuerberatung"],
+    "notFor": ["Unternehmen mit eigener Finanzabteilung und ERP"],
+    "pros": [
+      "E-Rechnung als XRechnung und ZUGFeRD laut Anbieter",
+      "Integriertes ELSTER-Modul für die Umsatzsteuervoranmeldung",
+      "DATEV-Export und DATEV-Cloud-Services für die Steuerberatung",
+      "Rechenzentren in Frankfurt, nach ISO 27001 zertifiziert (Herstellerangabe)"
+    ],
+    "cons": ["Preisseite nennt keine Jahrespreise", "Zahl der enthaltenen Nutzer pro Tarif nicht angegeben"],
+    "sources": [
+      {
+        "label": "Preise Lexware Office",
+        "url": "https://www.lexware.de/preise/",
+        "accessedAt": "2026-10-19"
+      },
+      {
+        "label": "Datenschutz und Datensicherheit",
+        "url": "https://www.lexware.de/datenschutz-datensicherheit/",
+        "accessedAt": "2026-10-19"
+      },
+      {
+        "label": "XRechnung erstellen",
+        "url": "https://www.lexware.de/funktionen/xrechnung/",
+        "accessedAt": "2026-10-19"
+      }
+    ],
+    "author": "wolfram-eschenbach",
+    "reviewer": "wolfram-eschenbach",
+    "publishedAt": "2026-10-19",
+    "updatedAt": "2026-10-21",
+    "handsOnTest": false,
+    "changelog": [
+      {
+        "date": "2026-10-19",
+        "note": "Profil angelegt. Fakten aus Anbieterseiten, Wertung als Entwurf zur redaktionellen Prüfung."
+      },
+      {
+        "date": "2026-10-21",
+        "note": "Redaktionell freigegeben und veröffentlicht. Fakten aus den genannten Anbieterquellen, Wertung ohne eigenen Praxistest."
+      }
+    ]
+  },
+  "alternatives": [
+    "sevdesk",
+    "datev-unternehmen-online",
+    "buchhaltungsbutler",
+    "wiso-meinbuero",
+    "papierkram"
+  ],
+  "verification": "verifiziert",
+  "status": "veroeffentlicht"
+}

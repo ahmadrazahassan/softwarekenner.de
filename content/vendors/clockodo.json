@@ -1,0 +1,23 @@
+{
+  "slug": "clockodo",
+  "legalName": "Clockodo GmbH",
+  "brandName": "Clockodo",
+  "headquarters": {
+    "city": "Unna",
+    "country": "DE"
+  },
+  "founded": null,
+  "website": "https://www.clockodo.com/de",
+  "germanEntity": true,
+  "supportLanguages": null,
+  "notes": "Amtsgericht Hamm, HRB 7711.",
+  "sources": [
+    {
+      "label": "Impressum Clockodo",
+      "url": "https://www.clockodo.com/de/impressum/",
+      "accessedAt": "2026-10-19"
+    }
+  ],
+  "verification": "verifiziert",
+  "verifiedAt": "2026-10-19"
+}

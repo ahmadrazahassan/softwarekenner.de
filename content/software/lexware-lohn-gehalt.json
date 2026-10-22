@@ -1,0 +1,125 @@
+{
+  "slug": "lexware-lohn-gehalt",
+  "name": "Lexware lohn+gehalt",
+  "vendor": "lexware",
+  "categories": ["lohnabrechnung"],
+  "primaryCategory": "lohnabrechnung",
+  "tagline": "Desktopsoftware für die Lohnabrechnung in vier Ausbaustufen",
+  "logo": "/logos/lexware.svg",
+  "brandColor": "#4a4fc4",
+  "website": "https://www.lexware.de/",
+  "affiliate": null,
+  "pricing": {
+    "currency": "EUR",
+    "basis": "netto",
+    "freePlan": false,
+    "trialDays": null,
+    "plans": [
+      {
+        "name": "lohn+gehalt",
+        "priceMonthlyNet": 3190,
+        "priceYearlyNetPerMonth": null,
+        "unit": "pro-monat",
+        "includedUsers": null,
+        "highlights": ["Einstiegsversion"],
+        "recommended": false
+      },
+      {
+        "name": "lohn+gehalt plus",
+        "priceMonthlyNet": 4290,
+        "priceYearlyNetPerMonth": null,
+        "unit": "pro-monat",
+        "includedUsers": null,
+        "highlights": ["Erweiterte Version"],
+        "recommended": true
+      },
+      {
+        "name": "lohn+gehalt pro",
+        "priceMonthlyNet": 7390,
+        "priceYearlyNetPerMonth": null,
+        "unit": "pro-monat",
+        "includedUsers": null,
+        "highlights": ["Für mehrere Firmen"],
+        "recommended": false
+      },
+      {
+        "name": "lohn+gehalt premium",
+        "priceMonthlyNet": 9540,
+        "priceYearlyNetPerMonth": null,
+        "unit": "pro-monat",
+        "includedUsers": null,
+        "highlights": ["Größte Ausbaustufe"],
+        "recommended": false
+      }
+    ],
+    "contractNotes": "Monatspreise laut Lexware-Preisliste gültig ab 01.09.2026, Jahrespreis jeweils das Zwölffache. Funktionsumfang je Stufe auf der Preisliste nicht beschrieben.",
+    "source": "https://www.lexware.de/preise2026/",
+    "verifiedAt": "2026-10-21"
+  },
+  "hosting": {
+    "serverLocation": "unbekannt",
+    "avv": "unbekannt"
+  },
+  "compliance": {
+    "gobd": "unbekannt",
+    "xrechnung": "unbekannt",
+    "zugferd": "unbekannt",
+    "iso27001": "unbekannt",
+    "bsiC5": "unbekannt"
+  },
+  "madeInGermany": true,
+  "germanInterface": true,
+  "germanSupport": true,
+  "integrations": [],
+  "platforms": ["windows"],
+  "companySizes": ["1-9", "10-49", "50-249"],
+  "scores": {
+    "funktionsumfang": 4.3,
+    "bedienung": 4,
+    "preisLeistung": 4.1,
+    "datenschutz": 4.1,
+    "support": 4,
+    "integrationen": 4.1
+  },
+  "editorial": {
+    "verdict": "Verbreitete Lohnsoftware für kleine und mittlere Betriebe, die selbst abrechnen. Vier Stufen von 31,90 € bis 95,40 € im Monat, als Windows-Programm.",
+    "bestFor": ["Kleine Betriebe mit eigener Lohnabrechnung", "Lohnbüros, die mehrere Firmen betreuen"],
+    "notFor": ["Teams, die nur im Browser arbeiten wollen"],
+    "pros": [
+      "Vier Ausbaustufen mit veröffentlichten Preisen",
+      "Monats- oder Jahresbezug laut Preisliste",
+      "Vom selben Anbieter wie Lexware Office"
+    ],
+    "cons": ["Nur für Windows", "Unterschiede der Stufen auf der Preisliste nicht erklärt"],
+    "sources": [
+      {
+        "label": "Lexware Preisliste gültig ab 01.09.2026",
+        "url": "https://www.lexware.de/preise2026/",
+        "accessedAt": "2026-10-21"
+      },
+      {
+        "label": "Impressum Lexware",
+        "url": "https://impressum.lexware.de/lexware-office",
+        "accessedAt": "2026-10-21"
+      }
+    ],
+    "author": "wolfram-eschenbach",
+    "reviewer": "wolfram-eschenbach",
+    "publishedAt": "2026-10-21",
+    "updatedAt": "2026-10-21",
+    "handsOnTest": false,
+    "changelog": [
+      {
+        "date": "2026-10-21",
+        "note": "Profil angelegt. Fakten aus Anbieterseiten, Wertung als Entwurf zur redaktionellen Prüfung."
+      },
+      {
+        "date": "2026-10-21",
+        "note": "Redaktionell freigegeben und veröffentlicht. Fakten aus den genannten Anbieterquellen, Wertung ohne eigenen Praxistest."
+      }
+    ]
+  },
+  "alternatives": ["datev-lohn-und-gehalt", "sage-lohnabrechnung", "sage-hr-suite"],
+  "verification": "verifiziert",
+  "status": "veroeffentlicht"
+}

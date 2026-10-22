@@ -1,0 +1,17 @@
+{
+  "slug": "erp",
+  "name": "ERP und Warenwirtschaft",
+  "shortName": "ERP",
+  "icon": "Boxes",
+  "description": "Systeme für Lager, Einkauf, Verkauf und Produktion. Wir achten auf Shopanbindungen, Schnittstellen zur Buchhaltung und den Aufwand der Einführung.",
+  "batch": 3,
+  "weights": null,
+  "faq": [],
+  "related": ["shopsysteme", "buchhaltung"],
+  "seo": {
+    "title": "ERP und Warenwirtschaft im Vergleich",
+    "description": "ERP-Software und Warenwirtschaft für Unternehmen in Deutschland: Lager, Shopanbindung, Einführung und Preise in Euro im Vergleich."
+  },
+  "status": "veroeffentlicht",
+  "updatedAt": "2026-10-19"
+}
