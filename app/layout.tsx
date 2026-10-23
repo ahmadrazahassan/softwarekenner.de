@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";
 import Script from "next/script";
 import { NuqsAdapter } from "nuqs/adapters/next/app";
@@ -45,6 +46,8 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           <MotionProvider>{children}</MotionProvider>
         </NuqsAdapter>
         {analytics && <Script strategy="afterInteractive" {...analytics} />}
+        {/* Vercel Web Analytics: cookieless, served from our own domain, no consent needed (Datenschutz). */}
+        <Analytics />
       </body>
     </html>
   );

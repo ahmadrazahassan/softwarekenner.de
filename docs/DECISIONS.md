@@ -325,3 +325,8 @@ All versions were checked with `npm view <pkg> version` on 19 October 2026. No c
 - **Not added:** FreshBooks fails rule 3 (USD only, US region, no German page, no German support). Odoo: the given link (sl1nk.com) lands on a Portuguese link shortener page with AdSense ads instead of Odoo; it needs the official Odoo partner link before a profile and deal make sense.
 - **FastBill (added the same day):** FastBill GmbH, Frankfurt am Main, direct UTM link (network `direkt`), profile and review in Buchhaltung and Rechnungsprogramme. Logo: the green mark cut from the official wordmark SVG (fastbill.com/themes/custom/fastbill/logo.svg), because the site offers no square icon.
 - **Fix:** the cost chart only says "am wenigsten" when at least two programs have a price at 10 users.
+
+## Vercel Web Analytics (24 October 2026)
+
+- **Decision:** `@vercel/analytics` 2.0.1 (pinned) with `<Analytics />` in `app/layout.tsx`. It is cookieless and loaded from our own domain, so `CONSENT_SERVICES` stays empty and no banner appears; Section 19 asks for cookieless analytics. It runs next to the optional provider in `lib/analytics` (still off). The privacy policy now describes it (Art. 6 Abs. 1 lit. f DSGVO), to be confirmed in the lawyer review.
+- **Owner step:** switch on "Web Analytics" in the Vercel project (Analytics tab) once; without it the script receives no data.

@@ -50,9 +50,16 @@ export default function PrivacyPage() {
 
       <h2>Cookies und Reichweitenmessung</h2>
       <p>
-        Wir setzen derzeit keine Cookies und keine Dienste ein, die eine Einwilligung erfordern. Für die
-        Reichweitenmessung ist ein cookieloses, in der EU betriebenes Verfahren vorgesehen; es wird hier
-        beschrieben, bevor es aktiviert wird.
+        Wir setzen keine Cookies und keine Dienste ein, die eine Einwilligung erfordern. Zur
+        Reichweitenmessung nutzen wir Vercel Web Analytics, ein Dienst unseres Hosting-Anbieters (siehe oben).
+        Er arbeitet ohne Cookies und ohne Speicherung von Informationen auf Ihrem Endgerät. Das Skript wird
+        von unserer eigenen Domain geladen. Laut Anbieter werden dabei die aufgerufene Seite, die
+        Herkunftsseite, Browser, Betriebssystem, Gerätetyp und das Land erfasst; Besucherinnen und Besucher
+        werden nur über einen täglich wechselnden, nicht umkehrbaren Wert ohne Wiedererkennung über mehrere
+        Tage unterschieden. Die IP-Adresse wird nicht gespeichert und es entsteht kein Profil. Rechtsgrundlage
+        ist unser berechtigtes Interesse an einer bedarfsgerechten Gestaltung der Website (Art. 6 Abs. 1 lit.
+        f DSGVO). Mit dem Anbieter besteht der oben genannte Vertrag zur Auftragsverarbeitung. Sie können der
+        Auswertung jederzeit widersprechen, indem Sie uns eine E-Mail schreiben.
       </p>
 
       <h2>Beratungsanfragen und Kontakt</h2>
