@@ -21,6 +21,7 @@ export const routes = {
   downloads: () => "/leitfaeden",
   download: (slug: string) => `/leitfaeden/${slug}`,
   advisory: () => "/beratung",
+  newsletter: () => "/newsletter",
   methodology: () => "/methodik",
   editorialTeam: () => "/redaktion",
   author: (slug: string) => `/autoren/${slug}`,

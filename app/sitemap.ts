@@ -57,6 +57,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...listAuthors().map((a) => entry(routes.author(a.slug))),
     ...[
       routes.advisory(),
+      routes.newsletter(),
       routes.methodology(),
       routes.editorialTeam(),
       routes.forVendors(),

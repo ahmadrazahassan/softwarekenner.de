@@ -68,7 +68,17 @@ export default function PrivacyPage() {
         <p>
           Für den Newsletter verarbeiten wir Ihre E-Mail-Adresse auf Grundlage Ihrer Einwilligung (Art. 6 Abs.
           1 lit. a DSGVO). Die Anmeldung erfolgt im Double-Opt-in-Verfahren und wird protokolliert. Sie können
-          die Einwilligung jederzeit über den Abmeldelink in jeder Ausgabe widerrufen.
+          die Einwilligung jederzeit über den Abmeldelink in jeder Ausgabe widerrufen. Wir speichern Ihre
+          E-Mail-Adresse bis zum Widerruf. Die Bestätigung protokollieren wir ohne Ihre Adresse mit einer
+          Kennung und dem Zeitpunkt.
+        </p>
+      )}
+      {siteConfig.features.newsletter && (
+        <p>
+          Für Versand und Verwaltung der Adressen setzen wir den E-Mail-Dienst Resend (Resend, Inc., San
+          Francisco, USA) als Auftragsverarbeiter ein (Art. 28 DSGVO). Auch Bestätigungs- und
+          Antwort-E-Mails zu Anfragen werden darüber versendet. Die Daten werden in der Region EU (Irland)
+          verarbeitet.
         </p>
       )}
 

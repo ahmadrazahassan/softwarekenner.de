@@ -184,6 +184,12 @@ test("newsletter double opt in needs the link and a click", async ({ page }) => 
   expect(Object.values(contacts).find((c) => c.email === email)?.confirmed).toBe(true);
 });
 
+test("newsletter page offers the sign up form", async ({ page }) => {
+  await page.goto("/newsletter");
+  await expect(page.getByRole("heading", { level: 1 })).toContainText("Einmal im Monat das Wichtigste");
+  await expect(page.getByRole("complementary").getByRole("button", { name: "Anmelden" })).toBeVisible();
+});
+
 test("broken confirmation links explain what to do", async ({ page }) => {
   await page.goto("/bestaetigen?token=gefaelschtgefaelschtgefaelschtgefaelschtgefaelscht");
   await expect(page.getByText("Dieser Link funktioniert nicht mehr")).toBeVisible();

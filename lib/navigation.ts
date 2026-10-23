@@ -62,6 +62,7 @@ export const FOOTER_COMPANY = [
   { href: "/redaktion", label: "Redaktion" },
   { href: "/methodik", label: "Methodik" },
   { href: "/kontakt", label: "Kontakt" },
+  { href: "/newsletter", label: "Newsletter" },
   { href: "/fuer-anbieter", label: "Für Anbieter" },
 ] as const;
 

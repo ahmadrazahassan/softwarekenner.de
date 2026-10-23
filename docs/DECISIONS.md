@@ -308,3 +308,10 @@ All versions were checked with `npm view <pkg> version` on 19 October 2026. No c
 - **Structured data:** FAQPage for category FAQs, logo and address for the Organization, image for Article.
 - **Not done:** a hard 404 for unknown slugs via `proxy.ts`; the Next 16 docs advise against shared modules in Proxy, and those pages already carry `noindex`.
 - **AVV article:** a section on the official templates (EU standard clauses 2021/915, BfDI Mustervereinbarung 2.1, Hessian Formulierungshilfe), because people search for "AVV Muster" and the article title now names it.
+
+## Newsletter (24 October 2026)
+
+- **Decision:** `features.newsletter` is on. Dedicated page `/newsletter` (Inhalt, Versprechen, Ablauf, FAQ, sticky Anmeldekarte), a newsletter block in the footer (headline, one line of benefit, form, link to the page, owner address below a rule), "Newsletter" in the footer column Unternehmen, entry in the sitemap, Resend named as processor in the privacy policy.
+- **Mail setup:** domain softwarekenner.de is verified in Resend (region eu-west-1). Sender `newsletter@softwarekenner.de`, own Resend segment "Softwarekenner Newsletter" (the account's "General" segment is shared with other sites). Values live in `.env.local` (not committed); the same variables must be set in Vercel.
+- **No invented proof:** the page names no subscriber count, no archive and no sample issue, because none exists yet.
+- **Open:** Resend's privacy details (DPA, transfer basis) are to be checked with the privacy policy review; the first issue is sent as a Resend Broadcast to the segment.

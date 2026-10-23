@@ -89,7 +89,7 @@ export const siteConfig = {
     sponsoredPlacements: false,
     /** User reviews collection is empty at launch (Section 10). */
     userReviews: false,
-    newsletter: false,
+    newsletter: true,
   },
 } as const;
 

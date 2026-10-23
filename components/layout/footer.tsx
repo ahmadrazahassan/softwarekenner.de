@@ -141,7 +141,25 @@ export function Footer({
               <h2 className="font-display text-[1.875rem] leading-[0.98] font-bold tracking-[-0.02em] uppercase">
                 Einmal im Monat das Wichtigste
               </h2>
+              <p className="type-body">
+                Neue Bewertungen, Preisänderungen und Fristen für Ihr Unternehmen. Kostenlos, ohne Werbung.{" "}
+                <AppLink
+                  href={routes.newsletter()}
+                  className="font-semibold underline underline-offset-4 hover:no-underline"
+                >
+                  Mehr zum Newsletter
+                </AppLink>
+              </p>
               <NewsletterForm privacyHref={routes.legal.privacy()} onBrand onSubmit={subscribeNewsletter} />
+              <address className="flex flex-col gap-0.5 border-t-[1.5px] border-ink pt-5 type-small not-italic">
+                <span className="font-semibold">
+                  {siteConfig.brand.name} · {legal.companyLegalName}
+                </span>
+                <span>{legal.companyAddress}</span>
+                <a href={`mailto:${contact.email}`} className="w-fit underline-offset-4 hover:underline">
+                  {contact.email}
+                </a>
+              </address>
             </>
           ) : (
             <>
