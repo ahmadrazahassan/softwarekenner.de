@@ -86,6 +86,13 @@ export default async function ComparisonPage({ params }: PageProps<"/vergleich/[
             );
           })}
         </div>
+        {[a, b].some((s) => s.affiliate?.active) && (
+          <p className="-mt-8 type-small text-text-muted">
+            Mit * gekennzeichnete Links sind Affiliate-Links. Schließen Sie darüber einen Vertrag ab, erhalten
+            wir unter Umständen eine Provision. Für Sie ändert sich der Preis nicht, und auf unsere
+            Bewertungen hat die Provision keinen Einfluss.
+          </p>
+        )}
         <aside className="rounded-lg bg-brand-50 p-6">
           <p className="type-eyebrow text-brand-ink">Das Wichtigste in 30 Sekunden</p>
           <p className="mt-2 type-body-lg text-ink">{comparison.verdict}</p>

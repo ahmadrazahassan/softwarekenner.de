@@ -1,0 +1,166 @@
+{
+  "slug": "easybill",
+  "name": "easybill",
+  "vendor": "easybill",
+  "categories": ["buchhaltung", "rechnungsprogramme"],
+  "primaryCategory": "buchhaltung",
+  "tagline": "Rechnungsprogramm mit E-Rechnung, DATEV-Export und Anbindung an Marktplätze",
+  "logo": "/logos/easybill.png",
+  "brandColor": "#1d5af5",
+  "website": "https://www.easybill.de/",
+  "affiliate": {
+    "url": "https://www.easybill.de/?utm_source=softwarekenner.de&utm_medium=referral&utm_campaign=listing",
+    "network": "direkt",
+    "active": true
+  },
+  "pricing": {
+    "currency": "EUR",
+    "basis": "netto",
+    "freePlan": true,
+    "trialDays": 7,
+    "plans": [
+      {
+        "name": "Free",
+        "priceMonthlyNet": 0,
+        "priceYearlyNetPerMonth": 0,
+        "unit": "pro-monat",
+        "includedUsers": 1,
+        "highlights": ["50 Dokumente pro Monat", "3 Kontakte", "DATEV-Schnittstelle"],
+        "recommended": false
+      },
+      {
+        "name": "Starter",
+        "priceMonthlyNet": 1200,
+        "priceYearlyNetPerMonth": 900,
+        "unit": "pro-monat",
+        "includedUsers": null,
+        "highlights": ["Bis 250 Dokumente pro Monat", "E-Rechnung erstellen und empfangen", "20 Kontakte"],
+        "recommended": false
+      },
+      {
+        "name": "Professional",
+        "priceMonthlyNet": 3900,
+        "priceYearlyNetPerMonth": 2500,
+        "unit": "pro-monat",
+        "includedUsers": null,
+        "highlights": ["Unbegrenzt Kunden", "Wiederkehrende Rechnungen", "Versandverwaltung"],
+        "recommended": true
+      },
+      {
+        "name": "Premium",
+        "priceMonthlyNet": 4500,
+        "priceYearlyNetPerMonth": 3700,
+        "unit": "pro-monat",
+        "includedUsers": 3,
+        "highlights": ["Automatisches Mahnwesen", "Projekte und Zeiterfassung", "3 Mitarbeitende inklusive"],
+        "recommended": false
+      }
+    ],
+    "contractNotes": "Preise netto zzgl. MwSt. Jahrestarife werden im Voraus berechnet. Professional und Premium mit wählbarem Dokumentenkontingent ab 500 Dokumenten im Monat, weitere Dokumente im Flex-Modell 0,29 € je Stück. Weitere Mitarbeitende in Premium 5 € je Person. Test 7 Tage mit allen Premium-Funktionen, danach automatisch der kostenlose Tarif.",
+    "source": "https://www.easybill.de/preise",
+    "verifiedAt": "2026-10-23"
+  },
+  "hosting": {
+    "serverLocation": "DE",
+    "avv": "ja"
+  },
+  "compliance": {
+    "gobd": "ja",
+    "xrechnung": "ja",
+    "zugferd": "ja",
+    "iso27001": "unbekannt",
+    "bsiC5": "unbekannt"
+  },
+  "madeInGermany": true,
+  "germanInterface": true,
+  "germanSupport": true,
+  "integrations": [
+    "DATEV",
+    "Lexware Office",
+    "Amazon",
+    "eBay",
+    "Shopify",
+    "Shopware",
+    "WooCommerce",
+    "Kaufland",
+    "Otto",
+    "Mollie"
+  ],
+  "platforms": ["web"],
+  "companySizes": ["solo", "1-9", "10-49"],
+  "scores": {
+    "funktionsumfang": 4.1,
+    "bedienung": 4.2,
+    "preisLeistung": 4.3,
+    "datenschutz": 4.4,
+    "support": 4.0,
+    "integrationen": 4.6
+  },
+  "editorial": {
+    "verdict": "Rechnungsprogramm aus Kaarst, stark im Onlinehandel mit Dutzenden Marktplatzanbindungen, E-Rechnung in beiden Formaten und DATEV-Übergabe. Eine Finanzbuchhaltung mit EÜR oder Bilanz ersetzt es nicht.",
+    "bestFor": [
+      "Onlinehändler mit Shops und Marktplätzen",
+      "Selbstständige und kleine Betriebe mit Steuerberatung über DATEV",
+      "Unternehmen, die E-Rechnungen sicher erstellen und empfangen wollen"
+    ],
+    "notFor": ["Betriebe, die EÜR oder Bilanz selbst erstellen wollen"],
+    "pros": [
+      "E-Rechnung als XRechnung und ZUGFeRD erstellen und empfangen",
+      "Anbindung an Amazon, eBay, Shopify, Shopware, Kaufland, Otto und viele weitere Kanäle",
+      "DATEV-Export und Übergabe an DATEV Unternehmen online",
+      "Dauerhaft kostenloser Tarif mit 50 Dokumenten im Monat",
+      "Daten laut Anbieter ausschließlich auf Servern in Deutschland"
+    ],
+    "cons": [
+      "Keine eigene Finanzbuchhaltung: EÜR und Bilanz entstehen bei der Steuerberatung oder in einem Buchhaltungsprogramm",
+      "Testphase mit 7 Tagen kürzer als bei vielen Wettbewerbern",
+      "Dokumentenkontingente und Archivkosten machen den Preis bei hohem Volumen schwer kalkulierbar"
+    ],
+    "sources": [
+      {
+        "label": "easybill Pakete und Preise",
+        "url": "https://www.easybill.de/preise",
+        "accessedAt": "2026-10-23"
+      },
+      {
+        "label": "easybill Pakete und Preise (Datenspeicherung in Deutschland)",
+        "url": "https://www.easybill.de/en/pricing/",
+        "accessedAt": "2026-10-23"
+      },
+      {
+        "label": "easybill E-Commerce: Marktplätze und Shopsysteme",
+        "url": "https://www.easybill.de/ecommerce",
+        "accessedAt": "2026-10-23"
+      },
+      {
+        "label": "easybill Hilfecenter: Auftragsverarbeitung nach Art. 28 DSGVO",
+        "url": "https://support.easybill.de/hc/de/articles/360001287249-Vertragsdokument-Auftrag-gem%C3%A4%C3%9F-Art-28-DSGVO-Vereinbarung",
+        "accessedAt": "2026-10-23"
+      },
+      {
+        "label": "easybill Hilfecenter: DATEV-Datenservice",
+        "url": "https://support.easybill.de/hc/de/articles/360001515879-easybill-mit-DATEV-Datenservice-verbinden-Rechnungsdatenservice-1-0",
+        "accessedAt": "2026-10-23"
+      },
+      {
+        "label": "Impressum easybill",
+        "url": "https://www.easybill.de/impressum",
+        "accessedAt": "2026-10-23"
+      }
+    ],
+    "author": "wolfram-eschenbach",
+    "reviewer": "wolfram-eschenbach",
+    "publishedAt": "2026-10-23",
+    "updatedAt": "2026-10-23",
+    "handsOnTest": false,
+    "changelog": [
+      {
+        "date": "2026-10-23",
+        "note": "Profil angelegt und veröffentlicht. Fakten aus Preisseite, E-Commerce-Seite, Hilfecenter und Impressum des Anbieters. Wertung ohne eigenen Praxistest."
+      }
+    ]
+  },
+  "alternatives": ["lexware-office", "sevdesk", "papierkram", "wiso-meinbuero"],
+  "verification": "verifiziert",
+  "status": "veroeffentlicht"
+}

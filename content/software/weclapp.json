@@ -8,7 +8,11 @@
   "logo": "/logos/weclapp.png",
   "brandColor": "#4a4fc4",
   "website": "https://www.weclapp.com/de/",
-  "affiliate": null,
+  "affiliate": {
+    "url": "https://www.weclapp.com/?utm_medium=company_profile&utm_source=softwarekenner.de&utm_campaign=softwarekenner.de",
+    "network": "direkt",
+    "active": true
+  },
   "pricing": {
     "currency": "EUR",
     "basis": "netto",

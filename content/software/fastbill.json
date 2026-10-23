@@ -1,0 +1,150 @@
+{
+  "slug": "fastbill",
+  "name": "FastBill",
+  "vendor": "fastbill",
+  "categories": ["buchhaltung", "rechnungsprogramme"],
+  "primaryCategory": "buchhaltung",
+  "tagline": "Rechnungen, Belege und Umsatzsteuervoranmeldung für Selbstständige und kleine Firmen",
+  "logo": "/logos/fastbill.svg",
+  "brandColor": "#84bf41",
+  "website": "https://www.fastbill.com/",
+  "affiliate": {
+    "url": "https://fastbill.com/?utm_medium=company_profile&utm_source=softwarekenner.de&utm_campaign=domain_click",
+    "network": "direkt",
+    "active": true
+  },
+  "pricing": {
+    "currency": "EUR",
+    "basis": "netto",
+    "freePlan": false,
+    "trialDays": 14,
+    "plans": [
+      {
+        "name": "Solo",
+        "priceMonthlyNet": 1000,
+        "priceYearlyNetPerMonth": 900,
+        "unit": "pro-monat",
+        "includedUsers": 1,
+        "highlights": [
+          "Rechnungen und Angebote",
+          "Umsatzsteuervoranmeldung",
+          "DATEV-Export und Zeiterfassung"
+        ],
+        "recommended": false
+      },
+      {
+        "name": "Plus",
+        "priceMonthlyNet": 1500,
+        "priceYearlyNetPerMonth": 1400,
+        "unit": "pro-monat",
+        "includedUsers": 1,
+        "highlights": ["5 Bankkonten", "Dokumentenverwaltung", "Auftragsbestätigungen und Lieferscheine"],
+        "recommended": false
+      },
+      {
+        "name": "Pro",
+        "priceMonthlyNet": 3000,
+        "priceYearlyNetPerMonth": 2700,
+        "unit": "pro-monat",
+        "includedUsers": 3,
+        "highlights": [
+          "DATEV Rechnungsdatenservice 1.0",
+          "Wiederkehrende Rechnungen",
+          "Belegerfassung per Mail-Inbox"
+        ],
+        "recommended": true
+      },
+      {
+        "name": "Premium",
+        "priceMonthlyNet": 5900,
+        "priceYearlyNetPerMonth": 5300,
+        "unit": "pro-monat",
+        "includedUsers": 5,
+        "highlights": ["Automatischer Bankabgleich", "Automatisches Mahnwesen", "Umsatzsteuerprognose"],
+        "recommended": false
+      }
+    ],
+    "contractNotes": "Preise netto zzgl. MwSt. Jahreszahlung wird jährlich abgebucht. Solo und Plus mit 1 Nutzer, Pro mit 3, Premium mit 5 Nutzern. Mahnwesen in Premium mit 20 Vorgängen inklusive. Test 14 Tage ohne Abo.",
+    "source": "https://www.fastbill.com/preise",
+    "verifiedAt": "2026-10-23"
+  },
+  "hosting": {
+    "serverLocation": "DE",
+    "avv": "unbekannt"
+  },
+  "compliance": {
+    "gobd": "ja",
+    "xrechnung": "ja",
+    "zugferd": "ja",
+    "iso27001": "unbekannt",
+    "bsiC5": "unbekannt"
+  },
+  "madeInGermany": true,
+  "germanInterface": true,
+  "germanSupport": true,
+  "integrations": ["DATEV", "ELSTER", "PayPal", "Zapier", "Shopify", "WooCommerce", "Amazon", "Jimdo"],
+  "platforms": ["web"],
+  "companySizes": ["solo", "1-9", "10-49"],
+  "scores": {
+    "funktionsumfang": 4.1,
+    "bedienung": 4.2,
+    "preisLeistung": 4.2,
+    "datenschutz": 4.1,
+    "support": 3.9,
+    "integrationen": 4.0
+  },
+  "editorial": {
+    "verdict": "Frankfurter Rechnungsprogramm mit Belegerfassung, Umsatzsteuervoranmeldung ohne eigenes ELSTER-Zertifikat und DATEV-Anbindung. Die Automatik für Bankabgleich und Mahnwesen gibt es erst im teuersten Tarif.",
+    "bestFor": [
+      "Freelancer und Selbstständige mit Steuerberatung",
+      "Agenturen und Beratungen mit wiederkehrenden Rechnungen",
+      "Kleine GmbHs und UGs mit bis zu fünf Nutzern"
+    ],
+    "notFor": [
+      "Betriebe, die ihren Jahresabschluss selbst erstellen wollen",
+      "Händler mit Lager und Warenwirtschaft"
+    ],
+    "pros": [
+      "Umsatzsteuervoranmeldung schon im kleinsten Tarif, Übermittlung ohne ELSTER-Zertifikat",
+      "E-Rechnung als ZUGFeRD und XRechnung in allen Tarifen",
+      "DATEV-Export, ab Pro auch DATEV Rechnungsdatenservice 1.0",
+      "Daten laut Anbieter auf Servern in Deutschland"
+    ],
+    "cons": [
+      "Automatischer Bankabgleich, Belegimport und Mahnwesen erst in Premium ab 53 € im Monat",
+      "Solo und Plus nur mit einem Nutzer",
+      "Kein dauerhaft kostenloser Tarif, keine Angaben zur Auftragsverarbeitung auf den geprüften Seiten"
+    ],
+    "sources": [
+      {
+        "label": "FastBill Preise und Tarife",
+        "url": "https://www.fastbill.com/preise",
+        "accessedAt": "2026-10-23"
+      },
+      {
+        "label": "FastBill Startseite: Funktionen und Hosting",
+        "url": "https://www.fastbill.com/",
+        "accessedAt": "2026-10-23"
+      },
+      {
+        "label": "Impressum FastBill",
+        "url": "https://www.fastbill.com/impressum",
+        "accessedAt": "2026-10-23"
+      }
+    ],
+    "author": "wolfram-eschenbach",
+    "reviewer": "wolfram-eschenbach",
+    "publishedAt": "2026-10-23",
+    "updatedAt": "2026-10-23",
+    "handsOnTest": false,
+    "changelog": [
+      {
+        "date": "2026-10-23",
+        "note": "Profil angelegt und veröffentlicht. Fakten aus Preisseite, Startseite und Impressum des Anbieters. Wertung ohne eigenen Praxistest."
+      }
+    ]
+  },
+  "alternatives": ["lexware-office", "sevdesk", "easybill", "papierkram"],
+  "verification": "verifiziert",
+  "status": "veroeffentlicht"
+}

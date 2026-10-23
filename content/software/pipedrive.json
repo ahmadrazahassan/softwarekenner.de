@@ -1,0 +1,165 @@
+{
+  "slug": "pipedrive",
+  "name": "Pipedrive",
+  "vendor": "pipedrive",
+  "categories": ["crm"],
+  "primaryCategory": "crm",
+  "tagline": "Vertriebs-CRM mit visueller Pipeline, Automationen und über 500 Integrationen",
+  "logo": "/logos/pipedrive.png",
+  "brandColor": "#017737",
+  "website": "https://www.pipedrive.com/de",
+  "affiliate": {
+    "url": "https://www.pipedrive.com/en/programlp?utm_campaign=flatfee&utm_medium=Affiliate&utm_source=softwarekenner.de&pscd=aff.trypipedrive.com&ps_partner_key=t57iZXJ0YnJhbmRs&sid7=EN-CTA&ps_xid=wI3FOTPEzjD6lT&gsxid=wI3FOTPEzjD6lT&gspk=cm9iZXJ0YnJhbmRs",
+    "network": "partnerstack",
+    "active": true
+  },
+  "pricing": {
+    "currency": "EUR",
+    "basis": "netto",
+    "freePlan": false,
+    "trialDays": 14,
+    "plans": [
+      {
+        "name": "Lite",
+        "priceMonthlyNet": 1900,
+        "priceYearlyNetPerMonth": 1400,
+        "unit": "pro-nutzer-monat",
+        "includedUsers": null,
+        "highlights": [
+          "Lead-, Kalender- und Pipelineverwaltung",
+          "KI-gestützte Berichte",
+          "Über 500 Integrationen"
+        ],
+        "recommended": false
+      },
+      {
+        "name": "Growth",
+        "priceMonthlyNet": 3400,
+        "priceYearlyNetPerMonth": 2400,
+        "unit": "pro-nutzer-monat",
+        "includedUsers": null,
+        "highlights": [
+          "E-Mail-Synchronisierung mit Tracking",
+          "Automationen und E-Mail-Sequenzen",
+          "Prognoseberichte"
+        ],
+        "recommended": true
+      },
+      {
+        "name": "Premium",
+        "priceMonthlyNet": 6400,
+        "priceYearlyNetPerMonth": 4900,
+        "unit": "pro-nutzer-monat",
+        "includedUsers": null,
+        "highlights": ["LeadBooster zur Lead-Gewinnung", "Lead-Scoring", "Verträge und E-Signaturen"],
+        "recommended": false
+      },
+      {
+        "name": "Ultimate",
+        "priceMonthlyNet": 8900,
+        "priceYearlyNetPerMonth": 6900,
+        "unit": "pro-nutzer-monat",
+        "includedUsers": null,
+        "highlights": [
+          "Sicherheitsregeln und IP-Beschränkung",
+          "Sandbox-Konto",
+          "Erweiterter Telefonsupport"
+        ],
+        "recommended": false
+      }
+    ],
+    "contractNotes": "Preise pro Nutzer und Monat, zzgl. MwSt. Jährliche oder monatliche Abrechnung. Zusatzmodule wie Campaigns, LeadBooster, Projects, Webbesucher und Smart Docs kosten extra. Test 14 Tage ohne Kreditkarte.",
+    "source": "https://www.pipedrive.com/de/pricing",
+    "verifiedAt": "2026-10-23"
+  },
+  "hosting": {
+    "serverLocation": "EU",
+    "avv": "ja"
+  },
+  "compliance": {
+    "gobd": "unbekannt",
+    "xrechnung": "unbekannt",
+    "zugferd": "unbekannt",
+    "iso27001": "ja",
+    "bsiC5": "unbekannt"
+  },
+  "madeInGermany": false,
+  "germanInterface": true,
+  "germanSupport": true,
+  "integrations": ["Gmail", "Outlook", "Zoom", "Zapier", "PandaDoc", "CloudTalk"],
+  "platforms": ["web", "ios", "android"],
+  "companySizes": ["solo", "1-9", "10-49", "50-249"],
+  "scores": {
+    "funktionsumfang": 4.4,
+    "bedienung": 4.5,
+    "preisLeistung": 3.9,
+    "datenschutz": 3.8,
+    "support": 3.8,
+    "integrationen": 4.5
+  },
+  "editorial": {
+    "verdict": "Vertriebs-CRM mit der wohl klarsten Pipelineansicht im Vergleich und großem Integrationskatalog. Die wichtigsten Automationen beginnen erst im Tarif Growth, Vertragspartner ist eine estnische Gesellschaft.",
+    "bestFor": [
+      "Vertriebsteams mit klar definierten Verkaufsphasen",
+      "Agenturen und Dienstleister mit vielen offenen Angeboten",
+      "Teams, die E-Mail und Kalender direkt im CRM wollen"
+    ],
+    "notFor": [
+      "Unternehmen, die CRM und Rechnungsstellung in einem Programm suchen",
+      "Teams, die Support auf Deutsch rund um die Uhr brauchen"
+    ],
+    "pros": [
+      "Pipeline als Kanban-Ansicht, Verkaufschancen per Ziehen verschieben",
+      "Über 500 Integrationen, darunter Gmail, Outlook, Zoom und Zapier",
+      "Hosting laut Anbieter in AWS-Rechenzentren in Frankfurt oder Dublin",
+      "14 Tage kostenlos testen ohne Kreditkarte"
+    ],
+    "cons": [
+      "E-Mail-Synchronisierung und Automationen erst ab Growth mit 34 € pro Nutzer bei monatlicher Zahlung",
+      "Support auf Deutsch nur werktags von 9 bis 17 Uhr UTC",
+      "Keine eigene DATEV-Anbindung, Rechnungen laufen über Zusatz-Apps",
+      "Vertragspartner Pipedrive OÜ mit Gerichtsstand Tallinn und estnischem Recht"
+    ],
+    "sources": [
+      {
+        "label": "Pipedrive Preise",
+        "url": "https://www.pipedrive.com/de/pricing",
+        "accessedAt": "2026-10-23"
+      },
+      {
+        "label": "Pipedrive Unterauftragsverarbeiter (Hosting-Regionen)",
+        "url": "https://www.pipedrive.com/en/subprocessors",
+        "accessedAt": "2026-10-23"
+      },
+      {
+        "label": "Pipedrive Auftragsverarbeitungsvertrag (DPA)",
+        "url": "https://www.pipedrive.com/en/privacy/dpa",
+        "accessedAt": "2026-10-23"
+      },
+      {
+        "label": "Pipedrive Sicherheit und Datenschutz",
+        "url": "https://www.pipedrive.com/en/features/privacy-security",
+        "accessedAt": "2026-10-23"
+      },
+      {
+        "label": "Pipedrive Nutzungsbedingungen",
+        "url": "https://www.pipedrive.com/en/terms-of-service",
+        "accessedAt": "2026-10-23"
+      }
+    ],
+    "author": "wolfram-eschenbach",
+    "reviewer": "wolfram-eschenbach",
+    "publishedAt": "2026-10-23",
+    "updatedAt": "2026-10-23",
+    "handsOnTest": false,
+    "changelog": [
+      {
+        "date": "2026-10-23",
+        "note": "Profil angelegt und veröffentlicht. Euro-Preise aus der Preistabelle der Pipedrive-Preisseite, Hosting und Vertragspartner aus DPA, Unterauftragsverarbeiter-Liste und Nutzungsbedingungen. Wertung ohne eigenen Praxistest."
+      }
+    ]
+  },
+  "alternatives": ["centralstationcrm", "sage-sales-management", "weclapp"],
+  "verification": "verifiziert",
+  "status": "veroeffentlicht"
+}

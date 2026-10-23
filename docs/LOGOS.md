@@ -14,6 +14,8 @@ Official vendor logos, used only to identify the products (trademark note on /tr
 | collmex.png            | collmex.de, header logo                                                                                                                                                   |
 | crewmeister.png        | crewmeister.com, app icon                                                                                                                                                 |
 | datev.svg              | DATEV logo as published on candis.io (DATEV integration page); datev.de was not reachable from the research environment. Check against the DATEV press kit before launch. |
+| easybill.png           | easybill.de, site icon 192 px                                                                                                                                             |
+| fastbill.svg           | fastbill.com, green mark cut from logo.svg                                                                                                                                |
 | factorial.png          | factorialhr.de, web app manifest icon                                                                                                                                     |
 | hrworks.png            | hrworks.de, site icon                                                                                                                                                     |
 | kenjo.png              | kenjo.io, site icon                                                                                                                                                       |
@@ -22,6 +24,7 @@ Official vendor logos, used only to identify the products (trademark note on /tr
 | papershift.png         | papershift.com, site icon                                                                                                                                                 |
 | papierkram.png         | papierkram.de, web app manifest icon                                                                                                                                      |
 | personio.svg           | personio.de, header logo                                                                                                                                                  |
+| pipedrive.png          | pipedrive.com, apple touch icon 152 px                                                                                                                                    |
 | rexx-systems.webp      | rexx-systems.com, site icon                                                                                                                                               |
 | sage.svg               | sage.com/de-de, header logo (used for all Sage products)                                                                                                                  |
 | sap.svg                | sap.com, header logo (SAP SuccessFactors, SAP Business One)                                                                                                               |

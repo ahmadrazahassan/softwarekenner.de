@@ -320,6 +320,22 @@ export function rankedSummaries(categorySlug: string, from: GoSource) {
   );
 }
 
+/**
+ * Products with an active affiliate deal for the labeled partner block on the home page. Sorted by
+ * name, never by score or commission, so the block cannot be read as a ranking.
+ */
+export function partnerOffers(from: GoSource) {
+  return listSoftware()
+    .filter((s) => s.affiliate?.active)
+    .map((s, i) => ({
+      summary: summaryOf(s, { from, position: i + 1 }),
+      strength: s.editorial.pros[0]!,
+      bestFor: s.editorial.bestFor[0]!,
+      trialDays: s.pricing.trialDays,
+      freePlan: s.pricing.freePlan,
+    }));
+}
+
 /** Details for RankedListItem (Section 7.2 C). */
 export function rankedDetailsOf(software: SoftwareData): RankedDetails {
   const price = entryPrice(software);

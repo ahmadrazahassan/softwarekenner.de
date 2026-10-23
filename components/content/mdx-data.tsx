@@ -152,9 +152,14 @@ export function Kostenvergleich({ slug }: { slug: string }) {
     .map((s) => ({ name: s.name, value: at10[s.name] }))
     .filter((s): s is { name: string; value: number } => typeof s.value === "number")
     .sort((a, b) => a.value - b.value);
-  const takeaway = priced.length
-    ? `Bei 10 Nutzern kostet ${priced[0]!.name} mit ${formatPrice(Math.round(priced[0]!.value * 100))} im Monat am wenigsten.`
-    : "Für 10 Nutzer nennen die Anbieter keine festen Preise.";
+  const cheapest = priced[0] && formatPrice(Math.round(priced[0].value * 100));
+  // "Am wenigsten" only when at least two programs have a price to compare at this team size.
+  const takeaway =
+    priced.length > 1
+      ? `Bei 10 Nutzern kostet ${priced[0]!.name} mit ${cheapest} im Monat am wenigsten.`
+      : priced.length === 1
+        ? `Für 10 Nutzer nennt nur ${priced[0]!.name} einen festen Preis: ${cheapest} im Monat.`
+        : "Für 10 Nutzer nennen die Anbieter keine festen Preise.";
   return (
     <div className="not-prose my-10 rounded-lg border border-line bg-white p-6">
       <ChartFrame

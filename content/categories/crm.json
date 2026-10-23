@@ -20,7 +20,7 @@
       "answer": "Je nach Anbieter gibt es Paketpreise mit fester Nutzerzahl oder Preise pro Nutzer und Monat, oft mit Zusatzmodulen. In unserem Vergleich reicht die Spanne vom kostenlosen Einstieg für drei Personen bis zu einer Außendienstlösung mit Mindestnutzerzahl. Rechnen Sie mit Ihrer realen Teamgröße."
     },
     {
-      "question": "Warum fehlen HubSpot, Pipedrive und Zoho im Vergleich?",
+      "question": "Warum fehlen HubSpot und Zoho im Vergleich?",
       "answer": "Wir listen nur Programme, deren Preise in Euro wir aus Anbieterquellen prüfen konnten. Bei diesen Anbietern war das in unserer Recherche nicht zuverlässig möglich. Wir ergänzen sie, sobald die Angaben geprüft sind."
     }
   ],
@@ -30,5 +30,5 @@
     "description": "CRM-Systeme für kleine und mittlere Unternehmen im Vergleich: DSGVO, Hosting in Deutschland, Preise pro Nutzer und Einwilligungen nach UWG."
   },
   "status": "veroeffentlicht",
-  "updatedAt": "2026-10-22"
+  "updatedAt": "2026-10-23"
 }

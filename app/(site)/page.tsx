@@ -11,6 +11,7 @@ import {
 } from "@/components/content/editorial";
 import { guideLink } from "@/components/content/guide-links";
 import { JsonLd } from "@/components/content/page-parts";
+import { PartnerOffers } from "@/components/home/partner-offers";
 import { PopularSoftware, type PopularTab } from "@/components/home/popular-software";
 import { CategoryTile, ComparisonCard, SectionHeading } from "@/components/software/cards";
 import { FinderBlock } from "@/components/software/finder-block";
@@ -35,6 +36,7 @@ import {
   listComparisons,
   listSoftware,
   listSoftwareByCategory,
+  partnerOffers,
   rankedSummaries,
 } from "@/lib/content";
 import { CATEGORY_ICONS } from "@/lib/content/icons";
@@ -190,7 +192,13 @@ export default function HomePage() {
               ))}
             </div>
             <p className="type-small text-text-muted">
-              Unabhängige Redaktion · Offene Methodik · Kostenlos für Sie
+              Unabhängige Redaktion · Offene Methodik · Kostenlos für Sie, finanziert über{" "}
+              <AppLink
+                href={routes.legal.transparency()}
+                className="underline underline-offset-3 hover:text-ink"
+              >
+                gekennzeichnete Affiliate-Links
+              </AppLink>
             </p>
           </div>
 
@@ -258,6 +266,8 @@ export default function HomePage() {
           </div>
         </section>
       )}
+
+      <PartnerOffers offers={partnerOffers("start")} />
 
       {market.length > 0 && (
         <section aria-labelledby="markt-titel" className="bg-surface-tint section-y">

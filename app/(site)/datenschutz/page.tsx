@@ -59,8 +59,20 @@ export default function PrivacyPage() {
       <p>
         Wenn Sie uns eine Anfrage senden, verarbeiten wir Name, geschäftliche E-Mail-Adresse,
         Unternehmensgröße, Kategorie und Ihre Nachricht, um die Anfrage zu beantworten (Art. 6 Abs. 1 lit. b
-        DSGVO). Wir speichern Ihre Anfrage bis {l.retentionInquiries}. Einen E-Mail-Dienst, der als
-        Auftragsverarbeiter Nachrichten für uns versendet, nennen wir hier, bevor wir ihn einsetzen.
+        DSGVO). Wir speichern Ihre Anfrage bis {l.retentionInquiries}. Die Eingangsbestätigung und unsere
+        Antwort versenden wir über den unten genannten E-Mail-Dienst.
+      </p>
+
+      <h2>E-Mail-Versand über Resend</h2>
+      <p>
+        Bestätigungs-E-Mails, Antworten auf Anfragen und den Newsletter versenden wir über den E-Mail-Dienst
+        Resend der Plus Five Five, Inc., 2261 Market Street #5039, San Francisco, CA 94114, USA. Resend
+        verarbeitet dabei Ihre E-Mail-Adresse, den Inhalt der Nachricht und technische Versanddaten in unserem
+        Auftrag (Art. 28 DSGVO). Wir haben den Versand für unsere Domain in der Region EU (Irland)
+        eingerichtet. Da Resend ein Unternehmen mit Sitz in den USA ist, ist ein Zugriff aus den USA nicht
+        ausgeschlossen. Resend ist nach dem EU-U.S. Data Privacy Framework zertifiziert (Art. 45 DSGVO);
+        ergänzend sind die Standardvertragsklauseln der EU-Kommission Teil des Auftragsverarbeitungsvertrags
+        (Art. 46 Abs. 2 lit. c DSGVO).
       </p>
 
       {siteConfig.features.newsletter && <h2>Newsletter</h2>}
@@ -70,22 +82,25 @@ export default function PrivacyPage() {
           1 lit. a DSGVO). Die Anmeldung erfolgt im Double-Opt-in-Verfahren und wird protokolliert. Sie können
           die Einwilligung jederzeit über den Abmeldelink in jeder Ausgabe widerrufen. Wir speichern Ihre
           E-Mail-Adresse bis zum Widerruf. Die Bestätigung protokollieren wir ohne Ihre Adresse mit einer
-          Kennung und dem Zeitpunkt.
-        </p>
-      )}
-      {siteConfig.features.newsletter && (
-        <p>
-          Für Versand und Verwaltung der Adressen setzen wir den E-Mail-Dienst Resend (Resend, Inc., San
-          Francisco, USA) als Auftragsverarbeiter ein (Art. 28 DSGVO). Auch Bestätigungs- und
-          Antwort-E-Mails zu Anfragen werden darüber versendet. Die Daten werden in der Region EU (Irland)
-          verarbeitet.
+          Kennung und dem Zeitpunkt. Die Adressen verwalten wir ebenfalls bei Resend.
         </p>
       )}
 
       <h2>Affiliate-Links</h2>
       <p>
-        Mit * gekennzeichnete Links führen über unsere eigene Weiterleitung zum Anbieter. Dabei übergeben wir
-        nur, von welcher Seite der Klick kam, keine personenbezogenen Daten.
+        Mit * gekennzeichnete Links sind Affiliate-Links. Sie führen über unsere eigene Weiterleitung
+        (Adressen, die mit /go/ beginnen) zum Anbieter oder zu dessen Partnerprogramm. An den Anbieter geben
+        wir dabei höchstens eine Kennung weiter, auf welcher Art von Seite und an welcher Position der Link
+        stand, etwa „kategorie-3“. Name, E-Mail-Adresse oder andere Angaben über Sie übermitteln wir nicht.
+        Auf unserer Website setzen wir für Affiliate-Links keine Cookies.
+      </p>
+      <p>
+        Nach dem Klick befinden Sie sich auf der Website des Anbieters. Dort kann der Anbieter oder das von
+        ihm beauftragte Partnernetzwerk, etwa PartnerStack, Cookies oder ähnliche Techniken einsetzen, um
+        einen späteren Vertragsabschluss unserer Empfehlung zuzuordnen. Dafür ist der Anbieter verantwortlich;
+        es gelten seine Datenschutzhinweise und seine Einwilligungsabfrage. Wir erhalten vom Anbieter nur
+        Angaben zu vermittelten Abschlüssen und Provisionen, keine Daten, mit denen wir Sie identifizieren
+        können.
       </p>
 
       <h2>Ihre Rechte</h2>

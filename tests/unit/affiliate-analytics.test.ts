@@ -33,6 +33,12 @@ describe("lib/affiliate", () => {
     expect(url.searchParams.get("clickref")).toBe("kategorie-3");
   });
 
+  it("leaves direct partner links (UTM only) exactly as given", () => {
+    const target = resolveGoTarget(deal(true, "direkt"), { from: "start", pos: "2" });
+    if (target.kind !== "affiliate") throw new Error("expected affiliate");
+    expect(target.url).toBe("https://partner.example/klick?id=7");
+  });
+
   it("drops values outside the whitelist", () => {
     expect(parseGoSource("newsletter?email=a@b.de")).toBeNull();
     expect(parseGoSource("vergleich")).toBe("vergleich");

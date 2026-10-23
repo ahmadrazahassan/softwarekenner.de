@@ -1,0 +1,20 @@
+{
+  "slug": "fastbill",
+  "legalName": "FastBill GmbH",
+  "brandName": "FastBill",
+  "headquarters": { "city": "Frankfurt am Main", "country": "DE" },
+  "founded": null,
+  "website": "https://www.fastbill.com/",
+  "germanEntity": true,
+  "supportLanguages": null,
+  "notes": "Brüsseler Straße 1 bis 3, 60327 Frankfurt am Main. Amtsgericht Frankfurt am Main, HRB 109200.",
+  "sources": [
+    {
+      "label": "Impressum FastBill",
+      "url": "https://www.fastbill.com/impressum",
+      "accessedAt": "2026-10-23"
+    }
+  ],
+  "verification": "verifiziert",
+  "verifiedAt": "2026-10-23"
+}

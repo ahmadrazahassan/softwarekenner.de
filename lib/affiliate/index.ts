@@ -18,6 +18,9 @@ const SUBID_PARAM: Record<string, string> = {
   impact: "subId1",
 };
 
+/** Direct partner links (UTM only, no network): the URL is used as given, without a sub id. */
+const WITHOUT_SUBID = new Set(["direkt"]);
+
 export type GoTarget =
   | { kind: "affiliate"; url: string; from: GoSource | null; position: number | null }
   | { kind: "profile"; path: string }
@@ -47,7 +50,9 @@ export function resolveGoTarget(
   const from = parseGoSource(query.from);
   const position = parseGoPosition(query.pos);
   const url = new URL(product.affiliate.url);
-  url.searchParams.set(SUBID_PARAM[product.affiliate.network] ?? "subid", subidOf(from, position));
+  if (!WITHOUT_SUBID.has(product.affiliate.network)) {
+    url.searchParams.set(SUBID_PARAM[product.affiliate.network] ?? "subid", subidOf(from, position));
+  }
   return { kind: "affiliate", url: url.toString(), from, position };
 }
 

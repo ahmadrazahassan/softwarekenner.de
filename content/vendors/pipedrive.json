@@ -1,0 +1,25 @@
+{
+  "slug": "pipedrive",
+  "legalName": "Pipedrive OÜ",
+  "brandName": "Pipedrive",
+  "headquarters": { "city": "Tallinn", "country": "EE" },
+  "founded": null,
+  "website": "https://www.pipedrive.com/de",
+  "germanEntity": false,
+  "supportLanguages": ["en", "de", "fr", "es"],
+  "notes": "Mustamäe tee 3a, 10615 Tallinn, Estland. Vertragspartner für Kunden in der EU laut Nutzungsbedingungen, Abschnitt 14.1. Estnisches Recht.",
+  "sources": [
+    {
+      "label": "Pipedrive Nutzungsbedingungen (Vertragspartner EU)",
+      "url": "https://www.pipedrive.com/en/terms-of-service",
+      "accessedAt": "2026-10-23"
+    },
+    {
+      "label": "Pipedrive Hilfecenter: Support kontaktieren",
+      "url": "https://support.pipedrive.com/hc/en-us/articles/115005875565-Contacting-Pipedrive-support-",
+      "accessedAt": "2026-10-23"
+    }
+  ],
+  "verification": "verifiziert",
+  "verifiedAt": "2026-10-23"
+}

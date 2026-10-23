@@ -38,52 +38,55 @@ Not verified for any vendor yet: founding year (except Collmex) and support lang
 
 ## Software profiles
 
-| Slug                          | Category                    | Verification | Hands on test | Prices verified | Sources | Review | Open gaps                                                      |
-| ----------------------------- | --------------------------- | ------------ | ------------- | --------------- | ------- | ------ | -------------------------------------------------------------- |
-| accountable                   | buchhaltung                 | verifiziert  | nein          | 2026-10-19      | 3       | ja     | avv, iso27001, bsiC5                                           |
-| buchhaltungsbutler            | buchhaltung                 | verifiziert  | nein          | 2026-10-19      | 3       | ja     | avv, iso27001, bsiC5                                           |
-| candis                        | buchhaltung                 | verifiziert  | nein          | 2026-10-19      | 3       | ja     | avv, bsiC5                                                     |
-| centralstationcrm             | crm                         | verifiziert  | nein          | 2026-10-21      | 3       | ja     | avv, gobd, xrechnung, zugferd, iso27001, bsiC5                 |
-| clockin                       | zeiterfassung               | verifiziert  | nein          | 2026-10-19      | 2       | ja     | avv, gobd, xrechnung, zugferd, iso27001, bsiC5                 |
-| clockodo                      | zeiterfassung               | verifiziert  | nein          | 2026-10-19      | 3       | ja     | gobd, xrechnung, zugferd, iso27001, bsiC5                      |
-| collmex                       | buchhaltung                 | verifiziert  | nein          | 2026-10-19      | 3       | ja     | avv, bsiC5                                                     |
-| crewmeister                   | zeiterfassung               | verifiziert  | nein          | 2026-10-19      | 2       | ja     | serverLocation, avv, gobd, xrechnung, zugferd, iso27001, bsiC5 |
-| datev-lohn-und-gehalt         | lohnabrechnung              | verifiziert  | nein          | 2026-10-21      | 2       | ja     | serverLocation, avv, gobd, xrechnung, zugferd, iso27001, bsiC5 |
-| datev-unternehmen-online      | buchhaltung                 | verifiziert  | nein          | 2026-10-19      | 2       | ja     | avv, iso27001, bsiC5                                           |
-| dynamics-365-business-central | erp                         | verifiziert  | nein          | 2026-10-21      | 3       | ja     | avv, gobd, xrechnung, zugferd, iso27001, bsiC5                 |
-| factorial                     | hr-software                 | verifiziert  | nein          | 2026-10-19      | 2       | ja     | avv, gobd, xrechnung, zugferd, bsiC5                           |
-| hrworks                       | hr-software                 | verifiziert  | nein          | 2026-10-19      | 2       | ja     | serverLocation, avv, gobd, xrechnung, zugferd, iso27001, bsiC5 |
-| kenjo                         | hr-software, zeiterfassung  | verifiziert  | nein          | 2026-10-19      | 2       | ja     | avv, gobd, xrechnung, zugferd, iso27001, bsiC5                 |
-| leapsome                      | hr-software                 | verifiziert  | nein          | 2026-10-19      | 3       | ja     | avv, gobd, xrechnung, zugferd, bsiC5                           |
-| lexware-lohn-gehalt           | lohnabrechnung              | verifiziert  | nein          | 2026-10-21      | 2       | ja     | serverLocation, avv, gobd, xrechnung, zugferd, iso27001, bsiC5 |
-| lexware-office                | buchhaltung                 | verifiziert  | nein          | 2026-10-19      | 3       | ja     | avv, bsiC5                                                     |
-| papershift                    | zeiterfassung               | verifiziert  | nein          | 2026-10-19      | 2       | ja     | serverLocation, avv, gobd, xrechnung, zugferd, iso27001, bsiC5 |
-| papierkram                    | buchhaltung                 | verifiziert  | nein          | 2026-10-19      | 2       | ja     | avv, iso27001, bsiC5                                           |
-| personio                      | hr-software                 | verifiziert  | nein          | 2026-10-19      | 2       | ja     | serverLocation, avv, gobd, xrechnung, zugferd, iso27001, bsiC5 |
-| rexx-systems                  | hr-software                 | verifiziert  | nein          | 2026-10-19      | 2       | ja     | avv, gobd, xrechnung, zugferd, bsiC5                           |
-| sage-100                      | erp                         | verifiziert  | nein          | 2026-10-21      | 6       | ja     | serverLocation, avv, iso27001, bsiC5                           |
-| sage-50-handwerk              | erp                         | verifiziert  | nein          | 2026-10-21      | 4       | ja     | avv, iso27001, bsiC5                                           |
-| sage-50                       | buchhaltung, erp            | verifiziert  | nein          | 2026-10-21      | 4       | ja     | avv, iso27001, bsiC5                                           |
-| sage-active                   | buchhaltung                 | verifiziert  | nein          | 2026-10-21      | 3       | ja     | serverLocation, avv, iso27001, bsiC5                           |
-| sage-b7                       | erp                         | verifiziert  | nein          | 2026-10-21      | 2       | ja     | serverLocation, avv, xrechnung, zugferd, iso27001, bsiC5       |
-| sage-hr-suite                 | hr-software, lohnabrechnung | verifiziert  | nein          | 2026-10-21      | 4       | ja     | avv, gobd, xrechnung, zugferd, iso27001, bsiC5                 |
-| sage-hr                       | hr-software                 | verifiziert  | nein          | 2026-10-21      | 3       | ja     | serverLocation, avv, gobd, xrechnung, zugferd, iso27001, bsiC5 |
-| sage-intacct                  | buchhaltung                 | verifiziert  | nein          | 2026-10-21      | 3       | ja     | serverLocation, avv, xrechnung, zugferd, bsiC5                 |
-| sage-lohnabrechnung           | lohnabrechnung, hr-software | verifiziert  | nein          | 2026-10-21      | 3       | ja     | serverLocation, gobd, xrechnung, zugferd, iso27001, bsiC5      |
-| sage-operations               | erp                         | verifiziert  | nein          | 2026-10-21      | 3       | ja     | serverLocation, avv, gobd, xrechnung, zugferd, iso27001, bsiC5 |
-| sage-sales-management         | crm                         | verifiziert  | nein          | 2026-10-21      | 2       | ja     | serverLocation, avv, gobd, xrechnung, zugferd, iso27001, bsiC5 |
-| sage-wincarat                 | erp                         | verifiziert  | nein          | 2026-10-21      | 2       | ja     | serverLocation, avv, gobd, xrechnung, zugferd, iso27001, bsiC5 |
-| sage-x3                       | erp                         | verifiziert  | nein          | 2026-10-21      | 4       | ja     | serverLocation, avv, gobd, xrechnung, zugferd, iso27001, bsiC5 |
-| sap-business-one              | erp                         | verifiziert  | nein          | 2026-10-21      | 2       | ja     | serverLocation, avv, gobd, xrechnung, zugferd, iso27001, bsiC5 |
-| sap-successfactors            | hr-software                 | verifiziert  | nein          | 2026-10-19      | 2       | ja     | avv, gobd, xrechnung, zugferd, iso27001, bsiC5                 |
-| sevdesk                       | buchhaltung                 | verifiziert  | nein          | 2026-10-19      | 3       | ja     | avv, iso27001, bsiC5                                           |
-| timetac                       | zeiterfassung               | verifiziert  | nein          | 2026-10-19      | 3       | ja     | avv, gobd, xrechnung, zugferd, bsiC5                           |
-| weclapp                       | erp                         | verifiziert  | nein          | 2026-10-21      | 2       | ja     | avv, gobd, xrechnung, zugferd, iso27001, bsiC5                 |
-| wiso-meinbuero                | buchhaltung                 | verifiziert  | nein          | 2026-10-19      | 3       | ja     | serverLocation, avv, iso27001, bsiC5                           |
-| xentral                       | erp                         | verifiziert  | nein          | 2026-10-21      | 2       | ja     | avv, gobd, xrechnung, zugferd, iso27001, bsiC5                 |
-| zep                           | zeiterfassung               | verifiziert  | nein          | 2026-10-19      | 2       | ja     | avv, gobd, xrechnung, zugferd, bsiC5                           |
+| Slug                          | Category                        | Verification | Hands on test | Prices verified | Sources | Review | Open gaps                                                      |
+| ----------------------------- | ------------------------------- | ------------ | ------------- | --------------- | ------- | ------ | -------------------------------------------------------------- |
+| accountable                   | buchhaltung                     | verifiziert  | nein          | 2026-10-19      | 3       | ja     | avv, iso27001, bsiC5                                           |
+| buchhaltungsbutler            | buchhaltung                     | verifiziert  | nein          | 2026-10-19      | 3       | ja     | avv, iso27001, bsiC5                                           |
+| candis                        | buchhaltung                     | verifiziert  | nein          | 2026-10-19      | 3       | ja     | avv, bsiC5                                                     |
+| centralstationcrm             | crm                             | verifiziert  | nein          | 2026-10-21      | 3       | ja     | avv, gobd, xrechnung, zugferd, iso27001, bsiC5                 |
+| clockin                       | zeiterfassung                   | verifiziert  | nein          | 2026-10-19      | 2       | ja     | avv, gobd, xrechnung, zugferd, iso27001, bsiC5                 |
+| clockodo                      | zeiterfassung                   | verifiziert  | nein          | 2026-10-19      | 3       | ja     | gobd, xrechnung, zugferd, iso27001, bsiC5                      |
+| collmex                       | buchhaltung                     | verifiziert  | nein          | 2026-10-19      | 3       | ja     | avv, bsiC5                                                     |
+| crewmeister                   | zeiterfassung                   | verifiziert  | nein          | 2026-10-19      | 2       | ja     | serverLocation, avv, gobd, xrechnung, zugferd, iso27001, bsiC5 |
+| datev-lohn-und-gehalt         | lohnabrechnung                  | verifiziert  | nein          | 2026-10-21      | 2       | ja     | serverLocation, avv, gobd, xrechnung, zugferd, iso27001, bsiC5 |
+| datev-unternehmen-online      | buchhaltung                     | verifiziert  | nein          | 2026-10-19      | 2       | ja     | avv, iso27001, bsiC5                                           |
+| dynamics-365-business-central | erp                             | verifiziert  | nein          | 2026-10-21      | 3       | ja     | avv, gobd, xrechnung, zugferd, iso27001, bsiC5                 |
+| easybill                      | buchhaltung, rechnungsprogramme | verifiziert  | nein          | 2026-10-23      | 6       | ja     | iso27001, bsiC5                                                |
+| fastbill                      | buchhaltung, rechnungsprogramme | verifiziert  | nein          | 2026-10-23      | 3       | ja     | avv, iso27001, bsiC5                                           |
+| factorial                     | hr-software                     | verifiziert  | nein          | 2026-10-19      | 2       | ja     | avv, gobd, xrechnung, zugferd, bsiC5                           |
+| hrworks                       | hr-software                     | verifiziert  | nein          | 2026-10-19      | 2       | ja     | serverLocation, avv, gobd, xrechnung, zugferd, iso27001, bsiC5 |
+| kenjo                         | hr-software, zeiterfassung      | verifiziert  | nein          | 2026-10-19      | 2       | ja     | avv, gobd, xrechnung, zugferd, iso27001, bsiC5                 |
+| leapsome                      | hr-software                     | verifiziert  | nein          | 2026-10-19      | 3       | ja     | avv, gobd, xrechnung, zugferd, bsiC5                           |
+| lexware-lohn-gehalt           | lohnabrechnung                  | verifiziert  | nein          | 2026-10-21      | 2       | ja     | serverLocation, avv, gobd, xrechnung, zugferd, iso27001, bsiC5 |
+| lexware-office                | buchhaltung                     | verifiziert  | nein          | 2026-10-19      | 3       | ja     | avv, bsiC5                                                     |
+| papershift                    | zeiterfassung                   | verifiziert  | nein          | 2026-10-19      | 2       | ja     | serverLocation, avv, gobd, xrechnung, zugferd, iso27001, bsiC5 |
+| papierkram                    | buchhaltung                     | verifiziert  | nein          | 2026-10-19      | 2       | ja     | avv, iso27001, bsiC5                                           |
+| personio                      | hr-software                     | verifiziert  | nein          | 2026-10-19      | 2       | ja     | serverLocation, avv, gobd, xrechnung, zugferd, iso27001, bsiC5 |
+| pipedrive                     | crm                             | verifiziert  | nein          | 2026-10-23      | 5       | ja     | gobd, xrechnung, zugferd, bsiC5                                |
+| rexx-systems                  | hr-software                     | verifiziert  | nein          | 2026-10-19      | 2       | ja     | avv, gobd, xrechnung, zugferd, bsiC5                           |
+| sage-100                      | erp                             | verifiziert  | nein          | 2026-10-21      | 6       | ja     | serverLocation, avv, iso27001, bsiC5                           |
+| sage-50-handwerk              | erp                             | verifiziert  | nein          | 2026-10-21      | 4       | ja     | avv, iso27001, bsiC5                                           |
+| sage-50                       | buchhaltung, erp                | verifiziert  | nein          | 2026-10-21      | 4       | ja     | avv, iso27001, bsiC5                                           |
+| sage-active                   | buchhaltung                     | verifiziert  | nein          | 2026-10-21      | 3       | ja     | serverLocation, avv, iso27001, bsiC5                           |
+| sage-b7                       | erp                             | verifiziert  | nein          | 2026-10-21      | 2       | ja     | serverLocation, avv, xrechnung, zugferd, iso27001, bsiC5       |
+| sage-hr-suite                 | hr-software, lohnabrechnung     | verifiziert  | nein          | 2026-10-21      | 4       | ja     | avv, gobd, xrechnung, zugferd, iso27001, bsiC5                 |
+| sage-hr                       | hr-software                     | verifiziert  | nein          | 2026-10-21      | 3       | ja     | serverLocation, avv, gobd, xrechnung, zugferd, iso27001, bsiC5 |
+| sage-intacct                  | buchhaltung                     | verifiziert  | nein          | 2026-10-21      | 3       | ja     | serverLocation, avv, xrechnung, zugferd, bsiC5                 |
+| sage-lohnabrechnung           | lohnabrechnung, hr-software     | verifiziert  | nein          | 2026-10-21      | 3       | ja     | serverLocation, gobd, xrechnung, zugferd, iso27001, bsiC5      |
+| sage-operations               | erp                             | verifiziert  | nein          | 2026-10-21      | 3       | ja     | serverLocation, avv, gobd, xrechnung, zugferd, iso27001, bsiC5 |
+| sage-sales-management         | crm                             | verifiziert  | nein          | 2026-10-21      | 2       | ja     | serverLocation, avv, gobd, xrechnung, zugferd, iso27001, bsiC5 |
+| sage-wincarat                 | erp                             | verifiziert  | nein          | 2026-10-21      | 2       | ja     | serverLocation, avv, gobd, xrechnung, zugferd, iso27001, bsiC5 |
+| sage-x3                       | erp                             | verifiziert  | nein          | 2026-10-21      | 4       | ja     | serverLocation, avv, gobd, xrechnung, zugferd, iso27001, bsiC5 |
+| sap-business-one              | erp                             | verifiziert  | nein          | 2026-10-21      | 2       | ja     | serverLocation, avv, gobd, xrechnung, zugferd, iso27001, bsiC5 |
+| sap-successfactors            | hr-software                     | verifiziert  | nein          | 2026-10-19      | 2       | ja     | avv, gobd, xrechnung, zugferd, iso27001, bsiC5                 |
+| sevdesk                       | buchhaltung                     | verifiziert  | nein          | 2026-10-19      | 3       | ja     | avv, iso27001, bsiC5                                           |
+| timetac                       | zeiterfassung                   | verifiziert  | nein          | 2026-10-19      | 3       | ja     | avv, gobd, xrechnung, zugferd, bsiC5                           |
+| weclapp                       | erp                             | verifiziert  | nein          | 2026-10-21      | 2       | ja     | avv, gobd, xrechnung, zugferd, iso27001, bsiC5                 |
+| wiso-meinbuero                | buchhaltung                     | verifiziert  | nein          | 2026-10-19      | 3       | ja     | serverLocation, avv, iso27001, bsiC5                           |
+| xentral                       | erp                             | verifiziert  | nein          | 2026-10-21      | 2       | ja     | avv, gobd, xrechnung, zugferd, iso27001, bsiC5                 |
+| zep                           | zeiterfassung                   | verifiziert  | nein          | 2026-10-19      | 2       | ja     | avv, gobd, xrechnung, zugferd, bsiC5                           |
 
-42 profiles, published on 21 October 2026 after editorial approval by Wolfram Eschenbach (`status: "veroeffentlicht"`, `verification: "verifiziert"`): 22 researched on 19 October 2026, 20 added on 21 October 2026 (the complete German Sage portfolio plus weclapp, Xentral, SAP Business One, Microsoft Dynamics 365 Business Central, DATEV Lohn und Gehalt, Lexware lohn+gehalt and CentralStationCRM). Every profile has a long form review in content/reviews, written as "im Überblick" without hands on test, with sourced key figures and charts from our own price data. "Open gaps" lists fields that stay `unbekannt` because no vendor source states them. Logo sources: docs/LOGOS.md.
+45 profiles. Pipedrive, easybill and FastBill added on 23 October 2026 as affiliate partners, with the same research and publishing rules. 42 profiles were published on 21 October 2026 after editorial approval by Wolfram Eschenbach (`status: "veroeffentlicht"`, `verification: "verifiziert"`): 22 researched on 19 October 2026, 20 added on 21 October 2026 (the complete German Sage portfolio plus weclapp, Xentral, SAP Business One, Microsoft Dynamics 365 Business Central, DATEV Lohn und Gehalt, Lexware lohn+gehalt and CentralStationCRM). Every profile has a long form review in content/reviews, written as "im Überblick" without hands on test, with sourced key figures and charts from our own price data. "Open gaps" lists fields that stay `unbekannt` because no vendor source states them. Logo sources: docs/LOGOS.md.
 
 ## Ratgeber (content/guides)
 
