@@ -77,6 +77,18 @@ describe("lib/affiliate", () => {
     }
   });
 
+  it("tells Impact the placement, the product and our site", () => {
+    const sage = {
+      slug: "sage",
+      affiliate: { url: "https://sagegmbh.sjv.io/5kE542", network: "impact", active: true },
+    };
+    const target = resolveGoTarget(sage, { from: "start", pos: "4" });
+    if (target.kind !== "affiliate") throw new Error("expected affiliate");
+    expect(target.url).toBe(
+      "https://sagegmbh.sjv.io/5kE542?subId1=start-4&subId2=sage&sharedid=softwarekenner.de",
+    );
+  });
+
   it("leaves direct partner links (UTM only) exactly as given", () => {
     const target = resolveGoTarget(deal(true, "direkt"), { from: "start", pos: "2" });
     if (target.kind !== "affiliate") throw new Error("expected affiliate");

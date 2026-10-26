@@ -3,6 +3,7 @@
  * and every branch is unit tested. Only whitelisted values reach the vendor: no personal data.
  */
 import { GO_SOURCES, routes, type GoSource } from "@/lib/routes";
+import { siteConfig } from "@/site.config";
 
 type AffiliateProduct = {
   slug: string;
@@ -16,6 +17,14 @@ const SUBID_PARAM: Record<string, string> = {
   digistore24: "sid1",
   partnerstack: "sid",
   impact: "subId1",
+};
+
+/**
+ * Extra fields a network shows in its click report. Impact: the product as subId2 and our site as
+ * Shared ID, so every click is attributed to this website even when the browser sends no referrer.
+ */
+const EXTRA_PARAMS: Record<string, (product: AffiliateProduct) => Record<string, string>> = {
+  impact: (product) => ({ subId2: product.slug, sharedid: new URL(siteConfig.domain).hostname }),
 };
 
 /** Direct partner links (UTM only, no network): the URL is used as given, without a sub id. */
@@ -52,6 +61,9 @@ export function resolveGoTarget(
   const url = new URL(product.affiliate.url);
   if (!WITHOUT_SUBID.has(product.affiliate.network)) {
     url.searchParams.set(SUBID_PARAM[product.affiliate.network] ?? "subid", subidOf(from, position));
+    for (const [key, value] of Object.entries(EXTRA_PARAMS[product.affiliate.network]?.(product) ?? {})) {
+      url.searchParams.set(key, value);
+    }
   }
   return { kind: "affiliate", url: url.toString(), from, position };
 }
