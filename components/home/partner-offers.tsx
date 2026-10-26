@@ -6,10 +6,11 @@ import { AppLink } from "@/components/ui/app-link";
 import { TextLink } from "@/components/ui/button";
 import { LogoTile } from "@/components/ui/logo-tile";
 import { ScoreChip } from "@/components/ui/score-chip";
-import { formatPrice, PRICE_UNIT_LABEL } from "@/lib/format";
+import { formatPrice, formatRating, PRICE_UNIT_LABEL } from "@/lib/format";
 import { routes } from "@/lib/routes";
 
-export type PartnerOffer = {
+type ProductOffer = {
+  kind: "product";
   summary: SoftwareSummary;
   strength: string;
   bestFor: string;
@@ -17,7 +18,28 @@ export type PartnerOffer = {
   freePlan: boolean;
 };
 
-function Terms({ offer }: { offer: PartnerOffer }) {
+/** Several programs of one vendor behind the same partner link, shown as one card. */
+type VendorOffer = {
+  kind: "vendor";
+  slug: string;
+  name: string;
+  logo?: string | null;
+  brandColor: string;
+  madeInGermany: boolean;
+  categoryLabels: string[];
+  products: { name: string; href: string }[];
+  scoreRange: [number, number];
+  outboundHref: string;
+};
+
+export type PartnerOffer = ProductOffer | VendorOffer;
+
+const listDe = new Intl.ListFormat("de", { type: "conjunction" });
+
+const ROW_CLASS =
+  "relative grid gap-5 border-b border-ink py-7 pl-5 before:absolute before:top-7 before:bottom-7 before:left-0 before:w-[3px] before:rounded-full before:bg-(--vendor-color) lg:grid-cols-[minmax(0,15rem)_minmax(0,1fr)_minmax(0,11rem)_auto] lg:items-center lg:gap-8";
+
+function Terms({ offer }: { offer: ProductOffer }) {
   const { priceFrom } = offer.summary;
   return (
     <dl className="grid grid-cols-2 gap-x-6 gap-y-3 lg:grid-cols-1">
@@ -43,6 +65,66 @@ function Terms({ offer }: { offer: PartnerOffer }) {
         </dd>
       </div>
     </dl>
+  );
+}
+
+/**
+ * One card for a vendor portfolio (Sage): no single score or price stands for all programs, so the
+ * card shows the score range and links every program's review.
+ */
+function VendorRow({ offer }: { offer: VendorOffer }) {
+  const [low, high] = offer.scoreRange;
+  return (
+    <li style={{ "--vendor-color": offer.brandColor } as CSSProperties} className={ROW_CLASS}>
+      <div className="flex items-center gap-4">
+        <LogoTile name={offer.name} logo={offer.logo} size={48} />
+        <div className="min-w-0">
+          <h3 className="type-h4 text-ink">{offer.name}</h3>
+          <p className="type-small text-text-muted">
+            {offer.products.length} Programme
+            {offer.madeInGermany && " · Anbieter aus Deutschland"}
+          </p>
+        </div>
+      </div>
+
+      <div className="flex flex-col gap-1.5">
+        <p className="type-body text-ink">
+          Programme für {listDe.format(offer.categoryLabels)} von einem Anbieter
+        </p>
+        <p className="type-small text-text-muted">
+          Bewertungen:{" "}
+          {offer.products.map((p, i) => (
+            <span key={p.href}>
+              {i > 0 && " · "}
+              <AppLink href={p.href} className="hover:underline hover:underline-offset-4">
+                {p.name}
+              </AppLink>
+            </span>
+          ))}
+        </p>
+      </div>
+
+      <dl className="grid grid-cols-2 gap-x-6 gap-y-3 lg:grid-cols-1">
+        <div>
+          <dt className="type-micro text-text-muted">Preise</dt>
+          <dd className="mt-0.5 type-small text-ink">je nach Programm</dd>
+        </div>
+        <div>
+          <dt className="type-micro text-text-muted">Kategorien</dt>
+          <dd className="mt-0.5 type-small text-ink">{offer.categoryLabels.length}</dd>
+        </div>
+      </dl>
+
+      <div className="flex flex-wrap items-center gap-x-5 gap-y-3 lg:flex-col lg:items-end">
+        <div className="flex items-center gap-2">
+          <span className="type-micro text-text-muted">Redaktionswertung</span>
+          <span className="type-small font-semibold text-ink tabular-nums">
+            {low === high ? formatRating(low) : `${formatRating(low)} bis ${formatRating(high)}`}
+          </span>
+        </div>
+        <AffiliateButton href={offer.outboundHref} label="Zum Anbieter" sponsored size="sm" adLabel="none" />
+      </div>
+    </li>
   );
 }
 
@@ -84,12 +166,13 @@ export function PartnerOffers({ offers }: { offers: PartnerOffer[] }) {
 
         <ul>
           {offers.map((offer) => {
+            if (offer.kind === "vendor") return <VendorRow key={offer.slug} offer={offer} />;
             const s = offer.summary;
             return (
               <li
                 key={s.slug}
                 style={{ "--vendor-color": s.brandColor } as CSSProperties}
-                className="relative grid gap-5 border-b border-ink py-7 pl-5 before:absolute before:top-7 before:bottom-7 before:left-0 before:w-[3px] before:rounded-full before:bg-(--vendor-color) lg:grid-cols-[minmax(0,15rem)_minmax(0,1fr)_minmax(0,11rem)_auto] lg:items-center lg:gap-8"
+                className={ROW_CLASS}
               >
                 <div className="flex items-center gap-4">
                   <LogoTile name={s.name} logo={s.logo} size={48} />

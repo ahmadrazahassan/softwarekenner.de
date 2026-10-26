@@ -1,6 +1,12 @@
 import { describe, expect, it } from "vitest";
 
-import { parseGoPosition, parseGoSource, resolveGoTarget, subidOf } from "@/lib/affiliate";
+import {
+  groupByPartnerLink,
+  parseGoPosition,
+  parseGoSource,
+  resolveGoTarget,
+  subidOf,
+} from "@/lib/affiliate";
 import { analyticsScript, serverEventRequest, type AnalyticsConfig } from "@/lib/analytics";
 
 const deal = (active: boolean, network = "awin") => ({
@@ -31,6 +37,23 @@ describe("lib/affiliate", () => {
     const url = new URL(target.url);
     expect(url.searchParams.get("id")).toBe("7");
     expect(url.searchParams.get("clickref")).toBe("kategorie-3");
+  });
+
+  it("groups a vendor's programs behind one partner link into one entry", () => {
+    const p = (slug: string, vendor: string, url: string) => ({ slug, vendor, affiliate: { url } });
+    const entries = groupByPartnerLink([
+      p("easybill", "easybill", "https://a.example"),
+      p("sage-100", "sage", "https://s.example"),
+      p("sage-50", "sage", "https://s.example"),
+      p("weclapp", "weclapp", "https://w.example"),
+    ]);
+    expect(entries.map((e) => (e.kind === "product" ? e.product.slug : e.vendor))).toEqual([
+      "easybill",
+      "sage",
+      "weclapp",
+    ]);
+    const sage = entries[1]!;
+    expect(sage.kind === "vendor" && sage.products.map((s) => s.slug)).toEqual(["sage-100", "sage-50"]);
   });
 
   it("leaves direct partner links (UTM only) exactly as given", () => {

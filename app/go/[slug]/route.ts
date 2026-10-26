@@ -2,7 +2,7 @@ import { after, type NextRequest } from "next/server";
 
 import { GO_HEADERS, resolveGoTarget } from "@/lib/affiliate";
 import { trackServerEvent } from "@/lib/analytics";
-import { getSoftware } from "@/lib/content";
+import { getPartnerVendor, getSoftware } from "@/lib/content";
 
 /**
  * Affiliate redirect (docs/BUILD_PROMPT.md Section 18): `/go/[slug]?from=…&pos=…`.
@@ -11,7 +11,7 @@ import { getSoftware } from "@/lib/content";
  */
 export async function GET(request: NextRequest, ctx: RouteContext<"/go/[slug]">) {
   const { slug } = await ctx.params;
-  const target = resolveGoTarget(getSoftware(slug), {
+  const target = resolveGoTarget(getSoftware(slug) ?? getPartnerVendor(slug), {
     from: request.nextUrl.searchParams.get("from"),
     pos: request.nextUrl.searchParams.get("pos"),
   });

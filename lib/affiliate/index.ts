@@ -56,6 +56,38 @@ export function resolveGoTarget(
   return { kind: "affiliate", url: url.toString(), from, position };
 }
 
+export type PartnerEntry<T> =
+  { kind: "product"; product: T } | { kind: "vendor"; vendor: string; products: T[] };
+
+/**
+ * Entries for the home partner block. Several programs of one vendor behind the same partner link
+ * (the Sage portfolio) become one vendor entry, so a portfolio cannot fill the block. Order is kept.
+ */
+export function groupByPartnerLink<T extends { vendor: string; affiliate: { url: string } | null }>(
+  products: T[],
+): PartnerEntry<T>[] {
+  const key = (p: T) => `${p.vendor} ${p.affiliate?.url}`;
+  const counts = new Map<string, number>();
+  for (const p of products) counts.set(key(p), (counts.get(key(p)) ?? 0) + 1);
+
+  const entries: PartnerEntry<T>[] = [];
+  const vendorEntries = new Map<string, { kind: "vendor"; vendor: string; products: T[] }>();
+  for (const p of products) {
+    if (counts.get(key(p))! < 2) {
+      entries.push({ kind: "product", product: p });
+      continue;
+    }
+    const existing = vendorEntries.get(key(p));
+    if (existing) existing.products.push(p);
+    else {
+      const entry = { kind: "vendor" as const, vendor: p.vendor, products: [p] };
+      vendorEntries.set(key(p), entry);
+      entries.push(entry);
+    }
+  }
+  return entries;
+}
+
 /** Headers for every `/go` response (Section 18). */
 export const GO_HEADERS = {
   "X-Robots-Tag": "noindex, nofollow",

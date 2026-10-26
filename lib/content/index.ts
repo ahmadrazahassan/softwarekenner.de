@@ -23,7 +23,9 @@ import type { RankedDetails } from "@/components/software/cards";
 import type { SoftwareSummary } from "@/components/software/types";
 import { compareDe, formatPrice, PRICE_UNIT_LABEL } from "@/lib/format";
 import { MAIN_NAV } from "@/lib/navigation";
-import { routes, type GoSource } from "@/lib/routes";
+import type { PartnerOffer } from "@/components/home/partner-offers";
+import { groupByPartnerLink } from "@/lib/affiliate";
+import { goHref, routes, type GoSource } from "@/lib/routes";
 import type { FinderProduct } from "@/lib/finder";
 import { buildSearchIndex } from "@/lib/search";
 import { computeAwards, type AwardKind } from "@/lib/scoring";
@@ -324,16 +326,51 @@ export function rankedSummaries(categorySlug: string, from: GoSource) {
  * Products with an active affiliate deal for the labeled partner block on the home page. Sorted by
  * name, never by score or commission, so the block cannot be read as a ranking.
  */
-export function partnerOffers(from: GoSource) {
-  return listSoftware()
-    .filter((s) => s.affiliate?.active)
-    .map((s, i) => ({
-      summary: summaryOf(s, { from, position: i + 1 }),
-      strength: s.editorial.pros[0]!,
-      bestFor: s.editorial.bestFor[0]!,
-      trialDays: s.pricing.trialDays,
-      freePlan: s.pricing.freePlan,
-    }));
+export function partnerOffers(from: GoSource): PartnerOffer[] {
+  return groupByPartnerLink(listSoftware().filter((s) => s.affiliate?.active))
+    .map((entry) => ({
+      entry,
+      name:
+        entry.kind === "product" ? entry.product.name : (getVendor(entry.vendor)?.brandName ?? entry.vendor),
+    }))
+    .sort((a, b) => compareDe(a.name, b.name))
+    .map(({ entry, name }, i): PartnerOffer => {
+      const position = i + 1;
+      if (entry.kind === "product") {
+        const s = entry.product;
+        return {
+          kind: "product",
+          summary: summaryOf(s, { from, position }),
+          strength: s.editorial.pros[0]!,
+          bestFor: s.editorial.bestFor[0]!,
+          trialDays: s.pricing.trialDays,
+          freePlan: s.pricing.freePlan,
+        };
+      }
+      const summaries = entry.products.map((s) => summaryOf(s, { from }));
+      const scores = summaries.map((s) => s.score);
+      return {
+        kind: "vendor",
+        slug: entry.vendor,
+        name,
+        logo: summaries[0]!.logo,
+        brandColor: summaries[0]!.brandColor,
+        madeInGermany: summaries.every((s) => s.madeInGermany),
+        categoryLabels: listCategories()
+          .filter((c) => entry.products.some((s) => s.categories.includes(c.slug)))
+          .map((c) => c.shortName),
+        products: summaries.map((s) => ({ name: s.name, href: s.href })),
+        scoreRange: [Math.min(...scores), Math.max(...scores)],
+        outboundHref: goHref(entry.vendor, from, position),
+      };
+    });
+}
+
+/** A vendor whose programs share one partner link, for `/go/<vendor>` from the combined partner card. */
+export function getPartnerVendor(slug: string) {
+  const deals = listSoftware().filter((s) => s.vendor === slug && s.affiliate?.active);
+  const urls = new Set(deals.map((s) => s.affiliate!.url));
+  return deals.length > 1 && urls.size === 1 ? { slug, affiliate: deals[0]!.affiliate } : undefined;
 }
 
 /** Details for RankedListItem (Section 7.2 C). */
