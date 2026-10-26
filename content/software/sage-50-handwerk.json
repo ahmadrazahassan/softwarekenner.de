@@ -8,7 +8,11 @@
   "logo": "/logos/sage.svg",
   "brandColor": "#4a4fc4",
   "website": "https://www.sage.com/de-de/produkte/sage-50-handwerk/",
-  "affiliate": null,
+  "affiliate": {
+    "url": "https://sagegmbh.sjv.io/5kE542",
+    "network": "impact",
+    "active": true
+  },
   "pricing": {
     "currency": "EUR",
     "basis": "netto",

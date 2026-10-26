@@ -103,7 +103,7 @@ export default function PrivacyPage() {
       </p>
       <p>
         Nach dem Klick befinden Sie sich auf der Website des Anbieters. Dort kann der Anbieter oder das von
-        ihm beauftragte Partnernetzwerk, etwa PartnerStack, Cookies oder ähnliche Techniken einsetzen, um
+        ihm beauftragte Partnernetzwerk, etwa PartnerStack oder Impact, Cookies oder ähnliche Techniken einsetzen, um
         einen späteren Vertragsabschluss unserer Empfehlung zuzuordnen. Dafür ist der Anbieter verantwortlich;
         es gelten seine Datenschutzhinweise und seine Einwilligungsabfrage. Wir erhalten vom Anbieter nur
         Angaben zu vermittelten Abschlüssen und Provisionen, keine Daten, mit denen wir Sie identifizieren

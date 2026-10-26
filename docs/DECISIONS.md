@@ -330,3 +330,8 @@ All versions were checked with `npm view <pkg> version` on 19 October 2026. No c
 
 - **Decision:** `@vercel/analytics` 2.0.1 (pinned) with `<Analytics />` in `app/layout.tsx`. It is cookieless and loaded from our own domain, so `CONSENT_SERVICES` stays empty and no banner appears; Section 19 asks for cookieless analytics. It runs next to the optional provider in `lib/analytics` (still off). The privacy policy now describes it (Art. 6 Abs. 1 lit. f DSGVO), to be confirmed in the lawyer review.
 - **Owner step:** switch on "Web Analytics" in the Vercel project (Analytics tab) once; without it the script receives no data.
+
+## Sage partner program (26 October 2026)
+
+- **Decision:** one Sage affiliate link from the owner (`https://sagegmbh.sjv.io/5kE542`, Impact, network `impact`) for all 13 Sage profiles. Every Sage CTA goes through `/go/<slug>`, which appends `subId1` with the placement id; checked on 26 October 2026 that Impact keeps `subId1` and lands on sage.com/de-de with its tracking parameters. Because the link is not product specific, visitors from every Sage profile land on the Sage Germany home page, not on the product page.
+- **Disclosure:** Transparenz and the home partner block pick the Sage products up from content; the privacy policy now names Impact next to PartnerStack.
