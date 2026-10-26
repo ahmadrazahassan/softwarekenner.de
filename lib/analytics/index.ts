@@ -1,8 +1,11 @@
 /**
  * Cookieless, EU hosted analytics (docs/BUILD_PROMPT.md Section 19): Plausible or self hosted Umami.
  * Off until `siteConfig.features.analytics` names a provider. No cookies, no personal data:
- * server events send neither the visitor's IP address nor the user agent.
+ * server events to these providers send neither the visitor's IP address nor the user agent.
+ * Vercel Web Analytics (always on, see `trackVercelEvent`) is the cookieless fallback.
  */
+import { track as vercelTrack } from "@vercel/analytics/server";
+
 import { siteConfig } from "@/site.config";
 
 export type AnalyticsConfig = {
@@ -48,6 +51,28 @@ export function serverEventRequest(
       body: JSON.stringify(body),
     },
   };
+}
+
+/**
+ * Custom event in Vercel Web Analytics (Events tab), e.g. affiliate clicks, which never reach the
+ * page script because `/go` only redirects. Vercel gets the user agent and IP only to build its
+ * daily visitor hash, as for page views; no cookies are forwarded.
+ */
+export async function trackVercelEvent(
+  name: string,
+  props: Record<string, string | number>,
+  headers: Headers,
+) {
+  try {
+    await vercelTrack(name, props, {
+      headers: {
+        "user-agent": headers.get("user-agent") ?? "",
+        "x-forwarded-for": headers.get("x-forwarded-for") ?? "",
+      },
+    });
+  } catch {
+    // Same rule as below: analytics never breaks the request.
+  }
 }
 
 /** Fire and forget. A failing analytics call never breaks the request that triggered it. */

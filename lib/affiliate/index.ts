@@ -56,6 +56,19 @@ export function resolveGoTarget(
   return { kind: "affiliate", url: url.toString(), from, position };
 }
 
+/** Crawlers, link checkers, chat previews and HTTP libraries that follow /go links without a person. */
+const BOT_UA =
+  /bot|crawl|spider|slurp|preview|monitor|headless|lighthouse|curl|wget|python|java\/|go-http|httpclient|axios|node-fetch|facebookexternalhit|whatsapp|telegram|discord|skype/i;
+
+/** Only a person's visit counts as a click: no HEAD probes, no prefetches, no known bots, no empty user agent. */
+export function isCountableClick(method: string, headers: Headers): boolean {
+  if (method !== "GET") return false;
+  const purpose = headers.get("sec-purpose") ?? headers.get("purpose") ?? "";
+  if (purpose.includes("prefetch") || headers.has("next-router-prefetch")) return false;
+  const ua = headers.get("user-agent") ?? "";
+  return ua !== "" && !BOT_UA.test(ua);
+}
+
 export type PartnerEntry<T> =
   { kind: "product"; product: T } | { kind: "vendor"; vendor: string; products: T[] };
 

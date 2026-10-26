@@ -99,15 +99,17 @@ export default function PrivacyPage() {
         (Adressen, die mit /go/ beginnen) zum Anbieter oder zu dessen Partnerprogramm. An den Anbieter geben
         wir dabei höchstens eine Kennung weiter, auf welcher Art von Seite und an welcher Position der Link
         stand, etwa „kategorie-3“. Name, E-Mail-Adresse oder andere Angaben über Sie übermitteln wir nicht.
-        Auf unserer Website setzen wir für Affiliate-Links keine Cookies.
+        Auf unserer Website setzen wir für Affiliate-Links keine Cookies. Wie oft ein Link geklickt wurde,
+        zählen wir mit Vercel Web Analytics wie einen Seitenaufruf: erfasst werden das Produkt und diese
+        Kennung, ohne Cookies und ohne dass wir Sie wiedererkennen können.
       </p>
       <p>
         Nach dem Klick befinden Sie sich auf der Website des Anbieters. Dort kann der Anbieter oder das von
-        ihm beauftragte Partnernetzwerk, etwa PartnerStack oder Impact, Cookies oder ähnliche Techniken einsetzen, um
-        einen späteren Vertragsabschluss unserer Empfehlung zuzuordnen. Dafür ist der Anbieter verantwortlich;
-        es gelten seine Datenschutzhinweise und seine Einwilligungsabfrage. Wir erhalten vom Anbieter nur
-        Angaben zu vermittelten Abschlüssen und Provisionen, keine Daten, mit denen wir Sie identifizieren
-        können.
+        ihm beauftragte Partnernetzwerk, etwa PartnerStack oder Impact, Cookies oder ähnliche Techniken
+        einsetzen, um einen späteren Vertragsabschluss unserer Empfehlung zuzuordnen. Dafür ist der Anbieter
+        verantwortlich; es gelten seine Datenschutzhinweise und seine Einwilligungsabfrage. Wir erhalten vom
+        Anbieter nur Angaben zu vermittelten Abschlüssen und Provisionen, keine Daten, mit denen wir Sie
+        identifizieren können.
       </p>
 
       <h2>Ihre Rechte</h2>

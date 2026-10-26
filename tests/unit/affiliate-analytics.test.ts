@@ -2,6 +2,7 @@ import { describe, expect, it } from "vitest";
 
 import {
   groupByPartnerLink,
+  isCountableClick,
   parseGoPosition,
   parseGoSource,
   resolveGoTarget,
@@ -54,6 +55,26 @@ describe("lib/affiliate", () => {
     ]);
     const sage = entries[1]!;
     expect(sage.kind === "vendor" && sage.products.map((s) => s.slug)).toEqual(["sage-100", "sage-50"]);
+  });
+
+  it("counts a person's click but not bots, probes or prefetches", () => {
+    const chrome =
+      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0 Safari/537.36";
+    const h = (init: Record<string, string>) => new Headers(init);
+    expect(isCountableClick("GET", h({ "user-agent": chrome }))).toBe(true);
+    expect(isCountableClick("HEAD", h({ "user-agent": chrome }))).toBe(false);
+    expect(isCountableClick("GET", h({ "user-agent": chrome, "sec-purpose": "prefetch" }))).toBe(false);
+    expect(isCountableClick("GET", h({ "user-agent": chrome, "next-router-prefetch": "1" }))).toBe(false);
+    expect(isCountableClick("GET", h({}))).toBe(false);
+    for (const ua of [
+      "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)",
+      "facebookexternalhit/1.1",
+      "WhatsApp/2.23",
+      "curl/8.4.0",
+      "python-requests/2.31",
+    ]) {
+      expect(isCountableClick("GET", h({ "user-agent": ua }))).toBe(false);
+    }
   });
 
   it("leaves direct partner links (UTM only) exactly as given", () => {
